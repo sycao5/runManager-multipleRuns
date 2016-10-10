@@ -1,0 +1,32 @@
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: exec_used_files(Seq,ExecutionId,User,FileId,FilePath,Sha256,Format,ArchivedFilePath,Access).
+%...................................................................................................
+exec_used_files(1,exec1,syc,f1,data_input11,input11_hash_value,'text/csv',archive_data_input11,read).
+exec_used_files(1,exec1,syc,f2,data_input12,input12_hash_value,'text/csv',archive_data_input12,read).
+exec_used_files(2,exec2,syc,f4,data_output11,output11_hash_value,'text/csv',archive_data_output11,read).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: exec_generated_files(Seq,ExecutionId,User,FileId,FilePath,Sha256,Format,ArchivedFilePath,Access).
+%...................................................................................................
+exec_generated_files(1,exec1,syc,f3,data_output11,output11_hash_value,'text/csv',archive_data_output11,write).
+exec_generated_files(2,exec2,syc,f5,data_output21,output21_hash_value,'images/png',archive_data_output21,write).
+exec_generated_files(2,exec2,syc,f6,data_output22,output22_hash_value,'images/png',archive_data_output22,write).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: input_files_to_execution_edges(ExecutionId, FileId).
+%...................................................................................................
+input_files_to_execution_edges(exec1,f1).
+input_files_to_execution_edges(exec1,f2).
+input_files_to_execution_edges(exec2,f4).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: execution_to_output_files_edges(ExecutionId, FileId).
+%...................................................................................................
+execution_to_output_files_edges(exec1,f3).
+execution_to_output_files_edges(exec2,f5).
+execution_to_output_files_edges(exec2,f6).

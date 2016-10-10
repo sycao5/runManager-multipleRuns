@@ -1,0 +1,26 @@
+
+digraph rm_data_view {
+rankdir=TB
+fontname=Courier; fontsize=18; labelloc=t
+label="multiple_runs"
+subgraph cluster_workflow { label=""; color=black; penwidth=2
+subgraph cluster_workflow_inner { label=""; color=white
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+r_script_run_1
+r_script_run_2
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+data_input11
+data_input12
+data_output11
+data_output11
+data_output21
+data_output22
+}}
+data_input11 -> r_script_run_1
+data_input12 -> r_script_run_1
+data_output11 -> r_script_run_2
+r_script_run_1 -> data_output11
+r_script_run_2 -> data_output21
+r_script_run_2 -> data_output22
+}
+

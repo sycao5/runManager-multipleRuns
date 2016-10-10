@@ -1,0 +1,3 @@
+% FACT: tag(Seq, ExecutionId, Tag).
+tag(1,'exec1','r_script_run_1').
+tag(2,'exec2','r_script_run_2').
