@@ -1,0 +1,19 @@
+
+digraph yw_data_view {
+rankdir=TB
+fontname=Courier; fontsize=18; labelloc=t
+label="Upstream graph for multiple runs"
+subgraph cluster_workflow { label=""; color=black; penwidth=2
+subgraph cluster_workflow_inner { label=""; color=white
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+r_script_1_run_3
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+data_input11_2
+data_input12_2
+data_output11_2
+}}
+data_input12_2 -> r_script_1_run_3
+data_input11_2 -> r_script_1_run_3
+r_script_1_run_3 -> data_output11_2
+}
+
