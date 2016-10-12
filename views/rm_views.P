@@ -20,9 +20,7 @@ exec_used_files(6,exec6,syc,f17,data_input12_2,input122_hash_value,'text/csv',ar
 %...................................................................................................
 exec_generated_files(1,exec1,syc,f3,data_output11,output11_hash_value,'text/csv',archive_data_output11,write).
 exec_generated_files(2,exec2,syc,f5,data_output21,output21_hash_value,'images/png',archive_data_output21,write).
-exec_generated_files(2,exec2,syc,f6,data_output22,output22_hash_value,'images/png',archive_data_output22,write).
 exec_generated_files(3,exec3,syc,f9,data_output11,output11_hash_value,'text/csv',archive_data_output11,write).
-exec_generated_files(4,exec4,syc,f11,data_output21,output21_hash_value,'images/png',archive_data_output21,write).
 exec_generated_files(4,exec4,syc,f12,data_output22,output22_hash_value,'images/png',archive_data_output22,write).
 exec_generated_files(5,exec5,syc,f15,data_output31,output31_hash_value,'images/png',archive_data_output31,write).
 exec_generated_files(6,exec6,syc,f18,data_output11_2,output112_hash_value,'text/csv',archive_data_output112,write).
@@ -48,9 +46,7 @@ input_files_to_execution_edges(exec6,f17).
 %...................................................................................................
 execution_to_output_files_edges(exec1,f3).
 execution_to_output_files_edges(exec2,f5).
-execution_to_output_files_edges(exec2,f6).
 execution_to_output_files_edges(exec3,f9).
-execution_to_output_files_edges(exec4,f11).
 execution_to_output_files_edges(exec4,f12).
 execution_to_output_files_edges(exec5,f15).
 execution_to_output_files_edges(exec6,f18).
