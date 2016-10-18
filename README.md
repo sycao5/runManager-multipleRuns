@@ -10,6 +10,8 @@ This project will query RunManager database in order to analysis the lineage bet
 
 3. `tag`(Seq, ExecutionId, Tag)
 
+From the facts stored in the database, there are three scripts: script_1, script_2, and script_3. There are three runs for script_1 and script_1_run_1 and script_1_run_2 are same run created by script_1 using the same set of parameter values. There are two runs for script_2 which use different parameter values to create these two runs for script_2. script_3 uses the outputs from two runs of script_2.
+
 ## Layouts of Repository
 
 The project folders have a folder structure:
