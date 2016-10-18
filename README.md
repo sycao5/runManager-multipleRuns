@@ -1,14 +1,14 @@
 # runManager-multipleRuns
 
-This project queries RunManager database in order to analysis the lineage between multiple runs collected by the RunManager. 
+This project will query RunManager database in order to analysis the lineage between multiple runs collected by the RunManager. 
 
 ## RunManager Database Schema
 
-1. execmeta(Seq, ExecutionId, MetadataId, DatapackageId, User, Subject, HostId, StartTime, OperatingSystem, Runtime, SoftwareApplication, ModuleDependencies, EndTime, ErrorMessage, PublishTime, PublishNodeId, PublishId, Console)
+1. `execmeta`(Seq, ExecutionId, MetadataId, DatapackageId, User, Subject, HostId, StartTime, OperatingSystem, Runtime, SoftwareApplication, ModuleDependencies, EndTime, ErrorMessage, PublishTime, PublishNodeId, PublishId, Console)
 
-2. filemeta(FileId, ExecutionId, FilePath, Sha256, Size, User, ModifyTime, CreateTime, Access, Format, ArchivedFilePath) 
+2. `filemeta`(FileId, ExecutionId, FilePath, Sha256, Size, User, ModifyTime, CreateTime, Access, Format, ArchivedFilePath) 
 
-3. tag(Seq, ExecutionId, Tag)
+3. `tag`(Seq, ExecutionId, Tag)
 
 ## Layouts of Repository
 
