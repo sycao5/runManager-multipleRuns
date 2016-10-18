@@ -11,20 +11,20 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-261.6 365.542,-261.6 365.542,4 -4,4"/>
 <text text-anchor="middle" x="180.771" y="-237.4" font-family="Courier,monospace" font-size="18.00">Upstream graph for multiple runs</text>
 <g id="clust1" class="cluster"><title>cluster_workflow</title>
-<polygon fill="none" stroke="black" stroke-width="2" points="43.7712,-8 43.7712,-220 317.771,-220 317.771,-8 43.7712,-8"/>
+<polygon fill="none" stroke="black" stroke-width="2" points="63.7712,-8 63.7712,-220 297.771,-220 297.771,-8 63.7712,-8"/>
 </g>
 <g id="clust2" class="cluster"><title>cluster_workflow_inner</title>
-<polygon fill="none" stroke="white" stroke-width="2" points="51.7712,-16 51.7712,-212 309.771,-212 309.771,-16 51.7712,-16"/>
+<polygon fill="none" stroke="white" stroke-width="2" points="71.7712,-16 71.7712,-212 289.771,-212 289.771,-16 71.7712,-16"/>
 </g>
 <!-- r_script_1_run_3 -->
 <g id="node1" class="node"><title>r_script_1_run_3</title>
-<polygon fill="#ccffcc" stroke="black" points="256.149,-132 105.393,-132 105.393,-96 256.149,-96 256.149,-132"/>
-<text text-anchor="middle" x="180.771" y="-109.8" font-family="Courier,monospace" font-size="14.00">r_script_1_run_3</text>
+<polygon fill="black" stroke="black" points="256.149,-132 105.393,-132 105.393,-96 256.149,-96 256.149,-132"/>
+<text text-anchor="middle" x="180.771" y="-109.8" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">r_script_1_run_3</text>
 </g>
 <!-- data_output11_2 -->
 <g id="node4" class="node"><title>data_output11_2</title>
-<path fill="#ffffcc" stroke="black" d="M229.334,-60C229.334,-60 132.208,-60 132.208,-60 126.208,-60 120.208,-54 120.208,-48 120.208,-48 120.208,-36 120.208,-36 120.208,-30 126.208,-24 132.208,-24 132.208,-24 229.334,-24 229.334,-24 235.334,-24 241.334,-30 241.334,-36 241.334,-36 241.334,-48 241.334,-48 241.334,-54 235.334,-60 229.334,-60"/>
-<text text-anchor="middle" x="180.771" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00">data_output11_2</text>
+<path fill="#ffe4b5" stroke="black" d="M217.258,-60C217.258,-60 144.285,-60 144.285,-60 138.285,-60 132.285,-54 132.285,-48 132.285,-48 132.285,-36 132.285,-36 132.285,-30 138.285,-24 144.285,-24 144.285,-24 217.258,-24 217.258,-24 223.258,-24 229.258,-30 229.258,-36 229.258,-36 229.258,-48 229.258,-48 229.258,-54 223.258,-60 217.258,-60"/>
+<text text-anchor="middle" x="180.771" y="-39.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">data_output11_2</text>
 </g>
 <!-- r_script_1_run_3&#45;&gt;data_output11_2 -->
 <g id="edge3" class="edge"><title>r_script_1_run_3&#45;&gt;data_output11_2</title>
@@ -33,23 +33,23 @@
 </g>
 <!-- data_input11_2 -->
 <g id="node2" class="node"><title>data_input11_2</title>
-<path fill="#ffffcc" stroke="black" d="M290.269,-204C290.269,-204 201.274,-204 201.274,-204 195.274,-204 189.274,-198 189.274,-192 189.274,-192 189.274,-180 189.274,-180 189.274,-174 195.274,-168 201.274,-168 201.274,-168 290.269,-168 290.269,-168 296.269,-168 302.269,-174 302.269,-180 302.269,-180 302.269,-192 302.269,-192 302.269,-198 296.269,-204 290.269,-204"/>
-<text text-anchor="middle" x="245.771" y="-181.8" font-family="Helvetica,sans-Serif" font-size="14.00">data_input11_2</text>
+<path fill="#ffe4b5" stroke="black" d="M269.36,-204C269.36,-204 202.183,-204 202.183,-204 196.183,-204 190.183,-198 190.183,-192 190.183,-192 190.183,-180 190.183,-180 190.183,-174 196.183,-168 202.183,-168 202.183,-168 269.36,-168 269.36,-168 275.36,-168 281.36,-174 281.36,-180 281.36,-180 281.36,-192 281.36,-192 281.36,-198 275.36,-204 269.36,-204"/>
+<text text-anchor="middle" x="235.771" y="-183.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">data_input11_2</text>
 </g>
 <!-- data_input11_2&#45;&gt;r_script_1_run_3 -->
 <g id="edge2" class="edge"><title>data_input11_2&#45;&gt;r_script_1_run_3</title>
-<path fill="none" stroke="black" d="M229.704,-167.697C221.832,-159.22 212.216,-148.864 203.598,-139.583"/>
-<polygon fill="black" stroke="black" points="206.023,-137.051 196.654,-132.104 200.894,-141.814 206.023,-137.051"/>
+<path fill="none" stroke="black" d="M222.176,-167.697C215.649,-159.389 207.703,-149.277 200.525,-140.141"/>
+<polygon fill="black" stroke="black" points="203.141,-137.805 194.21,-132.104 197.636,-142.13 203.141,-137.805"/>
 </g>
 <!-- data_input12_2 -->
 <g id="node3" class="node"><title>data_input12_2</title>
-<path fill="#ffffcc" stroke="black" d="M160.269,-204C160.269,-204 71.2737,-204 71.2737,-204 65.2737,-204 59.2737,-198 59.2737,-192 59.2737,-192 59.2737,-180 59.2737,-180 59.2737,-174 65.2737,-168 71.2737,-168 71.2737,-168 160.269,-168 160.269,-168 166.269,-168 172.269,-174 172.269,-180 172.269,-180 172.269,-192 172.269,-192 172.269,-198 166.269,-204 160.269,-204"/>
-<text text-anchor="middle" x="115.771" y="-181.8" font-family="Helvetica,sans-Serif" font-size="14.00">data_input12_2</text>
+<path fill="#ffe4b5" stroke="black" d="M159.36,-204C159.36,-204 92.1829,-204 92.1829,-204 86.1829,-204 80.1829,-198 80.1829,-192 80.1829,-192 80.1829,-180 80.1829,-180 80.1829,-174 86.1829,-168 92.1829,-168 92.1829,-168 159.36,-168 159.36,-168 165.36,-168 171.36,-174 171.36,-180 171.36,-180 171.36,-192 171.36,-192 171.36,-198 165.36,-204 159.36,-204"/>
+<text text-anchor="middle" x="125.771" y="-183.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">data_input12_2</text>
 </g>
 <!-- data_input12_2&#45;&gt;r_script_1_run_3 -->
 <g id="edge1" class="edge"><title>data_input12_2&#45;&gt;r_script_1_run_3</title>
-<path fill="none" stroke="black" d="M131.839,-167.697C139.71,-159.22 149.326,-148.864 157.945,-139.583"/>
-<polygon fill="black" stroke="black" points="160.649,-141.814 164.889,-132.104 155.519,-137.051 160.649,-141.814"/>
+<path fill="none" stroke="black" d="M139.367,-167.697C145.894,-159.389 153.839,-149.277 161.018,-140.141"/>
+<polygon fill="black" stroke="black" points="163.906,-142.13 167.332,-132.104 158.402,-137.805 163.906,-142.13"/>
 </g>
 </g>
 </svg>
