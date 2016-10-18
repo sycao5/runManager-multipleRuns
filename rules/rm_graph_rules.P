@@ -19,6 +19,13 @@ gv_node_style__param :-
 
 gv_node_style__workflow_port :-
     gv_nodestyle(circle, '#FFFFFF', 1, '0.2').
+
+gv_nodestyle__atomic_run :-
+    write('node[shape=box style=filled fillcolor="black" peripheries=1 fontname="Courier-Bold" fontcolor=white]'), eol.
+
+gv_node_style__file :-
+    write('node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname="Courier-Bold" fontsize=9 fontcolor=black]'), eol.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 gv_nodes__execution(RM) :-

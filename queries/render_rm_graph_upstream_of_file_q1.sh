@@ -21,9 +21,9 @@ graph :-
     gv_graph('yw_data_view', 'Upstream graph for multiple runs', 'TB'),
 
         gv_cluster('workflow', 'black'),
-            gv_nodestyle__atomic_step,
+            gv_nodestyle__atomic_run,
             gv_nodes__atomic_executions__upstream_of_data(RM,$ProvidedDataName),
-            gv_node_style__data,
+            gv_node_style__file,
             gv_nodes__files__upstream_of_file(RM,$ProvidedDataName),
         gv_cluster_end,
 

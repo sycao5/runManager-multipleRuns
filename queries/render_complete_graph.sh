@@ -18,9 +18,9 @@ graph :-
     gv_graph('rm_data_view', 'multiple_runs', 'TB'),
 
         gv_cluster('workflow', 'black'),
-            gv_nodestyle__atomic_step,
+            gv_nodestyle__atomic_run,
             gv_nodes__execution(RM),
-            gv_node_style__data,
+            gv_node_style__file,
             gv_nodes__file(RM),
         gv_cluster_end,
 
