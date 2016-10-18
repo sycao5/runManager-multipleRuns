@@ -6,6 +6,7 @@ source ./settings.sh
 # create output directories
 mkdir -p $FACTS_DIR
 mkdir -p $VIEWS_DIR
+mkdir -p $RESULTS_DIR
 
 # materialize views of RunManager
 $QUERIES_DIR/materialize_rm_views.sh > $VIEWS_DIR/rm_views.P
