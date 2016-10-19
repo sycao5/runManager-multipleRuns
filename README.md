@@ -4,7 +4,7 @@ This project will query RunManager database in order to analysis the lineage bet
 
 ## RunManager Database Schema
 
-In the simulated SQLite database used in RunManager, there are three scripts: script_1, script_2, and script_3. There are three runs for script_1 and script_1_run_1 and script_1_run_2 are same run created by script_1 using the same set of parameter values. There are two runs for script_2 which use different parameter values to create these two runs for script_2. script_3 uses the outputs from two runs of script_2. The database schema is defined in R version RunManager DB. All these retrospective provenance are represented using logic facts in Prolog.
+In the simulated SQLite database used in RunManager, there are three scripts: script_a, script_b, and script_c. There are three runs for script_a and script_a_run_1 and script_a_run_2 are same run created by script_a using the same set of parameter values. There are two runs for script_b which use different parameter values to create these two runs for script_b. script_c uses the outputs from two runs of script_b. The database schema is defined in R version RunManager DB. All these retrospective provenance are represented using logic facts in Prolog.
 
 1. `execmeta`(Seq, ExecutionId, MetadataId, DatapackageId, User, Subject, HostId, StartTime, OperatingSystem, Runtime, SoftwareApplication, ModuleDependencies, EndTime, ErrorMessage, PublishTime, PublishNodeId, PublishId, Console)
 
