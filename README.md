@@ -40,7 +40,7 @@ The project folders have a folder structure:
   
   *  SQLite:  a high-reliability, embedded, zero-configuration, public-domain, SQL database engine.  It is availabe at [SQLite homepage](https://www.sqlite.org). 
 
-2. The  following open-source packages are used  in our demo project.
+2. The  following packages are used  in our demo project.
   *  [recordr](https://github.com/NCEAS/recordr)
   *  [matlab-dataone](https://github.com/DataONEorg/matlab-dataone/tree/ml-sqlite)
   
