@@ -6,11 +6,11 @@ label="Upstream graph for multiple runs"
 subgraph cluster_workflow { label=""; color=black; penwidth=2
 subgraph cluster_workflow_inner { label=""; color=white
 node[shape=box style=filled fillcolor="black" peripheries=1 fontname="Courier-Bold" fontcolor=white]
-r_script_2_run_2
-r_script_2_run_1
-r_script_1_run_2
-r_script_1_run_1
-r_script_3_run_1
+r_script_b_run_2
+r_script_b_run_1
+r_script_a_run_2
+r_script_a_run_1
+r_script_c_run_1
 node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname="Courier-Bold" fontsize=9 fontcolor=black]
 data_input11
 data_input11
@@ -26,18 +26,18 @@ data_output22
 data_output22
 data_output31
 }}
-data_output22 -> r_script_3_run_1
-data_output21 -> r_script_3_run_1
-data_input12 -> r_script_1_run_1
-data_input12 -> r_script_1_run_2
-data_input11 -> r_script_1_run_1
-data_input11 -> r_script_1_run_2
-data_output11 -> r_script_2_run_1
-data_output11 -> r_script_2_run_2
-r_script_1_run_1 -> data_output11
-r_script_1_run_2 -> data_output11
-r_script_2_run_1 -> data_output21
-r_script_2_run_2 -> data_output22
-r_script_3_run_1 -> data_output31
+data_output22 -> r_script_c_run_1
+data_output21 -> r_script_c_run_1
+data_input12 -> r_script_a_run_1
+data_input12 -> r_script_a_run_2
+data_input11 -> r_script_a_run_1
+data_input11 -> r_script_a_run_2
+data_output11 -> r_script_b_run_1
+data_output11 -> r_script_b_run_2
+r_script_a_run_1 -> data_output11
+r_script_a_run_2 -> data_output11
+r_script_b_run_1 -> data_output21
+r_script_b_run_2 -> data_output22
+r_script_c_run_1 -> data_output31
 }
 

@@ -6,14 +6,14 @@ label="Upstream graph for multiple runs"
 subgraph cluster_workflow { label=""; color=black; penwidth=2
 subgraph cluster_workflow_inner { label=""; color=white
 node[shape=box style=filled fillcolor="black" peripheries=1 fontname="Courier-Bold" fontcolor=white]
-r_script_1_run_3
+r_script_a_run_3
 node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname="Courier-Bold" fontsize=9 fontcolor=black]
 data_input11_2
 data_input12_2
 data_output11_2
 }}
-data_input12_2 -> r_script_1_run_3
-data_input11_2 -> r_script_1_run_3
-r_script_1_run_3 -> data_output11_2
+data_input12_2 -> r_script_a_run_3
+data_input11_2 -> r_script_a_run_3
+r_script_a_run_3 -> data_output11_2
 }
 
