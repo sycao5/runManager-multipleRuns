@@ -1,0 +1,54 @@
+
+/* Start of top-level graph */
+digraph Workflow {
+rankdir=TB
+
+/* Title for graph */
+fontname=Helvetica; fontsize=18; labelloc=t
+label=C3_C4_generate_results_step
+
+/* Start of double cluster for drawing box around nodes in workflow */
+subgraph cluster_workflow_box_outer { label=""; color=black; penwidth=2
+subgraph cluster_workflow_box_inner { label=""; penwidth=0
+
+/* Style for nodes representing atomic programs in workflow */
+node[shape=box style=filled fillcolor="#CCFFCC" peripheries=1 fontname=Helvetica]
+
+/* Nodes representing atomic programs in workflow */
+generate_netcdf_file_for_C3_fraction
+generate_netcdf_file_for_C4_fraction
+generate_netcdf_file_for_Grass_fraction
+
+/* Style for nodes representing non-parameter data channels in workflow */
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+
+/* Nodes representing non-parameter data channels in workflow */
+C3_fraction_data [shape=record rankdir=LR label="{<f0> C3_fraction_data |<f1> file\:outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc}"];
+C4_fraction_data [shape=record rankdir=LR label="{<f0> C4_fraction_data |<f1> file\:outputs/SYNMAP_PRESENTVEG_C4Grass_RelaFrac_NA_v2.0.nc}"];
+Grass_fraction_data [shape=record rankdir=LR label="{<f0> Grass_fraction_data |<f1> file\:outputs/SYNMAP_PRESENTVEG_Grass_Fraction_NA_v2.0.nc}"];
+
+/* Edges representing connections between programs and channels */
+generate_netcdf_file_for_C3_fraction -> C3_fraction_data
+lon_variable -> generate_netcdf_file_for_C3_fraction
+lat_variable -> generate_netcdf_file_for_C3_fraction
+lon_bnds_variable -> generate_netcdf_file_for_C3_fraction
+lat_bnds_variable -> generate_netcdf_file_for_C3_fraction
+C3_Data -> generate_netcdf_file_for_C3_fraction
+generate_netcdf_file_for_C4_fraction -> C4_fraction_data
+lon_variable -> generate_netcdf_file_for_C4_fraction
+lat_variable -> generate_netcdf_file_for_C4_fraction
+lon_bnds_variable -> generate_netcdf_file_for_C4_fraction
+lat_bnds_variable -> generate_netcdf_file_for_C4_fraction
+C4_Data -> generate_netcdf_file_for_C4_fraction
+generate_netcdf_file_for_Grass_fraction -> Grass_fraction_data
+lon_variable -> generate_netcdf_file_for_Grass_fraction
+lat_variable -> generate_netcdf_file_for_Grass_fraction
+lon_bnds_variable -> generate_netcdf_file_for_Grass_fraction
+lat_bnds_variable -> generate_netcdf_file_for_Grass_fraction
+Grass_variable -> generate_netcdf_file_for_Grass_fraction
+
+/* End of double cluster for drawing box around nodes in workflow */
+}}
+
+/* End of top-level graph */
+}
