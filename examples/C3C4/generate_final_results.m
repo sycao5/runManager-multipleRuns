@@ -1,23 +1,24 @@
 % @BEGIN C3_C4_generate_results_step
 %
-% @in step1.mat @URI outputs/step1.mat
-% @in step2.mat @URI outputs/step2.mat
+% @in Grass @AS Grass_Matrix @URI file:Grass_{start_year}_{end_year}.mat
+% @in land_cover_map_mat @URI file:land_cover_map_{start_year}_{end_year}.mat
+% @in C3_mat @AS C3_Matrix @URI file:C3_{start_year}_{end_year}.mat
+% @in C4_mat @AS C4_Matrix @URI file:C4_{start_year}_{end_year}.mat
 
 % @out C3_fraction_data @URI file:outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc
 % @out C4_fraction_data @URI file:outputs/SYNMAP_PRESENTVEG_C4Grass_RelaFrac_NA_v2.0.nc
 % @out Grass_fraction_data @URI file:outputs/SYNMAP_PRESENTVEG_Grass_Fraction_NA_v2.0.nc
 
-load('step1.mat');
-load('step2.mat');
+load('Grass_2000_2010.mat');
+load('land_cover_map_2000_2010.mat');
+load('C3_2000_2010.mat');
+load('C4_2000_2010.mat');
 
 %% Output the netcdf file for C3 fraction
 %  Reuse longitude, latitude, and boundary variables from land cover input file
 % @BEGIN generate_netcdf_file_for_C3_fraction
-% @in lon_variable
-% @in lat_variable
-% @in lon_bnds_variable
-% @in lat_bnds_variable
-% @in C3_Data
+% @in land_cover_map_mat
+% @in C3_Matrix
 % @out C3_fraction_data @URI file:outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc
 moncid=netcdf.create('outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc', 'NC_CLOBBER');% create netCDF dataset (filename,mode)
 
@@ -73,11 +74,8 @@ netcdf.close(moncid)
 %% Output the netcdf file for C4 fraction
 % Reuse longitude, latitude, and boundary variables from land cover input file
 % @BEGIN generate_netcdf_file_for_C4_fraction
-% @in lon_variable
-% @in lat_variable
-% @in lon_bnds_variable
-% @in lat_bnds_variable
-% @in C4_Data
+% @in land_cover_map_mat
+% @in C4_Matrix
 % @out C4_fraction_data @URI file:outputs/SYNMAP_PRESENTVEG_C4Grass_RelaFrac_NA_v2.0.nc
 moncid=netcdf.create('outputs/SYNMAP_PRESENTVEG_C4Grass_RelaFrac_NA_v2.0.nc', 'NC_CLOBBER');% create netCDF dataset (filename,mode)
 
@@ -134,11 +132,8 @@ netcdf.close(moncid)
 %% Output the netcdf file for Grass fraction
 % Reuse longitude, latitude, and boundary variables from land cover input file
 % @BEGIN generate_netcdf_file_for_Grass_fraction
-% @in lon_variable
-% @in lat_variable
-% @in lon_bnds_variable
-% @in lat_bnds_variable
-% @in Grass_variable
+% @in land_cover_map_mat
+% @in Grass_Matrix
 % @out Grass_fraction_data @URI file:outputs/SYNMAP_PRESENTVEG_Grass_Fraction_NA_v2.0.nc
 moncid=netcdf.create('outputs/SYNMAP_PRESENTVEG_Grass_Fraction_NA_v2.0.nc', 'NC_CLOBBER');% create netCDF dataset (filename,mode)
 

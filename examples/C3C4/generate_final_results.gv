@@ -26,26 +26,21 @@ node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname
 C3_fraction_data [shape=record rankdir=LR label="{<f0> C3_fraction_data |<f1> file\:outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc}"];
 C4_fraction_data [shape=record rankdir=LR label="{<f0> C4_fraction_data |<f1> file\:outputs/SYNMAP_PRESENTVEG_C4Grass_RelaFrac_NA_v2.0.nc}"];
 Grass_fraction_data [shape=record rankdir=LR label="{<f0> Grass_fraction_data |<f1> file\:outputs/SYNMAP_PRESENTVEG_Grass_Fraction_NA_v2.0.nc}"];
+land_cover_map_mat [shape=record rankdir=LR label="{<f0> land_cover_map_mat |<f1> file\:land_cover_map_\{start_year\}_\{end_year\}.mat}"];
+C3_Matrix [shape=record rankdir=LR label="{<f0> C3_Matrix |<f1> file\:C3_\{start_year\}_\{end_year\}.mat}"];
+C4_Matrix [shape=record rankdir=LR label="{<f0> C4_Matrix |<f1> file\:C4_\{start_year\}_\{end_year\}.mat}"];
+Grass_Matrix [shape=record rankdir=LR label="{<f0> Grass_Matrix |<f1> file\:Grass_\{start_year\}_\{end_year\}.mat}"];
 
 /* Edges representing connections between programs and channels */
 generate_netcdf_file_for_C3_fraction -> C3_fraction_data
-lon_variable -> generate_netcdf_file_for_C3_fraction
-lat_variable -> generate_netcdf_file_for_C3_fraction
-lon_bnds_variable -> generate_netcdf_file_for_C3_fraction
-lat_bnds_variable -> generate_netcdf_file_for_C3_fraction
-C3_Data -> generate_netcdf_file_for_C3_fraction
+land_cover_map_mat -> generate_netcdf_file_for_C3_fraction
+C3_Matrix -> generate_netcdf_file_for_C3_fraction
 generate_netcdf_file_for_C4_fraction -> C4_fraction_data
-lon_variable -> generate_netcdf_file_for_C4_fraction
-lat_variable -> generate_netcdf_file_for_C4_fraction
-lon_bnds_variable -> generate_netcdf_file_for_C4_fraction
-lat_bnds_variable -> generate_netcdf_file_for_C4_fraction
-C4_Data -> generate_netcdf_file_for_C4_fraction
+land_cover_map_mat -> generate_netcdf_file_for_C4_fraction
+C4_Matrix -> generate_netcdf_file_for_C4_fraction
 generate_netcdf_file_for_Grass_fraction -> Grass_fraction_data
-lon_variable -> generate_netcdf_file_for_Grass_fraction
-lat_variable -> generate_netcdf_file_for_Grass_fraction
-lon_bnds_variable -> generate_netcdf_file_for_Grass_fraction
-lat_bnds_variable -> generate_netcdf_file_for_Grass_fraction
-Grass_variable -> generate_netcdf_file_for_Grass_fraction
+land_cover_map_mat -> generate_netcdf_file_for_Grass_fraction
+Grass_Matrix -> generate_netcdf_file_for_Grass_fraction
 
 /* End of double cluster for drawing box around nodes in workflow */
 }}

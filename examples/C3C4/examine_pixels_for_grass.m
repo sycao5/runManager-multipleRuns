@@ -1,17 +1,21 @@
 % @BEGIN C3_C4_examine_pixels_for_grass
 %
-% @in step1.mat @URI outputs/step1.mat
-% @out step2.mat @URI file:outputs/step2.mat
+% @in Tair @AS Tair_Matrix @URI file:Tair_{start_year}_{end_year}.mat
+% @in Rain @AS Rain_Matrix @URI file:Rain_{start_year}_{end_year}.mat
+% @out C3_mat @AS C3_Matrix @URI file:C3_{start_year}_{end_year}.mat
+% @out C4_mat @AS C4_Matrix @URI file:C4_{start_year}_{end_year}.mat
+
 
 %% Algorithm 1: method used in MstMIP
 %  Examine the type of each pixel to see if it includes grass
 % @BEGIN examine_pixels_for_grass
 % @in Tair @AS Tair_Matrix
 % @in Rain @AS Rain_Matrix
-% @out C3 @AS C3_Data
-% @out C4 @AS C4_Data
+% @out C3 @AS C3_Matrix @URI file:C3_{start_year}_{end_year}.mat
+% @out C4 @AS C4_Matrix @URI file:C4_{start_year}_{end_year}.mat
 
-load('step1.mat');
+load('Tair_2000_2010.mat');
+load('Rain_2000_2010.mat');
 
 C3=ones(ncols, nrows)*(-999.0);
 C4=ones(ncols, nrows)*(-999.0);
@@ -48,7 +52,8 @@ for i=1:ncols
     end
 end
 
-save('step2.mat', 'C3', 'C4');
+save('C3_2000_2010.mat', 'C3');
+save('C4_2000_2010.mat', 'C4');
 
 % @END examine_pixels_for_grass
 

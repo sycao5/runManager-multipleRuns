@@ -1,3 +1,4 @@
+
 /* Start of top-level graph */
 digraph Workflow {
 rankdir=TB
@@ -15,6 +16,7 @@ node[shape=box style=filled fillcolor="#CCFFCC" peripheries=1 fontname=Helvetica
 
 /* Nodes representing atomic programs in workflow */
 fetch_SYNMAP_land_cover_map_variable
+save_SYNMAP_land_cover_map_variable
 fetch_monthly_mean_air_temperature_data
 fetch_monthly_mean_precipitation_data
 initialize_Grass_Matrix
@@ -22,15 +24,18 @@ initialize_Grass_Matrix
 /* Style for nodes representing non-parameter data channels in workflow */
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
 
-/* Nodes for non-parameter data channels in workflow */
+/* Nodes representing non-parameter data channels in workflow */
+Tair_Matrix [shape=record rankdir=LR label="{<f0> Tair_Matrix |<f1> file\:Tair_\{start_year\}_\{end_year\}.mat}"];
+Rain_Matrix [shape=record rankdir=LR label="{<f0> Rain_Matrix |<f1> file\:Rain_\{start_year\}_\{end_year\}.mat}"];
+Grass_variable [shape=record rankdir=LR label="{<f0> Grass_variable |<f1> file\:Grass_\{start_year\}_\{end_year\}.mat}"];
+land_cover_map_mat [shape=record rankdir=LR label="{<f0> land_cover_map_mat |<f1> file\:land_cover_map_\{start_year\}_\{end_year\}.mat}"];
 SYNMAP_land_cover_map_data [shape=record rankdir=LR label="{<f0> SYNMAP_land_cover_map_data |<f1> inputs/land_cover/SYNMAP_NA_QD.nc}"];
+lon_variable
+lat_variable
+lon_bnds_variable
+lat_bnds_variable
 mean_airtemp [shape=record rankdir=LR label="{<f0> mean_airtemp |<f1> file\:inputs/narr_air.2m_monthly/air.2m_monthly_\{start_year\}_\{end_year\}_mean.\{month\}.nc}"];
 mean_precip [shape=record rankdir=LR label="{<f0> mean_precip |<f1> file\:inputs/narr_apcp_rescaled_monthly/apcp_monthly_\{start_year\}_\{end_year\}_mean.\{month\}.nc}"];
-
-/* Style for nodes representing parameter channels in workflow */
-node[shape=box style="rounded,filled" fillcolor="#FCFCFC" peripheries=1 fontname=Helvetica]
-
-/* Nodes representing parameter channels in workflow */
 
 /* Edges representing connections between programs and channels */
 fetch_SYNMAP_land_cover_map_variable -> lon_variable
@@ -38,6 +43,11 @@ fetch_SYNMAP_land_cover_map_variable -> lat_variable
 fetch_SYNMAP_land_cover_map_variable -> lon_bnds_variable
 fetch_SYNMAP_land_cover_map_variable -> lat_bnds_variable
 SYNMAP_land_cover_map_data -> fetch_SYNMAP_land_cover_map_variable
+save_SYNMAP_land_cover_map_variable -> land_cover_map_mat
+lon_variable -> save_SYNMAP_land_cover_map_variable
+lat_variable -> save_SYNMAP_land_cover_map_variable
+lon_bnds_variable -> save_SYNMAP_land_cover_map_variable
+lat_bnds_variable -> save_SYNMAP_land_cover_map_variable
 fetch_monthly_mean_air_temperature_data -> Tair_Matrix
 mean_airtemp -> fetch_monthly_mean_air_temperature_data
 fetch_monthly_mean_precipitation_data -> Rain_Matrix
@@ -46,26 +56,6 @@ initialize_Grass_Matrix -> Grass_variable
 
 /* End of double cluster for drawing box around nodes in workflow */
 }}
-
-/* Style for nodes representing workflow input ports */
-node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
-
-/* Nodes representing workflow input ports */
-SYNMAP_land_cover_map_data_input_port [label=""]
-mean_airtemp_input_port [label=""]
-mean_precip_input_port [label=""]
-
-/* Style for nodes representing workflow output ports */
-node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
-
-/* Nodes representing workflow output ports */
-
-/* Edges from input ports to channels */
-SYNMAP_land_cover_map_data_input_port -> SYNMAP_land_cover_map_data
-mean_airtemp_input_port -> mean_airtemp
-mean_precip_input_port -> mean_precip
-
-/* Edges from channels to output ports */
 
 /* End of top-level graph */
 }
