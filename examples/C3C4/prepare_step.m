@@ -46,7 +46,7 @@ netcdf.close(sncid)
 % @in lon_bnds @AS lon_bnds_variable
 % @in lat_bnds @AS lat_bnds_variable
 % @out land_cover_map_mat @URI file:land_cover_map_{start_year}_{end_year}.mat
-save('land_cover_map_2000_2010.mat', 'lon', 'lat', 'lon_bnds', 'lat_bnds');
+save('workspace/land_cover_map_2000_2010.mat', 'lon', 'lat', 'lon_bnds', 'lat_bnds');
 
 % @END save_SYNMAP_land_cover_map_variable
 
@@ -62,7 +62,7 @@ for m=1:12
     Tair(:,:,m)=netcdf.getVar(tncid,tvid);
     netcdf.close(tncid)
 end
-save('Tair_2000_2010.mat', 'Tair');
+save('workspace/Tair_2000_2010.mat', 'Tair');
 % @END fetch_monthly_mean_air_temperature_data
 
 
@@ -77,7 +77,7 @@ for m=1:12
     Rain(:,:,m)=netcdf.getVar(rncid,rvid);
     netcdf.close(rncid)
 end
-save('Rain_2000_2010.mat', 'Rain');
+save('workspace/Rain_2000_2010.mat', 'Rain');
 % @END fetch_monthly_mean_precipitation_data
 
 
@@ -90,7 +90,7 @@ for i=1:ncols
             Grass(i,j)=sum(frac(i,j,20:28))*0.5+sum(frac(i,j,43:44))*0.5+frac(i,j,39)*0.5+frac(i,j,42);
     end
 end
-save('Grass_2000_2010.mat', 'Grass');
+save('workspace/Grass_2000_2010.mat', 'Grass');
 % @END initialize_Grass_Matrix
 
 % @END C3_C4_prepare_step

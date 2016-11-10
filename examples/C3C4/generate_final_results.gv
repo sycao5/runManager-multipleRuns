@@ -1,4 +1,3 @@
-
 /* Start of top-level graph */
 digraph Workflow {
 rankdir=TB
@@ -22,7 +21,7 @@ generate_netcdf_file_for_Grass_fraction
 /* Style for nodes representing non-parameter data channels in workflow */
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
 
-/* Nodes representing non-parameter data channels in workflow */
+/* Nodes for non-parameter data channels in workflow */
 C3_fraction_data [shape=record rankdir=LR label="{<f0> C3_fraction_data |<f1> file\:outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc}"];
 C4_fraction_data [shape=record rankdir=LR label="{<f0> C4_fraction_data |<f1> file\:outputs/SYNMAP_PRESENTVEG_C4Grass_RelaFrac_NA_v2.0.nc}"];
 Grass_fraction_data [shape=record rankdir=LR label="{<f0> Grass_fraction_data |<f1> file\:outputs/SYNMAP_PRESENTVEG_Grass_Fraction_NA_v2.0.nc}"];
@@ -30,6 +29,11 @@ land_cover_map_mat [shape=record rankdir=LR label="{<f0> land_cover_map_mat |<f1
 C3_Matrix [shape=record rankdir=LR label="{<f0> C3_Matrix |<f1> file\:C3_\{start_year\}_\{end_year\}.mat}"];
 C4_Matrix [shape=record rankdir=LR label="{<f0> C4_Matrix |<f1> file\:C4_\{start_year\}_\{end_year\}.mat}"];
 Grass_Matrix [shape=record rankdir=LR label="{<f0> Grass_Matrix |<f1> file\:Grass_\{start_year\}_\{end_year\}.mat}"];
+
+/* Style for nodes representing parameter channels in workflow */
+node[shape=box style="rounded,filled" fillcolor="#FCFCFC" peripheries=1 fontname=Helvetica]
+
+/* Nodes representing parameter channels in workflow */
 
 /* Edges representing connections between programs and channels */
 generate_netcdf_file_for_C3_fraction -> C3_fraction_data
@@ -45,5 +49,34 @@ Grass_Matrix -> generate_netcdf_file_for_Grass_fraction
 /* End of double cluster for drawing box around nodes in workflow */
 }}
 
+/* Style for nodes representing workflow input ports */
+node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
+
+/* Nodes representing workflow input ports */
+Grass_Matrix_input_port [label=""]
+land_cover_map_mat_input_port [label=""]
+C3_Matrix_input_port [label=""]
+C4_Matrix_input_port [label=""]
+
+/* Style for nodes representing workflow output ports */
+node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
+
+/* Nodes representing workflow output ports */
+C3_fraction_data_output_port [label=""]
+C4_fraction_data_output_port [label=""]
+Grass_fraction_data_output_port [label=""]
+
+/* Edges from input ports to channels */
+Grass_Matrix_input_port -> Grass_Matrix
+land_cover_map_mat_input_port -> land_cover_map_mat
+C3_Matrix_input_port -> C3_Matrix
+C4_Matrix_input_port -> C4_Matrix
+
+/* Edges from channels to output ports */
+C3_fraction_data -> C3_fraction_data_output_port
+C4_fraction_data -> C4_fraction_data_output_port
+Grass_fraction_data -> Grass_fraction_data_output_port
+
 /* End of top-level graph */
 }
+

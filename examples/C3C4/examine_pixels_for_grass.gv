@@ -20,20 +20,52 @@ examine_pixels_for_grass
 /* Style for nodes representing non-parameter data channels in workflow */
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
 
-/* Nodes representing non-parameter data channels in workflow */
+/* Nodes for non-parameter data channels in workflow */
 C3_Matrix [shape=record rankdir=LR label="{<f0> C3_Matrix |<f1> file\:C3_\{start_year\}_\{end_year\}.mat}"];
 C4_Matrix [shape=record rankdir=LR label="{<f0> C4_Matrix |<f1> file\:C4_\{start_year\}_\{end_year\}.mat}"];
 Tair_Matrix [shape=record rankdir=LR label="{<f0> Tair_Matrix |<f1> file\:Tair_\{start_year\}_\{end_year\}.mat}"];
 Rain_Matrix [shape=record rankdir=LR label="{<f0> Rain_Matrix |<f1> file\:Rain_\{start_year\}_\{end_year\}.mat}"];
+Grass_variable [shape=record rankdir=LR label="{<f0> Grass_variable |<f1> file\:Grass_\{start_year\}_\{end_year\}.mat}"];
+
+/* Style for nodes representing parameter channels in workflow */
+node[shape=box style="rounded,filled" fillcolor="#FCFCFC" peripheries=1 fontname=Helvetica]
+
+/* Nodes representing parameter channels in workflow */
 
 /* Edges representing connections between programs and channels */
 examine_pixels_for_grass -> C3_Matrix
 examine_pixels_for_grass -> C4_Matrix
 Tair_Matrix -> examine_pixels_for_grass
 Rain_Matrix -> examine_pixels_for_grass
+Grass_variable -> examine_pixels_for_grass
 
 /* End of double cluster for drawing box around nodes in workflow */
 }}
 
+/* Style for nodes representing workflow input ports */
+node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
+
+/* Nodes representing workflow input ports */
+Tair_Matrix_input_port [label=""]
+Rain_Matrix_input_port [label=""]
+Grass_variable_input_port [label=""]
+
+/* Style for nodes representing workflow output ports */
+node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
+
+/* Nodes representing workflow output ports */
+C3_Matrix_output_port [label=""]
+C4_Matrix_output_port [label=""]
+
+/* Edges from input ports to channels */
+Tair_Matrix_input_port -> Tair_Matrix
+Rain_Matrix_input_port -> Rain_Matrix
+Grass_variable_input_port -> Grass_variable
+
+/* Edges from channels to output ports */
+C3_Matrix -> C3_Matrix_output_port
+C4_Matrix -> C4_Matrix_output_port
+
 /* End of top-level graph */
 }
+

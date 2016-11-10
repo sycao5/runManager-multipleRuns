@@ -9,10 +9,14 @@
 % @out C4_fraction_data @URI file:outputs/SYNMAP_PRESENTVEG_C4Grass_RelaFrac_NA_v2.0.nc
 % @out Grass_fraction_data @URI file:outputs/SYNMAP_PRESENTVEG_Grass_Fraction_NA_v2.0.nc
 
-load('Grass_2000_2010.mat');
-load('land_cover_map_2000_2010.mat');
-load('C3_2000_2010.mat');
-load('C4_2000_2010.mat');
+load('workspace/Grass_2000_2010.mat');
+load('workspace/land_cover_map_2000_2010.mat');
+load('workspace/C3_2000_2010.mat');
+load('workspace/C4_2000_2010.mat');
+
+ncols=480;
+nrows=296;
+nodatavalue = -999.0;
 
 %% Output the netcdf file for C3 fraction
 %  Reuse longitude, latitude, and boundary variables from land cover input file

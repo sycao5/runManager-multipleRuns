@@ -2,6 +2,7 @@
 %
 % @in Tair @AS Tair_Matrix @URI file:Tair_{start_year}_{end_year}.mat
 % @in Rain @AS Rain_Matrix @URI file:Rain_{start_year}_{end_year}.mat
+% @in Grass @AS Grass_variable @URI file:Grass_{start_year}_{end_year}.mat
 % @out C3_mat @AS C3_Matrix @URI file:C3_{start_year}_{end_year}.mat
 % @out C4_mat @AS C4_Matrix @URI file:C4_{start_year}_{end_year}.mat
 
@@ -11,11 +12,16 @@
 % @BEGIN examine_pixels_for_grass
 % @in Tair @AS Tair_Matrix
 % @in Rain @AS Rain_Matrix
+% @in Grass @AS Grass_variable @URI file:Grass_{start_year}_{end_year}.mat
 % @out C3 @AS C3_Matrix @URI file:C3_{start_year}_{end_year}.mat
 % @out C4 @AS C4_Matrix @URI file:C4_{start_year}_{end_year}.mat
 
-load('Tair_2000_2010.mat');
-load('Rain_2000_2010.mat');
+load('workspace/Tair_2000_2010.mat');
+load('workspace/Rain_2000_2010.mat');
+load('workspace/Grass_2000_2010.mat');
+
+ncols=480;
+nrows=296;
 
 C3=ones(ncols, nrows)*(-999.0);
 C4=ones(ncols, nrows)*(-999.0);
@@ -52,8 +58,8 @@ for i=1:ncols
     end
 end
 
-save('C3_2000_2010.mat', 'C3');
-save('C4_2000_2010.mat', 'C4');
+save('workspace/C3_2000_2010.mat', 'C3');
+save('workspace/C4_2000_2010.mat', 'C4');
 
 % @END examine_pixels_for_grass
 
