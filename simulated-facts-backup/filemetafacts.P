@@ -1,0 +1,17 @@
+% FACT: filemeta(FileId, ExecutionId, FilePath, Sha256, Size, User, ModifyTime, CreateTime, Access, Format, ArchivedFilePath).
+filemeta('f1', 'exec1', 'data_input11', 'input11_hash_value', '3200', 'syc', '', '','read', 'text/csv', 'archive_data_input11').
+filemeta('f2', 'exec1', 'data_input12', 'input12_hash_value', '3500', 'syc', '', '','read', 'text/csv', 'archive_data_input12').
+filemeta('f3', 'exec1', 'data_output11', 'output11_hash_value', '6700', 'syc', '', '','write', 'text/csv', 'archive_data_output11').
+filemeta('f4', 'exec2', 'data_output11', 'output11_hash_value', '6700', 'syc', '', '','read', 'text/csv', 'archive_data_output11').
+filemeta('f5', 'exec2', 'data_output21', 'output21_hash_value', '10000', 'syc', '', '','write', 'images/png', 'archive_data_output21').
+filemeta('f7', 'exec3', 'data_input11', 'input11_hash_value', '3200', 'syc', '', '','read', 'text/csv', 'archive_data_input11').
+filemeta('f8', 'exec3', 'data_input12', 'input12_hash_value', '3500', 'syc', '', '','read', 'text/csv', 'archive_data_input12').
+filemeta('f9', 'exec3', 'data_output11', 'output11_hash_value', '6700', 'syc', '', '','write', 'text/csv', 'archive_data_output11').
+filemeta('f10', 'exec4', 'data_output11', 'output11_hash_value', '6700', 'syc', '', '','read', 'text/csv', 'archive_data_output11').
+filemeta('f12', 'exec4', 'data_output22', 'output22_hash_value', '15000', 'syc', '', '','write', 'images/png', 'archive_data_output22').
+filemeta('f13', 'exec5', 'data_output21', 'output21_hash_value', '10000', 'syc', '', '','read', 'images/png', 'archive_data_output21').
+filemeta('f14', 'exec5', 'data_output22', 'output22_hash_value', '15000', 'syc', '', '','read', 'images/png', 'archive_data_output22').
+filemeta('f15', 'exec5', 'data_output31', 'output31_hash_value', '25300', 'syc', '', '','write', 'images/png', 'archive_data_output31').
+filemeta('f16', 'exec6', 'data_input11_2', 'input112_hash_value', '3220', 'syc', '', '','read', 'text/csv', 'archive_data_input112').
+filemeta('f17', 'exec6', 'data_input12_2', 'input122_hash_value', '3520', 'syc', '', '','read', 'text/csv', 'archive_data_input122').
+filemeta('f18', 'exec6', 'data_output11_2', 'output112_hash_value', '6720', 'syc', '', '','write', 'text/csv', 'archive_data_output112').
