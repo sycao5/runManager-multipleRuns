@@ -1,6 +1,6 @@
 
 digraph rm_data_view {
-rankdir=TB
+rankdir=LR
 fontname=Courier; fontsize=18; labelloc=t
 label="multiple_runs"
 subgraph cluster_workflow { label=""; color=black; penwidth=2
@@ -240,4 +240,3 @@ scriptC_01 -> "/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C4Gr
 scriptC_01 -> "/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_Grass_Fraction_NA_v2.0.nc"
 scriptC_01 -> "/Users/syc/.d1/provenance/runs/e573b0de-90fd-4b73-bf6e-7e68a022ca1b/metadata_e573b0de-90fd-4b73-bf6e-7e68a022ca1b.xml"
 }
-

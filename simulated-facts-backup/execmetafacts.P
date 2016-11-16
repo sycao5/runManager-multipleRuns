@@ -1,0 +1,7 @@
+% FACT: execmeta(Seq, ExecutionId, MetadataId, DatapackageId, User, Subject, HostId, StartTime, OperatingSystem, Runtime, SoftwareApplication, ModuleDependencies, EndTime, ErrorMessage, PublishTime, PublishNodeId, PublishId, Console).
+execmeta(1, 'exec1', 'm1', 'd1', 'syc', '', '', '', 'Mac OS', '', 'R/script1', '', '', '', '', '', '', 1).
+execmeta(2, 'exec2', 'm2', 'd2', 'syc', '', '', '', 'Mac OS', '', 'R/script2', '', '', '', '', '', '', 1).
+execmeta(3, 'exec3', 'm3', 'd1', 'syc', '', '', '', 'Mac OS', '', 'R/script1', '', '', '', '', '', '', 1).
+execmeta(4, 'exec4', 'm4', 'd2', 'syc', '', '', '', 'Mac OS', '', 'R/script2', '', '', '', '', '', '', 1).
+execmeta(5, 'exec5', 'm5', 'd5', 'syc', '', '', '', 'Mac OS', '', 'R/script3', '', '', '', '', '', '', 1).
+execmeta(6, 'exec6', 'm6', 'd6', 'syc', '', '', '', 'Mac OS', '', 'R/script1', '', '', '', '', '', '', 1).
