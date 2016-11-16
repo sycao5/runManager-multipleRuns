@@ -1,0 +1,5 @@
+FACT: tag(Seq, ExecutionId, Tag).
+%FACT: tag(Seq, ExecutionId, Tag).
+tag(1, '054fcca8-c370-46e8-97d6-46e5b3b3d855', 'scriptA_01').
+tag(2, '1fc1ca57-1b63-47f6-b66d-31b334214e2d', 'scriptB_01').
+tag(4, 'e573b0de-90fd-4b73-bf6e-7e68a022ca1b', 'scriptC_01').
