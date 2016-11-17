@@ -48,7 +48,7 @@ The project folders have a folder structure:
   `git clone https://github.com/sycao5/runManager-multipleRuns.git`.
   
 ### Running the demo
-1. Open a file ".bashrc", add a line like `export PATH="/Users/syc/xsb-3.6/bin:$PATH"`
+1. Open a file ".bashrc", add a line like `export PATH="/path/to/xsb-3.6/bin:$PATH"`
 
 2. Run the following commands
    ```
