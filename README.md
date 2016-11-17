@@ -56,5 +56,4 @@ source ~/.bashrc
 bash clean.sh
 bash make.sh
 ```
-
 3. Go to the folder `results/` to check the outputs
