@@ -51,9 +51,9 @@ The project folders have a folder structure:
 1. Open a file ".bashrc", add a line like `export PATH="/Users/syc/xsb-3.6/bin:$PATH"`
 
 2. Run the following commands
-```
-source ~/.bashrc
-bash clean.sh
-bash make.sh
-```
+   ```
+    source ~/.bashrc
+    bash clean.sh
+    bash make.sh
+   ```
 3. Go to the folder `results/` to check the outputs
