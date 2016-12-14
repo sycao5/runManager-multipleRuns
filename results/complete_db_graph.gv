@@ -6,11 +6,10 @@ label="multiple_runs"
 subgraph cluster_workflow { label=""; color=black; penwidth=2
 subgraph cluster_workflow_inner { label=""; color=white
 node[shape=box style=filled fillcolor="black" peripheries=1 fontname="Courier-Bold" fontcolor=white]
-scriptA_01
-scriptB_01
-scriptC_01
+script_A
+script_B
+script_C
 node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname="Courier-Bold" fontsize=9 fontcolor=black]
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
 "/Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc"
 "/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat"
 "/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc"
@@ -41,15 +40,14 @@ node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname
 "/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat"
 "/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat"
 "/Users/syc/Documents/C3_C4_mapping/prepare_step.m"
-"/Users/syc/.d1/provenance/runs/054fcca8-c370-46e8-97d6-46e5b3b3d855/metadata_054fcca8-c370-46e8-97d6-46e5b3b3d855.xml"
+"/Users/syc/.d1/provenance/runs/07baeda4-908a-4852-99b8-8748dfcc0ad9/metadata_07baeda4-908a-4852-99b8-8748dfcc0ad9.xml"
 "/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat"
 "/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat"
 "/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat"
 "/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat"
 "/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat"
 "/Users/syc/Documents/C3_C4_mapping/examine_pixels_for_grass.m"
-"/Users/syc/.d1/provenance/runs/1fc1ca57-1b63-47f6-b66d-31b334214e2d/metadata_1fc1ca57-1b63-47f6-b66d-31b334214e2d.xml"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
+"/Users/syc/.d1/provenance/runs/839c1300-9e38-4fa1-a010-e72056f2cbed/metadata_839c1300-9e38-4fa1-a010-e72056f2cbed.xml"
 "/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat"
 "/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat"
 "/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat"
@@ -58,185 +56,51 @@ node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname
 "/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C4Grass_RelaFrac_NA_v2.0.nc"
 "/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_Grass_Fraction_NA_v2.0.nc"
 "/Users/syc/Documents/C3_C4_mapping/generate_final_results.m"
-"/Users/syc/.d1/provenance/runs/e573b0de-90fd-4b73-bf6e-7e68a022ca1b/metadata_e573b0de-90fd-4b73-bf6e-7e68a022ca1b.xml"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.3.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.5.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.7.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.11.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.1.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.3.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.7.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.11.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.3.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.5.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.7.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.11.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.1.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.3.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.7.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.11.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.3.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.5.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.7.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.11.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.1.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.3.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.7.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.11.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.3.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.5.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.7.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.11.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.1.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.3.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.7.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.11.nc"
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc"
-"/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
-"/Users/syc/.matlab/R2015a/matlabprefs.mat"
+"/Users/syc/.d1/provenance/runs/0e30ba55-c9fa-4ff3-8d78-fbf1c48e39ca/metadata_0e30ba55-c9fa-4ff3-8d78-fbf1c48e39ca.xml"
 }}
-"/Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.3.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.5.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.7.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.11.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.1.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.3.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.7.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.11.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc" -> scriptA_01
-"/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat" -> scriptB_01
-"/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat" -> scriptB_01
-"/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat" -> scriptB_01
-"/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat" -> scriptC_01
-"/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat" -> scriptC_01
-"/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat" -> scriptC_01
-"/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat" -> scriptC_01
-scriptA_01 -> "/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat"
-scriptA_01 -> "/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat"
-scriptA_01 -> "/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat"
-scriptA_01 -> "/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat"
-scriptA_01 -> "/Users/syc/.d1/provenance/runs/054fcca8-c370-46e8-97d6-46e5b3b3d855/metadata_054fcca8-c370-46e8-97d6-46e5b3b3d855.xml"
-scriptB_01 -> "/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat"
-scriptB_01 -> "/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat"
-scriptB_01 -> "/Users/syc/.d1/provenance/runs/1fc1ca57-1b63-47f6-b66d-31b334214e2d/metadata_1fc1ca57-1b63-47f6-b66d-31b334214e2d.xml"
-scriptC_01 -> "/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc"
-scriptC_01 -> "/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C4Grass_RelaFrac_NA_v2.0.nc"
-scriptC_01 -> "/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_Grass_Fraction_NA_v2.0.nc"
-scriptC_01 -> "/Users/syc/.d1/provenance/runs/e573b0de-90fd-4b73-bf6e-7e68a022ca1b/metadata_e573b0de-90fd-4b73-bf6e-7e68a022ca1b.xml"
+"/Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.3.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.5.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.7.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.11.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.1.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.3.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.7.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.11.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc" -> script_A
+"/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat" -> script_B
+"/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat" -> script_B
+"/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat" -> script_B
+"/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat" -> script_C
+"/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat" -> script_C
+"/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat" -> script_C
+"/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat" -> script_C
+script_A -> "/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat"
+script_A -> "/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat"
+script_A -> "/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat"
+script_A -> "/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat"
+script_A -> "/Users/syc/.d1/provenance/runs/07baeda4-908a-4852-99b8-8748dfcc0ad9/metadata_07baeda4-908a-4852-99b8-8748dfcc0ad9.xml"
+script_B -> "/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat"
+script_B -> "/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat"
+script_B -> "/Users/syc/.d1/provenance/runs/839c1300-9e38-4fa1-a010-e72056f2cbed/metadata_839c1300-9e38-4fa1-a010-e72056f2cbed.xml"
+script_C -> "/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc"
+script_C -> "/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C4Grass_RelaFrac_NA_v2.0.nc"
+script_C -> "/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_Grass_Fraction_NA_v2.0.nc"
+script_C -> "/Users/syc/.d1/provenance/runs/0e30ba55-c9fa-4ff3-8d78-fbf1c48e39ca/metadata_0e30ba55-c9fa-4ff3-8d78-fbf1c48e39ca.xml"
 }
+

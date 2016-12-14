@@ -18,11 +18,12 @@ dot -Tsvg $RESULTS_DIR/complete_db_graph.gv > $RESULTS_DIR/complete_db_graph.svg
 
 # draw worfklow graph upstream of C3_fraction_data
 #$QUERIES_DIR/render_rm_graph_upstream_of_file_q1.sh output31_hash_value > $RESULTS_DIR/wf_upstream_of_test_data_C3.gv
-$QUERIES_DIR/render_rm_graph_upstream_of_file_q1.sh \'66687AADF862BD776C8FC18B8E9F8E20089714856EE233B3902A591D0D5F2925\' > $RESULTS_DIR/wf_upstream_of_test_data_C3.gv
+$QUERIES_DIR/render_rm_graph_upstream_of_file_q1.sh \'0C46DBB4A07906AF9F91F09E04919A90108FEE10453F096E1079841CAA0C001D\' > $RESULTS_DIR/wf_upstream_of_test_data_C3.gv
 dot -Tpdf $RESULTS_DIR/wf_upstream_of_test_data_C3.gv > $RESULTS_DIR/wf_upstream_of_test_data_C3.pdf
 dot -Tsvg $RESULTS_DIR/wf_upstream_of_test_data_C3.gv > $RESULTS_DIR/wf_upstream_of_test_data_C3.svg
 
+# draw worfklow graph upstream of Grass_data
 #$QUERIES_DIR/render_rm_graph_upstream_of_file_q1.sh output112_hash_value > $RESULTS_DIR/wf_upstream_of_test_data_Grass.gv
-$QUERIES_DIR/render_rm_graph_upstream_of_file_q1.sh \'66687AADF862BD776C8FC18B8E9F8E20089714856EE233B3902A591D0D5F2925\' > $RESULTS_DIR/wf_upstream_of_test_data_Grass.gv
+$QUERIES_DIR/render_rm_graph_upstream_of_file_q1.sh \'217F6762E376849F8C5440C79078E5B73BFCC4CF054965842D99A3A2B4335F5B\' > $RESULTS_DIR/wf_upstream_of_test_data_Grass.gv
 dot -Tpdf $RESULTS_DIR/wf_upstream_of_test_data_Grass.gv > $RESULTS_DIR/wf_upstream_of_test_data_Grass.pdf
 dot -Tsvg $RESULTS_DIR/wf_upstream_of_test_data_Grass.gv > $RESULTS_DIR/wf_upstream_of_test_data_Grass.svg
