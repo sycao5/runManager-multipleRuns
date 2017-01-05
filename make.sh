@@ -16,6 +16,11 @@ $QUERIES_DIR/render_complete_graph.sh > $RESULTS_DIR/complete_db_graph.gv
 dot -Tpdf $RESULTS_DIR/complete_db_graph.gv > $RESULTS_DIR/complete_db_graph.pdf
 dot -Tsvg $RESULTS_DIR/complete_db_graph.gv > $RESULTS_DIR/complete_db_graph.svg
 
+# draw complete multiple runs graph based on File SHA256
+$QUERIES_DIR/render_complete_graph_sha256.sh > $RESULTS_DIR/complete_db_graph_sha256.gv
+dot -Tpdf $RESULTS_DIR/complete_db_graph_sha256.gv > $RESULTS_DIR/complete_db_graph_sha256.pdf
+dot -Tsvg $RESULTS_DIR/complete_db_graph_sha256.gv > $RESULTS_DIR/complete_db_graph_sha256.svg
+
 # draw worfklow graph upstream of C3_fraction_data
 #$QUERIES_DIR/render_rm_graph_upstream_of_file_q1.sh output31_hash_value > $RESULTS_DIR/wf_upstream_of_test_data_C3.gv
 $QUERIES_DIR/render_rm_graph_upstream_of_file_q1.sh \'0C46DBB4A07906AF9F91F09E04919A90108FEE10453F096E1079841CAA0C001D\' > $RESULTS_DIR/wf_upstream_of_test_data_C3.gv

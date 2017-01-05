@@ -1,5 +1,7 @@
 
 %FACT: tag(Seq, ExecutionId, Tag).
-tag(1, '07baeda4-908a-4852-99b8-8748dfcc0ad9', 'script_A').
-tag(2, '839c1300-9e38-4fa1-a010-e72056f2cbed', 'script_B').
-tag(3, '0e30ba55-c9fa-4ff3-8d78-fbf1c48e39ca', 'script_C').
+tag(1, '497490a7-dfaf-40e8-8647-e32d191ec9bc', 'prepare_step').
+tag(2, 'a22b7b73-c07a-4d4d-adfe-be8f876a1c19', 'examine_pixels_for_grass_threshold_2.5').
+tag(3, 'a74b61e9-d4f9-4d3c-a96f-9487f48d5d14', 'generate_final_results_threshold_2.5').
+tag(4, '9d486f62-5541-46d6-b7cd-125ac393797e', 'examine_pixels_for_grass_threshold_5').
+tag(5, 'e34a97ce-7be1-41b3-b081-9c7415826baf', 'generate_final_results_threshold_5').
