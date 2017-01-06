@@ -76,12 +76,12 @@ gv_nodes__files__upstream_of_file(RM, DataSha256) :-
        rm_file_downstream(Sha256, DataSha256),
        filemeta(_,_,FilePath,Sha256,_,_,_,_,_,_,_),
        gv_labeled_node(FilePath),
-       fail
+	   fail
        ;
        true.
 
 gv_edges__file_to_execution__upstream_of_file(RM, DownstreamDataSha256) :-
-       rm_file_to_execution_connection_upstream_of_file(RM, DownstreamDataSha256, FilePath, Tag),
+       rm_file_to_execution_connection_upstream_of_file(RM, DownstreamDataSha256, FilePath, Tag, Shas256),
        gv_unlabeled_edge(FilePath, Tag),
        fail
        ;
@@ -98,7 +98,7 @@ gv_edges__execution_to_file__upstream_of_file(RM, DownstreamDataSha256) :-
 
 gv_nodes__file_DataSha256(RM) :-
        filemeta(_,_,FilePath,Sha256,_,_,_,_,_,_,_),
-       gv_labeled_node_sha256(Sha256),
+       gv_labeled_node_sha256(Sha256, FilePath),
        fail
        ;
        true.
@@ -119,6 +119,31 @@ gv_edges__execution_to_file_DataSha256(RM) :-
        filemeta(FileId,ExecutionId,FilePath,Sha256,_,_,_,_,_,_,_),
        execution_to_output_files_edges(ExecutionId,FileId),
        gv_unlabeled_edge_sha256(Tag,Sha256),
+       fail
+       ;
+       true.
+	   
+
+gv_nodes__files__upstream_of_file_sha256(RM, DataSha256) :-
+       rm_file_downstream(Sha256, DataSha256),
+       filemeta(_,_,FilePath,Sha256,_,_,_,_,_,_,_),
+	   gv_labeled_node_sha256(Sha256, FilePath),
+	   fail
+       ;
+       true.
+
+gv_edges__file_to_execution__upstream_of_file_sha256(RM, DownstreamDataSha256) :-
+       rm_file_to_execution_connection_upstream_of_file(RM, DownstreamDataSha256, FilePath, Tag, Sha256),
+       gv_unlabeled_edge_sha256(Sha256, Tag),
+       fail
+       ;
+       true.
+
+gv_edges__execution_to_file__upstream_of_file_sha256(RM, DownstreamDataSha256) :-
+       rm_file_downstream(DataSha256, DownstreamDataSha256),
+       exec_generated_files(_,ExecutionId,_,_,FilePath,DataSha256,_,_,_),
+       tag(_,ExecutionId,Tag),
+       gv_unlabeled_edge_sha256(Tag, DataSha256),
        fail
        ;
        true.

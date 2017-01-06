@@ -47,8 +47,8 @@ gv_record_node_uri_list(DataId) :-
 gv_record_node_close() :-
     write('}"]'), eol.
 
-gv_labeled_node_sha256(Name) :-
-   fmt_write('"%S"', args(Name)), eol.
+gv_labeled_node_sha256(Sha256, FilePath) :-
+   fmt_write('"%S" [label=%S]', args(Sha256, FilePath)), eol.
    
 gv_unlabeled_edge_sha256(From, To) :-
    fmt_write('"%S" -> "%S"', args(From, To)), eol.

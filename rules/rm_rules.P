@@ -40,8 +40,8 @@ rm_execution_downstream_of_file(E2, Sha256) :-
     rm_execution_downstream(E1, E2).
 
 
-:- table rm_file_to_execution_connection_upstream_of_file/4.
-rm_file_to_execution_connection_upstream_of_file(RM, DataSha256, FilePath, Tag) :-
+:- table rm_file_to_execution_connection_upstream_of_file/5.
+rm_file_to_execution_connection_upstream_of_file(RM, DataSha256, FilePath, Tag, Sha256_1) :-
     rm_file_downstream_of_execution(ExecutionId, DataSha256),
     execmeta(_,ExecutionId,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_),
     tag(_,ExecutionId,Tag),
