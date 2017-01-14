@@ -49,7 +49,8 @@ gv_edges__file_to_execution(RM) :-
        execmeta(_,ExecutionId,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_),
        tag(_,ExecutionId,Tag),
 	   input_files_to_execution_edges(ExecutionId,FileId),
-       gv_unlabeled_edge(FilePath,Tag),
+       %gv_unlabeled_edge(FilePath,Tag),
+	   gv_unlabeled_edge(FilePath,ExecutionId),
        fail
        ;
        true.
@@ -59,7 +60,8 @@ gv_edges__execution_to_file(RM) :-
        tag(_,ExecutionId,Tag),
        filemeta(FileId,ExecutionId,FilePath,_,_,_,_,_,_,_,_),
        execution_to_output_files_edges(ExecutionId,FileId),
-       gv_unlabeled_edge(Tag,FilePath),
+       %gv_unlabeled_edge(Tag,FilePath),
+	   gv_unlabeled_edge(ExecutionId,FilePath),
        fail
        ;
        true.
