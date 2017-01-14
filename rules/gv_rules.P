@@ -25,8 +25,8 @@ gv_nodestyle(Shape, Fillcolor, Peripheries, Width) :-
                args(Shape, Fillcolor, Peripheries, Width)), eol.
 
 gv_labeled_node(Name) :-
-   write(Name), eol.
-
+   fmt_write('"%S"', args(Name)), eol.
+   
 gv_unlabeled_node(Name) :-
     fmt_write('%S [label=""]', args(Name)), eol.
 
@@ -35,8 +35,8 @@ gv_record_node(Name, TopText, BottomText) :-
                args(Name, TopText, BottomText)), eol.
 
 gv_unlabeled_edge(From, To) :-
-    fmt_write('%S -> %S', args(From, To)), eol.
-
+    fmt_write('"%S" -> "%S"', args(From, To)), eol.
+	
 gv_record_node_open(Name, TopText) :-
     fmt_write('%S[shape=record rankdir=LR label="{<f0> %S |<f1>',
                args(Name, TopText)).
@@ -48,7 +48,10 @@ gv_record_node_close() :-
     write('}"]'), eol.
 
 gv_labeled_node_sha256(Sha256, FilePath) :-
-   fmt_write('"%S" [label=%S]', args(Sha256, FilePath)), eol.
+   fmt_write('"%S" [shape=record label="%S \\n %S"]', args(Sha256, FilePath, Sha256)), eol.
    
 gv_unlabeled_edge_sha256(From, To) :-
    fmt_write('"%S" -> "%S"', args(From, To)), eol.
+   
+gv_labeled_node_execution(ExecutionId, Tag) :-
+    fmt_write('"%S" [shape=record label="%S \\n %S"]', args(ExecutionId, Tag, ExecutionId)), eol.

@@ -31,7 +31,8 @@ gv_node_style__file :-
 gv_nodes__execution(RM) :-
 	    execmeta(_,ExecutionId,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_),
         tag(_,ExecutionId,Tag),
-        gv_labeled_node(Tag),
+        %gv_labeled_node(Tag),
+		gv_labeled_node_execution(ExecutionId, Tag),
         fail
         ;
         true.
@@ -108,7 +109,8 @@ gv_edges__file_DataSha256_to_execution(RM) :-
        execmeta(_,ExecutionId,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_),
        tag(_,ExecutionId,Tag),
 	   input_files_to_execution_edges(ExecutionId,FileId),
-       gv_unlabeled_edge_sha256(Sha256,Tag),
+       %gv_unlabeled_edge_sha256(Sha256,Tag),
+	   gv_unlabeled_edge_sha256(Sha256,ExecutionId),
        fail
        ;
        true.
@@ -118,7 +120,8 @@ gv_edges__execution_to_file_DataSha256(RM) :-
        tag(_,ExecutionId,Tag),
        filemeta(FileId,ExecutionId,FilePath,Sha256,_,_,_,_,_,_,_),
        execution_to_output_files_edges(ExecutionId,FileId),
-       gv_unlabeled_edge_sha256(Tag,Sha256),
+       %gv_unlabeled_edge_sha256(Tag,Sha256),
+	   gv_unlabeled_edge_sha256(ExecutionId,Sha256),
        fail
        ;
        true.
