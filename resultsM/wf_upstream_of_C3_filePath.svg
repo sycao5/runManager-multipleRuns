@@ -19,208 +19,208 @@
 <!-- a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19 -->
 <g id="node1" class="node"><title>a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19</title>
 <polygon fill="black" stroke="black" points="1428.69,-642.2 1428.69,-683.8 1755.44,-683.8 1755.44,-642.2 1428.69,-642.2"/>
-<text text-anchor="middle" x="1592.07" y="-667.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">_h252 </text>
+<text text-anchor="middle" x="1592.07" y="-667.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">examine_pixels_for_grass_param_2_5 </text>
 <text text-anchor="middle" x="1592.07" y="-650.4" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white"> a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat -->
-<g id="node27" class="node"><title>/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat</title>
-<path fill="#ffe4b5" stroke="black" d="M2166.65,-669C2166.65,-669 1844.96,-669 1844.96,-669 1838.96,-669 1832.96,-663 1832.96,-657 1832.96,-657 1832.96,-645 1832.96,-645 1832.96,-639 1838.96,-633 1844.96,-633 1844.96,-633 2166.65,-633 2166.65,-633 2172.65,-633 2178.65,-639 2178.65,-645 2178.65,-645 2178.65,-657 2178.65,-657 2178.65,-663 2172.65,-669 2166.65,-669"/>
-<text text-anchor="middle" x="2005.81" y="-648.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat</text>
-</g>
-<!-- a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat -->
-<g id="edge37" class="edge"><title>a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat</title>
-<path fill="none" stroke="black" d="M1755.5,-658.266C1777.54,-657.624 1800.28,-656.961 1822.63,-656.309"/>
-<polygon fill="black" stroke="black" points="1822.98,-659.801 1832.88,-656.011 1822.78,-652.804 1822.98,-659.801"/>
-</g>
 <!-- /Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat -->
-<g id="node32" class="node"><title>/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat</title>
-<path fill="#ffe4b5" stroke="black" d="M2166.65,-723C2166.65,-723 1844.96,-723 1844.96,-723 1838.96,-723 1832.96,-717 1832.96,-711 1832.96,-711 1832.96,-699 1832.96,-699 1832.96,-693 1838.96,-687 1844.96,-687 1844.96,-687 2166.65,-687 2166.65,-687 2172.65,-687 2178.65,-693 2178.65,-699 2178.65,-699 2178.65,-711 2178.65,-711 2178.65,-717 2172.65,-723 2166.65,-723"/>
-<text text-anchor="middle" x="2005.81" y="-702.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat</text>
+<g id="node11" class="node"><title>/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat</title>
+<path fill="#ffe4b5" stroke="black" d="M2166.65,-644C2166.65,-644 1844.96,-644 1844.96,-644 1838.96,-644 1832.96,-638 1832.96,-632 1832.96,-632 1832.96,-620 1832.96,-620 1832.96,-614 1838.96,-608 1844.96,-608 1844.96,-608 2166.65,-608 2166.65,-608 2172.65,-608 2178.65,-614 2178.65,-620 2178.65,-620 2178.65,-632 2178.65,-632 2178.65,-638 2172.65,-644 2166.65,-644"/>
+<text text-anchor="middle" x="2005.81" y="-623.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat</text>
 </g>
 <!-- a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat -->
-<g id="edge39" class="edge"><title>a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat</title>
-<path fill="none" stroke="black" d="M1755.5,-679.569C1777.54,-681.818 1800.28,-684.137 1822.63,-686.417"/>
-<polygon fill="black" stroke="black" points="1822.57,-689.929 1832.88,-687.462 1823.28,-682.965 1822.57,-689.929"/>
+<g id="edge33" class="edge"><title>a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat</title>
+<path fill="none" stroke="black" d="M1755.5,-648.403C1777.54,-646.423 1800.28,-644.38 1822.63,-642.37"/>
+<polygon fill="black" stroke="black" points="1823.23,-645.831 1832.88,-641.45 1822.6,-638.859 1823.23,-645.831"/>
+</g>
+<!-- /Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat -->
+<g id="node12" class="node"><title>/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat</title>
+<path fill="#ffe4b5" stroke="black" d="M2166.65,-698C2166.65,-698 1844.96,-698 1844.96,-698 1838.96,-698 1832.96,-692 1832.96,-686 1832.96,-686 1832.96,-674 1832.96,-674 1832.96,-668 1838.96,-662 1844.96,-662 1844.96,-662 2166.65,-662 2166.65,-662 2172.65,-662 2178.65,-668 2178.65,-674 2178.65,-674 2178.65,-686 2178.65,-686 2178.65,-692 2172.65,-698 2166.65,-698"/>
+<text text-anchor="middle" x="2005.81" y="-677.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat</text>
+</g>
+<!-- a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat -->
+<g id="edge34" class="edge"><title>a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat</title>
+<path fill="none" stroke="black" d="M1755.5,-669.707C1777.54,-670.617 1800.28,-671.555 1822.63,-672.478"/>
+<polygon fill="black" stroke="black" points="1822.74,-675.986 1832.88,-672.901 1823.03,-668.992 1822.74,-675.986"/>
 </g>
 <!-- 497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
 <g id="node2" class="node"><title>497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <polygon fill="black" stroke="black" points="626.708,-669.2 626.708,-710.8 953.456,-710.8 953.456,-669.2 626.708,-669.2"/>
-<text text-anchor="middle" x="790.082" y="-694.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">_h252 </text>
+<text text-anchor="middle" x="790.082" y="-694.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">prepare_step </text>
 <text text-anchor="middle" x="790.082" y="-677.4" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white"> 497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</text>
 </g>
 <!-- /Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat -->
-<g id="node7" class="node"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat</title>
-<path fill="#ffe4b5" stroke="black" d="M1336.37,-681C1336.37,-681 1004.08,-681 1004.08,-681 998.084,-681 992.084,-675 992.084,-669 992.084,-669 992.084,-657 992.084,-657 992.084,-651 998.084,-645 1004.08,-645 1004.08,-645 1336.37,-645 1336.37,-645 1342.37,-645 1348.37,-651 1348.37,-657 1348.37,-657 1348.37,-669 1348.37,-669 1348.37,-675 1342.37,-681 1336.37,-681"/>
-<text text-anchor="middle" x="1170.23" y="-660.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat</text>
+<g id="node16" class="node"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat</title>
+<path fill="#ffe4b5" stroke="black" d="M1336.37,-627C1336.37,-627 1004.08,-627 1004.08,-627 998.084,-627 992.084,-621 992.084,-615 992.084,-615 992.084,-603 992.084,-603 992.084,-597 998.084,-591 1004.08,-591 1004.08,-591 1336.37,-591 1336.37,-591 1342.37,-591 1348.37,-597 1348.37,-603 1348.37,-603 1348.37,-615 1348.37,-615 1348.37,-621 1342.37,-627 1336.37,-627"/>
+<text text-anchor="middle" x="1170.23" y="-606.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat</text>
 </g>
 <!-- 497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat -->
-<g id="edge33" class="edge"><title>497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat</title>
-<path fill="none" stroke="black" d="M953.645,-678.393C962.979,-677.726 972.402,-677.054 981.819,-676.381"/>
-<polygon fill="black" stroke="black" points="982.306,-679.855 992.031,-675.652 981.807,-672.873 982.306,-679.855"/>
-</g>
-<!-- /Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat -->
-<g id="node11" class="node"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat</title>
-<path fill="#ffe4b5" stroke="black" d="M1338.77,-627C1338.77,-627 1001.68,-627 1001.68,-627 995.685,-627 989.685,-621 989.685,-615 989.685,-615 989.685,-603 989.685,-603 989.685,-597 995.685,-591 1001.68,-591 1001.68,-591 1338.77,-591 1338.77,-591 1344.77,-591 1350.77,-597 1350.77,-603 1350.77,-603 1350.77,-615 1350.77,-615 1350.77,-621 1344.77,-627 1338.77,-627"/>
-<text text-anchor="middle" x="1170.23" y="-606.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat</text>
-</g>
-<!-- 497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat -->
-<g id="edge34" class="edge"><title>497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat</title>
+<g id="edge35" class="edge"><title>497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat</title>
 <path fill="none" stroke="black" d="M859.915,-669.137C897.863,-658.174 945.971,-645.152 989.456,-636 1001.52,-633.461 1014.09,-631.069 1026.72,-628.837"/>
 <polygon fill="black" stroke="black" points="1027.61,-632.236 1036.86,-627.082 1026.41,-625.339 1027.61,-632.236"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat -->
-<g id="node26" class="node"><title>/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat</title>
-<path fill="#ffe4b5" stroke="black" d="M1785.2,-770C1785.2,-770 1398.93,-770 1398.93,-770 1392.93,-770 1386.93,-764 1386.93,-758 1386.93,-758 1386.93,-746 1386.93,-746 1386.93,-740 1392.93,-734 1398.93,-734 1398.93,-734 1785.2,-734 1785.2,-734 1791.2,-734 1797.2,-740 1797.2,-746 1797.2,-746 1797.2,-758 1797.2,-758 1797.2,-764 1791.2,-770 1785.2,-770"/>
-<text text-anchor="middle" x="1592.07" y="-749.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat</text>
-</g>
-<!-- 497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat -->
-<g id="edge36" class="edge"><title>497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat</title>
-<path fill="none" stroke="black" d="M851.903,-710.846C890.739,-723.08 942.446,-737.397 989.456,-744 1117.1,-761.928 1261.48,-764.431 1376.8,-762.214"/>
-<polygon fill="black" stroke="black" points="1376.88,-765.713 1386.81,-762.008 1376.74,-758.714 1376.88,-765.713"/>
-</g>
 <!-- /Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat -->
-<g id="node31" class="node"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat</title>
-<path fill="#ffe4b5" stroke="black" d="M1336.37,-735C1336.37,-735 1004.08,-735 1004.08,-735 998.084,-735 992.084,-729 992.084,-723 992.084,-723 992.084,-711 992.084,-711 992.084,-705 998.084,-699 1004.08,-699 1004.08,-699 1336.37,-699 1336.37,-699 1342.37,-699 1348.37,-705 1348.37,-711 1348.37,-711 1348.37,-723 1348.37,-723 1348.37,-729 1342.37,-735 1336.37,-735"/>
-<text text-anchor="middle" x="1170.23" y="-714.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat</text>
+<g id="node26" class="node"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat</title>
+<path fill="#ffe4b5" stroke="black" d="M1336.37,-681C1336.37,-681 1004.08,-681 1004.08,-681 998.084,-681 992.084,-675 992.084,-669 992.084,-669 992.084,-657 992.084,-657 992.084,-651 998.084,-645 1004.08,-645 1004.08,-645 1336.37,-645 1336.37,-645 1342.37,-645 1348.37,-651 1348.37,-657 1348.37,-657 1348.37,-669 1348.37,-669 1348.37,-675 1342.37,-681 1336.37,-681"/>
+<text text-anchor="middle" x="1170.23" y="-660.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat</text>
 </g>
 <!-- 497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat -->
-<g id="edge38" class="edge"><title>497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat</title>
-<path fill="none" stroke="black" d="M953.645,-701.607C962.979,-702.274 972.402,-702.946 981.819,-703.619"/>
-<polygon fill="black" stroke="black" points="981.807,-707.127 992.031,-704.348 982.306,-700.145 981.807,-707.127"/>
+<g id="edge37" class="edge"><title>497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat</title>
+<path fill="none" stroke="black" d="M953.645,-678.393C962.979,-677.726 972.402,-677.054 981.819,-676.381"/>
+<polygon fill="black" stroke="black" points="982.306,-679.855 992.031,-675.652 981.807,-672.873 982.306,-679.855"/>
+</g>
+<!-- /Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat -->
+<g id="node27" class="node"><title>/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat</title>
+<path fill="#ffe4b5" stroke="black" d="M1785.2,-772C1785.2,-772 1398.93,-772 1398.93,-772 1392.93,-772 1386.93,-766 1386.93,-760 1386.93,-760 1386.93,-748 1386.93,-748 1386.93,-742 1392.93,-736 1398.93,-736 1398.93,-736 1785.2,-736 1785.2,-736 1791.2,-736 1797.2,-742 1797.2,-748 1797.2,-748 1797.2,-760 1797.2,-760 1797.2,-766 1791.2,-772 1785.2,-772"/>
+<text text-anchor="middle" x="1592.07" y="-751.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat</text>
+</g>
+<!-- 497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat -->
+<g id="edge38" class="edge"><title>497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat</title>
+<path fill="none" stroke="black" d="M852.35,-710.93C891.138,-723.113 942.634,-737.344 989.456,-744 1117.08,-762.141 1261.46,-765.116 1376.78,-763.331"/>
+<polygon fill="black" stroke="black" points="1376.85,-766.831 1386.79,-763.163 1376.73,-759.832 1376.85,-766.831"/>
+</g>
+<!-- /Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat -->
+<g id="node35" class="node"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat</title>
+<path fill="#ffe4b5" stroke="black" d="M1338.77,-735C1338.77,-735 1001.68,-735 1001.68,-735 995.685,-735 989.685,-729 989.685,-723 989.685,-723 989.685,-711 989.685,-711 989.685,-705 995.685,-699 1001.68,-699 1001.68,-699 1338.77,-699 1338.77,-699 1344.77,-699 1350.77,-705 1350.77,-711 1350.77,-711 1350.77,-723 1350.77,-723 1350.77,-729 1344.77,-735 1338.77,-735"/>
+<text text-anchor="middle" x="1170.23" y="-714.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat</text>
+</g>
+<!-- 497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat -->
+<g id="edge39" class="edge"><title>497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc&#45;&gt;/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat</title>
+<path fill="none" stroke="black" d="M953.645,-701.607C962.205,-702.218 970.84,-702.835 979.476,-703.452"/>
+<polygon fill="black" stroke="black" points="979.388,-706.954 989.611,-704.175 979.886,-699.972 979.388,-706.954"/>
 </g>
 <!-- a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14 -->
 <g id="node3" class="node"><title>a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14</title>
-<polygon fill="black" stroke="black" points="2214.48,-657.2 2214.48,-698.8 2541.23,-698.8 2541.23,-657.2 2214.48,-657.2"/>
-<text text-anchor="middle" x="2377.85" y="-682.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">_h252 </text>
-<text text-anchor="middle" x="2377.85" y="-665.4" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white"> a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14</text>
+<polygon fill="black" stroke="black" points="2214.48,-677.2 2214.48,-718.8 2541.23,-718.8 2541.23,-677.2 2214.48,-677.2"/>
+<text text-anchor="middle" x="2377.85" y="-702.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">generate_final_results_param_2_5 </text>
+<text text-anchor="middle" x="2377.85" y="-685.4" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white"> a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14</text>
 </g>
 <!-- /Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc -->
-<g id="node22" class="node"><title>/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M3056.41,-696C3056.41,-696 2589.17,-696 2589.17,-696 2583.17,-696 2577.17,-690 2577.17,-684 2577.17,-684 2577.17,-672 2577.17,-672 2577.17,-666 2583.17,-660 2589.17,-660 2589.17,-660 3056.41,-660 3056.41,-660 3062.41,-660 3068.41,-666 3068.41,-672 3068.41,-672 3068.41,-684 3068.41,-684 3068.41,-690 3062.41,-696 3056.41,-696"/>
-<text text-anchor="middle" x="2822.79" y="-675.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc</text>
+<g id="node17" class="node"><title>/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M3056.41,-716C3056.41,-716 2589.17,-716 2589.17,-716 2583.17,-716 2577.17,-710 2577.17,-704 2577.17,-704 2577.17,-692 2577.17,-692 2577.17,-686 2583.17,-680 2589.17,-680 2589.17,-680 3056.41,-680 3056.41,-680 3062.41,-680 3068.41,-686 3068.41,-692 3068.41,-692 3068.41,-704 3068.41,-704 3068.41,-710 3062.41,-716 3056.41,-716"/>
+<text text-anchor="middle" x="2822.79" y="-695.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc</text>
 </g>
 <!-- a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14&#45;&gt;/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc -->
-<g id="edge35" class="edge"><title>a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14&#45;&gt;/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc</title>
-<path fill="none" stroke="black" d="M2541.27,-678C2549.7,-678 2558.25,-678 2566.87,-678"/>
-<polygon fill="black" stroke="black" points="2567.02,-681.5 2577.02,-678 2567.02,-674.5 2567.02,-681.5"/>
+<g id="edge36" class="edge"><title>a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14&#45;&gt;/Users/syc/Documents/C3_C4_mapping/outputs/SYNMAP_PRESENTVEG_C3Grass_RelaFrac_NA_v2.0.nc</title>
+<path fill="none" stroke="black" d="M2541.27,-698C2549.7,-698 2558.25,-698 2566.87,-698"/>
+<polygon fill="black" stroke="black" points="2567.02,-701.5 2577.02,-698 2567.02,-694.5 2567.02,-701.5"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc -->
-<g id="node4" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M576.163,-1356C576.163,-1356 38.5449,-1356 38.5449,-1356 32.5449,-1356 26.5449,-1350 26.5449,-1344 26.5449,-1344 26.5449,-1332 26.5449,-1332 26.5449,-1326 32.5449,-1320 38.5449,-1320 38.5449,-1320 576.163,-1320 576.163,-1320 582.163,-1320 588.163,-1326 588.163,-1332 588.163,-1332 588.163,-1344 588.163,-1344 588.163,-1350 582.163,-1356 576.163,-1356"/>
-<text text-anchor="middle" x="307.354" y="-1335.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc</text>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc -->
+<g id="node4" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M578.562,-1356C578.562,-1356 36.1458,-1356 36.1458,-1356 30.1458,-1356 24.1458,-1350 24.1458,-1344 24.1458,-1344 24.1458,-1332 24.1458,-1332 24.1458,-1326 30.1458,-1320 36.1458,-1320 36.1458,-1320 578.562,-1320 578.562,-1320 584.562,-1320 590.562,-1326 590.562,-1332 590.562,-1332 590.562,-1344 590.562,-1344 590.562,-1350 584.562,-1356 578.562,-1356"/>
+<text text-anchor="middle" x="307.354" y="-1335.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge24" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge26" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M578.523,-1319.88C582.711,-1317.13 586.779,-1314.17 590.708,-1311 687.05,-1233.34 763.545,-835.242 783.805,-720.804"/>
 <polygon fill="black" stroke="black" points="787.255,-721.388 785.536,-710.934 780.361,-720.178 787.255,-721.388"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc -->
-<g id="node5" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M565.067,-1302C565.067,-1302 49.6413,-1302 49.6413,-1302 43.6413,-1302 37.6413,-1296 37.6413,-1290 37.6413,-1290 37.6413,-1278 37.6413,-1278 37.6413,-1272 43.6413,-1266 49.6413,-1266 49.6413,-1266 565.067,-1266 565.067,-1266 571.067,-1266 577.067,-1272 577.067,-1278 577.067,-1278 577.067,-1290 577.067,-1290 577.067,-1296 571.067,-1302 565.067,-1302"/>
-<text text-anchor="middle" x="307.354" y="-1281.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc</text>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc -->
+<g id="node5" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M576.163,-1302C576.163,-1302 38.5449,-1302 38.5449,-1302 32.5449,-1302 26.5449,-1296 26.5449,-1290 26.5449,-1290 26.5449,-1278 26.5449,-1278 26.5449,-1272 32.5449,-1266 38.5449,-1266 38.5449,-1266 576.163,-1266 576.163,-1266 582.163,-1266 588.163,-1272 588.163,-1278 588.163,-1278 588.163,-1290 588.163,-1290 588.163,-1296 582.163,-1302 576.163,-1302"/>
+<text text-anchor="middle" x="307.354" y="-1281.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge25" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
-<path fill="none" stroke="black" d="M577.164,-1266.52C581.826,-1263.59 586.348,-1260.42 590.708,-1257 765.55,-1119.96 786.773,-818.404 788.97,-720.999"/>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge27" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<path fill="none" stroke="black" d="M578.095,-1265.93C582.428,-1263.16 586.639,-1260.19 590.708,-1257 765.55,-1119.96 786.773,-818.404 788.97,-720.999"/>
 <polygon fill="black" stroke="black" points="792.471,-720.983 789.144,-710.924 785.472,-720.862 792.471,-720.983"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc -->
-<g id="node6" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc -->
+<g id="node6" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc</title>
 <path fill="#ffe4b5" stroke="black" d="M562.668,-1248C562.668,-1248 52.0404,-1248 52.0404,-1248 46.0404,-1248 40.0404,-1242 40.0404,-1236 40.0404,-1236 40.0404,-1224 40.0404,-1224 40.0404,-1218 46.0404,-1212 52.0404,-1212 52.0404,-1212 562.668,-1212 562.668,-1212 568.668,-1212 574.668,-1218 574.668,-1224 574.668,-1224 574.668,-1236 574.668,-1236 574.668,-1242 568.668,-1248 562.668,-1248"/>
-<text text-anchor="middle" x="307.354" y="-1227.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc</text>
+<text text-anchor="middle" x="307.354" y="-1227.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge26" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge28" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M574.807,-1213.65C580.295,-1210.41 585.606,-1206.87 590.708,-1203 751.04,-1081.48 781.83,-812.516 787.707,-721.107"/>
 <polygon fill="black" stroke="black" points="791.216,-721.049 788.307,-710.862 784.228,-720.64 791.216,-721.049"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat&#45;&gt;a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19 -->
-<g id="edge29" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat&#45;&gt;a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19</title>
-<path fill="none" stroke="black" d="M1348.36,-663C1371.48,-663 1395.14,-663 1418.19,-663"/>
-<polygon fill="black" stroke="black" points="1418.37,-666.5 1428.37,-663 1418.37,-659.5 1418.37,-666.5"/>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc -->
+<g id="node7" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M486.993,-1194C486.993,-1194 127.715,-1194 127.715,-1194 121.715,-1194 115.715,-1188 115.715,-1182 115.715,-1182 115.715,-1170 115.715,-1170 115.715,-1164 121.715,-1158 127.715,-1158 127.715,-1158 486.993,-1158 486.993,-1158 492.993,-1158 498.993,-1164 498.993,-1170 498.993,-1170 498.993,-1182 498.993,-1182 498.993,-1188 492.993,-1194 486.993,-1194"/>
+<text text-anchor="middle" x="307.354" y="-1173.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc</text>
+</g>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge32" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<path fill="none" stroke="black" d="M499.189,-1185.32C531.978,-1179.51 564.031,-1168.41 590.708,-1149 736.778,-1042.7 776.454,-805.919 786.188,-721.031"/>
+<polygon fill="black" stroke="black" points="789.677,-721.314 787.278,-710.995 782.718,-720.558 789.677,-721.314"/>
 </g>
 <!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.5.nc -->
 <g id="node8" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.5.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M562.668,-1194C562.668,-1194 52.0404,-1194 52.0404,-1194 46.0404,-1194 40.0404,-1188 40.0404,-1182 40.0404,-1182 40.0404,-1170 40.0404,-1170 40.0404,-1164 46.0404,-1158 52.0404,-1158 52.0404,-1158 562.668,-1158 562.668,-1158 568.668,-1158 574.668,-1164 574.668,-1170 574.668,-1170 574.668,-1182 574.668,-1182 574.668,-1188 568.668,-1194 562.668,-1194"/>
-<text text-anchor="middle" x="307.354" y="-1173.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.5.nc</text>
+<path fill="#ffe4b5" stroke="black" d="M562.668,-1140C562.668,-1140 52.0404,-1140 52.0404,-1140 46.0404,-1140 40.0404,-1134 40.0404,-1128 40.0404,-1128 40.0404,-1116 40.0404,-1116 40.0404,-1110 46.0404,-1104 52.0404,-1104 52.0404,-1104 562.668,-1104 562.668,-1104 568.668,-1104 574.668,-1110 574.668,-1116 574.668,-1116 574.668,-1128 574.668,-1128 574.668,-1134 568.668,-1140 562.668,-1140"/>
+<text text-anchor="middle" x="307.354" y="-1119.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.5.nc</text>
 </g>
 <!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.5.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge30" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.5.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
-<path fill="none" stroke="black" d="M574.606,-1159.38C580.154,-1156.22 585.532,-1152.77 590.708,-1149 736.778,-1042.7 776.454,-805.919 786.188,-721.031"/>
-<polygon fill="black" stroke="black" points="789.677,-721.314 787.278,-710.995 782.718,-720.558 789.677,-721.314"/>
+<g id="edge31" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.5.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<path fill="none" stroke="black" d="M574.692,-1104.87C580.196,-1101.86 585.545,-1098.57 590.708,-1095 722.604,-1003.73 770.44,-799.175 784.287,-721.097"/>
+<polygon fill="black" stroke="black" points="787.787,-721.391 786.021,-710.945 780.887,-720.213 787.787,-721.391"/>
 </g>
 <!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.1.nc -->
 <g id="node9" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.1.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M576.163,-1140C576.163,-1140 38.5449,-1140 38.5449,-1140 32.5449,-1140 26.5449,-1134 26.5449,-1128 26.5449,-1128 26.5449,-1116 26.5449,-1116 26.5449,-1110 32.5449,-1104 38.5449,-1104 38.5449,-1104 576.163,-1104 576.163,-1104 582.163,-1104 588.163,-1110 588.163,-1116 588.163,-1116 588.163,-1128 588.163,-1128 588.163,-1134 582.163,-1140 576.163,-1140"/>
-<text text-anchor="middle" x="307.354" y="-1119.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.1.nc</text>
+<path fill="#ffe4b5" stroke="black" d="M576.163,-1086C576.163,-1086 38.5449,-1086 38.5449,-1086 32.5449,-1086 26.5449,-1080 26.5449,-1074 26.5449,-1074 26.5449,-1062 26.5449,-1062 26.5449,-1056 32.5449,-1050 38.5449,-1050 38.5449,-1050 576.163,-1050 576.163,-1050 582.163,-1050 588.163,-1056 588.163,-1062 588.163,-1062 588.163,-1074 588.163,-1074 588.163,-1080 582.163,-1086 576.163,-1086"/>
+<text text-anchor="middle" x="307.354" y="-1065.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.1.nc</text>
 </g>
 <!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.1.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge28" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.1.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
-<path fill="none" stroke="black" d="M576.307,-1103.98C581.243,-1101.21 586.051,-1098.22 590.708,-1095 722.604,-1003.73 770.44,-799.175 784.287,-721.097"/>
-<polygon fill="black" stroke="black" points="787.787,-721.391 786.021,-710.945 780.887,-720.213 787.787,-721.391"/>
-</g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc -->
-<g id="node10" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M576.163,-1086C576.163,-1086 38.5449,-1086 38.5449,-1086 32.5449,-1086 26.5449,-1080 26.5449,-1074 26.5449,-1074 26.5449,-1062 26.5449,-1062 26.5449,-1056 32.5449,-1050 38.5449,-1050 38.5449,-1050 576.163,-1050 576.163,-1050 582.163,-1050 588.163,-1056 588.163,-1062 588.163,-1062 588.163,-1074 588.163,-1074 588.163,-1080 582.163,-1086 576.163,-1086"/>
-<text text-anchor="middle" x="307.354" y="-1065.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc</text>
-</g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge27" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<g id="edge30" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.1.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M575.398,-1049.94C580.64,-1047.19 585.752,-1044.22 590.708,-1041 708.812,-964.319 763.799,-791.401 781.934,-720.851"/>
 <polygon fill="black" stroke="black" points="785.411,-721.373 784.439,-710.823 778.62,-719.676 785.411,-721.373"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat&#45;&gt;a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19 -->
-<g id="edge32" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat&#45;&gt;a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19</title>
-<path fill="none" stroke="black" d="M1311.32,-627.019C1345.87,-631.462 1383.26,-636.272 1419.13,-640.885"/>
-<polygon fill="black" stroke="black" points="1418.83,-644.376 1429.2,-642.181 1419.73,-637.433 1418.83,-644.376"/>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc -->
+<g id="node10" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M576.163,-1032C576.163,-1032 38.5449,-1032 38.5449,-1032 32.5449,-1032 26.5449,-1026 26.5449,-1020 26.5449,-1020 26.5449,-1008 26.5449,-1008 26.5449,-1002 32.5449,-996 38.5449,-996 38.5449,-996 576.163,-996 576.163,-996 582.163,-996 588.163,-1002 588.163,-1008 588.163,-1008 588.163,-1020 588.163,-1020 588.163,-1026 582.163,-1032 576.163,-1032"/>
+<text text-anchor="middle" x="307.354" y="-1011.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14 -->
-<g id="edge31" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14</title>
-<path fill="none" stroke="black" d="M1351.04,-598.181C1553.35,-589.132 1891.23,-583.423 2178.48,-624 2221.63,-630.095 2268.74,-642.659 2306.22,-654.135"/>
-<polygon fill="black" stroke="black" points="2305.44,-657.557 2316.03,-657.18 2307.52,-650.872 2305.44,-657.557"/>
-</g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc -->
-<g id="node12" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M562.668,-1032C562.668,-1032 52.0404,-1032 52.0404,-1032 46.0404,-1032 40.0404,-1026 40.0404,-1020 40.0404,-1020 40.0404,-1008 40.0404,-1008 40.0404,-1002 46.0404,-996 52.0404,-996 52.0404,-996 562.668,-996 562.668,-996 568.668,-996 574.668,-1002 574.668,-1008 574.668,-1008 574.668,-1020 574.668,-1020 574.668,-1026 568.668,-1032 562.668,-1032"/>
-<text text-anchor="middle" x="307.354" y="-1011.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc</text>
-</g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge3" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge29" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.9.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M574.079,-995.918C579.766,-993.187 585.319,-990.221 590.708,-987 695.33,-924.481 756.24,-782.879 778.885,-720.49"/>
 <polygon fill="black" stroke="black" points="782.266,-721.429 782.312,-710.834 775.669,-719.088 782.266,-721.429"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc -->
-<g id="node13" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M576.163,-978C576.163,-978 38.5449,-978 38.5449,-978 32.5449,-978 26.5449,-972 26.5449,-966 26.5449,-966 26.5449,-954 26.5449,-954 26.5449,-948 32.5449,-942 38.5449,-942 38.5449,-942 576.163,-942 576.163,-942 582.163,-942 588.163,-948 588.163,-954 588.163,-954 588.163,-966 588.163,-966 588.163,-972 582.163,-978 576.163,-978"/>
-<text text-anchor="middle" x="307.354" y="-957.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc</text>
+<!-- /Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14 -->
+<g id="edge14" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14</title>
+<path fill="none" stroke="black" d="M2127.97,-644.015C2144.96,-646.844 2162.18,-649.874 2178.48,-653 2211.95,-659.422 2248.38,-667.397 2280.78,-674.843"/>
+<polygon fill="black" stroke="black" points="2280.17,-678.293 2290.7,-677.134 2281.74,-671.473 2280.17,-678.293"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge2" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14 -->
+<g id="edge11" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14</title>
+<path fill="none" stroke="black" d="M2178.56,-688.354C2187.11,-688.771 2195.7,-689.188 2204.26,-689.605"/>
+<polygon fill="black" stroke="black" points="2204.12,-693.102 2214.28,-690.092 2204.47,-686.11 2204.12,-693.102"/>
+</g>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc -->
+<g id="node13" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M562.668,-978C562.668,-978 52.0404,-978 52.0404,-978 46.0404,-978 40.0404,-972 40.0404,-966 40.0404,-966 40.0404,-954 40.0404,-954 40.0404,-948 46.0404,-942 52.0404,-942 52.0404,-942 562.668,-942 562.668,-942 568.668,-942 574.668,-948 574.668,-954 574.668,-954 574.668,-966 574.668,-966 574.668,-972 568.668,-978 562.668,-978"/>
+<text text-anchor="middle" x="307.354" y="-957.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc</text>
+</g>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge3" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M571.966,-941.944C578.368,-939.224 584.628,-936.249 590.708,-933 682.239,-884.091 747.42,-773.352 774.764,-719.931"/>
 <polygon fill="black" stroke="black" points="777.912,-721.461 779.278,-710.955 771.658,-718.317 777.912,-721.461"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc -->
-<g id="node14" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M578.562,-924C578.562,-924 36.1458,-924 36.1458,-924 30.1458,-924 24.1458,-918 24.1458,-912 24.1458,-912 24.1458,-900 24.1458,-900 24.1458,-894 30.1458,-888 36.1458,-888 36.1458,-888 578.562,-888 578.562,-888 584.562,-888 590.562,-894 590.562,-900 590.562,-900 590.562,-912 590.562,-912 590.562,-918 584.562,-924 578.562,-924"/>
-<text text-anchor="middle" x="307.354" y="-903.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc</text>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc -->
+<g id="node14" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M565.067,-924C565.067,-924 49.6413,-924 49.6413,-924 43.6413,-924 37.6413,-918 37.6413,-912 37.6413,-912 37.6413,-900 37.6413,-900 37.6413,-894 43.6413,-888 49.6413,-888 49.6413,-888 565.067,-888 565.067,-888 571.067,-888 577.067,-894 577.067,-900 577.067,-900 577.067,-912 577.067,-912 577.067,-918 571.067,-924 565.067,-924"/>
+<text text-anchor="middle" x="307.354" y="-903.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge1" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge2" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M568.639,-887.931C576.166,-885.241 583.541,-882.272 590.708,-879 669.613,-842.978 736.757,-762.384 768.862,-718.988"/>
 <polygon fill="black" stroke="black" points="771.747,-720.972 774.809,-710.83 766.09,-716.849 771.747,-720.972"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc -->
-<g id="node15" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M486.993,-870C486.993,-870 127.715,-870 127.715,-870 121.715,-870 115.715,-864 115.715,-858 115.715,-858 115.715,-846 115.715,-846 115.715,-840 121.715,-834 127.715,-834 127.715,-834 486.993,-834 486.993,-834 492.993,-834 498.993,-840 498.993,-846 498.993,-846 498.993,-858 498.993,-858 498.993,-864 492.993,-870 486.993,-870"/>
-<text text-anchor="middle" x="307.354" y="-849.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc</text>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc -->
+<g id="node15" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M576.163,-870C576.163,-870 38.5449,-870 38.5449,-870 32.5449,-870 26.5449,-864 26.5449,-858 26.5449,-858 26.5449,-846 26.5449,-846 26.5449,-840 32.5449,-834 38.5449,-834 38.5449,-834 576.163,-834 576.163,-834 582.163,-834 588.163,-840 588.163,-846 588.163,-846 588.163,-858 588.163,-858 588.163,-864 582.163,-870 576.163,-870"/>
+<text text-anchor="middle" x="307.354" y="-849.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge7" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/land_cover/SYNMAP_NA_QD.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
-<path fill="none" stroke="black" d="M499.195,-846.899C530.37,-842.352 561.875,-835.409 590.708,-825 657.008,-801.066 722.327,-749.795 758.998,-717.779"/>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge1" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<path fill="none" stroke="black" d="M562.189,-833.995C571.905,-831.331 581.445,-828.344 590.708,-825 657.008,-801.066 722.327,-749.795 758.998,-717.779"/>
 <polygon fill="black" stroke="black" points="761.643,-720.113 766.815,-710.866 757.005,-714.869 761.643,-720.113"/>
 </g>
+<!-- /Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat&#45;&gt;a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19 -->
+<g id="edge7" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Rain_2000_2010.mat&#45;&gt;a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19</title>
+<path fill="none" stroke="black" d="M1311.32,-627.019C1345.87,-631.462 1383.26,-636.272 1419.13,-640.885"/>
+<polygon fill="black" stroke="black" points="1418.83,-644.376 1429.2,-642.181 1419.73,-637.433 1418.83,-644.376"/>
+</g>
 <!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.7.nc -->
-<g id="node16" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.7.nc</title>
+<g id="node18" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.7.nc</title>
 <path fill="#ffe4b5" stroke="black" d="M562.668,-816C562.668,-816 52.0404,-816 52.0404,-816 46.0404,-816 40.0404,-810 40.0404,-804 40.0404,-804 40.0404,-792 40.0404,-792 40.0404,-786 46.0404,-780 52.0404,-780 52.0404,-780 562.668,-780 562.668,-780 568.668,-780 574.668,-786 574.668,-792 574.668,-792 574.668,-804 574.668,-804 574.668,-810 568.668,-816 562.668,-816"/>
 <text text-anchor="middle" x="307.354" y="-795.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.7.nc</text>
 </g>
@@ -230,7 +230,7 @@
 <polygon fill="black" stroke="black" points="740.585,-718.362 748.094,-710.887 737.563,-712.048 740.585,-718.362"/>
 </g>
 <!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.3.nc -->
-<g id="node17" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.3.nc</title>
+<g id="node19" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.3.nc</title>
 <path fill="#ffe4b5" stroke="black" d="M576.163,-762C576.163,-762 38.5449,-762 38.5449,-762 32.5449,-762 26.5449,-756 26.5449,-750 26.5449,-750 26.5449,-738 26.5449,-738 26.5449,-732 32.5449,-726 38.5449,-726 38.5449,-726 576.163,-726 576.163,-726 582.163,-726 588.163,-732 588.163,-738 588.163,-738 588.163,-750 588.163,-750 588.163,-756 582.163,-762 576.163,-762"/>
 <text text-anchor="middle" x="307.354" y="-741.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.3.nc</text>
 </g>
@@ -240,7 +240,7 @@
 <polygon fill="black" stroke="black" points="631.555,-715.552 641.03,-710.811 630.666,-708.609 631.555,-715.552"/>
 </g>
 <!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.11.nc -->
-<g id="node18" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.11.nc</title>
+<g id="node20" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.11.nc</title>
 <path fill="#ffe4b5" stroke="black" d="M578.562,-708C578.562,-708 36.1458,-708 36.1458,-708 30.1458,-708 24.1458,-702 24.1458,-696 24.1458,-696 24.1458,-684 24.1458,-684 24.1458,-678 30.1458,-672 36.1458,-672 36.1458,-672 578.562,-672 578.562,-672 584.562,-672 590.562,-678 590.562,-684 590.562,-684 590.562,-696 590.562,-696 590.562,-702 584.562,-708 578.562,-708"/>
 <text text-anchor="middle" x="307.354" y="-687.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.11.nc</text>
 </g>
@@ -249,118 +249,108 @@
 <path fill="none" stroke="black" d="M590.776,-690C599.422,-690 607.992,-690 616.441,-690"/>
 <polygon fill="black" stroke="black" points="616.683,-693.5 626.683,-690 616.683,-686.5 616.683,-693.5"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc -->
-<g id="node19" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc -->
+<g id="node21" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc</title>
 <path fill="#ffe4b5" stroke="black" d="M562.668,-654C562.668,-654 52.0404,-654 52.0404,-654 46.0404,-654 40.0404,-648 40.0404,-642 40.0404,-642 40.0404,-630 40.0404,-630 40.0404,-624 46.0404,-618 52.0404,-618 52.0404,-618 562.668,-618 562.668,-618 568.668,-618 574.668,-624 574.668,-630 574.668,-630 574.668,-642 574.668,-642 574.668,-648 568.668,-654 562.668,-654"/>
-<text text-anchor="middle" x="307.354" y="-633.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc</text>
+<text text-anchor="middle" x="307.354" y="-633.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge10" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.8.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge10" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.4.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M507.453,-654.034C535.428,-656.861 563.804,-659.884 590.708,-663 603.836,-664.52 617.44,-666.185 631.089,-667.917"/>
 <polygon fill="black" stroke="black" points="630.666,-671.391 641.03,-669.189 631.555,-664.448 630.666,-671.391"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc -->
-<g id="node20" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M576.163,-600C576.163,-600 38.5449,-600 38.5449,-600 32.5449,-600 26.5449,-594 26.5449,-588 26.5449,-588 26.5449,-576 26.5449,-576 26.5449,-570 32.5449,-564 38.5449,-564 38.5449,-564 576.163,-564 576.163,-564 582.163,-564 588.163,-570 588.163,-576 588.163,-576 588.163,-588 588.163,-588 588.163,-594 582.163,-600 576.163,-600"/>
-<text text-anchor="middle" x="307.354" y="-579.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc</text>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc -->
+<g id="node22" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M565.067,-600C565.067,-600 49.6413,-600 49.6413,-600 43.6413,-600 37.6413,-594 37.6413,-588 37.6413,-588 37.6413,-576 37.6413,-576 37.6413,-570 43.6413,-564 49.6413,-564 49.6413,-564 565.067,-564 565.067,-564 571.067,-564 577.067,-570 577.067,-576 577.067,-576 577.067,-588 577.067,-588 577.067,-594 571.067,-600 565.067,-600"/>
+<text text-anchor="middle" x="307.354" y="-579.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge9" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.4.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge9" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.12.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M548.327,-600.051C562.741,-602.648 576.962,-605.614 590.708,-609 643.042,-621.89 699.679,-646.134 738.985,-664.752"/>
 <polygon fill="black" stroke="black" points="737.563,-667.952 748.094,-669.113 740.585,-661.638 737.563,-667.952"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc -->
-<g id="node21" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M578.562,-546C578.562,-546 36.1458,-546 36.1458,-546 30.1458,-546 24.1458,-540 24.1458,-534 24.1458,-534 24.1458,-522 24.1458,-522 24.1458,-516 30.1458,-510 36.1458,-510 36.1458,-510 578.562,-510 578.562,-510 584.562,-510 590.562,-516 590.562,-522 590.562,-522 590.562,-534 590.562,-534 590.562,-540 584.562,-546 578.562,-546"/>
-<text text-anchor="middle" x="307.354" y="-525.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc</text>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc -->
+<g id="node23" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M576.163,-546C576.163,-546 38.5449,-546 38.5449,-546 32.5449,-546 26.5449,-540 26.5449,-534 26.5449,-534 26.5449,-522 26.5449,-522 26.5449,-516 32.5449,-510 38.5449,-510 38.5449,-510 576.163,-510 576.163,-510 582.163,-510 588.163,-516 588.163,-522 588.163,-522 588.163,-534 588.163,-534 588.163,-540 582.163,-546 576.163,-546"/>
+<text text-anchor="middle" x="307.354" y="-525.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge8" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.12.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge8" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.8.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M562.189,-546.005C571.905,-548.669 581.445,-551.656 590.708,-555 657.008,-578.934 722.327,-630.205 758.998,-662.221"/>
 <polygon fill="black" stroke="black" points="757.005,-665.131 766.815,-669.134 761.643,-659.887 757.005,-665.131"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc -->
-<g id="node23" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc -->
+<g id="node24" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc</title>
 <path fill="#ffe4b5" stroke="black" d="M562.668,-492C562.668,-492 52.0404,-492 52.0404,-492 46.0404,-492 40.0404,-486 40.0404,-480 40.0404,-480 40.0404,-468 40.0404,-468 40.0404,-462 46.0404,-456 52.0404,-456 52.0404,-456 562.668,-456 562.668,-456 568.668,-456 574.668,-462 574.668,-468 574.668,-468 574.668,-480 574.668,-480 574.668,-486 568.668,-492 562.668,-492"/>
-<text text-anchor="middle" x="307.354" y="-471.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc</text>
+<text text-anchor="middle" x="307.354" y="-471.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge13" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge13" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M568.639,-492.069C576.166,-494.759 583.541,-497.728 590.708,-501 669.613,-537.022 736.757,-617.616 768.862,-661.012"/>
 <polygon fill="black" stroke="black" points="766.09,-663.151 774.809,-669.17 771.747,-659.028 766.09,-663.151"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc -->
-<g id="node24" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M562.668,-438C562.668,-438 52.0404,-438 52.0404,-438 46.0404,-438 40.0404,-432 40.0404,-426 40.0404,-426 40.0404,-414 40.0404,-414 40.0404,-408 46.0404,-402 52.0404,-402 52.0404,-402 562.668,-402 562.668,-402 568.668,-402 574.668,-408 574.668,-414 574.668,-414 574.668,-426 574.668,-426 574.668,-432 568.668,-438 562.668,-438"/>
-<text text-anchor="middle" x="307.354" y="-417.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc</text>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc -->
+<g id="node25" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M576.163,-438C576.163,-438 38.5449,-438 38.5449,-438 32.5449,-438 26.5449,-432 26.5449,-426 26.5449,-426 26.5449,-414 26.5449,-414 26.5449,-408 32.5449,-402 38.5449,-402 38.5449,-402 576.163,-402 576.163,-402 582.163,-402 588.163,-408 588.163,-414 588.163,-414 588.163,-426 588.163,-426 588.163,-432 582.163,-438 576.163,-438"/>
+<text text-anchor="middle" x="307.354" y="-417.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge12" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.9.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge12" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M571.966,-438.056C578.368,-440.776 584.628,-443.751 590.708,-447 682.239,-495.909 747.42,-606.648 774.764,-660.069"/>
 <polygon fill="black" stroke="black" points="771.658,-661.683 779.278,-669.045 777.912,-658.539 771.658,-661.683"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc -->
-<g id="node25" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M576.163,-384C576.163,-384 38.5449,-384 38.5449,-384 32.5449,-384 26.5449,-378 26.5449,-372 26.5449,-372 26.5449,-360 26.5449,-360 26.5449,-354 32.5449,-348 38.5449,-348 38.5449,-348 576.163,-348 576.163,-348 582.163,-348 588.163,-354 588.163,-360 588.163,-360 588.163,-372 588.163,-372 588.163,-378 582.163,-384 576.163,-384"/>
-<text text-anchor="middle" x="307.354" y="-363.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc</text>
+<!-- /Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat&#45;&gt;a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19 -->
+<g id="edge16" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat&#45;&gt;a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19</title>
+<path fill="none" stroke="black" d="M1348.36,-663C1371.48,-663 1395.14,-663 1418.19,-663"/>
+<polygon fill="black" stroke="black" points="1418.37,-666.5 1428.37,-663 1418.37,-659.5 1418.37,-666.5"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge11" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.5.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14 -->
+<g id="edge15" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14</title>
+<path fill="none" stroke="black" d="M1797.17,-746.141C1909.76,-740.977 2051.99,-733.097 2178.48,-722 2186.86,-721.265 2195.44,-720.453 2204.09,-719.586"/>
+<polygon fill="black" stroke="black" points="2204.69,-723.043 2214.29,-718.545 2203.98,-716.08 2204.69,-723.043"/>
+</g>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc -->
+<g id="node28" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M562.668,-384C562.668,-384 52.0404,-384 52.0404,-384 46.0404,-384 40.0404,-378 40.0404,-372 40.0404,-372 40.0404,-360 40.0404,-360 40.0404,-354 46.0404,-348 52.0404,-348 52.0404,-348 562.668,-348 562.668,-348 568.668,-348 574.668,-354 574.668,-360 574.668,-360 574.668,-372 574.668,-372 574.668,-378 568.668,-384 562.668,-384"/>
+<text text-anchor="middle" x="307.354" y="-363.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc</text>
+</g>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge17" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.1.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M574.079,-384.082C579.766,-386.813 585.319,-389.779 590.708,-393 695.33,-455.519 756.24,-597.121 778.885,-659.51"/>
 <polygon fill="black" stroke="black" points="775.669,-660.912 782.312,-669.166 782.266,-658.571 775.669,-660.912"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14 -->
-<g id="edge14" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/land_cover_map_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14</title>
-<path fill="none" stroke="black" d="M1797.32,-756.567C1910.27,-756.205 2052.79,-750.991 2178.48,-732 2221.08,-725.563 2267.61,-713.19 2304.9,-701.91"/>
-<polygon fill="black" stroke="black" points="2306.13,-705.194 2314.66,-698.917 2304.08,-698.501 2306.13,-705.194"/>
-</g>
-<!-- /Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14 -->
-<g id="edge18" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/C3_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14</title>
-<path fill="none" stroke="black" d="M2178.56,-663.532C2187.11,-664.156 2195.7,-664.783 2204.26,-665.407"/>
-<polygon fill="black" stroke="black" points="2204.05,-668.901 2214.28,-666.138 2204.56,-661.92 2204.05,-668.901"/>
-</g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc -->
-<g id="node28" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc -->
+<g id="node29" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc</title>
 <path fill="#ffe4b5" stroke="black" d="M562.668,-330C562.668,-330 52.0404,-330 52.0404,-330 46.0404,-330 40.0404,-324 40.0404,-318 40.0404,-318 40.0404,-306 40.0404,-306 40.0404,-300 46.0404,-294 52.0404,-294 52.0404,-294 562.668,-294 562.668,-294 568.668,-294 574.668,-300 574.668,-306 574.668,-306 574.668,-318 574.668,-318 574.668,-324 568.668,-330 562.668,-330"/>
-<text text-anchor="middle" x="307.354" y="-309.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc</text>
+<text text-anchor="middle" x="307.354" y="-309.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge17" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.2.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge20" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.6.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M574.742,-329.715C580.214,-332.559 585.545,-335.648 590.708,-339 708.812,-415.681 763.799,-588.599 781.934,-659.149"/>
 <polygon fill="black" stroke="black" points="778.62,-660.324 784.439,-669.177 785.411,-658.627 778.62,-660.324"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc -->
-<g id="node29" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M565.067,-276C565.067,-276 49.6413,-276 49.6413,-276 43.6413,-276 37.6413,-270 37.6413,-264 37.6413,-264 37.6413,-252 37.6413,-252 37.6413,-246 43.6413,-240 49.6413,-240 49.6413,-240 565.067,-240 565.067,-240 571.067,-240 577.067,-246 577.067,-252 577.067,-252 577.067,-264 577.067,-264 577.067,-270 571.067,-276 565.067,-276"/>
-<text text-anchor="middle" x="307.354" y="-255.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc</text>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc -->
+<g id="node30" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M576.163,-276C576.163,-276 38.5449,-276 38.5449,-276 32.5449,-276 26.5449,-270 26.5449,-264 26.5449,-264 26.5449,-252 26.5449,-252 26.5449,-246 32.5449,-240 38.5449,-240 38.5449,-240 576.163,-240 576.163,-240 582.163,-240 588.163,-246 588.163,-252 588.163,-252 588.163,-264 588.163,-264 588.163,-270 582.163,-276 576.163,-276"/>
+<text text-anchor="middle" x="307.354" y="-255.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge16" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.10.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge19" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.2.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M576.307,-276.023C581.243,-278.79 586.051,-281.778 590.708,-285 722.604,-376.271 770.44,-580.825 784.287,-658.903"/>
 <polygon fill="black" stroke="black" points="780.887,-659.787 786.021,-669.055 787.787,-658.609 780.887,-659.787"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc -->
-<g id="node30" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc</title>
-<path fill="#ffe4b5" stroke="black" d="M576.163,-222C576.163,-222 38.5449,-222 38.5449,-222 32.5449,-222 26.5449,-216 26.5449,-210 26.5449,-210 26.5449,-198 26.5449,-198 26.5449,-192 32.5449,-186 38.5449,-186 38.5449,-186 576.163,-186 576.163,-186 582.163,-186 588.163,-192 588.163,-198 588.163,-198 588.163,-210 588.163,-210 588.163,-216 582.163,-222 576.163,-222"/>
-<text text-anchor="middle" x="307.354" y="-201.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc</text>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc -->
+<g id="node31" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc</title>
+<path fill="#ffe4b5" stroke="black" d="M578.562,-222C578.562,-222 36.1458,-222 36.1458,-222 30.1458,-222 24.1458,-216 24.1458,-210 24.1458,-210 24.1458,-198 24.1458,-198 24.1458,-192 30.1458,-186 36.1458,-186 36.1458,-186 578.562,-186 578.562,-186 584.562,-186 590.562,-192 590.562,-198 590.562,-198 590.562,-210 590.562,-210 590.562,-216 584.562,-222 578.562,-222"/>
+<text text-anchor="middle" x="307.354" y="-201.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc</text>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
-<g id="edge15" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.6.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
+<!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc -->
+<g id="edge18" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.10.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M577.155,-222.097C581.804,-224.849 586.328,-227.813 590.708,-231 736.778,-337.299 776.454,-574.081 786.188,-658.969"/>
 <polygon fill="black" stroke="black" points="782.718,-659.442 787.278,-669.005 789.677,-658.686 782.718,-659.442"/>
 </g>
-<!-- /Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat&#45;&gt;a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19 -->
-<g id="edge20" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Tair_2000_2010.mat&#45;&gt;a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19</title>
-<path fill="none" stroke="black" d="M1311.32,-698.981C1345.87,-694.538 1383.26,-689.728 1419.13,-685.115"/>
-<polygon fill="black" stroke="black" points="1419.73,-688.567 1429.2,-683.819 1418.83,-681.624 1419.73,-688.567"/>
-</g>
-<!-- /Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14 -->
-<g id="edge19" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/C4_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14</title>
-<path fill="none" stroke="black" d="M2178.56,-692.468C2187.11,-691.844 2195.7,-691.217 2204.26,-690.593"/>
-<polygon fill="black" stroke="black" points="2204.56,-694.08 2214.28,-689.862 2204.05,-687.099 2204.56,-694.08"/>
-</g>
 <!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.3.nc -->
-<g id="node33" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.3.nc</title>
+<g id="node32" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.3.nc</title>
 <path fill="#ffe4b5" stroke="black" d="M562.668,-168C562.668,-168 52.0404,-168 52.0404,-168 46.0404,-168 40.0404,-162 40.0404,-156 40.0404,-156 40.0404,-144 40.0404,-144 40.0404,-138 46.0404,-132 52.0404,-132 52.0404,-132 562.668,-132 562.668,-132 568.668,-132 574.668,-138 574.668,-144 574.668,-144 574.668,-156 574.668,-156 574.668,-162 568.668,-168 562.668,-168"/>
 <text text-anchor="middle" x="307.354" y="-147.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.3.nc</text>
 </g>
@@ -370,7 +360,7 @@
 <polygon fill="black" stroke="black" points="784.228,-659.36 788.307,-669.138 791.216,-658.951 784.228,-659.36"/>
 </g>
 <!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.11.nc -->
-<g id="node34" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.11.nc</title>
+<g id="node33" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.11.nc</title>
 <path fill="#ffe4b5" stroke="black" d="M565.067,-114C565.067,-114 49.6413,-114 49.6413,-114 43.6413,-114 37.6413,-108 37.6413,-102 37.6413,-102 37.6413,-90 37.6413,-90 37.6413,-84 43.6413,-78 49.6413,-78 49.6413,-78 565.067,-78 565.067,-78 571.067,-78 577.067,-84 577.067,-90 577.067,-90 577.067,-102 577.067,-102 577.067,-108 571.067,-114 565.067,-114"/>
 <text text-anchor="middle" x="307.354" y="-93.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_air.2m_monthly/air.2m_monthly_2000_2010_mean.11.nc</text>
 </g>
@@ -380,7 +370,7 @@
 <polygon fill="black" stroke="black" points="785.472,-659.138 789.144,-669.076 792.471,-659.017 785.472,-659.138"/>
 </g>
 <!-- /Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.7.nc -->
-<g id="node35" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.7.nc</title>
+<g id="node34" class="node"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.7.nc</title>
 <path fill="#ffe4b5" stroke="black" d="M576.163,-60C576.163,-60 38.5449,-60 38.5449,-60 32.5449,-60 26.5449,-54 26.5449,-48 26.5449,-48 26.5449,-36 26.5449,-36 26.5449,-30 32.5449,-24 38.5449,-24 38.5449,-24 576.163,-24 576.163,-24 582.163,-24 588.163,-30 588.163,-36 588.163,-36 588.163,-48 588.163,-48 588.163,-54 582.163,-60 576.163,-60"/>
 <text text-anchor="middle" x="307.354" y="-39.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.7.nc</text>
 </g>
@@ -388,6 +378,16 @@
 <g id="edge21" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/inputs/narr_apcp_rescaled_monthly/apcp_monthly_2000_2010_mean.7.nc&#45;&gt;497490a7&#45;dfaf&#45;40e8&#45;8647&#45;e32d191ec9bc</title>
 <path fill="none" stroke="black" d="M578.523,-60.116C582.711,-62.8748 586.779,-65.8322 590.708,-69 687.05,-146.664 763.545,-544.758 783.805,-659.196"/>
 <polygon fill="black" stroke="black" points="780.361,-659.822 785.536,-669.066 787.255,-658.612 780.361,-659.822"/>
+</g>
+<!-- /Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat&#45;&gt;a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19 -->
+<g id="edge25" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat&#45;&gt;a22b7b73&#45;c07a&#45;4d4d&#45;adfe&#45;be8f876a1c19</title>
+<path fill="none" stroke="black" d="M1311.32,-698.981C1345.87,-694.538 1383.26,-689.728 1419.13,-685.115"/>
+<polygon fill="black" stroke="black" points="1419.73,-688.567 1429.2,-683.819 1418.83,-681.624 1419.73,-688.567"/>
+</g>
+<!-- /Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14 -->
+<g id="edge24" class="edge"><title>/Users/syc/Documents/C3_C4_mapping/workspace/Grass_2000_2010.mat&#45;&gt;a74b61e9&#45;d4f9&#45;4d3c&#45;a96f&#45;9487f48d5d14</title>
+<path fill="none" stroke="black" d="M1350.94,-717.133C1552.44,-716.836 1888.95,-715.003 2178.48,-707 2186.84,-706.769 2195.39,-706.501 2204.04,-706.205"/>
+<polygon fill="black" stroke="black" points="2204.34,-709.696 2214.21,-705.845 2204.09,-702.701 2204.34,-709.696"/>
 </g>
 </g>
 </svg>

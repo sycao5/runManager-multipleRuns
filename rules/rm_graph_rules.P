@@ -66,6 +66,7 @@ gv_edges__execution_to_file(RM) :-
 gv_nodes__atomic_executions__upstream_of_data(RM, DataSha256) :-
        rm_file_downstream_of_execution(E1, DataSha256),
        execmeta(_,E1,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_),
+	   tag(_,E1,Tag),
        gv_labeled_node_execution(E1, Tag),
 	   fail
        ;

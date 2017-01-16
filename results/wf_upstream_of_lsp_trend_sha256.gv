@@ -6,16 +6,14 @@ label="Upstream graph for multiple runs"
 subgraph cluster_workflow { label=""; color=black; penwidth=2
 subgraph cluster_workflow_inner { label=""; color=white
 node[shape=box style=filled fillcolor="black" peripheries=1 fontname="Courier-Bold" fontcolor=white]
-"urn:uuid:4fcd5da4-67af-4f8d-ad36-c9cdf45621d4" [shape=record label="_h310 \n urn:uuid:4fcd5da4-67af-4f8d-ad36-c9cdf45621d4"]
-"urn:uuid:53c74750-d660-479d-8e59-f54068835317" [shape=record label="_h310 \n urn:uuid:53c74750-d660-479d-8e59-f54068835317"]
-"urn:uuid:f5d6b763-c953-48f4-9a39-4a61f45bfdd3" [shape=record label="_h310 \n urn:uuid:f5d6b763-c953-48f4-9a39-4a61f45bfdd3"]
-"urn:uuid:167b320e-9143-4084-882e-7d19914767c0" [shape=record label="_h310 \n urn:uuid:167b320e-9143-4084-882e-7d19914767c0"]
-"urn:uuid:3d6c8ed0-83c0-4b12-9154-2804f4317598" [shape=record label="_h310 \n urn:uuid:3d6c8ed0-83c0-4b12-9154-2804f4317598"]
-"urn:uuid:98b5270a-1577-4865-970f-17c6b0065374" [shape=record label="_h310 \n urn:uuid:98b5270a-1577-4865-970f-17c6b0065374"]
-"urn:uuid:53ada2f7-5e25-4845-883e-1049a90c321c" [shape=record label="_h310 \n urn:uuid:53ada2f7-5e25-4845-883e-1049a90c321c"]
+"urn:uuid:4fcd5da4-67af-4f8d-ad36-c9cdf45621d4" [shape=record label="ohibc run 1 \n urn:uuid:4fcd5da4-67af-4f8d-ad36-c9cdf45621d4"]
+"urn:uuid:53c74750-d660-479d-8e59-f54068835317" [shape=record label="ohibc run 1 \n urn:uuid:53c74750-d660-479d-8e59-f54068835317"]
+"urn:uuid:f5d6b763-c953-48f4-9a39-4a61f45bfdd3" [shape=record label="ohibc run 1 \n urn:uuid:f5d6b763-c953-48f4-9a39-4a61f45bfdd3"]
+"urn:uuid:167b320e-9143-4084-882e-7d19914767c0" [shape=record label="ohibc run 1 \n urn:uuid:167b320e-9143-4084-882e-7d19914767c0"]
+"urn:uuid:3d6c8ed0-83c0-4b12-9154-2804f4317598" [shape=record label="ohibc run 1 \n urn:uuid:3d6c8ed0-83c0-4b12-9154-2804f4317598"]
+"urn:uuid:98b5270a-1577-4865-970f-17c6b0065374" [shape=record label="ohibc run 1 \n urn:uuid:98b5270a-1577-4865-970f-17c6b0065374"]
+"urn:uuid:53ada2f7-5e25-4845-883e-1049a90c321c" [shape=record label="ohibc run 1 \n urn:uuid:53ada2f7-5e25-4845-883e-1049a90c321c"]
 node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname="Courier-Bold" fontsize=9 fontcolor=black]
-"e4f5dd01c6b2e03bbe67419aa6ea9c20d938478e5523a2b6dc057413f6db2bf5" [shape=record label="/Users/slaughter/git/OHI-Science/ohibc/prep/lsp/vHS/int/zonal_stats_3nm.csv \n e4f5dd01c6b2e03bbe67419aa6ea9c20d938478e5523a2b6dc057413f6db2bf5"]
-"e4f5dd01c6b2e03bbe67419aa6ea9c20d938478e5523a2b6dc057413f6db2bf5" [shape=record label="/Users/slaughter/git/OHI-Science/ohibc/prep/lsp/vHS/int/zonal_stats_3nm.csv \n e4f5dd01c6b2e03bbe67419aa6ea9c20d938478e5523a2b6dc057413f6db2bf5"]
 "5ba2c041bacec6ae9b550d578fb0667523ab9d610f043b13832a0ae6e2c84e10" [shape=record label="/Users/slaughter/git/OHI-Science/ohibc/prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif \n 5ba2c041bacec6ae9b550d578fb0667523ab9d610f043b13832a0ae6e2c84e10"]
 "5ba2c041bacec6ae9b550d578fb0667523ab9d610f043b13832a0ae6e2c84e10" [shape=record label="/Users/slaughter/git/OHI-Science/ohibc/prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif \n 5ba2c041bacec6ae9b550d578fb0667523ab9d610f043b13832a0ae6e2c84e10"]
 "9c23639cf9ce610831cc57a78e88bd8ff8b67a46253aff39154b57b58ab60832" [shape=record label="/Users/slaughter/git/OHI-Science/ohibc/prep/lsp/vHS/output/area_protected_total.csv \n 9c23639cf9ce610831cc57a78e88bd8ff8b67a46253aff39154b57b58ab60832"]
@@ -43,9 +41,9 @@ node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname
 "bc918e73e8ffd7509cfd2f5173f4d13b17e620340a6ddae47c56f3b7697be7b1" [shape=record label="/Users/slaughter/git/OHI-Science/ohibc/prep/lsp/vHS/int/area_protected_ws.csv \n bc918e73e8ffd7509cfd2f5173f4d13b17e620340a6ddae47c56f3b7697be7b1"]
 "bc918e73e8ffd7509cfd2f5173f4d13b17e620340a6ddae47c56f3b7697be7b1" [shape=record label="/Users/slaughter/git/OHI-Science/ohibc/prep/lsp/vHS/int/area_protected_ws.csv \n bc918e73e8ffd7509cfd2f5173f4d13b17e620340a6ddae47c56f3b7697be7b1"]
 "97b9fe2837579bac75e964fe212402ba5ac595bb539bce4f7897be9cdcb55638" [shape=record label="/Users/slaughter/git/OHI-Science/ohibc/prep/lsp/vHS/output/lsp_trend.csv \n 97b9fe2837579bac75e964fe212402ba5ac595bb539bce4f7897be9cdcb55638"]
+"e4f5dd01c6b2e03bbe67419aa6ea9c20d938478e5523a2b6dc057413f6db2bf5" [shape=record label="/Users/slaughter/git/OHI-Science/ohibc/prep/lsp/vHS/int/zonal_stats_3nm.csv \n e4f5dd01c6b2e03bbe67419aa6ea9c20d938478e5523a2b6dc057413f6db2bf5"]
+"e4f5dd01c6b2e03bbe67419aa6ea9c20d938478e5523a2b6dc057413f6db2bf5" [shape=record label="/Users/slaughter/git/OHI-Science/ohibc/prep/lsp/vHS/int/zonal_stats_3nm.csv \n e4f5dd01c6b2e03bbe67419aa6ea9c20d938478e5523a2b6dc057413f6db2bf5"]
 }}
-"85130403e425f79e80e52e3fcaa9c116f5cc0b01c4aa7ea4078c21c08d6ac2fd" -> "urn:uuid:f5d6b763-c953-48f4-9a39-4a61f45bfdd3"
-"cf404cbfa31cc0f7f4a397632797d8aa416eb621a214569945c833594b16b3c3" -> "urn:uuid:53c74750-d660-479d-8e59-f54068835317"
 "98c477e500188e52b2399aec3cc8d1cecefa6315c5ed6bf6f36f8252e7c6103c" -> "urn:uuid:f5d6b763-c953-48f4-9a39-4a61f45bfdd3"
 "93cca45a93cbf195aac755354840087590d4788e06768d7db90481ef9b5d9bc3" -> "urn:uuid:f5d6b763-c953-48f4-9a39-4a61f45bfdd3"
 "b03456556a5921cabea227978673e751441b2255f877cb183d4eeb1475105593" -> "urn:uuid:f5d6b763-c953-48f4-9a39-4a61f45bfdd3"
@@ -59,7 +57,8 @@ node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname
 "5ba2c041bacec6ae9b550d578fb0667523ab9d610f043b13832a0ae6e2c84e10" -> "urn:uuid:f5d6b763-c953-48f4-9a39-4a61f45bfdd3"
 "9c23639cf9ce610831cc57a78e88bd8ff8b67a46253aff39154b57b58ab60832" -> "urn:uuid:53ada2f7-5e25-4845-883e-1049a90c321c"
 "1a8556ac0c8124864b109286a0d419b9213d0084cc831c813a5905e887c291a1" -> "urn:uuid:53c74750-d660-479d-8e59-f54068835317"
-"urn:uuid:f5d6b763-c953-48f4-9a39-4a61f45bfdd3" -> "e4f5dd01c6b2e03bbe67419aa6ea9c20d938478e5523a2b6dc057413f6db2bf5"
+"85130403e425f79e80e52e3fcaa9c116f5cc0b01c4aa7ea4078c21c08d6ac2fd" -> "urn:uuid:f5d6b763-c953-48f4-9a39-4a61f45bfdd3"
+"cf404cbfa31cc0f7f4a397632797d8aa416eb621a214569945c833594b16b3c3" -> "urn:uuid:53c74750-d660-479d-8e59-f54068835317"
 "urn:uuid:3d6c8ed0-83c0-4b12-9154-2804f4317598" -> "5ba2c041bacec6ae9b550d578fb0667523ab9d610f043b13832a0ae6e2c84e10"
 "urn:uuid:4fcd5da4-67af-4f8d-ad36-c9cdf45621d4" -> "9c23639cf9ce610831cc57a78e88bd8ff8b67a46253aff39154b57b58ab60832"
 "urn:uuid:f5d6b763-c953-48f4-9a39-4a61f45bfdd3" -> "1a8556ac0c8124864b109286a0d419b9213d0084cc831c813a5905e887c291a1"
@@ -72,5 +71,6 @@ node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname
 "urn:uuid:53c74750-d660-479d-8e59-f54068835317" -> "d792e5fe1c3c98a24dde23e00895f627ab2c0a102f5852dcc4f02e2ba9dba1eb"
 "urn:uuid:53c74750-d660-479d-8e59-f54068835317" -> "bc918e73e8ffd7509cfd2f5173f4d13b17e620340a6ddae47c56f3b7697be7b1"
 "urn:uuid:53ada2f7-5e25-4845-883e-1049a90c321c" -> "97b9fe2837579bac75e964fe212402ba5ac595bb539bce4f7897be9cdcb55638"
+"urn:uuid:f5d6b763-c953-48f4-9a39-4a61f45bfdd3" -> "e4f5dd01c6b2e03bbe67419aa6ea9c20d938478e5523a2b6dc057413f6db2bf5"
 }
 

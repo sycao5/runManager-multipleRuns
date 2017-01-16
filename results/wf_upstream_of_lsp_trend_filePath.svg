@@ -19,174 +19,199 @@
 <!-- urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4 -->
 <g id="node1" class="node"><title>urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4</title>
 <polygon fill="black" stroke="black" points="3317.91,-129.2 3317.91,-170.8 3720.25,-170.8 3720.25,-129.2 3317.91,-129.2"/>
-<text text-anchor="middle" x="3519.08" y="-154.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">_h310 </text>
+<text text-anchor="middle" x="3519.08" y="-154.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">ohibc run 1 </text>
 <text text-anchor="middle" x="3519.08" y="-137.4" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white"> urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4</text>
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/area_protected_total.csv -->
-<g id="node11" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/area_protected_total.csv</title>
+<g id="node13" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/area_protected_total.csv</title>
 <path fill="#ffe4b5" stroke="black" d="M4208.44,-168C4208.44,-168 3768.18,-168 3768.18,-168 3762.18,-168 3756.18,-162 3756.18,-156 3756.18,-156 3756.18,-144 3756.18,-144 3756.18,-138 3762.18,-132 3768.18,-132 3768.18,-132 4208.44,-132 4208.44,-132 4214.44,-132 4220.44,-138 4220.44,-144 4220.44,-144 4220.44,-156 4220.44,-156 4220.44,-162 4214.44,-168 4208.44,-168"/>
 <text text-anchor="middle" x="3988.31" y="-147.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/area_protected_total.csv</text>
 </g>
 <!-- urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/area_protected_total.csv -->
-<g id="edge19" class="edge"><title>urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/area_protected_total.csv</title>
+<g id="edge20" class="edge"><title>urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/area_protected_total.csv</title>
 <path fill="none" stroke="black" d="M3720.26,-150C3728.81,-150 3737.41,-150 3746.03,-150"/>
 <polygon fill="black" stroke="black" points="3746.15,-153.5 3756.15,-150 3746.15,-146.5 3746.15,-153.5"/>
 </g>
 <!-- urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317 -->
 <g id="node2" class="node"><title>urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317</title>
 <polygon fill="black" stroke="black" points="2406.45,-129.2 2406.45,-170.8 2808.78,-170.8 2808.78,-129.2 2406.45,-129.2"/>
-<text text-anchor="middle" x="2607.61" y="-154.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">_h310 </text>
+<text text-anchor="middle" x="2607.61" y="-154.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">ohibc run 1 </text>
 <text text-anchor="middle" x="2607.61" y="-137.4" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white"> urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317</text>
 </g>
-<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_3nm.csv -->
-<g id="node12" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_3nm.csv</title>
+<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv -->
+<g id="node8" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv</title>
 <path fill="#ffe4b5" stroke="black" d="M3269.98,-114C3269.98,-114 2856.72,-114 2856.72,-114 2850.72,-114 2844.72,-108 2844.72,-102 2844.72,-102 2844.72,-90 2844.72,-90 2844.72,-84 2850.72,-78 2856.72,-78 2856.72,-78 3269.98,-78 3269.98,-78 3275.98,-78 3281.98,-84 3281.98,-90 3281.98,-90 3281.98,-102 3281.98,-102 3281.98,-108 3275.98,-114 3269.98,-114"/>
-<text text-anchor="middle" x="3063.35" y="-93.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_3nm.csv</text>
+<text text-anchor="middle" x="3063.35" y="-93.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv</text>
 </g>
-<!-- urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_3nm.csv -->
-<g id="edge20" class="edge"><title>urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_3nm.csv</title>
+<!-- urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv -->
+<g id="edge16" class="edge"><title>urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv</title>
 <path fill="none" stroke="black" d="M2783.39,-129.199C2822,-124.604 2862.75,-119.755 2900.81,-115.225"/>
 <polygon fill="black" stroke="black" points="2901.43,-118.676 2910.94,-114.019 2900.6,-111.725 2901.43,-118.676"/>
 </g>
+<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_3nm.csv -->
+<g id="node14" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_3nm.csv</title>
+<path fill="#ffe4b5" stroke="black" d="M3269.98,-168C3269.98,-168 2856.72,-168 2856.72,-168 2850.72,-168 2844.72,-162 2844.72,-156 2844.72,-156 2844.72,-144 2844.72,-144 2844.72,-138 2850.72,-132 2856.72,-132 2856.72,-132 3269.98,-132 3269.98,-132 3275.98,-132 3281.98,-138 3281.98,-144 3281.98,-144 3281.98,-156 3281.98,-156 3281.98,-162 3275.98,-168 3269.98,-168"/>
+<text text-anchor="middle" x="3063.35" y="-147.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_3nm.csv</text>
+</g>
+<!-- urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_3nm.csv -->
+<g id="edge21" class="edge"><title>urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_3nm.csv</title>
+<path fill="none" stroke="black" d="M2808.95,-150C2817.48,-150 2826.06,-150 2834.65,-150"/>
+<polygon fill="black" stroke="black" points="2834.72,-153.5 2844.72,-150 2834.72,-146.5 2834.72,-153.5"/>
+</g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_ws.csv -->
-<g id="node15" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_ws.csv</title>
-<path fill="#ffe4b5" stroke="black" d="M3267.08,-168C3267.08,-168 2859.62,-168 2859.62,-168 2853.62,-168 2847.62,-162 2847.62,-156 2847.62,-156 2847.62,-144 2847.62,-144 2847.62,-138 2853.62,-132 2859.62,-132 2859.62,-132 3267.08,-132 3267.08,-132 3273.08,-132 3279.08,-138 3279.08,-144 3279.08,-144 3279.08,-156 3279.08,-156 3279.08,-162 3273.08,-168 3267.08,-168"/>
-<text text-anchor="middle" x="3063.35" y="-147.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_ws.csv</text>
+<g id="node17" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_ws.csv</title>
+<path fill="#ffe4b5" stroke="black" d="M3267.08,-222C3267.08,-222 2859.62,-222 2859.62,-222 2853.62,-222 2847.62,-216 2847.62,-210 2847.62,-210 2847.62,-198 2847.62,-198 2847.62,-192 2853.62,-186 2859.62,-186 2859.62,-186 3267.08,-186 3267.08,-186 3273.08,-186 3279.08,-192 3279.08,-198 3279.08,-198 3279.08,-210 3279.08,-210 3279.08,-216 3273.08,-222 3267.08,-222"/>
+<text text-anchor="middle" x="3063.35" y="-201.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_ws.csv</text>
 </g>
 <!-- urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_ws.csv -->
-<g id="edge23" class="edge"><title>urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_ws.csv</title>
-<path fill="none" stroke="black" d="M2808.95,-150C2818.36,-150 2827.84,-150 2837.31,-150"/>
-<polygon fill="black" stroke="black" points="2837.58,-153.5 2847.58,-150 2837.58,-146.5 2837.58,-153.5"/>
-</g>
-<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv -->
-<g id="node20" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv</title>
-<path fill="#ffe4b5" stroke="black" d="M3269.98,-222C3269.98,-222 2856.72,-222 2856.72,-222 2850.72,-222 2844.72,-216 2844.72,-210 2844.72,-210 2844.72,-198 2844.72,-198 2844.72,-192 2850.72,-186 2856.72,-186 2856.72,-186 3269.98,-186 3269.98,-186 3275.98,-186 3281.98,-192 3281.98,-198 3281.98,-198 3281.98,-210 3281.98,-210 3281.98,-216 3275.98,-222 3269.98,-222"/>
-<text text-anchor="middle" x="3063.35" y="-201.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv</text>
-</g>
-<!-- urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv -->
-<g id="edge28" class="edge"><title>urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv</title>
+<g id="edge24" class="edge"><title>urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_ws.csv</title>
 <path fill="none" stroke="black" d="M2783.39,-170.801C2822,-175.396 2862.75,-180.245 2900.81,-184.775"/>
 <polygon fill="black" stroke="black" points="2900.6,-188.275 2910.94,-185.981 2901.43,-181.324 2900.6,-188.275"/>
 </g>
 <!-- urn:uuid:f5d6b763&#45;c953&#45;48f4&#45;9a39&#45;4a61f45bfdd3 -->
 <g id="node3" class="node"><title>urn:uuid:f5d6b763&#45;c953&#45;48f4&#45;9a39&#45;4a61f45bfdd3</title>
 <polygon fill="black" stroke="black" points="1511.18,-129.2 1511.18,-170.8 1913.51,-170.8 1913.51,-129.2 1511.18,-129.2"/>
-<text text-anchor="middle" x="1712.35" y="-154.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">_h310 </text>
+<text text-anchor="middle" x="1712.35" y="-154.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">ohibc run 1 </text>
 <text text-anchor="middle" x="1712.35" y="-137.4" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white"> urn:uuid:f5d6b763&#45;c953&#45;48f4&#45;9a39&#45;4a61f45bfdd3</text>
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_1km.csv -->
-<g id="node8" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_1km.csv</title>
+<g id="node10" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_1km.csv</title>
 <path fill="#ffe4b5" stroke="black" d="M2358.41,-114C2358.41,-114 1961.55,-114 1961.55,-114 1955.55,-114 1949.55,-108 1949.55,-102 1949.55,-102 1949.55,-90 1949.55,-90 1949.55,-84 1955.55,-78 1961.55,-78 1961.55,-78 2358.41,-78 2358.41,-78 2364.41,-78 2370.41,-84 2370.41,-90 2370.41,-90 2370.41,-102 2370.41,-102 2370.41,-108 2364.41,-114 2358.41,-114"/>
 <text text-anchor="middle" x="2159.98" y="-93.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_1km.csv</text>
 </g>
 <!-- urn:uuid:f5d6b763&#45;c953&#45;48f4&#45;9a39&#45;4a61f45bfdd3&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_1km.csv -->
-<g id="edge16" class="edge"><title>urn:uuid:f5d6b763&#45;c953&#45;48f4&#45;9a39&#45;4a61f45bfdd3&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_1km.csv</title>
+<g id="edge17" class="edge"><title>urn:uuid:f5d6b763&#45;c953&#45;48f4&#45;9a39&#45;4a61f45bfdd3&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_1km.csv</title>
 <path fill="none" stroke="black" d="M1885,-129.199C1922.93,-124.604 1962.94,-119.755 2000.32,-115.225"/>
 <polygon fill="black" stroke="black" points="2000.77,-118.696 2010.28,-114.019 1999.93,-111.747 2000.77,-118.696"/>
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_3nm.csv -->
-<g id="node13" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_3nm.csv</title>
+<g id="node15" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_3nm.csv</title>
 <path fill="#ffe4b5" stroke="black" d="M2358.41,-168C2358.41,-168 1961.55,-168 1961.55,-168 1955.55,-168 1949.55,-162 1949.55,-156 1949.55,-156 1949.55,-144 1949.55,-144 1949.55,-138 1955.55,-132 1961.55,-132 1961.55,-132 2358.41,-132 2358.41,-132 2364.41,-132 2370.41,-138 2370.41,-144 2370.41,-144 2370.41,-156 2370.41,-156 2370.41,-162 2364.41,-168 2358.41,-168"/>
 <text text-anchor="middle" x="2159.98" y="-147.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_3nm.csv</text>
 </g>
 <!-- urn:uuid:f5d6b763&#45;c953&#45;48f4&#45;9a39&#45;4a61f45bfdd3&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_3nm.csv -->
-<g id="edge21" class="edge"><title>urn:uuid:f5d6b763&#45;c953&#45;48f4&#45;9a39&#45;4a61f45bfdd3&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_3nm.csv</title>
+<g id="edge22" class="edge"><title>urn:uuid:f5d6b763&#45;c953&#45;48f4&#45;9a39&#45;4a61f45bfdd3&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_3nm.csv</title>
 <path fill="none" stroke="black" d="M1913.68,-150C1922.23,-150 1930.84,-150 1939.43,-150"/>
 <polygon fill="black" stroke="black" points="1939.52,-153.5 1949.52,-150 1939.52,-146.5 1939.52,-153.5"/>
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_ws.csv -->
-<g id="node16" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_ws.csv</title>
+<g id="node18" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_ws.csv</title>
 <path fill="#ffe4b5" stroke="black" d="M2355.51,-222C2355.51,-222 1964.45,-222 1964.45,-222 1958.45,-222 1952.45,-216 1952.45,-210 1952.45,-210 1952.45,-198 1952.45,-198 1952.45,-192 1958.45,-186 1964.45,-186 1964.45,-186 2355.51,-186 2355.51,-186 2361.51,-186 2367.51,-192 2367.51,-198 2367.51,-198 2367.51,-210 2367.51,-210 2367.51,-216 2361.51,-222 2355.51,-222"/>
 <text text-anchor="middle" x="2159.98" y="-201.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_ws.csv</text>
 </g>
 <!-- urn:uuid:f5d6b763&#45;c953&#45;48f4&#45;9a39&#45;4a61f45bfdd3&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_ws.csv -->
-<g id="edge24" class="edge"><title>urn:uuid:f5d6b763&#45;c953&#45;48f4&#45;9a39&#45;4a61f45bfdd3&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_ws.csv</title>
+<g id="edge25" class="edge"><title>urn:uuid:f5d6b763&#45;c953&#45;48f4&#45;9a39&#45;4a61f45bfdd3&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_ws.csv</title>
 <path fill="none" stroke="black" d="M1885,-170.801C1922.93,-175.396 1962.94,-180.245 2000.32,-184.775"/>
 <polygon fill="black" stroke="black" points="1999.93,-188.253 2010.28,-185.981 2000.77,-181.304 1999.93,-188.253"/>
 </g>
 <!-- urn:uuid:167b320e&#45;9143&#45;4084&#45;882e&#45;7d19914767c0 -->
 <g id="node4" class="node"><title>urn:uuid:167b320e&#45;9143&#45;4084&#45;882e&#45;7d19914767c0</title>
 <polygon fill="black" stroke="black" points="529.524,-34.2 529.524,-75.8 931.86,-75.8 931.86,-34.2 529.524,-34.2"/>
-<text text-anchor="middle" x="730.692" y="-59.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">_h310 </text>
+<text text-anchor="middle" x="730.692" y="-59.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">ohibc run 1 </text>
 <text text-anchor="middle" x="730.692" y="-42.4" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white"> urn:uuid:167b320e&#45;9143&#45;4084&#45;882e&#45;7d19914767c0</text>
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif -->
-<g id="node14" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif</title>
+<g id="node16" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif</title>
 <path fill="#ffe4b5" stroke="black" d="M1457.54,-60C1457.54,-60 985.499,-60 985.499,-60 979.499,-60 973.499,-54 973.499,-48 973.499,-48 973.499,-36 973.499,-36 973.499,-30 979.499,-24 985.499,-24 985.499,-24 1457.54,-24 1457.54,-24 1463.54,-24 1469.54,-30 1469.54,-36 1469.54,-36 1469.54,-48 1469.54,-48 1469.54,-54 1463.54,-60 1457.54,-60"/>
 <text text-anchor="middle" x="1221.52" y="-39.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif</text>
 </g>
 <!-- urn:uuid:167b320e&#45;9143&#45;4084&#45;882e&#45;7d19914767c0&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif -->
-<g id="edge22" class="edge"><title>urn:uuid:167b320e&#45;9143&#45;4084&#45;882e&#45;7d19914767c0&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif</title>
+<g id="edge23" class="edge"><title>urn:uuid:167b320e&#45;9143&#45;4084&#45;882e&#45;7d19914767c0&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif</title>
 <path fill="none" stroke="black" d="M931.927,-49.6749C942.317,-49.3986 952.817,-49.1193 963.349,-48.8392"/>
 <polygon fill="black" stroke="black" points="963.551,-52.3352 973.454,-48.5705 963.364,-45.3377 963.551,-52.3352"/>
 </g>
 <!-- urn:uuid:3d6c8ed0&#45;83c0&#45;4b12&#45;9154&#45;2804f4317598 -->
 <g id="node5" class="node"><title>urn:uuid:3d6c8ed0&#45;83c0&#45;4b12&#45;9154&#45;2804f4317598</title>
 <polygon fill="black" stroke="black" points="529.524,-113.2 529.524,-154.8 931.86,-154.8 931.86,-113.2 529.524,-113.2"/>
-<text text-anchor="middle" x="730.692" y="-138.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">_h310 </text>
+<text text-anchor="middle" x="730.692" y="-138.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">ohibc run 1 </text>
 <text text-anchor="middle" x="730.692" y="-121.4" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white"> urn:uuid:3d6c8ed0&#45;83c0&#45;4b12&#45;9154&#45;2804f4317598</text>
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif -->
-<g id="node10" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif</title>
+<g id="node12" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif</title>
 <path fill="#ffe4b5" stroke="black" d="M1463.34,-114C1463.34,-114 979.701,-114 979.701,-114 973.701,-114 967.701,-108 967.701,-102 967.701,-102 967.701,-90 967.701,-90 967.701,-84 973.701,-78 979.701,-78 979.701,-78 1463.34,-78 1463.34,-78 1469.34,-78 1475.34,-84 1475.34,-90 1475.34,-90 1475.34,-102 1475.34,-102 1475.34,-108 1469.34,-114 1463.34,-114"/>
 <text text-anchor="middle" x="1221.52" y="-93.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif</text>
 </g>
 <!-- urn:uuid:3d6c8ed0&#45;83c0&#45;4b12&#45;9154&#45;2804f4317598&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif -->
-<g id="edge18" class="edge"><title>urn:uuid:3d6c8ed0&#45;83c0&#45;4b12&#45;9154&#45;2804f4317598&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif</title>
+<g id="edge19" class="edge"><title>urn:uuid:3d6c8ed0&#45;83c0&#45;4b12&#45;9154&#45;2804f4317598&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif</title>
 <path fill="none" stroke="black" d="M931.927,-118.434C947.284,-117.241 962.881,-116.028 978.465,-114.817"/>
 <polygon fill="black" stroke="black" points="979.003,-118.285 988.702,-114.021 978.46,-111.306 979.003,-118.285"/>
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_inland_1km_raster_500m.tif -->
-<g id="node19" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_inland_1km_raster_500m.tif</title>
+<g id="node21" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_inland_1km_raster_500m.tif</title>
 <path fill="#ffe4b5" stroke="black" d="M1457.54,-168C1457.54,-168 985.499,-168 985.499,-168 979.499,-168 973.499,-162 973.499,-156 973.499,-156 973.499,-144 973.499,-144 973.499,-138 979.499,-132 985.499,-132 985.499,-132 1457.54,-132 1457.54,-132 1463.54,-132 1469.54,-138 1469.54,-144 1469.54,-144 1469.54,-156 1469.54,-156 1469.54,-162 1463.54,-168 1457.54,-168"/>
 <text text-anchor="middle" x="1221.52" y="-147.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_inland_1km_raster_500m.tif</text>
 </g>
 <!-- urn:uuid:3d6c8ed0&#45;83c0&#45;4b12&#45;9154&#45;2804f4317598&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_inland_1km_raster_500m.tif -->
-<g id="edge27" class="edge"><title>urn:uuid:3d6c8ed0&#45;83c0&#45;4b12&#45;9154&#45;2804f4317598&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_inland_1km_raster_500m.tif</title>
+<g id="edge28" class="edge"><title>urn:uuid:3d6c8ed0&#45;83c0&#45;4b12&#45;9154&#45;2804f4317598&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_inland_1km_raster_500m.tif</title>
 <path fill="none" stroke="black" d="M931.927,-140.554C942.317,-140.894 952.817,-141.238 963.349,-141.582"/>
 <polygon fill="black" stroke="black" points="963.345,-145.084 973.454,-141.913 963.574,-138.088 963.345,-145.084"/>
 </g>
 <!-- urn:uuid:98b5270a&#45;1577&#45;4865&#45;970f&#45;17c6b0065374 -->
 <g id="node6" class="node"><title>urn:uuid:98b5270a&#45;1577&#45;4865&#45;970f&#45;17c6b0065374</title>
 <polygon fill="black" stroke="black" points="529.524,-183.2 529.524,-224.8 931.86,-224.8 931.86,-183.2 529.524,-183.2"/>
-<text text-anchor="middle" x="730.692" y="-208.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">_h310 </text>
+<text text-anchor="middle" x="730.692" y="-208.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">ohibc run 1 </text>
 <text text-anchor="middle" x="730.692" y="-191.4" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white"> urn:uuid:98b5270a&#45;1577&#45;4865&#45;970f&#45;17c6b0065374</text>
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_pep_rast_500m.tif -->
-<g id="node9" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_pep_rast_500m.tif</title>
+<g id="node11" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_pep_rast_500m.tif</title>
 <path fill="#ffe4b5" stroke="black" d="M1433.45,-222C1433.45,-222 1009.59,-222 1009.59,-222 1003.59,-222 997.591,-216 997.591,-210 997.591,-210 997.591,-198 997.591,-198 997.591,-192 1003.59,-186 1009.59,-186 1009.59,-186 1433.45,-186 1433.45,-186 1439.45,-186 1445.45,-192 1445.45,-198 1445.45,-198 1445.45,-210 1445.45,-210 1445.45,-216 1439.45,-222 1433.45,-222"/>
 <text text-anchor="middle" x="1221.52" y="-201.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_pep_rast_500m.tif</text>
 </g>
 <!-- urn:uuid:98b5270a&#45;1577&#45;4865&#45;970f&#45;17c6b0065374&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_pep_rast_500m.tif -->
-<g id="edge17" class="edge"><title>urn:uuid:98b5270a&#45;1577&#45;4865&#45;970f&#45;17c6b0065374&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_pep_rast_500m.tif</title>
+<g id="edge18" class="edge"><title>urn:uuid:98b5270a&#45;1577&#45;4865&#45;970f&#45;17c6b0065374&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_pep_rast_500m.tif</title>
 <path fill="none" stroke="black" d="M931.927,-204C950.254,-204 968.923,-204 987.505,-204"/>
 <polygon fill="black" stroke="black" points="987.513,-207.5 997.513,-204 987.512,-200.5 987.513,-207.5"/>
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_wdpa_rast_500m.tif -->
-<g id="node17" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_wdpa_rast_500m.tif</title>
+<g id="node19" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_wdpa_rast_500m.tif</title>
 <path fill="#ffe4b5" stroke="black" d="M1436.35,-276C1436.35,-276 1006.69,-276 1006.69,-276 1000.69,-276 994.692,-270 994.692,-264 994.692,-264 994.692,-252 994.692,-252 994.692,-246 1000.69,-240 1006.69,-240 1006.69,-240 1436.35,-240 1436.35,-240 1442.35,-240 1448.35,-246 1448.35,-252 1448.35,-252 1448.35,-264 1448.35,-264 1448.35,-270 1442.35,-276 1436.35,-276"/>
 <text text-anchor="middle" x="1221.52" y="-255.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_wdpa_rast_500m.tif</text>
 </g>
 <!-- urn:uuid:98b5270a&#45;1577&#45;4865&#45;970f&#45;17c6b0065374&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_wdpa_rast_500m.tif -->
-<g id="edge25" class="edge"><title>urn:uuid:98b5270a&#45;1577&#45;4865&#45;970f&#45;17c6b0065374&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_wdpa_rast_500m.tif</title>
+<g id="edge26" class="edge"><title>urn:uuid:98b5270a&#45;1577&#45;4865&#45;970f&#45;17c6b0065374&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_wdpa_rast_500m.tif</title>
 <path fill="none" stroke="black" d="M912.517,-224.811C931.205,-226.92 949.914,-229.015 967.86,-231 991.271,-233.589 1015.91,-236.273 1040.24,-238.899"/>
 <polygon fill="black" stroke="black" points="1039.96,-242.389 1050.28,-239.981 1040.71,-235.429 1039.96,-242.389"/>
 </g>
 <!-- urn:uuid:53ada2f7&#45;5e25&#45;4845&#45;883e&#45;1049a90c321c -->
 <g id="node7" class="node"><title>urn:uuid:53ada2f7&#45;5e25&#45;4845&#45;883e&#45;1049a90c321c</title>
 <polygon fill="black" stroke="black" points="4256.37,-129.2 4256.37,-170.8 4658.71,-170.8 4658.71,-129.2 4256.37,-129.2"/>
-<text text-anchor="middle" x="4457.54" y="-154.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">_h310 </text>
+<text text-anchor="middle" x="4457.54" y="-154.2" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white">ohibc run 1 </text>
 <text text-anchor="middle" x="4457.54" y="-137.4" font-family="Courier,monospace" font-weight="bold" font-size="14.00" fill="white"> urn:uuid:53ada2f7&#45;5e25&#45;4845&#45;883e&#45;1049a90c321c</text>
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/lsp_trend.csv -->
-<g id="node18" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/lsp_trend.csv</title>
+<g id="node20" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/lsp_trend.csv</title>
 <path fill="#ffe4b5" stroke="black" d="M5087.31,-168C5087.31,-168 4706.84,-168 4706.84,-168 4700.84,-168 4694.84,-162 4694.84,-156 4694.84,-156 4694.84,-144 4694.84,-144 4694.84,-138 4700.84,-132 4706.84,-132 4706.84,-132 5087.31,-132 5087.31,-132 5093.31,-132 5099.31,-138 5099.31,-144 5099.31,-144 5099.31,-156 5099.31,-156 5099.31,-162 5093.31,-168 5087.31,-168"/>
 <text text-anchor="middle" x="4897.08" y="-147.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/lsp_trend.csv</text>
 </g>
 <!-- urn:uuid:53ada2f7&#45;5e25&#45;4845&#45;883e&#45;1049a90c321c&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/lsp_trend.csv -->
-<g id="edge26" class="edge"><title>urn:uuid:53ada2f7&#45;5e25&#45;4845&#45;883e&#45;1049a90c321c&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/lsp_trend.csv</title>
+<g id="edge27" class="edge"><title>urn:uuid:53ada2f7&#45;5e25&#45;4845&#45;883e&#45;1049a90c321c&#45;&gt;/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/output/lsp_trend.csv</title>
 <path fill="none" stroke="black" d="M4658.74,-150C4667.31,-150 4675.92,-150 4684.52,-150"/>
 <polygon fill="black" stroke="black" points="4684.6,-153.5 4694.6,-150 4684.6,-146.5 4684.6,-153.5"/>
+</g>
+<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv&#45;&gt;urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4 -->
+<g id="edge10" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv&#45;&gt;urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4</title>
+<path fill="none" stroke="black" d="M3215.75,-114.019C3253.24,-118.481 3293.84,-123.313 3332.76,-127.944"/>
+<polygon fill="black" stroke="black" points="3332.8,-131.474 3343.14,-129.181 3333.63,-124.523 3332.8,-131.474"/>
+</g>
+<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif -->
+<g id="node9" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif</title>
+<path fill="#ffe4b5" stroke="black" d="M481.287,-152C481.287,-152 36.2376,-152 36.2376,-152 30.2376,-152 24.2376,-146 24.2376,-140 24.2376,-140 24.2376,-128 24.2376,-128 24.2376,-122 30.2376,-116 36.2376,-116 36.2376,-116 481.287,-116 481.287,-116 487.287,-116 493.287,-122 493.287,-128 493.287,-128 493.287,-140 493.287,-140 493.287,-146 487.287,-152 481.287,-152"/>
+<text text-anchor="middle" x="258.762" y="-131.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif</text>
+</g>
+<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif&#45;&gt;urn:uuid:167b320e&#45;9143&#45;4084&#45;882e&#45;7d19914767c0 -->
+<g id="edge13" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif&#45;&gt;urn:uuid:167b320e&#45;9143&#45;4084&#45;882e&#45;7d19914767c0</title>
+<path fill="none" stroke="black" d="M366.985,-115.975C434.899,-104.558 523.269,-89.7018 595.779,-77.5122"/>
+<polygon fill="black" stroke="black" points="596.62,-80.92 605.901,-75.8105 595.459,-74.0168 596.62,-80.92"/>
+</g>
+<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif&#45;&gt;urn:uuid:3d6c8ed0&#45;83c0&#45;4b12&#45;9154&#45;2804f4317598 -->
+<g id="edge12" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif&#45;&gt;urn:uuid:3d6c8ed0&#45;83c0&#45;4b12&#45;9154&#45;2804f4317598</title>
+<path fill="none" stroke="black" d="M493.35,-134C502.043,-134 510.737,-134 519.387,-134"/>
+<polygon fill="black" stroke="black" points="519.517,-137.5 529.517,-134 519.517,-130.5 519.517,-137.5"/>
+</g>
+<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif&#45;&gt;urn:uuid:98b5270a&#45;1577&#45;4865&#45;970f&#45;17c6b0065374 -->
+<g id="edge11" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif&#45;&gt;urn:uuid:98b5270a&#45;1577&#45;4865&#45;970f&#45;17c6b0065374</title>
+<path fill="none" stroke="black" d="M380.781,-152.027C441.443,-161.063 515.475,-172.091 579.713,-181.659"/>
+<polygon fill="black" stroke="black" points="579.529,-185.17 589.935,-183.182 580.56,-178.247 579.529,-185.17"/>
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_1km.csv&#45;&gt;urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317 -->
 <g id="edge14" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_1km.csv&#45;&gt;urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317</title>
@@ -210,8 +235,8 @@
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_3nm.csv&#45;&gt;urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4 -->
 <g id="edge3" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_3nm.csv&#45;&gt;urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4</title>
-<path fill="none" stroke="black" d="M3215.75,-114.019C3253.24,-118.481 3293.84,-123.313 3332.76,-127.944"/>
-<polygon fill="black" stroke="black" points="3332.8,-131.474 3343.14,-129.181 3333.63,-124.523 3332.8,-131.474"/>
+<path fill="none" stroke="black" d="M3282.24,-150C3290.64,-150 3299.06,-150 3307.45,-150"/>
+<polygon fill="black" stroke="black" points="3307.66,-153.5 3317.66,-150 3307.66,-146.5 3307.66,-153.5"/>
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_3nm.csv&#45;&gt;urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317 -->
 <g id="edge4" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_3nm.csv&#45;&gt;urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317</title>
@@ -225,8 +250,8 @@
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_ws.csv&#45;&gt;urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4 -->
 <g id="edge6" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_ws.csv&#45;&gt;urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4</title>
-<path fill="none" stroke="black" d="M3279.25,-150C3288.67,-150 3298.12,-150 3307.53,-150"/>
-<polygon fill="black" stroke="black" points="3307.72,-153.5 3317.72,-150 3307.72,-146.5 3307.72,-153.5"/>
+<path fill="none" stroke="black" d="M3215.75,-185.981C3253.24,-181.519 3293.84,-176.687 3332.76,-172.056"/>
+<polygon fill="black" stroke="black" points="3333.63,-175.477 3343.14,-170.819 3332.8,-168.526 3333.63,-175.477"/>
 </g>
 <!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_ws.csv&#45;&gt;urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317 -->
 <g id="edge7" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/zonal_stats_ws.csv&#45;&gt;urn:uuid:53c74750&#45;d660&#45;479d&#45;8e59&#45;f54068835317</title>
@@ -242,31 +267,6 @@
 <g id="edge9" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/spatial/hs_inland_1km_raster_500m.tif&#45;&gt;urn:uuid:f5d6b763&#45;c953&#45;48f4&#45;9a39&#45;4a61f45bfdd3</title>
 <path fill="none" stroke="black" d="M1469.8,-150C1480.19,-150 1490.57,-150 1500.87,-150"/>
 <polygon fill="black" stroke="black" points="1501.14,-153.5 1511.14,-150 1501.14,-146.5 1501.14,-153.5"/>
-</g>
-<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv&#45;&gt;urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4 -->
-<g id="edge10" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/lsp/vHS/int/area_protected_1km.csv&#45;&gt;urn:uuid:4fcd5da4&#45;67af&#45;4f8d&#45;ad36&#45;c9cdf45621d4</title>
-<path fill="none" stroke="black" d="M3215.75,-185.981C3253.24,-181.519 3293.84,-176.687 3332.76,-172.056"/>
-<polygon fill="black" stroke="black" points="3333.63,-175.477 3343.14,-170.819 3332.8,-168.526 3333.63,-175.477"/>
-</g>
-<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif -->
-<g id="node21" class="node"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif</title>
-<path fill="#ffe4b5" stroke="black" d="M481.287,-152C481.287,-152 36.2376,-152 36.2376,-152 30.2376,-152 24.2376,-146 24.2376,-140 24.2376,-140 24.2376,-128 24.2376,-128 24.2376,-122 30.2376,-116 36.2376,-116 36.2376,-116 481.287,-116 481.287,-116 487.287,-116 493.287,-122 493.287,-128 493.287,-128 493.287,-140 493.287,-140 493.287,-146 487.287,-152 481.287,-152"/>
-<text text-anchor="middle" x="258.762" y="-131.3" font-family="Courier,monospace" font-weight="bold" font-size="9.00">/Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif</text>
-</g>
-<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif&#45;&gt;urn:uuid:167b320e&#45;9143&#45;4084&#45;882e&#45;7d19914767c0 -->
-<g id="edge13" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif&#45;&gt;urn:uuid:167b320e&#45;9143&#45;4084&#45;882e&#45;7d19914767c0</title>
-<path fill="none" stroke="black" d="M366.985,-115.975C434.899,-104.558 523.269,-89.7018 595.779,-77.5122"/>
-<polygon fill="black" stroke="black" points="596.62,-80.92 605.901,-75.8105 595.459,-74.0168 596.62,-80.92"/>
-</g>
-<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif&#45;&gt;urn:uuid:3d6c8ed0&#45;83c0&#45;4b12&#45;9154&#45;2804f4317598 -->
-<g id="edge12" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif&#45;&gt;urn:uuid:3d6c8ed0&#45;83c0&#45;4b12&#45;9154&#45;2804f4317598</title>
-<path fill="none" stroke="black" d="M493.35,-134C502.043,-134 510.737,-134 519.387,-134"/>
-<polygon fill="black" stroke="black" points="519.517,-137.5 529.517,-134 519.517,-130.5 519.517,-137.5"/>
-</g>
-<!-- /Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif&#45;&gt;urn:uuid:98b5270a&#45;1577&#45;4865&#45;970f&#45;17c6b0065374 -->
-<g id="edge11" class="edge"><title>/Users/slaughter/git/OHI&#45;Science/ohibc/prep/spatial/raster/ohibc_rgn_raster_500m.tif&#45;&gt;urn:uuid:98b5270a&#45;1577&#45;4865&#45;970f&#45;17c6b0065374</title>
-<path fill="none" stroke="black" d="M380.781,-152.027C441.443,-161.063 515.475,-172.091 579.713,-181.659"/>
-<polygon fill="black" stroke="black" points="579.529,-185.17 589.935,-183.182 580.56,-178.247 579.529,-185.17"/>
 </g>
 </g>
 </svg>
