@@ -25,8 +25,21 @@
 # #         min       max
 # # x 1169571.2 1227753.5
 # # y  473548.3  534590.4
-source("setup.R")
 
+# @BEGIN Read_in_BC_WDPA_MPA_shapefile
+# @in setup_configuration_file @AS setup_R
+# @in hs_wdpa_poly @AS original_WDPA_MPA_global_dataset
+# @out BC_specific_polygon_subset_of_WDPA_global_dataset
+
+# @BEGIN Set_up_default_BC_projection_to_BC_Albers_and_start_provenance_tracking
+# @in setup_configuration_file @AS setup_R
+# @out poly_hs_wdpa @AS BC_specific_polygon_subset_of_WDPA_global_dataset
+source("setup.R")
+# @END Set_up_default_BC_projection_to_BC_Albers_and_start_provenance_tracking
+
+# @BEGIN create_BC_specific_polygon_subset_of_WDPA_global_dataset
+# @in hs_wdpa_poly @AS original_WDPA_MPA_global_dataset
+# @out poly_hs_wdpa @AS BC_specific_polygon_subset_of_WDPA_global_dataset
 poly_hs_wdpa <- get_wdpa_poly(p4s_bcalb, reload = FALSE) %>%  ### defaults to BC Albers
   spTransform(CRS(p4s_bcalb)) %>%
   crop(ext_howe)
@@ -36,3 +49,6 @@ writeOGR(poly_hs_wdpa,
          layer = 'hs_wdpa_poly',
          driver = 'ESRI Shapefile',
          overwrite_layer = TRUE)
+# @END create_BC_specific_polygon_subset_of_WDPA_global_dataset
+		 
+# @END Read_in_BC_WDPA_MPA_shapefile
