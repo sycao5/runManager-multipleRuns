@@ -23,11 +23,12 @@ write_hs_pep_poly
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
 
 /* Nodes for non-parameter data channels in workflow */
-poly_hs_pep
+poly_hs_pep [shape=record rankdir=LR label="{<f0> poly_hs_pep |<f1> file\:\{dir_goal\}/spatial/hs_pep_poly}"];
 setup_R
 dir_anx
-TA_PEP_SVW_polygon [shape=record rankdir=LR label="{<f0> TA_PEP_SVW_polygon |<f1> file\:_raw_data/databc/TA_PEP_SVW}"];
+TA_PEP_SVW_polygon [shape=record rankdir=LR label="{<f0> TA_PEP_SVW_polygon |<f1> file\:\{dir_anx\}_raw_data/databc/TA_PEP_SVW}"];
 hs_pep_poly
+dir_goal
 
 /* Style for nodes representing parameter channels in workflow */
 node[shape=box style="rounded,filled" fillcolor="#FCFCFC" peripheries=1 fontname=Helvetica]
@@ -36,12 +37,14 @@ node[shape=box style="rounded,filled" fillcolor="#FCFCFC" peripheries=1 fontname
 
 /* Edges representing connections between programs and channels */
 set_up_Configuration_and_start_provenance_tracking -> dir_anx
+set_up_Configuration_and_start_provenance_tracking -> dir_goal
 setup_R -> set_up_Configuration_and_start_provenance_tracking
 read_TA_PEP_SVW_polygon -> hs_pep_poly
 dir_anx -> read_TA_PEP_SVW_polygon
 TA_PEP_SVW_polygon -> read_TA_PEP_SVW_polygon
 write_hs_pep_poly -> poly_hs_pep
 hs_pep_poly -> write_hs_pep_poly
+dir_goal -> write_hs_pep_poly
 
 /* End of double cluster for drawing box around nodes in workflow */
 }}

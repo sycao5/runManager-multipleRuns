@@ -2,13 +2,14 @@
 # DataBC offers spatial data on BC protected areas with small differences from the WDPA dataset.  We will use this as well.
 
 # @BEGIN Read_BC_Parks_EcologicalReserves_ProtectedArea_data
-# @in poly_hs_pep @AS TA_PEP_SVW_polygon @URI file:_raw_data/databc/TA_PEP_SVW
+# @in poly_hs_pep @AS TA_PEP_SVW_polygon @URI file:{dir_anx}_raw_data/databc/TA_PEP_SVW
 # @in setup_configuration_file @AS setup_R
-# @out poly_hs_pep
+# @out poly_hs_pep @URI file:{dir_goal}/spatial/hs_pep_poly 
 
 # @BEGIN set_up_Configuration_and_start_provenance_tracking
 # @in setup_configuration_file @AS setup_R
 # @out dir_anx
+# @out dir_goal
 source("setup.R")
 # @END set_up_Configuration_and_start_provenance_tracking
 
@@ -28,7 +29,8 @@ poly_hs_pep <- readOGR(dsn = file.path(dir_anx, '_raw_data/databc/TA_PEP_SVW'),
 
 # @BEGIN write_hs_pep_poly
 # @in poly_hs_pep @AS hs_pep_poly
-# @out poly_hs_pep
+# @in dir_goal
+# @out poly_hs_pep @URI file:{dir_goal}/spatial/hs_pep_poly 
 
 message("Writing outp hs_pep_ploy...")
 writeOGR(poly_hs_pep,
