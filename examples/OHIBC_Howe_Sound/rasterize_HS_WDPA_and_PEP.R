@@ -39,8 +39,8 @@ rast_base <- raster(file.path(dir_spatial, 'raster/ohibc_rgn_raster_500m.tif')) 
 # @param dir_goal
 # @in hs_wdpa_shp_file @URI file:{dir_goal}/spatial/hs_wdpa_poly.shp
 # @in hs_pep_shp_file @URI file:{dir_goal}/spatial/hs_pep_poly.shp
-# @out hs_wdpa_rast_file @URI file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif
-# @out hs_pep_rast_file @URI file:{dir_goal}/spatial/hs_pep_rast_500m.tif 
+# @out hs_wdpa_rast_file_handle 
+# @out hs_pep_rast_file_handle  
 
 hs_wdpa_shp_file  <- file.path(dir_goal, 'spatial', 'hs_wdpa_poly.shp')
 hs_wdpa_rast_file <- file.path(dir_goal, 'spatial', 'hs_wdpa_rast_500m.tif')
@@ -52,6 +52,7 @@ hs_pep_rast_file  <- file.path(dir_goal, 'spatial', 'hs_pep_rast_500m.tif')
 # @BEGIN rasterize_howe_sound_wdpa_shape_file
 # @in hs_wdpa_shp_file @URI file:{dir_goal}/spatial/hs_wdpa_poly.shp
 # @in rast_base  @AS extent_of_howe_sound
+# @in hs_wdpa_rast_file_handle 
 # @out hs_wdpa_rast_file  @URI file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif
 
 rast_wdpa <- gdal_rast2(src = hs_wdpa_shp_file,
@@ -65,6 +66,7 @@ rast_wdpa <- gdal_rast2(src = hs_wdpa_shp_file,
 # @BEGIN rasterize_howe_sound_pep_shape_file
 # @in hs_pep_shp_file @URI file:{dir_goal}/spatial/hs_pep_poly.shp
 # @in rast_base  @AS extent_of_howe_sound
+# @in hs_pep_rast_file_handle
 # @out hs_pep_rast_file @URI file:{dir_goal}/spatial/hs_pep_rast_500m.tif
 
 rast_pep  <- gdal_rast2(src = hs_pep_shp_file,
