@@ -1,0 +1,92 @@
+
+/* Start of top-level graph */
+digraph Workflow {
+rankdir=TB
+
+/* Title for graph */
+fontname=Helvetica; fontsize=18; labelloc=t
+label=Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents
+
+/* Start of double cluster for drawing box around nodes in workflow */
+subgraph cluster_workflow_box_outer { label=""; color=black; penwidth=2
+subgraph cluster_workflow_box_inner { label=""; penwidth=0
+
+/* Style for nodes representing atomic programs in workflow */
+node[shape=box style=filled fillcolor="#CCFFCC" peripheries=1 fontname=Helvetica]
+
+/* Nodes representing atomic programs in workflow */
+set_up_configuration_and_start_provenance_tracking
+rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution
+load_and_create_howe_sound_wdpa_pep_files
+rasterize_howe_sound_wdpa_shape_file
+rasterize_howe_sound_pep_shape_file
+
+/* Style for nodes representing non-parameter data channels in workflow */
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+
+/* Nodes for non-parameter data channels in workflow */
+hs_wdpa_rast_file [shape=record rankdir=LR label="{<f0> hs_wdpa_rast_file |<f1> file\:\{dir_goal\}/spatial/hs_wdpa_rast_500m.tif}"];
+hs_pep_rast_file [shape=record rankdir=LR label="{<f0> hs_pep_rast_file |<f1> file\:\{dir_goal\}/spatial/hs_pep_rast_500m.tif}"];
+"setup.R"
+ohibc_rgn_raster_500m [shape=record rankdir=LR label="{<f0> ohibc_rgn_raster_500m |<f1> file\:\{dir_spatial\}/raster/ohibc_rgn_raster_500m.tif}"];
+hs_wdpa_shp_file [shape=record rankdir=LR label="{<f0> hs_wdpa_shp_file |<f1> file\:\{dir_goal\}/spatial/hs_wdpa_poly.shp}"];
+hs_pep_shp_file [shape=record rankdir=LR label="{<f0> hs_pep_shp_file |<f1> file\:\{dir_goal\}/spatial/hs_pep_poly.shp}"];
+extent_of_howe_sound
+
+/* Style for nodes representing parameter channels in workflow */
+node[shape=box style="rounded,filled" fillcolor="#FCFCFC" peripheries=1 fontname=Helvetica]
+
+/* Nodes representing parameter channels in workflow */
+dir_spatial
+dir_goal
+
+/* Edges representing connections between programs and channels */
+set_up_configuration_and_start_provenance_tracking -> dir_spatial
+set_up_configuration_and_start_provenance_tracking -> dir_goal
+"setup.R" -> set_up_configuration_and_start_provenance_tracking
+rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution -> extent_of_howe_sound
+dir_spatial -> rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution
+ohibc_rgn_raster_500m -> rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution
+load_and_create_howe_sound_wdpa_pep_files -> hs_wdpa_rast_file
+load_and_create_howe_sound_wdpa_pep_files -> hs_pep_rast_file
+dir_goal -> load_and_create_howe_sound_wdpa_pep_files
+hs_wdpa_shp_file -> load_and_create_howe_sound_wdpa_pep_files
+hs_pep_shp_file -> load_and_create_howe_sound_wdpa_pep_files
+rasterize_howe_sound_wdpa_shape_file -> hs_wdpa_rast_file
+hs_wdpa_shp_file -> rasterize_howe_sound_wdpa_shape_file
+extent_of_howe_sound -> rasterize_howe_sound_wdpa_shape_file
+rasterize_howe_sound_pep_shape_file -> hs_pep_rast_file
+hs_pep_shp_file -> rasterize_howe_sound_pep_shape_file
+extent_of_howe_sound -> rasterize_howe_sound_pep_shape_file
+
+/* End of double cluster for drawing box around nodes in workflow */
+}}
+
+/* Style for nodes representing workflow input ports */
+node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
+
+/* Nodes representing workflow input ports */
+"setup.R_input_port" [label=""]
+hs_wdpa_shp_file_input_port [label=""]
+hs_pep_shp_file_input_port [label=""]
+ohibc_rgn_raster_500m_input_port [label=""]
+
+/* Style for nodes representing workflow output ports */
+node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
+
+/* Nodes representing workflow output ports */
+hs_wdpa_rast_file_output_port [label=""]
+hs_pep_rast_file_output_port [label=""]
+
+/* Edges from input ports to channels */
+"setup.R_input_port" -> "setup.R"
+hs_wdpa_shp_file_input_port -> hs_wdpa_shp_file
+hs_pep_shp_file_input_port -> hs_pep_shp_file
+ohibc_rgn_raster_500m_input_port -> ohibc_rgn_raster_500m
+
+/* Edges from channels to output ports */
+hs_wdpa_rast_file -> hs_wdpa_rast_file_output_port
+hs_pep_rast_file -> hs_pep_rast_file_output_port
+
+/* End of top-level graph */
+}

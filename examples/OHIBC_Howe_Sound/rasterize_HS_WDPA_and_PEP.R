@@ -7,23 +7,71 @@
 
 ## Rasterize the BC WDPA-MPA shapefile to Howe Sound extents
 
+# @BEGIN  Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents
+# @in setup_configuration_file @AS setup.R
+# @in hs_wdpa_shp_file @URI file:{dir_goal}/spatial/hs_wdpa_poly.shp
+# @in hs_pep_shp_file @URI file:{dir_goal}/spatial/hs_pep_poly.shp
+# @in ohibc_rgn_raster_500m @URI file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif
+
+# @out hs_wdpa_rast_file @URI file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif
+# @out hs_pep_rast_file @URI file:{dir_goal}/spatial/hs_pep_rast_500m.tif 
+
+# @BEGIN set_up_configuration_and_start_provenance_tracking
+# @in setup_configuration_file @AS setup.R
+# @out dir_spatial
+# @out dir_goal
+
 source("setup.R")
+# @END set_up_configuration_and_start_provenance_tracking
+
+
+# @BEGIN rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution
+# @param dir_spatial
+# @in ohibc_rgn_raster_500m @URI file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif
+# @out rast_base @AS extent_of_howe_sound
+
 rast_base <- raster(file.path(dir_spatial, 'raster/ohibc_rgn_raster_500m.tif')) %>%
   crop(ext_howe)
+# @END rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution
+
+
+# @BEGIN load_and_create_howe_sound_wdpa_pep_files
+# @param dir_goal
+# @in hs_wdpa_shp_file @URI file:{dir_goal}/spatial/hs_wdpa_poly.shp
+# @in hs_pep_shp_file @URI file:{dir_goal}/spatial/hs_pep_poly.shp
+# @out hs_wdpa_rast_file @URI file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif
+# @out hs_pep_rast_file @URI file:{dir_goal}/spatial/hs_pep_rast_500m.tif 
 
 hs_wdpa_shp_file  <- file.path(dir_goal, 'spatial', 'hs_wdpa_poly.shp')
 hs_wdpa_rast_file <- file.path(dir_goal, 'spatial', 'hs_wdpa_rast_500m.tif')
 hs_pep_shp_file   <- file.path(dir_goal, 'spatial', 'hs_pep_poly.shp')
 hs_pep_rast_file  <- file.path(dir_goal, 'spatial', 'hs_pep_rast_500m.tif')
+# @END load_and_create_howe_sound_wdpa_pep_files
+
+
+# @BEGIN rasterize_howe_sound_wdpa_shape_file
+# @in hs_wdpa_shp_file @URI file:{dir_goal}/spatial/hs_wdpa_poly.shp
+# @in rast_base  @AS extent_of_howe_sound
+# @out hs_wdpa_rast_file  @URI file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif
 
 rast_wdpa <- gdal_rast2(src = hs_wdpa_shp_file,
                         rast_base = rast_base,
                         dst = hs_wdpa_rast_file,
                         value = 'STATUS_YR',
                         override_p4s = TRUE)
+# @END rasterize_wdpa_shape_file
+
+
+# @BEGIN rasterize_howe_sound_pep_shape_file
+# @in hs_pep_shp_file @URI file:{dir_goal}/spatial/hs_pep_poly.shp
+# @in rast_base  @AS extent_of_howe_sound
+# @out hs_pep_rast_file @URI file:{dir_goal}/spatial/hs_pep_rast_500m.tif
 
 rast_pep  <- gdal_rast2(src = hs_pep_shp_file,
                         rast_base = rast_base,
                         dst = hs_pep_rast_file,
                         value = 'OBJECTID', ### no year field available
                         override_p4s = TRUE)
+# @END rasterize_howe_sound_pep_shape_file
+						
+# @END Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents
