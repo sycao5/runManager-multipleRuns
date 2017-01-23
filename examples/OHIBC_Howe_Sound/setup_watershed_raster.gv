@@ -1,0 +1,73 @@
+
+/* Start of top-level graph */
+digraph Workflow {
+rankdir=TB
+
+/* Title for graph */
+fontname=Helvetica; fontsize=18; labelloc=t
+label=Setup_watershed_raster
+
+/* Start of double cluster for drawing box around nodes in workflow */
+subgraph cluster_workflow_box_outer { label=""; color=black; penwidth=2
+subgraph cluster_workflow_box_inner { label=""; penwidth=0
+
+/* Style for nodes representing atomic programs in workflow */
+node[shape=box style=filled fillcolor="#CCFFCC" peripheries=1 fontname=Helvetica]
+
+/* Nodes representing atomic programs in workflow */
+set_up_configuration_and_start_provenance_tracking
+"raster_to_same_extents/resolution_as_500m_base_raster"
+
+/* Style for nodes representing non-parameter data channels in workflow */
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+
+/* Nodes for non-parameter data channels in workflow */
+rast_watershe [shape=record rankdir=LR label="{<f0> rast_watershe |<f1> file\:\{dir_goal\}/spatial/howe_sound_watershed_500m.tif}"];
+"setup.R"
+rast_base [shape=record rankdir=LR label="{<f0> rast_base |<f1> file\:\{dir_spatial/raster/ohibc_rgn_raster_500m.tif\}}"];
+howe_sound_watersheds [shape=record rankdir=LR label="{<f0> howe_sound_watersheds |<f1> file\:\{dir_spatial\}/watershed/howe_sound_watersheds}"];
+
+/* Style for nodes representing parameter channels in workflow */
+node[shape=box style="rounded,filled" fillcolor="#FCFCFC" peripheries=1 fontname=Helvetica]
+
+/* Nodes representing parameter channels in workflow */
+dir_spatial
+dir_goal
+
+/* Edges representing connections between programs and channels */
+set_up_configuration_and_start_provenance_tracking -> dir_spatial
+set_up_configuration_and_start_provenance_tracking -> dir_goal
+"setup.R" -> set_up_configuration_and_start_provenance_tracking
+"raster_to_same_extents/resolution_as_500m_base_raster" -> rast_watershe
+dir_spatial -> "raster_to_same_extents/resolution_as_500m_base_raster"
+dir_goal -> "raster_to_same_extents/resolution_as_500m_base_raster"
+rast_base -> "raster_to_same_extents/resolution_as_500m_base_raster"
+howe_sound_watersheds -> "raster_to_same_extents/resolution_as_500m_base_raster"
+
+/* End of double cluster for drawing box around nodes in workflow */
+}}
+
+/* Style for nodes representing workflow input ports */
+node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
+
+/* Nodes representing workflow input ports */
+"setup.R_input_port" [label=""]
+rast_base_input_port [label=""]
+howe_sound_watersheds_input_port [label=""]
+
+/* Style for nodes representing workflow output ports */
+node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
+
+/* Nodes representing workflow output ports */
+rast_watershe_output_port [label=""]
+
+/* Edges from input ports to channels */
+"setup.R_input_port" -> "setup.R"
+rast_base_input_port -> rast_base
+howe_sound_watersheds_input_port -> howe_sound_watersheds
+
+/* Edges from channels to output ports */
+rast_watershe -> rast_watershe_output_port
+
+/* End of top-level graph */
+}

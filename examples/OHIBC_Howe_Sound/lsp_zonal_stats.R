@@ -6,7 +6,37 @@
 
 # Calculate goal model
 
+# @BEGIN calculate_goal_model
+# @in setup_configuration_file @AS setup.R
+# @in rast_3nm_raster_file @URI file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m
+# @in rast_1km_raster_file @URI file:{dir_goal}/spatial/hs_inland_1km_raster_500m
+# @in rast_ws_raster_file  @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
+# @in rast_pep_file @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
+# @in rast_wdpa_pep_file   @URI file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif
+# @out zonal_3nm_file @URI file:{dir_goal}/int/zonal_stats_3nm.csv
+# @out zonal_1km_file @URI file:{dir_goal}/int/zonal_stats_1km.csv
+# @out zonal_ws_file @URI file:{dir_goal}/int/zonal_stats_ws.csv
+
+
+# @BEGIN set_up_configuration_and_start_provenance_tracking
+# @in setup_configuration_file @AS setup.R
+# @out dir_goal
+
 source("setup.R")
+# @END set_up_configuration_and_start_provenance_tracking
+
+
+# @BEGIN read_in_OHI_region_rasters
+# @in rast_3nm_raster_file @URI file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m
+# @in rast_1km_raster_file @URI file:{dir_goal}/spatial/hs_inland_1km_raster_500m
+# @in rast_ws_raster_file  @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
+# @in rast_pep_file        @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
+# @in rast_wdpa_pep_file   @URI file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif
+# @out rast_3nm
+# @out rast_1km
+# @out rast_ws 
+# @out rast_pep
+# @out rast_wdpa_pep
 
 rast_3nm  <- raster(file.path(dir_goal, 'spatial/hs_offshore_3nm_raster_500m.tif'))
 values(rast_3nm)[!is.na(values(rast_3nm))] <- 1
@@ -19,8 +49,24 @@ rast_pep  <- raster(file.path(dir_goal, 'spatial/hs_pep_rast_500m.tif'))
 rast_wdpa_pep <- raster(file.path(dir_goal, 'spatial/hs_wdpa_rast_500m.tif'))
 ### will adjust values of this to include pep areas
 
+# @END read_in_OHI_region_rasters
+
+
+
 ### for any non-WDPA cells with PEP values, set to 1 (distinct from WDPA values, which are all years)
 values(rast_wdpa_pep)[!is.na(values(rast_pep)) & is.na(values(rast_wdpa_pep))] <- 1
+
+
+# @BEGIN outputs_stats_for_protected_cells
+# @param dir_goal
+# @in rast_3nm
+# @in rast_1km
+# @in rast_ws
+# @in rast_pep
+# @in rast_wdpa_pep
+# @out zonal_3nm_file @URI file:{dir_goal}/int/zonal_stats_3nm.csv
+# @out zonal_1km_file @URI file:{dir_goal}/int/zonal_stats_1km.csv
+# @out zonal_ws_file @URI file:{dir_goal}/int/zonal_stats_ws.csv
 
 zonal_3nm_file <- file.path(dir_goal, 'int', 'zonal_stats_3nm.csv')
 zonal_1km_file <- file.path(dir_goal, 'int', 'zonal_stats_1km.csv')
@@ -53,3 +99,7 @@ stats_ws <- raster::crosstab(rast_wdpa_pep, rast_ws, useNA = TRUE, progress = 't
 write.csv(stats_3nm, zonal_3nm_file)
 write.csv(stats_1km, zonal_1km_file)
 write.csv(stats_ws,  zonal_ws_file)
+
+# @END outputs_stats_for_protected_cells
+
+# @END calculate_goal_model

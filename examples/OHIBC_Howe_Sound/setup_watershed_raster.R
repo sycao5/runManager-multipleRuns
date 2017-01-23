@@ -4,7 +4,28 @@
 # University of California, Santa Barbara.
 # Available at: https://github.com/OHI-Science/ohiprep/releases/edit/v2016.1
 
+# @BEGIN Setup_watershed_raster
+# @in setup_configuration_file @AS setup.R
+# @in rast_base @URI file:{dir_spatial/raster/ohibc_rgn_raster_500m.tif}
+# @in howe_sound_watersheds @URI file:{dir_spatial}/watershed/howe_sound_watersheds 
+# @out rast_watershe @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
+
+
+# @BEGIN set_up_configuration_and_start_provenance_tracking
+# @in setup_configuration_file @AS setup.R
+# @out dir_spatial
+# @out dir_goal
+
 source("setup.R")
+# @END set_up_configuration_and_start_provenance_tracking
+
+
+# @BEGIN raster_to_same_extents/resolution_as_500m_base_raster
+# @param dir_spatial
+# @param dir_goal
+# @in rast_base @URI file:{dir_spatial/raster/ohibc_rgn_raster_500m.tif}
+# @in howe_sound_watersheds @URI file:{dir_spatial}/watershed/howe_sound_watersheds 
+# @out rast_watershe @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
 
 rast_base <- raster(file.path(dir_spatial, 'raster/ohibc_rgn_raster_500m.tif')) %>%
 crop(ext_howe)
@@ -14,3 +35,7 @@ rast_watershed <- gdal_rast2(src = file.path(dir_spatial, 'watershed/howe_sound_
                              dst = file.path(dir_goal, 'spatial/howe_sound_watershed_500m.tif'),
                              # value = 'WATERSHED_',
                              override_p4s = TRUE)
+							 
+# @END raster_to_same_extents/resolution_as_500m_base_raster
+
+# @END Setup_watershed_raster
