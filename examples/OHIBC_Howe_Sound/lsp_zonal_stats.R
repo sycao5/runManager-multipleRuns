@@ -13,9 +13,9 @@
 # @in rast_ws_raster_file  @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
 # @in rast_pep_file @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
 # @in rast_wdpa_pep_file   @URI file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif
-# @out zonal_3nm_file @URI file:{dir_goal}/int/zonal_stats_3nm.csv
-# @out zonal_1km_file @URI file:{dir_goal}/int/zonal_stats_1km.csv
-# @out zonal_ws_file @URI file:{dir_goal}/int/zonal_stats_ws.csv
+# @out zonal_3nm_file @URI file:{dir_goal}/int/zonal_stats_3nm.csv @DESC summary of zonal stats datafrmes (3nm offshore)
+# @out zonal_1km_file @URI file:{dir_goal}/int/zonal_stats_1km.csv @DESC summary of zonal stats dataframes (1km inland)
+# @out zonal_ws_file @URI file:{dir_goal}/int/zonal_stats_ws.csv @DESC summary of zonal stats dataframes (inland, full watershed)
 
 
 # @BEGIN set_up_configuration_and_start_provenance_tracking
@@ -57,16 +57,16 @@ rast_wdpa_pep <- raster(file.path(dir_goal, 'spatial/hs_wdpa_rast_500m.tif'))
 values(rast_wdpa_pep)[!is.na(values(rast_pep)) & is.na(values(rast_wdpa_pep))] <- 1
 
 
-# @BEGIN outputs_stats_for_protected_cells
+# @BEGIN outputs_zonal_stats_dataframes_for_protected_cells
 # @param dir_goal
 # @in rast_3nm
 # @in rast_1km
 # @in rast_ws
 # @in rast_pep
 # @in rast_wdpa_pep
-# @out zonal_3nm_file @URI file:{dir_goal}/int/zonal_stats_3nm.csv
-# @out zonal_1km_file @URI file:{dir_goal}/int/zonal_stats_1km.csv
-# @out zonal_ws_file @URI file:{dir_goal}/int/zonal_stats_ws.csv
+# @out zonal_3nm_file @URI file:{dir_goal}/int/zonal_stats_3nm.csv @DESC summary of zonal stats datafrmes (3nm offshore)
+# @out zonal_1km_file @URI file:{dir_goal}/int/zonal_stats_1km.csv @DESC summary of zonal stats dataframes (1km inland)
+# @out zonal_ws_file @URI file:{dir_goal}/int/zonal_stats_ws.csv @DESC summary of zonal stats dataframes (inland, full watershed)
 
 zonal_3nm_file <- file.path(dir_goal, 'int', 'zonal_stats_3nm.csv')
 zonal_1km_file <- file.path(dir_goal, 'int', 'zonal_stats_1km.csv')
