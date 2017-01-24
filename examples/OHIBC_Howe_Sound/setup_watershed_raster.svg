@@ -82,7 +82,7 @@
 <path fill="#ffffcc" stroke="black" d="M50.4699,-209.1C50.4699,-209.1 343.53,-209.1 343.53,-209.1 349.53,-209.1 355.53,-215.1 355.53,-221.1 355.53,-221.1 355.53,-246.7 355.53,-246.7 355.53,-252.7 349.53,-258.7 343.53,-258.7 343.53,-258.7 50.4699,-258.7 50.4699,-258.7 44.4699,-258.7 38.4699,-252.7 38.4699,-246.7 38.4699,-246.7 38.4699,-221.1 38.4699,-221.1 38.4699,-215.1 44.4699,-209.1 50.4699,-209.1"/>
 <text text-anchor="middle" x="197" y="-242.1" font-family="Helvetica,sans-Serif" font-size="14.00">rast_base</text>
 <polyline fill="none" stroke="black" points="38.4699,-233.9 355.53,-233.9 "/>
-<text text-anchor="middle" x="197" y="-217.3" font-family="Helvetica,sans-Serif" font-size="14.00">file:{dir_spatial/raster/ohibc_rgn_raster_500m.tif}</text>
+<text text-anchor="middle" x="197" y="-217.3" font-family="Helvetica,sans-Serif" font-size="14.00">file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif</text>
 </g>
 <!-- rast_base&#45;&gt;raster_to_same_extents/resolution_as_500m_base_raster -->
 <g id="edge7" class="edge"><title>rast_base&#45;&gt;raster_to_same_extents/resolution_as_500m_base_raster</title>

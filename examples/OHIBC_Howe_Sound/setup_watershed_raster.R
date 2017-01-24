@@ -6,7 +6,7 @@
 
 # @BEGIN Setup_watershed_raster
 # @in setup_configuration_file @AS setup.R
-# @in rast_base @URI file:{dir_spatial/raster/ohibc_rgn_raster_500m.tif}
+# @in rast_base @URI file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif
 # @in howe_sound_watersheds @URI file:{dir_spatial}/watershed/howe_sound_watersheds 
 # @out rast_watershe @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
 
@@ -23,7 +23,7 @@ source("setup.R")
 # @BEGIN raster_to_same_extents/resolution_as_500m_base_raster
 # @param dir_spatial
 # @param dir_goal
-# @in rast_base @URI file:{dir_spatial/raster/ohibc_rgn_raster_500m.tif}
+# @in rast_base @URI file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif
 # @in howe_sound_watersheds @URI file:{dir_spatial}/watershed/howe_sound_watersheds 
 # @out rast_watershe @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
 
