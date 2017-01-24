@@ -1,0 +1,10 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q4_Pro : List the outputs that depend on area_protected_total_file.
+
+q4_pro(UpstreamDataName, OutputDataName)
+...................................................................................................
+q4_pro(area_protected_total_file,lsp_status_trend_summary_db_file).
+q4_pro(area_protected_total_file,lsp_trend_file).
+q4_pro(area_protected_total_file,lsp_status_file).

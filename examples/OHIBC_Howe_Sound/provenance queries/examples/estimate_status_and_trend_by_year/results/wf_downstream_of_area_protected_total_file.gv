@@ -1,0 +1,48 @@
+
+digraph yw_data_view {
+rankdir=TB
+fontname=Courier; fontsize=18; labelloc=t
+label="Write_year_by_year_status_and_trend_estimates"
+subgraph cluster_workflow { label=""; color=black; penwidth=2
+subgraph cluster_workflow_inner { label=""; color=white
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+save_year_by_year_status_and_trend_estimates
+output_estimate_status_file_by_region_since_1980
+output_estimate_trend_file_by_region_since_1980
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+area_protected_total_file
+lsp_status_file
+status_df_data
+lsp_trend_file
+trend_df_data
+lsp_status_trend_summary_db_file
+node[shape=box style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica]
+}}
+subgraph cluster_inflows { label=""; color=white; penwidth=2
+subgraph cluster_inflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+area_protected_total_file_inflow [label=""]
+}}
+subgraph cluster_outflows { label=""; color=white; penwidth=2
+subgraph cluster_outflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+lsp_status_trend_summary_db_file_outflow [label=""]
+lsp_trend_file_outflow [label=""]
+lsp_status_file_outflow [label=""]
+}}
+save_year_by_year_status_and_trend_estimates -> lsp_status_trend_summary_db_file
+output_estimate_trend_file_by_region_since_1980 -> trend_df_data
+output_estimate_trend_file_by_region_since_1980 -> lsp_trend_file
+output_estimate_status_file_by_region_since_1980 -> status_df_data
+output_estimate_status_file_by_region_since_1980 -> lsp_status_file
+area_protected_total_file -> output_estimate_status_file_by_region_since_1980
+area_protected_total_file -> output_estimate_trend_file_by_region_since_1980
+status_df_data -> save_year_by_year_status_and_trend_estimates
+trend_df_data -> save_year_by_year_status_and_trend_estimates
+area_protected_total_file_inflow -> area_protected_total_file
+lsp_status_trend_summary_db_file -> lsp_status_trend_summary_db_file_outflow
+lsp_trend_file -> lsp_trend_file_outflow
+lsp_status_file -> lsp_status_file_outflow
+}
+

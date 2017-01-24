@@ -1,0 +1,8 @@
+
+inputs:
+  - prep/lsp/vHS/output/area_protected_total.csv
+  - prep/lsp/vHS/output/area_protected_total.csv
+
+outputs:
+  - prep/lsp/vHS/output/lsp_status.csv
+  - prep/lsp/vHS/output/lsp_trend.csv

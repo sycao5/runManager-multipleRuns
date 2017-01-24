@@ -1,0 +1,25 @@
+
+% FACT: resource(resource_id, resource_uri).
+resource(1, 'prep/lsp/vHS/output/area_protected_total.csv').
+resource(2, 'prep/lsp/vHS/output/lsp_status.csv').
+resource(3, 'prep/lsp/vHS/output/lsp_trend.csv').
+
+% FACT: data_resource(data_id, resource_id).
+data_resource(2, 1).
+data_resource(3, 2).
+data_resource(4, 3).
+data_resource(11, 1).
+data_resource(12, 2).
+data_resource(11, 1).
+data_resource(14, 3).
+
+% FACT: uri_variable_value(resource_id, uri_variable_id, uri_variable_value).
+uri_variable_value(1, 1, 'prep/lsp/vHS').
+uri_variable_value(2, 2, 'prep/lsp/vHS').
+uri_variable_value(3, 3, 'prep/lsp/vHS').
+uri_variable_value(1, 4, 'prep/lsp/vHS').
+uri_variable_value(2, 5, 'prep/lsp/vHS').
+uri_variable_value(1, 6, 'prep/lsp/vHS').
+uri_variable_value(3, 7, 'prep/lsp/vHS').
+
+% FACT: log_variable_value(resource_id, log_entry_id, log_variable_id, log_variable_value).
