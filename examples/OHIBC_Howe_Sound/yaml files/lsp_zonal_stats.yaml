@@ -1,0 +1,12 @@
+
+inputs:
+  - prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif
+  - prep/lsp/vHS/spatial/hs_inland_1km_raster_500m.tif
+  - prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif
+  - prep/lsp/vHS/spatial/hs_pep_rast_500m.tif
+  - prep/lsp/vHS/spatial/hs_wdpa_rast_500m.tif
+
+outputs:
+  - prep/lsp/vHS/int/zonal_stats_3nm.csv
+  - prep/lsp/vHS/int/zonal_stats_1km.csv
+  - prep/lsp/vHS/int/zonal_stats_ws.csv

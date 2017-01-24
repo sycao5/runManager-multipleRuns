@@ -1,0 +1,6 @@
+
+inputs:
+  - /Volumes/ohi/git-annex/bcprep/_raw_data/databc/TA_PEP_SVW/TA_PEP_SVW_polygon.shp
+
+outputs:
+  - prep/lsp/vHS/spatial/hs_pep_poly.shp

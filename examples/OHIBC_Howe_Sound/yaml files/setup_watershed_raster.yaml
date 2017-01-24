@@ -1,0 +1,6 @@
+
+inputs:
+  - prep/spatial/raster/ohibc_rgn_raster_500m.tif
+
+outputs:
+  - prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif

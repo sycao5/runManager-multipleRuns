@@ -1,0 +1,7 @@
+
+inputs:
+  - prep/spatial/raster/ohibc_rgn_raster_500m.tif
+
+outputs:
+  - prep/lsp/vHS/spatial/hs_wdpa_rast_500m.tif
+  - prep/lsp/vHS/spatial/hs_pep_rast_500m.tif
