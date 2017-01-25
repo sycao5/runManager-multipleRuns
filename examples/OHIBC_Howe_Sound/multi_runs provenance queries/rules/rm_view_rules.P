@@ -1,0 +1,19 @@
+
+exec_used_files(Seq,ExecutionId,User,FileId,FilePath,Sha256,Format,ArchivedFilePath,Access) :-
+    execmeta(Seq,ExecutionId,_,_,User,_,_,_,_,_,_,_,_,_,_,_,_),
+    filemeta(FileId,ExecutionId,FilePath,Sha256,_,_,_,_,Access,Format,ArchivedFilePath),
+    Access='read'.
+
+
+exec_generated_files(Seq,ExecutionId,User,FileId,FilePath,Sha256,Format,ArchivedFilePath,Access) :-
+    execmeta(Seq,ExecutionId,_,_,User,_,_,_,_,_,_,_,_,_,_,_,_),
+    filemeta(FileId,ExecutionId,FilePath,Sha256,_,_,_,_,Access,Format,ArchivedFilePath),
+    Access='write'.
+
+
+input_files_to_execution_edges(ExecutionId,FileId) :-
+    exec_used_files(_,ExecutionId,_,FileId,_,_,_,_,_).
+
+
+execution_to_output_files_edges(ExecutionId,FileId) :-
+    exec_generated_files(_,ExecutionId,_,FileId,_,_,_,_,_).

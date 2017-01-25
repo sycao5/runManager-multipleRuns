@@ -1,0 +1,49 @@
+
+:- table rm_file_immediately_downstream/2.
+rm_file_immediately_downstream(Sha256_1, Sha256_2) :-
+    exec_used_files(_, E, _, _, _, Sha256_1, _, _, _),
+    exec_generated_files(_, E, _, _, _, Sha256_2, _, _, _).
+
+:- table rm_file_downstream/2.
+rm_file_downstream(Sha256_1, Sha256_2) :-
+    Sha256_1 = Sha256_2.
+rm_file_downstream(Sha256_1, Sha256_2) :-
+    rm_file_immediately_downstream(Sha256_1, Sha256_2).
+rm_file_downstream(Sha256_1, Sha256_2):-
+    rm_file_immediately_downstream(Sha256_1, S),
+    rm_file_downstream(S, Sha256_2).
+
+:- table rm_execution_immediately_downstream/2.
+rm_execution_immediately_downstream(E1, E2) :-
+    exec_generated_files(_, E1, _, _, _, Sha256, _, _, _),
+    exec_used_files(_, E2, _, _, _, Sha256, _, _, _).
+
+:- table rm_execution_downstream/2.
+rm_execution_downstream(E1, E2) :-
+    rm_execution_immediately_downstream(E1, E2).
+rm_execution_downstream(E1, E2) :-
+    rm_execution_immediately_downstream(E1, E),
+    rm_execution_downstream(E, E2).
+
+:- table rm_file_downstream_of_execution/2.
+rm_file_downstream_of_execution(E1, Sha256) :-
+    exec_generated_files(_, E1, _, _, _, Sha256, _, _, _).
+rm_file_downstream_of_execution(E1, Sha256) :-
+    exec_generated_files(_, E2, _, _, _, Sha256, _, _, _),
+    rm_execution_downstream(E1, E2).
+
+:- table rm_execution_downstream_of_file/2.
+rm_execution_downstream_of_file(E1, Sha256) :-
+    exec_used_files(_, E1, _, _, _, Sha256, _, _, _).
+rm_execution_downstream_of_file(E2, Sha256) :-
+    exec_used_files(_, E1, _, _, _, Sha256, _, _, _),
+    rm_execution_downstream(E1, E2).
+
+
+:- table rm_file_to_execution_connection_upstream_of_file/6.
+rm_file_to_execution_connection_upstream_of_file(RM, DataSha256, FilePath, Tag, ExecutionId, Sha256_1) :-
+    rm_file_downstream_of_execution(ExecutionId, DataSha256),
+    execmeta(_,ExecutionId,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_),
+    tag(_,ExecutionId,Tag),
+    exec_used_files(Seq,ExecutionId,User,FileId,FilePath,Sha256_1,Format,ArchivedFilePath,Access),
+    filemeta(_,_,FilePath,Sha256_1,_,_,_,_,_,_,_).
