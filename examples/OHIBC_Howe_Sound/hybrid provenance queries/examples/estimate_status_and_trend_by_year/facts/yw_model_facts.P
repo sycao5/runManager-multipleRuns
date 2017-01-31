@@ -1,12 +1,14 @@
 
 % FACT: program(program_id, program_name, qualified_program_name, begin_annotation_id, end_annotation_id).
-program(1, 'Write_year_by_year_status_and_trend_estimates', 'Write_year_by_year_status_and_trend_estimates', 1, 51).
-program(2, 'set_up_configuration_and_start_provenance_tracking', 'Write_year_by_year_status_and_trend_estimates.set_up_configuration_and_start_provenance_tracking', 12, 16).
-program(3, 'create_new_stats_and_trend_file', 'Write_year_by_year_status_and_trend_estimates.create_new_stats_and_trend_file', 17, 21).
-program(4, 'define_param_year_span', 'Write_year_by_year_status_and_trend_estimates.define_param_year_span', 22, 24).
-program(5, 'output_estimate_status_file_by_region_since_1980', 'Write_year_by_year_status_and_trend_estimates.output_estimate_status_file_by_region_since_1980', 25, 34).
-program(6, 'output_estimate_trend_file_by_region_since_1980', 'Write_year_by_year_status_and_trend_estimates.output_estimate_trend_file_by_region_since_1980', 35, 44).
-program(7, 'save_year_by_year_status_and_trend_estimates', 'Write_year_by_year_status_and_trend_estimates.save_year_by_year_status_and_trend_estimates', 45, 50).
+program(1, 'Calculate_Percentage_Protected_Area_for_Howe_Sound', 'Calculate_Percentage_Protected_Area_for_Howe_Sound', 1, 57).
+program(2, 'set_up_configuration_and_start_provenance_tracking', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.set_up_configuration_and_start_provenance_tracking', 12, 16).
+program(3, 'create_new_stats_and_trend_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.create_new_stats_and_trend_file', 17, 21).
+program(4, 'define_param_year_span', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.define_param_year_span', 22, 24).
+program(5, 'output_estimate_status_file_by_region_since_1980', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_status_file_by_region_since_1980', 25, 32).
+program(6, 'write_status_to_csv_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.write_status_to_csv_file', 33, 37).
+program(7, 'output_estimate_trend_file_by_region_since_1980', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_trend_file_by_region_since_1980', 38, 45).
+program(8, 'write_trend_to_csv_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.write_trend_to_csv_file', 46, 50).
+program(9, 'save_year_by_year_status_and_trend_estimates', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.save_year_by_year_status_and_trend_estimates', 51, 56).
 
 % FACT: workflow(program_id).
 workflow(1).
@@ -20,34 +22,38 @@ has_subprogram(1, 4).
 has_subprogram(1, 5).
 has_subprogram(1, 6).
 has_subprogram(1, 7).
+has_subprogram(1, 8).
+has_subprogram(1, 9).
 
 % FACT: port(port_id, port_type, port_name, qualified_port_name, port_annotation_id, data_id).
-port(1, 'in', 'setup_configuration_file', 'Write_year_by_year_status_and_trend_estimates<-setup_configuration_file', 2, 1).
-port(2, 'in', 'area_protected_total_file', 'Write_year_by_year_status_and_trend_estimates<-area_protected_total_file', 4, 2).
-port(3, 'out', 'lsp_status_file', 'Write_year_by_year_status_and_trend_estimates->lsp_status_file', 6, 3).
-port(4, 'out', 'lsp_trend_file', 'Write_year_by_year_status_and_trend_estimates->lsp_trend_file', 8, 4).
-port(5, 'out', 'lsp_status_trend_summary_db_file', 'Write_year_by_year_status_and_trend_estimates->lsp_status_trend_summary_db_file', 10, 5).
-port(6, 'in', 'setup_configuration_file', 'Write_year_by_year_status_and_trend_estimates.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file', 13, 6).
-port(7, 'out', 'dir_goal', 'Write_year_by_year_status_and_trend_estimates.set_up_configuration_and_start_provenance_tracking->dir_goal', 15, 7).
-port(8, 'param', 'dir_goal', 'Write_year_by_year_status_and_trend_estimates.create_new_stats_and_trend_file<-dir_goal', 18, 7).
-port(9, 'out', 'status_file_handle', 'Write_year_by_year_status_and_trend_estimates.create_new_stats_and_trend_file->status_file_handle', 19, 8).
-port(10, 'out', 'trend_file_handle', 'Write_year_by_year_status_and_trend_estimates.create_new_stats_and_trend_file->trend_file_handle', 20, 9).
-port(11, 'out', 'year_span', 'Write_year_by_year_status_and_trend_estimates.define_param_year_span->year_span', 23, 10).
-port(12, 'param', 'year_span', 'Write_year_by_year_status_and_trend_estimates.output_estimate_status_file_by_region_since_1980<-year_span', 26, 10).
-port(13, 'param', 'dir_goal', 'Write_year_by_year_status_and_trend_estimates.output_estimate_status_file_by_region_since_1980<-dir_goal', 27, 7).
-port(14, 'in', 'area_protected_total_file', 'Write_year_by_year_status_and_trend_estimates.output_estimate_status_file_by_region_since_1980<-area_protected_total_file', 28, 11).
-port(15, 'in', 'status_file_handle', 'Write_year_by_year_status_and_trend_estimates.output_estimate_status_file_by_region_since_1980<-status_file_handle', 30, 8).
-port(16, 'out', 'lsp_status_file', 'Write_year_by_year_status_and_trend_estimates.output_estimate_status_file_by_region_since_1980->lsp_status_file', 31, 12).
-port(17, 'out', 'status_df_data', 'Write_year_by_year_status_and_trend_estimates.output_estimate_status_file_by_region_since_1980->status_df_data', 33, 13).
-port(18, 'param', 'dir_goal', 'Write_year_by_year_status_and_trend_estimates.output_estimate_trend_file_by_region_since_1980<-dir_goal', 36, 7).
-port(19, 'param', 'year_span', 'Write_year_by_year_status_and_trend_estimates.output_estimate_trend_file_by_region_since_1980<-year_span', 37, 10).
-port(20, 'in', 'area_protected_total_file', 'Write_year_by_year_status_and_trend_estimates.output_estimate_trend_file_by_region_since_1980<-area_protected_total_file', 38, 11).
-port(21, 'in', 'trend_file_handle', 'Write_year_by_year_status_and_trend_estimates.output_estimate_trend_file_by_region_since_1980<-trend_file_handle', 40, 9).
-port(22, 'out', 'lsp_trend_file', 'Write_year_by_year_status_and_trend_estimates.output_estimate_trend_file_by_region_since_1980->lsp_trend_file', 41, 14).
-port(23, 'out', 'trend_df_data', 'Write_year_by_year_status_and_trend_estimates.output_estimate_trend_file_by_region_since_1980->trend_df_data', 43, 15).
-port(24, 'in', 'status_df_data', 'Write_year_by_year_status_and_trend_estimates.save_year_by_year_status_and_trend_estimates<-status_df_data', 46, 13).
-port(25, 'in', 'trend_df_data', 'Write_year_by_year_status_and_trend_estimates.save_year_by_year_status_and_trend_estimates<-trend_df_data', 47, 15).
-port(26, 'out', 'lsp_status_trend_summary_db_file', 'Write_year_by_year_status_and_trend_estimates.save_year_by_year_status_and_trend_estimates->lsp_status_trend_summary_db_file', 48, 16).
+port(1, 'in', 'setup_configuration_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound<-setup_configuration_file', 2, 1).
+port(2, 'in', 'area_protected_total_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound<-area_protected_total_file', 4, 2).
+port(3, 'out', 'lsp_status_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound->lsp_status_file', 6, 3).
+port(4, 'out', 'lsp_trend_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound->lsp_trend_file', 8, 4).
+port(5, 'out', 'lsp_status_trend_summary_db_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound->lsp_status_trend_summary_db_file', 10, 5).
+port(6, 'in', 'setup_configuration_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file', 13, 6).
+port(7, 'out', 'dir_goal', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.set_up_configuration_and_start_provenance_tracking->dir_goal', 15, 7).
+port(8, 'param', 'dir_goal', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.create_new_stats_and_trend_file<-dir_goal', 18, 7).
+port(9, 'out', 'status_file_handle', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.create_new_stats_and_trend_file->status_file_handle', 19, 8).
+port(10, 'out', 'trend_file_handle', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.create_new_stats_and_trend_file->trend_file_handle', 20, 9).
+port(11, 'out', 'year_span', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.define_param_year_span->year_span', 23, 10).
+port(12, 'param', 'year_span', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_status_file_by_region_since_1980<-year_span', 26, 10).
+port(13, 'param', 'dir_goal', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_status_file_by_region_since_1980<-dir_goal', 27, 7).
+port(14, 'in', 'area_protected_total_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_status_file_by_region_since_1980<-area_protected_total_file', 28, 11).
+port(15, 'in', 'status_file_handle', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_status_file_by_region_since_1980<-status_file_handle', 30, 8).
+port(16, 'out', 'status_df_data', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_status_file_by_region_since_1980->status_df_data', 31, 12).
+port(17, 'in', 'status_df_data', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.write_status_to_csv_file<-status_df_data', 34, 12).
+port(18, 'out', 'lsp_status_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.write_status_to_csv_file->lsp_status_file', 35, 13).
+port(19, 'param', 'dir_goal', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_trend_file_by_region_since_1980<-dir_goal', 39, 7).
+port(20, 'param', 'year_span', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_trend_file_by_region_since_1980<-year_span', 40, 10).
+port(21, 'in', 'area_protected_total_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_trend_file_by_region_since_1980<-area_protected_total_file', 41, 11).
+port(22, 'in', 'trend_file_handle', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_trend_file_by_region_since_1980<-trend_file_handle', 43, 9).
+port(23, 'out', 'trend_df_data', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_trend_file_by_region_since_1980->trend_df_data', 44, 14).
+port(24, 'in', 'trend_df_data', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.write_trend_to_csv_file<-trend_df_data', 47, 14).
+port(25, 'out', 'lsp_trend_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.write_trend_to_csv_file->lsp_trend_file', 48, 15).
+port(26, 'in', 'status_df_data', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.save_year_by_year_status_and_trend_estimates<-status_df_data', 52, 12).
+port(27, 'in', 'trend_df_data', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.save_year_by_year_status_and_trend_estimates<-trend_df_data', 53, 14).
+port(28, 'out', 'lsp_status_trend_summary_db_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound.save_year_by_year_status_and_trend_estimates->lsp_status_trend_summary_db_file', 54, 16).
 
 % FACT: port_alias(port_id, alias).
 port_alias(1, 'setup_R').
@@ -59,10 +65,10 @@ port_uri_template(3, 'file:{dir_goal}/output/lsp_status.csv').
 port_uri_template(4, 'file:{dir_goal}/output/lsp_trend.csv').
 port_uri_template(5, 'dbfile://').
 port_uri_template(14, 'file:{dir_goal}/output/area_protected_total.csv').
-port_uri_template(16, 'file:{dir_goal}/output/lsp_status.csv').
-port_uri_template(20, 'file:{dir_goal}/output/area_protected_total.csv').
-port_uri_template(22, 'file:{dir_goal}/output/lsp_trend.csv').
-port_uri_template(26, 'dbfile://').
+port_uri_template(18, 'file:{dir_goal}/output/lsp_status.csv').
+port_uri_template(21, 'file:{dir_goal}/output/area_protected_total.csv').
+port_uri_template(25, 'file:{dir_goal}/output/lsp_trend.csv').
+port_uri_template(28, 'dbfile://').
 
 % FACT: has_in_port(block_id, port_id).
 has_in_port(1, 1).
@@ -73,12 +79,14 @@ has_in_port(5, 12).
 has_in_port(5, 13).
 has_in_port(5, 14).
 has_in_port(5, 15).
-has_in_port(6, 18).
-has_in_port(6, 19).
-has_in_port(6, 20).
-has_in_port(6, 21).
-has_in_port(7, 24).
-has_in_port(7, 25).
+has_in_port(6, 17).
+has_in_port(7, 19).
+has_in_port(7, 20).
+has_in_port(7, 21).
+has_in_port(7, 22).
+has_in_port(8, 24).
+has_in_port(9, 26).
+has_in_port(9, 27).
 
 % FACT: has_out_port(block_id, port_id).
 has_out_port(1, 3).
@@ -89,10 +97,10 @@ has_out_port(3, 9).
 has_out_port(3, 10).
 has_out_port(4, 11).
 has_out_port(5, 16).
-has_out_port(5, 17).
-has_out_port(6, 22).
-has_out_port(6, 23).
-has_out_port(7, 26).
+has_out_port(6, 18).
+has_out_port(7, 23).
+has_out_port(8, 25).
+has_out_port(9, 28).
 
 % FACT: data(data_id, data_name, qualified_data_name).
 data(1, 'setup_R', '[setup_R]').
@@ -100,17 +108,17 @@ data(2, 'area_protected_total_file', '[area_protected_total_file]').
 data(3, 'lsp_status_file', '[lsp_status_file]').
 data(4, 'lsp_trend_file', '[lsp_trend_file]').
 data(5, 'lsp_status_trend_summary_db_file', '[lsp_status_trend_summary_db_file]').
-data(6, 'setup_R', 'Write_year_by_year_status_and_trend_estimates[setup_R]').
-data(7, 'dir_goal', 'Write_year_by_year_status_and_trend_estimates[dir_goal]').
-data(8, 'status_file_handle', 'Write_year_by_year_status_and_trend_estimates[status_file_handle]').
-data(9, 'trend_file_handle', 'Write_year_by_year_status_and_trend_estimates[trend_file_handle]').
-data(10, 'year_span', 'Write_year_by_year_status_and_trend_estimates[year_span]').
-data(11, 'area_protected_total_file', 'Write_year_by_year_status_and_trend_estimates[area_protected_total_file]').
-data(12, 'lsp_status_file', 'Write_year_by_year_status_and_trend_estimates[lsp_status_file]').
-data(13, 'status_df_data', 'Write_year_by_year_status_and_trend_estimates[status_df_data]').
-data(14, 'lsp_trend_file', 'Write_year_by_year_status_and_trend_estimates[lsp_trend_file]').
-data(15, 'trend_df_data', 'Write_year_by_year_status_and_trend_estimates[trend_df_data]').
-data(16, 'lsp_status_trend_summary_db_file', 'Write_year_by_year_status_and_trend_estimates[lsp_status_trend_summary_db_file]').
+data(6, 'setup_R', 'Calculate_Percentage_Protected_Area_for_Howe_Sound[setup_R]').
+data(7, 'dir_goal', 'Calculate_Percentage_Protected_Area_for_Howe_Sound[dir_goal]').
+data(8, 'status_file_handle', 'Calculate_Percentage_Protected_Area_for_Howe_Sound[status_file_handle]').
+data(9, 'trend_file_handle', 'Calculate_Percentage_Protected_Area_for_Howe_Sound[trend_file_handle]').
+data(10, 'year_span', 'Calculate_Percentage_Protected_Area_for_Howe_Sound[year_span]').
+data(11, 'area_protected_total_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound[area_protected_total_file]').
+data(12, 'status_df_data', 'Calculate_Percentage_Protected_Area_for_Howe_Sound[status_df_data]').
+data(13, 'lsp_status_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound[lsp_status_file]').
+data(14, 'trend_df_data', 'Calculate_Percentage_Protected_Area_for_Howe_Sound[trend_df_data]').
+data(15, 'lsp_trend_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound[lsp_trend_file]').
+data(16, 'lsp_status_trend_summary_db_file', 'Calculate_Percentage_Protected_Area_for_Howe_Sound[lsp_status_trend_summary_db_file]').
 
 % FACT: channel(channel_id, data_id).
 channel(1, 3).
@@ -125,72 +133,78 @@ channel(9, 10).
 channel(10, 11).
 channel(11, 11).
 channel(12, 8).
-channel(13, 9).
-channel(14, 13).
-channel(15, 15).
-channel(16, 1).
-channel(17, 2).
-channel(18, 2).
-channel(19, 12).
-channel(20, 14).
-channel(21, 16).
+channel(13, 12).
+channel(14, 12).
+channel(15, 9).
+channel(16, 14).
+channel(17, 14).
+channel(18, 1).
+channel(19, 2).
+channel(20, 2).
+channel(21, 13).
+channel(22, 15).
+channel(23, 16).
 
 % FACT: port_connects_to_channel(port_id, channel_id).
-port_connects_to_channel(16, 1).
-port_connects_to_channel(22, 2).
-port_connects_to_channel(26, 3).
+port_connects_to_channel(18, 1).
+port_connects_to_channel(25, 2).
+port_connects_to_channel(28, 3).
 port_connects_to_channel(6, 4).
 port_connects_to_channel(7, 5).
 port_connects_to_channel(8, 5).
 port_connects_to_channel(7, 6).
 port_connects_to_channel(13, 6).
 port_connects_to_channel(7, 7).
-port_connects_to_channel(18, 7).
+port_connects_to_channel(19, 7).
 port_connects_to_channel(11, 8).
 port_connects_to_channel(12, 8).
 port_connects_to_channel(11, 9).
-port_connects_to_channel(19, 9).
+port_connects_to_channel(20, 9).
 port_connects_to_channel(14, 10).
-port_connects_to_channel(20, 11).
+port_connects_to_channel(21, 11).
 port_connects_to_channel(9, 12).
 port_connects_to_channel(15, 12).
-port_connects_to_channel(10, 13).
-port_connects_to_channel(21, 13).
-port_connects_to_channel(17, 14).
-port_connects_to_channel(24, 14).
-port_connects_to_channel(23, 15).
-port_connects_to_channel(25, 15).
-port_connects_to_channel(6, 16).
-port_connects_to_channel(14, 17).
-port_connects_to_channel(20, 18).
-port_connects_to_channel(16, 19).
-port_connects_to_channel(22, 20).
-port_connects_to_channel(26, 21).
+port_connects_to_channel(16, 13).
+port_connects_to_channel(17, 13).
+port_connects_to_channel(16, 14).
+port_connects_to_channel(26, 14).
+port_connects_to_channel(10, 15).
+port_connects_to_channel(22, 15).
+port_connects_to_channel(23, 16).
+port_connects_to_channel(24, 16).
+port_connects_to_channel(23, 17).
+port_connects_to_channel(27, 17).
+port_connects_to_channel(6, 18).
+port_connects_to_channel(14, 19).
+port_connects_to_channel(21, 20).
+port_connects_to_channel(18, 21).
+port_connects_to_channel(25, 22).
+port_connects_to_channel(28, 23).
 
 % FACT: inflow_connects_to_channel(port_id, channel_id).
 inflow_connects_to_channel(1, 4).
 inflow_connects_to_channel(2, 10).
 inflow_connects_to_channel(2, 11).
-inflow_connects_to_channel(1, 16).
-inflow_connects_to_channel(2, 17).
-inflow_connects_to_channel(2, 18).
+inflow_connects_to_channel(1, 18).
+inflow_connects_to_channel(2, 19).
+inflow_connects_to_channel(2, 20).
 
 % FACT: outflow_connects_to_channel(port_id, channel_id).
 outflow_connects_to_channel(3, 1).
 outflow_connects_to_channel(4, 2).
 outflow_connects_to_channel(5, 3).
-outflow_connects_to_channel(3, 19).
-outflow_connects_to_channel(4, 20).
-outflow_connects_to_channel(5, 21).
+outflow_connects_to_channel(3, 21).
+outflow_connects_to_channel(4, 22).
+outflow_connects_to_channel(5, 23).
 
 % FACT: uri_variable(uri_variable_id, variable_name, port_id).
 uri_variable(1, 'dir_goal', 2).
 uri_variable(2, 'dir_goal', 3).
 uri_variable(3, 'dir_goal', 4).
 uri_variable(4, 'dir_goal', 14).
-uri_variable(5, 'dir_goal', 16).
-uri_variable(6, 'dir_goal', 20).
-uri_variable(7, 'dir_goal', 22).
+uri_variable(5, 'dir_goal', 18).
+uri_variable(6, 'dir_goal', 21).
+uri_variable(7, 'dir_goal', 25).
 
 % FACT: log_template(log_template_id, port_id, entry_template, log_annotation_id).
 

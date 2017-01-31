@@ -5,7 +5,7 @@ rankdir=TB
 
 /* Title for graph */
 fontname=Helvetica; fontsize=18; labelloc=t
-label="Write_year_by_year_status_&_trend_estimates"
+label=Calculate_Percentage_Protected_Area_for_Howe_Sound
 
 /* Start of double cluster for drawing box around nodes in workflow */
 subgraph cluster_workflow_box_outer { label=""; color=black; penwidth=2
@@ -16,11 +16,13 @@ node[shape=box style=filled fillcolor="#CCFFCC" peripheries=1 fontname=Helvetica
 
 /* Nodes representing atomic programs in workflow */
 set_up_configuration_and_start_provenance_tracking
-"create_new_stats_&_trend_file"
+create_new_stats_and_trend_file
 define_param_year_span
 output_estimate_status_file_by_region_since_1980
+write_status_to_csv_file
 output_estimate_trend_file_by_region_since_1980
-"save_year_by_year_status_&_trend_estimates"
+write_trend_to_csv_file
+save_year_by_year_status_and_trend_estimates
 
 /* Style for nodes representing non-parameter data channels in workflow */
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
@@ -29,11 +31,11 @@ node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname
 lsp_status_file [shape=record rankdir=LR label="{<f0> lsp_status_file |<f1> file\:\{dir_goal\}/output/lsp_status.csv}"];
 lsp_trend_file [shape=record rankdir=LR label="{<f0> lsp_trend_file |<f1> file\:\{dir_goal\}/output/lsp_trend.csv}"];
 lsp_status_trend_summary_db_file [shape=record rankdir=LR label="{<f0> lsp_status_trend_summary_db_file |<f1> dbfile\://}"];
-"setup.R"
+setup_R
 area_protected_total_file [shape=record rankdir=LR label="{<f0> area_protected_total_file |<f1> file\:\{dir_goal\}/output/area_protected_total.csv}"];
 status_file_handle
-trend_file_handle
 status_df_data
+trend_file_handle
 trend_df_data
 
 /* Style for nodes representing parameter channels in workflow */
@@ -45,26 +47,28 @@ year_span
 
 /* Edges representing connections between programs and channels */
 set_up_configuration_and_start_provenance_tracking -> dir_goal
-"setup.R" -> set_up_configuration_and_start_provenance_tracking
-"create_new_stats_&_trend_file" -> status_file_handle
-"create_new_stats_&_trend_file" -> trend_file_handle
-dir_goal -> "create_new_stats_&_trend_file"
+setup_R -> set_up_configuration_and_start_provenance_tracking
+create_new_stats_and_trend_file -> status_file_handle
+create_new_stats_and_trend_file -> trend_file_handle
+dir_goal -> create_new_stats_and_trend_file
 define_param_year_span -> year_span
-output_estimate_status_file_by_region_since_1980 -> lsp_status_file
 output_estimate_status_file_by_region_since_1980 -> status_df_data
 year_span -> output_estimate_status_file_by_region_since_1980
 dir_goal -> output_estimate_status_file_by_region_since_1980
 area_protected_total_file -> output_estimate_status_file_by_region_since_1980
 status_file_handle -> output_estimate_status_file_by_region_since_1980
-output_estimate_trend_file_by_region_since_1980 -> lsp_trend_file
+write_status_to_csv_file -> lsp_status_file
+status_df_data -> write_status_to_csv_file
 output_estimate_trend_file_by_region_since_1980 -> trend_df_data
 dir_goal -> output_estimate_trend_file_by_region_since_1980
 year_span -> output_estimate_trend_file_by_region_since_1980
 area_protected_total_file -> output_estimate_trend_file_by_region_since_1980
 trend_file_handle -> output_estimate_trend_file_by_region_since_1980
-"save_year_by_year_status_&_trend_estimates" -> lsp_status_trend_summary_db_file
-status_df_data -> "save_year_by_year_status_&_trend_estimates"
-trend_df_data -> "save_year_by_year_status_&_trend_estimates"
+write_trend_to_csv_file -> lsp_trend_file
+trend_df_data -> write_trend_to_csv_file
+save_year_by_year_status_and_trend_estimates -> lsp_status_trend_summary_db_file
+status_df_data -> save_year_by_year_status_and_trend_estimates
+trend_df_data -> save_year_by_year_status_and_trend_estimates
 
 /* End of double cluster for drawing box around nodes in workflow */
 }}
@@ -73,7 +77,7 @@ trend_df_data -> "save_year_by_year_status_&_trend_estimates"
 node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
 
 /* Nodes representing workflow input ports */
-"setup.R_input_port" [label=""]
+setup_R_input_port [label=""]
 area_protected_total_file_input_port [label=""]
 
 /* Style for nodes representing workflow output ports */
@@ -85,7 +89,7 @@ lsp_trend_file_output_port [label=""]
 lsp_status_trend_summary_db_file_output_port [label=""]
 
 /* Edges from input ports to channels */
-"setup.R_input_port" -> "setup.R"
+setup_R_input_port -> setup_R
 area_protected_total_file_input_port -> area_protected_total_file
 
 /* Edges from channels to output ports */

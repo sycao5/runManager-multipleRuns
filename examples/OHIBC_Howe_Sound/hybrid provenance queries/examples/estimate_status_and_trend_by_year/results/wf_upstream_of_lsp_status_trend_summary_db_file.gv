@@ -2,7 +2,7 @@
 digraph yw_data_view {
 rankdir=TB
 fontname=Courier; fontsize=18; labelloc=t
-label="Write_year_by_year_status_and_trend_estimates"
+label="Calculate_Percentage_Protected_Area_for_Howe_Sound"
 subgraph cluster_workflow { label=""; color=black; penwidth=2
 subgraph cluster_workflow_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]

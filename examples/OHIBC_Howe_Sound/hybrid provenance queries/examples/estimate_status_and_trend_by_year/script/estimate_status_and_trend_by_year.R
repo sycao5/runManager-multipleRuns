@@ -5,7 +5,7 @@
 # University of California, Santa Barbara.
 # Available at: https://github.com/OHI-Science/ohiprep/releases/edit/v2016.1
 
-# @BEGIN Write_year_by_year_status_and_trend_estimates
+# @BEGIN Calculate_Percentage_Protected_Area_for_Howe_Sound
 # @in setup_configuration_file @AS setup_R
 # @in area_protected_total_file @URI file:{dir_goal}/output/area_protected_total.csv
 # @out lsp_status_file @URI file:{dir_goal}/output/lsp_status.csv
@@ -42,15 +42,18 @@ year_span <- 20
 # @param dir_goal
 # @in area_protected_total_file @URI file:{dir_goal}/output/area_protected_total.csv
 # @in status_file_handle
-# @out lsp_status_file @URI file:{dir_goal}/output/lsp_status.csv
 # @out status_df_data
 
 status_df <- read.csv(file.path(dir_goal, 'output', 'area_protected_total.csv')) %>%
   select(rgn_id, year, lsp_status) %>%
   filter(year > max(year) - year_span)
+# @END output_estimate_status_file_by_region_since_1980  
+  
+# @BEGIN write_status_to_csv_file
+# @in status_df_data
+# @out lsp_status_file @URI file:{dir_goal}/output/lsp_status.csv
 write.csv(status_df, status_file)
-
-# @END output_estimate_status_file_by_region_since_1980
+# @END write_status_to_csv_file  
 
 
 # @BEGIN output_estimate_trend_file_by_region_since_1980
@@ -58,7 +61,6 @@ write.csv(status_df, status_file)
 # @param year_span
 # @in area_protected_total_file @URI file:{dir_goal}/output/area_protected_total.csv
 # @in trend_file_handle
-# @out lsp_trend_file @URI file:{dir_goal}/output/lsp_trend.csv
 # @out trend_df_data
 
 trend_df <- read.csv(file.path(dir_goal, 'output', 'area_protected_total.csv')) %>%
@@ -73,9 +75,14 @@ trend_df <- trend_df %>%
   mutate(lsp_trend = trend_lm/first(lsp_status) * 5) %>%
   select(-lsp_status, -trend_lm)
 
-write.csv(trend_df, trend_file)
-
 # @END output_estimate_trend_file_by_region_since_1980
+
+# @BEGIN write_trend_to_csv_file
+# @in trend_df_data
+# @out lsp_trend_file @URI file:{dir_goal}/output/lsp_trend.csv
+write.csv(trend_df, trend_file)
+# @END write_trend_to_csv_file
+
 
 
 
@@ -97,4 +104,4 @@ head(lsp_status_trend_summary)
 
 #DT::datatable(lsp_status_trend_summary, caption = 'LSP status and trend estimates')
 
-# @END Write_year_by_year_status_and_trend_estimates
+# @END Calculate_Percentage_Protected_Area_for_Howe_Sound

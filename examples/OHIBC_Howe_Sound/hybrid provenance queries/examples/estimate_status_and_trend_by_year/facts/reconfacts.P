@@ -9,9 +9,9 @@ data_resource(2, 1).
 data_resource(3, 2).
 data_resource(4, 3).
 data_resource(11, 1).
-data_resource(12, 2).
+data_resource(13, 2).
 data_resource(11, 1).
-data_resource(14, 3).
+data_resource(15, 3).
 
 % FACT: uri_variable_value(resource_id, uri_variable_id, uri_variable_value).
 uri_variable_value(1, 1, 'prep/lsp/vHS').

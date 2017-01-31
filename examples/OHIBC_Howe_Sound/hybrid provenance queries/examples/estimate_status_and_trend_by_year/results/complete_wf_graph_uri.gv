@@ -1,7 +1,7 @@
 digraph Workflow {
 rankdir=TB
 fontname=Courier; fontsize=18; labelloc=t
-label=Write_year_by_year_status_and_trend_estimates
+label=Calculate_Percentage_Protected_Area_for_Howe_Sound
 subgraph cluster_workflow_box_outer { label=""; color=black; penwidth=2
 subgraph cluster_workflow_box_inner { label=""; color=white
 node[shape=box style=filled fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
@@ -9,7 +9,9 @@ set_up_configuration_and_start_provenance_tracking
 create_new_stats_and_trend_file
 define_param_year_span
 output_estimate_status_file_by_region_since_1980
+write_status_to_csv_file
 output_estimate_trend_file_by_region_since_1980
+write_trend_to_csv_file
 save_year_by_year_status_and_trend_estimates
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
 lsp_status_file [shape=record rankdir=LR label="{<f0> lsp_status_file |<f1> file\:\{dir_goal\}/output/lsp_status.csv}"];
@@ -18,8 +20,8 @@ lsp_status_trend_summary_db_file [shape=record rankdir=LR label="{<f0> lsp_statu
 setup_R
 area_protected_total_file [shape=record rankdir=LR label="{<f0> area_protected_total_file |<f1> file\:\{dir_goal\}/output/area_protected_total.csv}"];
 status_file_handle
-trend_file_handle
 status_df_data
+trend_file_handle
 trend_df_data
 node[shape=box style="rounded,filled" fillcolor="#FCFCFC" peripheries=1 fontname=Helvetica]
 dir_goal
@@ -30,18 +32,20 @@ create_new_stats_and_trend_file -> status_file_handle
 create_new_stats_and_trend_file -> trend_file_handle
 dir_goal -> create_new_stats_and_trend_file
 define_param_year_span -> year_span
-output_estimate_status_file_by_region_since_1980 -> lsp_status_file
 output_estimate_status_file_by_region_since_1980 -> status_df_data
 year_span -> output_estimate_status_file_by_region_since_1980
 dir_goal -> output_estimate_status_file_by_region_since_1980
 area_protected_total_file -> output_estimate_status_file_by_region_since_1980
 status_file_handle -> output_estimate_status_file_by_region_since_1980
-output_estimate_trend_file_by_region_since_1980 -> lsp_trend_file
+write_status_to_csv_file -> lsp_status_file
+status_df_data -> write_status_to_csv_file
 output_estimate_trend_file_by_region_since_1980 -> trend_df_data
 dir_goal -> output_estimate_trend_file_by_region_since_1980
 year_span -> output_estimate_trend_file_by_region_since_1980
 area_protected_total_file -> output_estimate_trend_file_by_region_since_1980
 trend_file_handle -> output_estimate_trend_file_by_region_since_1980
+write_trend_to_csv_file -> lsp_trend_file
+trend_df_data -> write_trend_to_csv_file
 save_year_by_year_status_and_trend_estimates -> lsp_status_trend_summary_db_file
 status_df_data -> save_year_by_year_status_and_trend_estimates
 trend_df_data -> save_year_by_year_status_and_trend_estimates
