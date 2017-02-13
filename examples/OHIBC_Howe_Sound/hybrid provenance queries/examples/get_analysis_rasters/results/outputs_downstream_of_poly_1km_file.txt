@@ -1,0 +1,9 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q4_Pro : List the outputs that depend on poly_1km_file.
+
+q4_pro(UpstreamDataName, OutputDataName)
+...................................................................................................
+q4_pro(poly_1km_file,rast_1km_file).
+q4_pro(poly_1km_file,rast_3nm_file).

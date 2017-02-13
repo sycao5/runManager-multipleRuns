@@ -1,0 +1,59 @@
+
+% FACT: extract_source(source_id, source_path).
+extract_source(1, './script/get_analysis_rasters.R').
+
+% FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
+annotation(1, 1, 17, 'begin', '@BEGIN', 'Set_up_coastal_buffer_rasters').
+annotation(2, 1, 18, 'in', '@in', 'setup_configuration_file').
+annotation(3, 1, 18, 'as', '@AS', 'setup_R').
+annotation(4, 1, 19, 'in', '@in', 'poly_3nm_file').
+annotation(5, 1, 19, 'uri', '@URI', 'file:{dir_spatial}/howe_sound_offshore_3nm.shp').
+annotation(6, 1, 20, 'in', '@in', 'poly_1km_file').
+annotation(7, 1, 20, 'uri', '@URI', 'file:{dir_spatial}/howe_sound_inland_1km.shp').
+annotation(8, 1, 21, 'in', '@in', 'rast_base').
+annotation(9, 1, 21, 'uri', '@URI', 'file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif').
+annotation(10, 1, 22, 'out', '@out', 'rast_3nm_file').
+annotation(11, 1, 22, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m.tif').
+annotation(12, 1, 23, 'out', '@out', 'rast_1km_file').
+annotation(13, 1, 23, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_inland_1km_raster_500m.tif').
+annotation(14, 1, 26, 'begin', '@BEGIN', 'set_up_configuration_and_start_provenance_tracking').
+annotation(15, 1, 27, 'in', '@in', 'setup_configuration_file').
+annotation(16, 1, 27, 'as', '@AS', 'setup_R').
+annotation(17, 1, 28, 'out', '@out', 'dir_spatial').
+annotation(18, 1, 29, 'out', '@out', 'dir_goal').
+annotation(19, 1, 32, 'end', '@END', 'set_up_configuration_and_start_provenance_tracking').
+annotation(20, 1, 36, 'begin', '@BEGIN', 'create_presence_of_buffer_rasters').
+annotation(21, 1, 37, 'param', '@param', 'dir_goal').
+annotation(22, 1, 38, 'in', '@in', 'rast_base').
+annotation(23, 1, 38, 'uri', '@URI', 'file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif').
+annotation(24, 1, 39, 'out', '@out', 'rast_3nm_file_handle').
+annotation(25, 1, 40, 'out', '@out', 'rast_1km_file_handle').
+annotation(26, 1, 47, 'end', '@END', 'check_presence_of_buffer_rasters').
+annotation(27, 1, 50, 'begin', '@BEGIN', 'read_in_buffer_shapfiles_if_rasters_not').
+annotation(28, 1, 51, 'param', '@param', 'dir_spatial').
+annotation(29, 1, 52, 'in', '@in', 'poly_3nm_file').
+annotation(30, 1, 52, 'uri', '@URI', 'file:{dir_spatial}/howe_sound_offshore_3nm.shp').
+annotation(31, 1, 53, 'in', '@in', 'poly_1km_file').
+annotation(32, 1, 53, 'uri', '@URI', 'file:{dir_spatial}/howe_sound_inland_1km.shp').
+annotation(33, 1, 54, 'in', '@in', 'rast_3nm_file_handle').
+annotation(34, 1, 55, 'in', '@in', 'rast_1km_file_handle').
+annotation(35, 1, 56, 'out', '@out', 'rast_3nm_file').
+annotation(36, 1, 56, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m.tif').
+annotation(37, 1, 57, 'out', '@out', 'rast_1km_file').
+annotation(38, 1, 57, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_inland_1km_raster_500m.tif').
+annotation(39, 1, 80, 'end', '@END', 'read_in_buffer_shapfiles_if_rasters_not').
+annotation(40, 1, 82, 'end', '@END', 'Set_up_coastal_buffer_rasters').
+
+% FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
+annotation_qualifies(3, 2).
+annotation_qualifies(5, 4).
+annotation_qualifies(7, 6).
+annotation_qualifies(9, 8).
+annotation_qualifies(11, 10).
+annotation_qualifies(13, 12).
+annotation_qualifies(16, 15).
+annotation_qualifies(23, 22).
+annotation_qualifies(30, 29).
+annotation_qualifies(32, 31).
+annotation_qualifies(36, 35).
+annotation_qualifies(38, 37).

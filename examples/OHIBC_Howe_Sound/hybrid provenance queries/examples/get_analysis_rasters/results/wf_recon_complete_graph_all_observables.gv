@@ -1,0 +1,63 @@
+
+digraph yw_data_view {
+rankdir=TB
+fontname=Courier; fontsize=18; labelloc=t
+label="Set_up_coastal_buffer_rasters"
+subgraph cluster_workflow { label=""; color=black; penwidth=2
+subgraph cluster_workflow_inner { label=""; color=white
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+set_up_configuration_and_start_provenance_tracking
+create_presence_of_buffer_rasters
+read_in_buffer_shapfiles_if_rasters_not
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname="Courier-Bold" fontsize=9]
+setup_R[shape=record rankdir=LR label="{<f0> setup_R |<f1>}"]
+rast_base[shape=record rankdir=LR label="{<f0> rast_base |<f1>prep/spatial/raster/ohibc_rgn_raster_500m.tif\l}"]
+poly_3nm_file[shape=record rankdir=LR label="{<f0> poly_3nm_file |<f1>}"]
+poly_1km_file[shape=record rankdir=LR label="{<f0> poly_1km_file |<f1>}"]
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+dir_spatial
+dir_goal
+rast_3nm_file_handle
+rast_1km_file_handle
+node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname="Courier-Bold" fontsize=9]
+rast_3nm_file[shape=record rankdir=LR label="{<f0> rast_3nm_file |<f1>prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif\l}"]
+rast_1km_file[shape=record rankdir=LR label="{<f0> rast_1km_file |<f1>prep/lsp/vHS/spatial/hs_inland_1km_raster_500m.tif\l}"]
+node[shape=box style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica]
+}}
+subgraph cluster_inflows { label=""; color=white; penwidth=2
+subgraph cluster_inflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+setup_R_inflow [label=""]
+rast_base_inflow [label=""]
+poly_3nm_file_inflow [label=""]
+poly_1km_file_inflow [label=""]
+}}
+subgraph cluster_outflows { label=""; color=white; penwidth=2
+subgraph cluster_outflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+rast_1km_file_outflow [label=""]
+rast_3nm_file_outflow [label=""]
+}}
+setup_R -> set_up_configuration_and_start_provenance_tracking
+dir_spatial -> read_in_buffer_shapfiles_if_rasters_not
+dir_goal -> create_presence_of_buffer_rasters
+rast_base -> create_presence_of_buffer_rasters
+rast_3nm_file_handle -> read_in_buffer_shapfiles_if_rasters_not
+rast_1km_file_handle -> read_in_buffer_shapfiles_if_rasters_not
+poly_3nm_file -> read_in_buffer_shapfiles_if_rasters_not
+poly_1km_file -> read_in_buffer_shapfiles_if_rasters_not
+set_up_configuration_and_start_provenance_tracking -> dir_spatial
+set_up_configuration_and_start_provenance_tracking -> dir_goal
+create_presence_of_buffer_rasters -> rast_3nm_file_handle
+create_presence_of_buffer_rasters -> rast_1km_file_handle
+read_in_buffer_shapfiles_if_rasters_not -> rast_3nm_file
+read_in_buffer_shapfiles_if_rasters_not -> rast_1km_file
+setup_R_inflow -> setup_R
+rast_base_inflow -> rast_base
+poly_3nm_file_inflow -> poly_3nm_file
+poly_1km_file_inflow -> poly_1km_file
+rast_1km_file -> rast_1km_file_outflow
+rast_3nm_file -> rast_3nm_file_outflow
+}
+

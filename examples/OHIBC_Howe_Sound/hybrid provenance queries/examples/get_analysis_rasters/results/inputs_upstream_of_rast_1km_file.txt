@@ -1,0 +1,11 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q2_Pro : List the script inputs that are upstream of data product rast_1km_file.
+
+q2_pro(DataProduct, InputDataName)
+...................................................................................................
+q2_pro(rast_1km_file,poly_1km_file).
+q2_pro(rast_1km_file,poly_3nm_file).
+q2_pro(rast_1km_file,rast_base).
+q2_pro(rast_1km_file,setup_R).

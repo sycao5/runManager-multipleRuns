@@ -1,0 +1,58 @@
+digraph Workflow {
+rankdir=TB
+fontname=Courier; fontsize=18; labelloc=t
+label=Set_up_coastal_buffer_rasters
+subgraph cluster_workflow_box_outer { label=""; color=black; penwidth=2
+subgraph cluster_workflow_box_inner { label=""; color=white
+node[shape=box style=filled fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+set_up_configuration_and_start_provenance_tracking
+create_presence_of_buffer_rasters
+read_in_buffer_shapfiles_if_rasters_not
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+rast_3nm_file [shape=record rankdir=LR label="{<f0> rast_3nm_file |<f1> file\:\{dir_goal\}/spatial/hs_offshore_3nm_raster_500m.tif}"];
+rast_1km_file [shape=record rankdir=LR label="{<f0> rast_1km_file |<f1> file\:\{dir_goal\}/spatial/hs_inland_1km_raster_500m.tif}"];
+setup_R
+rast_base [shape=record rankdir=LR label="{<f0> rast_base |<f1> file\:\{dir_spatial\}/raster/ohibc_rgn_raster_500m.tif}"];
+poly_3nm_file [shape=record rankdir=LR label="{<f0> poly_3nm_file |<f1> file\:\{dir_spatial\}/howe_sound_offshore_3nm.shp}"];
+poly_1km_file [shape=record rankdir=LR label="{<f0> poly_1km_file |<f1> file\:\{dir_spatial\}/howe_sound_inland_1km.shp}"];
+rast_3nm_file_handle
+rast_1km_file_handle
+node[shape=box style="rounded,filled" fillcolor="#FCFCFC" peripheries=1 fontname=Helvetica]
+dir_goal
+dir_spatial
+set_up_configuration_and_start_provenance_tracking -> dir_spatial
+set_up_configuration_and_start_provenance_tracking -> dir_goal
+setup_R -> set_up_configuration_and_start_provenance_tracking
+create_presence_of_buffer_rasters -> rast_3nm_file_handle
+create_presence_of_buffer_rasters -> rast_1km_file_handle
+dir_goal -> create_presence_of_buffer_rasters
+rast_base -> create_presence_of_buffer_rasters
+read_in_buffer_shapfiles_if_rasters_not -> rast_3nm_file
+read_in_buffer_shapfiles_if_rasters_not -> rast_1km_file
+dir_spatial -> read_in_buffer_shapfiles_if_rasters_not
+poly_3nm_file -> read_in_buffer_shapfiles_if_rasters_not
+poly_1km_file -> read_in_buffer_shapfiles_if_rasters_not
+rast_3nm_file_handle -> read_in_buffer_shapfiles_if_rasters_not
+rast_1km_file_handle -> read_in_buffer_shapfiles_if_rasters_not
+}}
+subgraph cluster_input_ports_group_outer { label=""; color=white
+subgraph cluster_input_ports_group_inner { label=""; color=white
+node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
+setup_R_input_port [label=""]
+poly_3nm_file_input_port [label=""]
+poly_1km_file_input_port [label=""]
+rast_base_input_port [label=""]
+}}
+subgraph cluster_output_ports_group_outer { label=""; color=white
+subgraph cluster_output_ports_group_inner { label=""; color=white
+node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
+rast_3nm_file_output_port [label=""]
+rast_1km_file_output_port [label=""]
+}}
+setup_R_input_port -> setup_R
+poly_3nm_file_input_port -> poly_3nm_file
+poly_1km_file_input_port -> poly_1km_file
+rast_base_input_port -> rast_base
+rast_3nm_file -> rast_3nm_file_output_port
+rast_1km_file -> rast_1km_file_output_port
+}

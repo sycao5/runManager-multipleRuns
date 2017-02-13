@@ -15,7 +15,7 @@
 
 
 # @BEGIN  Set_up_coastal_buffer_rasters
-# @in setup_configuration_file @AS setup.R
+# @in setup_configuration_file @AS setup_R
 # @in poly_3nm_file @URI file:{dir_spatial}/howe_sound_offshore_3nm.shp
 # @in poly_1km_file @URI file:{dir_spatial}/howe_sound_inland_1km.shp
 # @in rast_base @URI file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif
@@ -24,11 +24,11 @@
 
 
 # @BEGIN set_up_configuration_and_start_provenance_tracking
-# @in setup_configuration_file @AS setup.R
+# @in setup_configuration_file @AS setup_R
 # @out dir_spatial
 # @out dir_goal
 
-source("setup.R")
+source("setup_R")
 # @END set_up_configuration_and_start_provenance_tracking
 
 

@@ -1,0 +1,168 @@
+
+% FACT: program(program_id, program_name, qualified_program_name, begin_annotation_id, end_annotation_id).
+program(1, 'Set_up_coastal_buffer_rasters', 'Set_up_coastal_buffer_rasters', 1, 40).
+program(2, 'set_up_configuration_and_start_provenance_tracking', 'Set_up_coastal_buffer_rasters.set_up_configuration_and_start_provenance_tracking', 14, 19).
+program(3, 'create_presence_of_buffer_rasters', 'Set_up_coastal_buffer_rasters.create_presence_of_buffer_rasters', 20, 26).
+program(4, 'read_in_buffer_shapfiles_if_rasters_not', 'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not', 27, 39).
+
+% FACT: workflow(program_id).
+workflow(1).
+
+% FACT: function(program_id).
+
+% FACT: has_subprogram(program_id, subprogram_id).
+has_subprogram(1, 2).
+has_subprogram(1, 3).
+has_subprogram(1, 4).
+
+% FACT: port(port_id, port_type, port_name, qualified_port_name, port_annotation_id, data_id).
+port(1, 'in', 'setup_configuration_file', 'Set_up_coastal_buffer_rasters<-setup_configuration_file', 2, 1).
+port(2, 'in', 'poly_3nm_file', 'Set_up_coastal_buffer_rasters<-poly_3nm_file', 4, 2).
+port(3, 'in', 'poly_1km_file', 'Set_up_coastal_buffer_rasters<-poly_1km_file', 6, 3).
+port(4, 'in', 'rast_base', 'Set_up_coastal_buffer_rasters<-rast_base', 8, 4).
+port(5, 'out', 'rast_3nm_file', 'Set_up_coastal_buffer_rasters->rast_3nm_file', 10, 5).
+port(6, 'out', 'rast_1km_file', 'Set_up_coastal_buffer_rasters->rast_1km_file', 12, 6).
+port(7, 'in', 'setup_configuration_file', 'Set_up_coastal_buffer_rasters.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file', 15, 7).
+port(8, 'out', 'dir_spatial', 'Set_up_coastal_buffer_rasters.set_up_configuration_and_start_provenance_tracking->dir_spatial', 17, 8).
+port(9, 'out', 'dir_goal', 'Set_up_coastal_buffer_rasters.set_up_configuration_and_start_provenance_tracking->dir_goal', 18, 9).
+port(10, 'param', 'dir_goal', 'Set_up_coastal_buffer_rasters.create_presence_of_buffer_rasters<-dir_goal', 21, 9).
+port(11, 'in', 'rast_base', 'Set_up_coastal_buffer_rasters.create_presence_of_buffer_rasters<-rast_base', 22, 10).
+port(12, 'out', 'rast_3nm_file_handle', 'Set_up_coastal_buffer_rasters.create_presence_of_buffer_rasters->rast_3nm_file_handle', 24, 11).
+port(13, 'out', 'rast_1km_file_handle', 'Set_up_coastal_buffer_rasters.create_presence_of_buffer_rasters->rast_1km_file_handle', 25, 12).
+port(14, 'param', 'dir_spatial', 'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not<-dir_spatial', 28, 8).
+port(15, 'in', 'poly_3nm_file', 'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not<-poly_3nm_file', 29, 13).
+port(16, 'in', 'poly_1km_file', 'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not<-poly_1km_file', 31, 14).
+port(17, 'in', 'rast_3nm_file_handle', 'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not<-rast_3nm_file_handle', 33, 11).
+port(18, 'in', 'rast_1km_file_handle', 'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not<-rast_1km_file_handle', 34, 12).
+port(19, 'out', 'rast_3nm_file', 'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not->rast_3nm_file', 35, 15).
+port(20, 'out', 'rast_1km_file', 'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not->rast_1km_file', 37, 16).
+
+% FACT: port_alias(port_id, alias).
+port_alias(1, 'setup_R').
+port_alias(7, 'setup_R').
+
+% FACT: port_uri_template(port_id, uri).
+port_uri_template(2, 'file:{dir_spatial}/howe_sound_offshore_3nm.shp').
+port_uri_template(3, 'file:{dir_spatial}/howe_sound_inland_1km.shp').
+port_uri_template(4, 'file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif').
+port_uri_template(5, 'file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m.tif').
+port_uri_template(6, 'file:{dir_goal}/spatial/hs_inland_1km_raster_500m.tif').
+port_uri_template(11, 'file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif').
+port_uri_template(15, 'file:{dir_spatial}/howe_sound_offshore_3nm.shp').
+port_uri_template(16, 'file:{dir_spatial}/howe_sound_inland_1km.shp').
+port_uri_template(19, 'file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m.tif').
+port_uri_template(20, 'file:{dir_goal}/spatial/hs_inland_1km_raster_500m.tif').
+
+% FACT: has_in_port(block_id, port_id).
+has_in_port(1, 1).
+has_in_port(1, 2).
+has_in_port(1, 3).
+has_in_port(1, 4).
+has_in_port(2, 7).
+has_in_port(3, 10).
+has_in_port(3, 11).
+has_in_port(4, 14).
+has_in_port(4, 15).
+has_in_port(4, 16).
+has_in_port(4, 17).
+has_in_port(4, 18).
+
+% FACT: has_out_port(block_id, port_id).
+has_out_port(1, 5).
+has_out_port(1, 6).
+has_out_port(2, 8).
+has_out_port(2, 9).
+has_out_port(3, 12).
+has_out_port(3, 13).
+has_out_port(4, 19).
+has_out_port(4, 20).
+
+% FACT: data(data_id, data_name, qualified_data_name).
+data(1, 'setup_R', '[setup_R]').
+data(2, 'poly_3nm_file', '[poly_3nm_file]').
+data(3, 'poly_1km_file', '[poly_1km_file]').
+data(4, 'rast_base', '[rast_base]').
+data(5, 'rast_3nm_file', '[rast_3nm_file]').
+data(6, 'rast_1km_file', '[rast_1km_file]').
+data(7, 'setup_R', 'Set_up_coastal_buffer_rasters[setup_R]').
+data(8, 'dir_spatial', 'Set_up_coastal_buffer_rasters[dir_spatial]').
+data(9, 'dir_goal', 'Set_up_coastal_buffer_rasters[dir_goal]').
+data(10, 'rast_base', 'Set_up_coastal_buffer_rasters[rast_base]').
+data(11, 'rast_3nm_file_handle', 'Set_up_coastal_buffer_rasters[rast_3nm_file_handle]').
+data(12, 'rast_1km_file_handle', 'Set_up_coastal_buffer_rasters[rast_1km_file_handle]').
+data(13, 'poly_3nm_file', 'Set_up_coastal_buffer_rasters[poly_3nm_file]').
+data(14, 'poly_1km_file', 'Set_up_coastal_buffer_rasters[poly_1km_file]').
+data(15, 'rast_3nm_file', 'Set_up_coastal_buffer_rasters[rast_3nm_file]').
+data(16, 'rast_1km_file', 'Set_up_coastal_buffer_rasters[rast_1km_file]').
+
+% FACT: channel(channel_id, data_id).
+channel(1, 5).
+channel(2, 6).
+channel(3, 7).
+channel(4, 9).
+channel(5, 10).
+channel(6, 8).
+channel(7, 13).
+channel(8, 14).
+channel(9, 11).
+channel(10, 12).
+channel(11, 1).
+channel(12, 2).
+channel(13, 3).
+channel(14, 4).
+channel(15, 15).
+channel(16, 16).
+
+% FACT: port_connects_to_channel(port_id, channel_id).
+port_connects_to_channel(19, 1).
+port_connects_to_channel(20, 2).
+port_connects_to_channel(7, 3).
+port_connects_to_channel(9, 4).
+port_connects_to_channel(10, 4).
+port_connects_to_channel(11, 5).
+port_connects_to_channel(8, 6).
+port_connects_to_channel(14, 6).
+port_connects_to_channel(15, 7).
+port_connects_to_channel(16, 8).
+port_connects_to_channel(12, 9).
+port_connects_to_channel(17, 9).
+port_connects_to_channel(13, 10).
+port_connects_to_channel(18, 10).
+port_connects_to_channel(7, 11).
+port_connects_to_channel(15, 12).
+port_connects_to_channel(16, 13).
+port_connects_to_channel(11, 14).
+port_connects_to_channel(19, 15).
+port_connects_to_channel(20, 16).
+
+% FACT: inflow_connects_to_channel(port_id, channel_id).
+inflow_connects_to_channel(1, 3).
+inflow_connects_to_channel(4, 5).
+inflow_connects_to_channel(2, 7).
+inflow_connects_to_channel(3, 8).
+inflow_connects_to_channel(1, 11).
+inflow_connects_to_channel(2, 12).
+inflow_connects_to_channel(3, 13).
+inflow_connects_to_channel(4, 14).
+
+% FACT: outflow_connects_to_channel(port_id, channel_id).
+outflow_connects_to_channel(5, 1).
+outflow_connects_to_channel(6, 2).
+outflow_connects_to_channel(5, 15).
+outflow_connects_to_channel(6, 16).
+
+% FACT: uri_variable(uri_variable_id, variable_name, port_id).
+uri_variable(1, 'dir_spatial', 2).
+uri_variable(2, 'dir_spatial', 3).
+uri_variable(3, 'dir_spatial', 4).
+uri_variable(4, 'dir_goal', 5).
+uri_variable(5, 'dir_goal', 6).
+uri_variable(6, 'dir_spatial', 11).
+uri_variable(7, 'dir_spatial', 15).
+uri_variable(8, 'dir_spatial', 16).
+uri_variable(9, 'dir_goal', 19).
+uri_variable(10, 'dir_goal', 20).
+
+% FACT: log_template(log_template_id, port_id, entry_template, log_annotation_id).
+
+% FACT: log_template_variable(log_variable_id, variable_name, log_template_id).

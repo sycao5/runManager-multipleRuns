@@ -1,0 +1,7 @@
+
+inputs:
+  - prep/spatial/raster/ohibc_rgn_raster_500m.tif
+
+outputs:
+  - prep/lsp/vHS/spatial/hs_inland_1km_raster_500m.tif
+  - prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif
