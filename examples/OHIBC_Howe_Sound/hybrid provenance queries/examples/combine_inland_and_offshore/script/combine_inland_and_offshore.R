@@ -6,8 +6,8 @@
 
 ## Combine scores for inland and offshore, and writing output layers
 
-# @BEGIN combine_scores_for_inland_&_offshore_&_outputs
-# @in setup_configuration_file @AS setup.R
+# @BEGIN combine_scores_for_inland_and_offshore_and_outputs
+# @in setup_configuration_file @AS setup_R
 # @in prot_3nm_stats_file @URI file:{dir_goal}/int/area_protected_3nm.csv
 # @in prot_1km_stats_file @URI file:{dir_goal}/int/area_protected_1km.csv
 # @in prot_ws_stats_file  @URI file:{dir_goal}/int/area_protected_ws.csv
@@ -15,14 +15,14 @@
 
 
 # @BEGIN set_up_configuration_and_start_provenance_tracking
-# @in setup_configuration_file @AS setup.R
+# @in setup_configuration_file @AS setup_R
 # @out dir_goal
 
-source("setup.R")
+source("setup_R")
 # @END set_up_configuration_and_start_provenance_tracking
 
 
-# @BEGIN read_in_protected_area_&_total_area_by_region
+# @BEGIN read_in_protected_area_and_total_area_by_region
 # @param dir_goal
 # @in prot_3nm_stats_file @URI file:{dir_goal}/int/area_protected_3nm.csv
 # @in prot_1km_stats_file @URI file:{dir_goal}/int/area_protected_1km.csv
@@ -35,10 +35,10 @@ prot_3nm <- read.csv(file.path(dir_goal, 'int', 'area_protected_3nm.csv'))
 prot_1km <- read.csv(file.path(dir_goal, 'int', 'area_protected_1km.csv'))
 prot_ws  <- read.csv(file.path(dir_goal, 'int', 'area_protected_ws.csv'))
 
-# @END read_in_protected_area_&_total_area_by_region
+# @END read_in_protected_area_and_total_area_by_region
 
 
-# @BEGIN combine_scores_for_inland_&_offshore_&_write_output_layers
+# @BEGIN combine_scores_for_inland_and_offshore_and_write_output_layers
 # @in prot_1km
 # @in prot_3nm
 # @in prot_ws
@@ -74,6 +74,6 @@ prot_df <- prot_1km %>%
 
 write.csv(prot_df, file.path(dir_goal, 'output', 'area_protected_total.csv'))
 
-# @END combine_scores_for_inland_&_offshore_&_write_output_layers
+# @END combine_scores_for_inland_and_offshore_and_write_output_layers
 
-# @END combine_scores_for_inland_&_offshore_&_outputs
+# @END combine_scores_for_inland_and_offshore_and_outputs

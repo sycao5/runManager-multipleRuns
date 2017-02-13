@@ -1,0 +1,8 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q4_Pro : List the outputs that depend on prot_ws_stats_file.
+
+q4_pro(UpstreamDataName, OutputDataName)
+...................................................................................................
+q4_pro(prot_ws_stats_file,area_protected_total_file).

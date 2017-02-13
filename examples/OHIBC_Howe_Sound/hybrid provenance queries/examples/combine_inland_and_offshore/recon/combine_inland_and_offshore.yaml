@@ -1,0 +1,8 @@
+
+inputs:
+  - prep/lsp/vHS/int/area_protected_3nm.csv
+  - prep/lsp/vHS/int/area_protected_1km.csv
+  - prep/lsp/vHS/int/area_protected_ws.csv
+
+outputs:
+  - prep/lsp/vHS/output/area_protected_total.csv

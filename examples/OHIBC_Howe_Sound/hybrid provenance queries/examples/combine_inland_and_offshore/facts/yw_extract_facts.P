@@ -1,0 +1,53 @@
+
+% FACT: extract_source(source_id, source_path).
+extract_source(1, './script/combine_inland_and_offshore.R').
+
+% FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
+annotation(1, 1, 9, 'begin', '@BEGIN', 'combine_scores_for_inland_and_offshore_and_outputs').
+annotation(2, 1, 10, 'in', '@in', 'setup_configuration_file').
+annotation(3, 1, 10, 'as', '@AS', 'setup_R').
+annotation(4, 1, 11, 'in', '@in', 'prot_3nm_stats_file').
+annotation(5, 1, 11, 'uri', '@URI', 'file:{dir_goal}/int/area_protected_3nm.csv').
+annotation(6, 1, 12, 'in', '@in', 'prot_1km_stats_file').
+annotation(7, 1, 12, 'uri', '@URI', 'file:{dir_goal}/int/area_protected_1km.csv').
+annotation(8, 1, 13, 'in', '@in', 'prot_ws_stats_file').
+annotation(9, 1, 13, 'uri', '@URI', 'file:{dir_goal}/int/area_protected_ws.csv').
+annotation(10, 1, 14, 'out', '@out', 'area_protected_total_file').
+annotation(11, 1, 14, 'uri', '@URI', 'file:{dir_goal}/output/area_protected_total.csv').
+annotation(12, 1, 17, 'begin', '@BEGIN', 'set_up_configuration_and_start_provenance_tracking').
+annotation(13, 1, 18, 'in', '@in', 'setup_configuration_file').
+annotation(14, 1, 18, 'as', '@AS', 'setup_R').
+annotation(15, 1, 19, 'out', '@out', 'dir_goal').
+annotation(16, 1, 22, 'end', '@END', 'set_up_configuration_and_start_provenance_tracking').
+annotation(17, 1, 25, 'begin', '@BEGIN', 'read_in_protected_area_and_total_area_by_region').
+annotation(18, 1, 26, 'param', '@param', 'dir_goal').
+annotation(19, 1, 27, 'in', '@in', 'prot_3nm_stats_file').
+annotation(20, 1, 27, 'uri', '@URI', 'file:{dir_goal}/int/area_protected_3nm.csv').
+annotation(21, 1, 28, 'in', '@in', 'prot_1km_stats_file').
+annotation(22, 1, 28, 'uri', '@URI', 'file:{dir_goal}/int/area_protected_1km.csv').
+annotation(23, 1, 29, 'in', '@in', 'prot_ws_stats_file').
+annotation(24, 1, 29, 'uri', '@URI', 'file:{dir_goal}/int/area_protected_ws.csv').
+annotation(25, 1, 30, 'out', '@out', 'prot_3nm').
+annotation(26, 1, 31, 'out', '@out', 'prot_1km').
+annotation(27, 1, 32, 'out', '@out', 'prot_ws').
+annotation(28, 1, 38, 'end', '@END', 'read_in_protected_area_and_total_area_by_region').
+annotation(29, 1, 41, 'begin', '@BEGIN', 'combine_scores_for_inland_and_offshore_and_write_output_layers').
+annotation(30, 1, 42, 'in', '@in', 'prot_1km').
+annotation(31, 1, 43, 'in', '@in', 'prot_3nm').
+annotation(32, 1, 44, 'in', '@in', 'prot_ws').
+annotation(33, 1, 45, 'out', '@out', 'area_protected_total_file').
+annotation(34, 1, 45, 'uri', '@URI', 'file:{dir_goal}/output/area_protected_total.csv').
+annotation(35, 1, 77, 'end', '@END', 'combine_scores_for_inland_and_offshore_and_write_output_layers').
+annotation(36, 1, 79, 'end', '@END', 'combine_scores_for_inland_and_offshore_and_outputs').
+
+% FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
+annotation_qualifies(3, 2).
+annotation_qualifies(5, 4).
+annotation_qualifies(7, 6).
+annotation_qualifies(9, 8).
+annotation_qualifies(11, 10).
+annotation_qualifies(14, 13).
+annotation_qualifies(20, 19).
+annotation_qualifies(22, 21).
+annotation_qualifies(24, 23).
+annotation_qualifies(34, 33).

@@ -1,0 +1,11 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q2_Pro : List the script inputs that are upstream of data product area_protected_total_file.
+
+q2_pro(DataProduct, InputDataName)
+...................................................................................................
+q2_pro(area_protected_total_file,prot_ws_stats_file).
+q2_pro(area_protected_total_file,prot_1km_stats_file).
+q2_pro(area_protected_total_file,prot_3nm_stats_file).
+q2_pro(area_protected_total_file,setup_R).

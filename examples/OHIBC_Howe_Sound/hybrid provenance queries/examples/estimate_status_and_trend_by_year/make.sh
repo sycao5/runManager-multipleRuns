@@ -52,37 +52,12 @@ $QUERIES_DIR/render_wf_graph_upstream_of_data_q1.sh lsp_status_trend_summary_db_
 dot -Tpdf $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.gv > $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.pdf
 dot -Tsvg $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.gv > $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.svg
 
-# draw worfklow graph upstream of C4_fraction_data
-#$QUERIES_DIR/render_wf_graph_upstream_of_data_q1.sh \'C4_fraction_data\' > $RESULTS_DIR/wf_upstream_of_C4_fraction_data.gv
-#dot -Tpdf $RESULTS_DIR/wf_upstream_of_C4_fraction_data.gv > $RESULTS_DIR/wf_upstream_of_C4_fraction_data.pdf
-#dot -Tsvg $RESULTS_DIR/wf_upstream_of_C4_fraction_data.gv > $RESULTS_DIR/wf_upstream_of_C4_fraction_data.svg
-
-# draw worfklow graph upstream of Grass_fraction_data
-#$QUERIES_DIR/render_wf_graph_upstream_of_data_q1.sh \'Grass_fraction_data\' > $RESULTS_DIR/wf_upstream_of_Grass_fraction_data.gv
-#dot -Tpdf $RESULTS_DIR/wf_upstream_of_Grass_fraction_data.gv > $RESULTS_DIR/wf_upstream_of_Grass_fraction_data.pdf
-#dot -Tsvg $RESULTS_DIR/wf_upstream_of_Grass_fraction_data.gv > $RESULTS_DIR/wf_upstream_of_Grass_fraction_data.svg
-
-# draw worfklow graph upstream of mean_precip
-#$QUERIES_DIR/render_wf_graph_upstream_of_data_q1.sh mean_precip > $RESULTS_DIR/wf_upstream_of_mean_precip.gv
-#dot -Tpdf $RESULTS_DIR/wf_upstream_of_mean_precip.gv > $RESULTS_DIR/wf_upstream_of_mean_precip.pdf
-#dot -Tsvg $RESULTS_DIR/wf_upstream_of_mean_precip.gv > $RESULTS_DIR/wf_upstream_of_mean_precip.svg
-
 ##############
 #   Q2_pro   #
 ##############
 
-# list workflow outputs
-#$QUERIES_DIR/list_dependent_inputs_q2.sh > $RESULTS_DIR/q2_pro_outputs.txt
-
 # list script inputs upstream of output data C3_fraction_data
 $QUERIES_DIR/list_inputs_upstream_of_data_q2.sh lsp_status_trend_summary_db_file  lsp_status_trend_summary_db_file > $RESULTS_DIR/inputs_upstream_of_lsp_status_trend_summary_db_file.txt
-
-# list script inputs upstream of output data C4_fraction_data
-#$QUERIES_DIR/list_inputs_upstream_of_data_q2.sh \'C4_fraction_data\' C4_fraction_data > $RESULTS_DIR/inputs_upstream_of_C4_fraction_data.txt
-
-# list script inputs upstream of output data Grass_fraction_data
-#$QUERIES_DIR/list_inputs_upstream_of_data_q2.sh \'Grass_fraction_data\' Grass_fraction_data > $RESULTS_DIR/inputs_upstream_of_Grass_fraction_data.txt
-
 
 ##############
 #   Q3_pro   #
@@ -94,41 +69,13 @@ $QUERIES_DIR/render_wf_graph_downstream_of_data_q3.sh area_protected_total_file 
 dot -Tpdf $RESULTS_DIR/wf_downstream_of_area_protected_total_file.gv > $RESULTS_DIR/wf_downstream_of_area_protected_total_file.pdf
 dot -Tsvg $RESULTS_DIR/wf_downstream_of_area_protected_total_file.gv > $RESULTS_DIR/wf_downstream_of_area_protected_total_file.svg
 
-# draw worfklow graph downstream of mean_airtemp
-#$QUERIES_DIR/render_wf_graph_downstream_of_data_q3.sh mean_airtemp > $RESULTS_DIR/wf_downstream_of_mean_airtemp.gv
-#dot -Tpdf $RESULTS_DIR/wf_downstream_of_mean_airtemp.gv > $RESULTS_DIR/wf_downstream_of_mean_airtemp.pdf
-#dot -Tsvg $RESULTS_DIR/wf_downstream_of_mean_airtemp.gv > $RESULTS_DIR/wf_downstream_of_mean_airtemp.svg
-
-# draw worfklow graph downstream of SYNMAP_land_cover_map_data
-#$QUERIES_DIR/render_wf_graph_downstream_of_data_q3.sh \'SYNMAP_land_cover_map_data\'> $RESULTS_DIR/wf_downstream_of_SYNMAP_land_cover_map_data.gv
-#dot -Tpdf $RESULTS_DIR/wf_downstream_of_SYNMAP_land_cover_map_data.gv > $RESULTS_DIR/wf_downstream_of_SYNMAP_land_cover_map_data.pdf
-#dot -Tsvg $RESULTS_DIR/wf_downstream_of_SYNMAP_land_cover_map_data.gv > $RESULTS_DIR/wf_downstream_of_SYNMAP_land_cover_map_data.svg
-
-# draw worfklow graph downstream of lat_variable
-#$QUERIES_DIR/render_wf_graph_downstream_of_data_q3.sh lat_variable > $RESULTS_DIR/wf_downstream_of_lat_variable.gv
-#dot -Tpdf $RESULTS_DIR/wf_downstream_of_lat_variable.gv > $RESULTS_DIR/wf_downstream_of_lat_variable.pdf
-#dot -Tsvg $RESULTS_DIR/wf_downstream_of_lat_variable.gv > $RESULTS_DIR/wf_downstream_of_lat_variable.svg
-
-# draw worfklow graph downstream of Grass_variable
-#$QUERIES_DIR/render_wf_graph_downstream_of_data_q3.sh \'Grass_variable\' > $RESULTS_DIR/wf_downstream_of_Grass_variable.gv
-#dot -Tpdf $RESULTS_DIR/wf_downstream_of_Grass_variable.gv > $RESULTS_DIR/wf_downstream_of_Grass_variable.pdf
-#dot -Tsvg $RESULTS_DIR/wf_downstream_of_Grass_variable.gv > $RESULTS_DIR/wf_downstream_of_Grass_variable.svg
-
 ##############
 #   Q4_pro   #
 ##############
 
-# list workflow outputs
-#$QUERIES_DIR/list_dependent_outputs_q4.sh > $RESULTS_DIR/q4_pro_outputs.txt
 
 # list script outputs downstream of input data area_protected_total_file
 $QUERIES_DIR/list_outputs_downstream_of_data_q4.sh area_protected_total_file area_protected_total_file > $RESULTS_DIR/outputs_downstream_of_area_protected_total_file.txt
-
-# list script outputs downstream of input data mean_precip
-#$QUERIES_DIR/list_outputs_downstream_of_data_q4.sh mean_precip mean_precip > $RESULTS_DIR/outputs_downstream_of_mean_precip.txt
-
-# list script outputs downstream of input data SYNMAP_land_cover_map_data
-#$QUERIES_DIR/list_outputs_downstream_of_data_q4.sh \'SYNMAP_land_cover_map_data\' SYNMAP_land_cover_map_data > $RESULTS_DIR/outputs_downstream_of_SYNMAP_land_cover_map_data.txt
 
 
 ##############
@@ -140,15 +87,6 @@ $QUERIES_DIR/render_wf_recon_graph_upstream_of_data_q5.sh lsp_status_trend_summa
 dot -Tpdf $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.gv > $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.pdf
 dot -Tsvg $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.gv > $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.svg
 
-# draw recon worfklow graph upstream of C4_fraction_data
-#$QUERIES_DIR/render_wf_recon_graph_upstream_of_data_q5.sh \'C4_fraction_data\' > $RESULTS_DIR/wf_recon_upstream_of_C4_fraction_data.gv
-#dot -Tpdf $RESULTS_DIR/wf_recon_upstream_of_C4_fraction_data.gv > $RESULTS_DIR/wf_recon_upstream_of_C4_fraction_data.pdf
-#dot -Tsvg $RESULTS_DIR/wf_recon_upstream_of_C4_fraction_data.gv > $RESULTS_DIR/wf_recon_upstream_of_C4_fraction_data.svg
-
-# draw recon worfklow graph upstream of Grass_fraction_data
-#$QUERIES_DIR/render_wf_recon_graph_upstream_of_data_q5.sh \'Grass_fraction_data\' > $RESULTS_DIR/wf_recon_upstream_of_Grass_fraction_data.gv
-#dot -Tpdf $RESULTS_DIR/wf_recon_upstream_of_Grass_fraction_data.gv > $RESULTS_DIR/wf_recon_upstream_of_Grass_fraction_data.pdf
-#dot -Tsvg $RESULTS_DIR/wf_recon_upstream_of_Grass_fraction_data.gv > $RESULTS_DIR/wf_recon_upstream_of_Grass_fraction_data.svg
 
 ##############
 #   Q6_pro   #

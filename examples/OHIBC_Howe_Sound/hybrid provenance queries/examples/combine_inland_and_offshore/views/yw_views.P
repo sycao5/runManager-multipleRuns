@@ -1,0 +1,157 @@
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_source_file(SourceId, SourceFile).
+%...................................................................................................
+yw_source_file(1,'./script/combine_inland_and_offshore.R').
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_workflow_script(WorkflowId, WorkflowName, SourceId, SourceFile).
+%...................................................................................................
+yw_workflow_script(1,combine_scores_for_inland_and_offshore_and_outputs,1,'./script/combine_inland_and_offshore.R').
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_program(WorkflowId, ProgramName, WorkflowId, SourceId, BeginLine, EndLine).
+%...................................................................................................
+yw_program(1,combine_scores_for_inland_and_offshore_and_outputs,nil,1,9,79).
+yw_program(2,set_up_configuration_and_start_provenance_tracking,1,1,17,22).
+yw_program(3,read_in_protected_area_and_total_area_by_region,1,1,25,38).
+yw_program(4,combine_scores_for_inland_and_offshore_and_write_output_layers,1,1,41,77).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_workflow(WorkflowId, WorkflowName, ParentWorkflowId, SourceId, BeginLine, EndLine).
+%...................................................................................................
+yw_workflow(1,combine_scores_for_inland_and_offshore_and_outputs,nil,1,9,79).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_workflow_step(StepId, StepName, WorkflowId, SourceId, BeginLine, EndLine).
+%...................................................................................................
+yw_workflow_step(2,set_up_configuration_and_start_provenance_tracking,1,1,17,22).
+yw_workflow_step(3,read_in_protected_area_and_total_area_by_region,1,1,25,38).
+yw_workflow_step(4,combine_scores_for_inland_and_offshore_and_write_output_layers,1,1,41,77).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_function(FunctionId, FunctionName, ParentWorkflowId, SourceId, BeginLine, EndLine).
+%...................................................................................................
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_data(DataId, DataName, WorkflowId, WorkflowName).
+%...................................................................................................
+yw_data(1,setup_R,nil,nil).
+yw_data(2,prot_3nm_stats_file,nil,nil).
+yw_data(3,prot_1km_stats_file,nil,nil).
+yw_data(4,prot_ws_stats_file,nil,nil).
+yw_data(5,area_protected_total_file,nil,nil).
+yw_data(6,setup_R,1,combine_scores_for_inland_and_offshore_and_outputs).
+yw_data(7,dir_goal,1,combine_scores_for_inland_and_offshore_and_outputs).
+yw_data(8,prot_3nm_stats_file,1,combine_scores_for_inland_and_offshore_and_outputs).
+yw_data(9,prot_1km_stats_file,1,combine_scores_for_inland_and_offshore_and_outputs).
+yw_data(10,prot_ws_stats_file,1,combine_scores_for_inland_and_offshore_and_outputs).
+yw_data(11,prot_3nm,1,combine_scores_for_inland_and_offshore_and_outputs).
+yw_data(12,prot_1km,1,combine_scores_for_inland_and_offshore_and_outputs).
+yw_data(13,prot_ws,1,combine_scores_for_inland_and_offshore_and_outputs).
+yw_data(14,area_protected_total_file,1,combine_scores_for_inland_and_offshore_and_outputs).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_step_input(ProgramId, ProgramName, PortType, PortId, PortName, DataId, DataName).
+%...................................................................................................
+yw_step_input(4,combine_scores_for_inland_and_offshore_and_write_output_layers,in,17,prot_ws,13,prot_ws).
+yw_step_input(4,combine_scores_for_inland_and_offshore_and_write_output_layers,in,16,prot_3nm,11,prot_3nm).
+yw_step_input(4,combine_scores_for_inland_and_offshore_and_write_output_layers,in,15,prot_1km,12,prot_1km).
+yw_step_input(3,read_in_protected_area_and_total_area_by_region,param,8,dir_goal,7,dir_goal).
+yw_step_input(3,read_in_protected_area_and_total_area_by_region,in,11,prot_ws_stats_file,10,prot_ws_stats_file).
+yw_step_input(3,read_in_protected_area_and_total_area_by_region,in,10,prot_1km_stats_file,9,prot_1km_stats_file).
+yw_step_input(3,read_in_protected_area_and_total_area_by_region,in,9,prot_3nm_stats_file,8,prot_3nm_stats_file).
+yw_step_input(2,set_up_configuration_and_start_provenance_tracking,in,6,setup_configuration_file,6,setup_R).
+yw_step_input(1,combine_scores_for_inland_and_offshore_and_outputs,in,4,prot_ws_stats_file,4,prot_ws_stats_file).
+yw_step_input(1,combine_scores_for_inland_and_offshore_and_outputs,in,3,prot_1km_stats_file,3,prot_1km_stats_file).
+yw_step_input(1,combine_scores_for_inland_and_offshore_and_outputs,in,2,prot_3nm_stats_file,2,prot_3nm_stats_file).
+yw_step_input(1,combine_scores_for_inland_and_offshore_and_outputs,in,1,setup_configuration_file,1,setup_R).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_step_output(ProgramId, ProgramName, PortType, PortId, PortName, DataId, DataName).
+%...................................................................................................
+yw_step_output(1,combine_scores_for_inland_and_offshore_and_outputs,out,5,area_protected_total_file,5,area_protected_total_file).
+yw_step_output(2,set_up_configuration_and_start_provenance_tracking,out,7,dir_goal,7,dir_goal).
+yw_step_output(3,read_in_protected_area_and_total_area_by_region,out,12,prot_3nm,11,prot_3nm).
+yw_step_output(3,read_in_protected_area_and_total_area_by_region,out,13,prot_1km,12,prot_1km).
+yw_step_output(3,read_in_protected_area_and_total_area_by_region,out,14,prot_ws,13,prot_ws).
+yw_step_output(4,combine_scores_for_inland_and_offshore_and_write_output_layers,out,18,area_protected_total_file,14,area_protected_total_file).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_inflow(WorkflowId, WorkflowName, DataId, DataName, ProgramId, ProgramName).
+%...................................................................................................
+yw_inflow(1,combine_scores_for_inland_and_offshore_and_outputs,10,prot_ws_stats_file,3,read_in_protected_area_and_total_area_by_region).
+yw_inflow(1,combine_scores_for_inland_and_offshore_and_outputs,9,prot_1km_stats_file,3,read_in_protected_area_and_total_area_by_region).
+yw_inflow(1,combine_scores_for_inland_and_offshore_and_outputs,8,prot_3nm_stats_file,3,read_in_protected_area_and_total_area_by_region).
+yw_inflow(1,combine_scores_for_inland_and_offshore_and_outputs,6,setup_R,2,set_up_configuration_and_start_provenance_tracking).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_flow(SourceProgramId, SourceProgramName, SourcePortId, SourcePortName, DataId, DataName, SinkPortId, SinkPortName, SinkProgramId, SinkProgramName).
+%...................................................................................................
+yw_flow(2,set_up_configuration_and_start_provenance_tracking,7,dir_goal,7,dir_goal,8,dir_goal,3,read_in_protected_area_and_total_area_by_region).
+yw_flow(3,read_in_protected_area_and_total_area_by_region,12,prot_3nm,11,prot_3nm,16,prot_3nm,4,combine_scores_for_inland_and_offshore_and_write_output_layers).
+yw_flow(3,read_in_protected_area_and_total_area_by_region,13,prot_1km,12,prot_1km,15,prot_1km,4,combine_scores_for_inland_and_offshore_and_write_output_layers).
+yw_flow(3,read_in_protected_area_and_total_area_by_region,14,prot_ws,13,prot_ws,17,prot_ws,4,combine_scores_for_inland_and_offshore_and_write_output_layers).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_outflow(StepId, StepName, StepOutDataId, StepOutDataName, WorkflowId, WorkflowName, WorkflowOutDataId, WorkflowOutDataName).
+%...................................................................................................
+yw_outflow(4,combine_scores_for_inland_and_offshore_and_write_output_layers,14,area_protected_total_file,1,combine_scores_for_inland_and_offshore_and_outputs,5,area_protected_total_file).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_qualified_name(EntityType, Id, QualifiedName).
+%...................................................................................................
+yw_qualified_name(program,1,combine_scores_for_inland_and_offshore_and_outputs).
+yw_qualified_name(program,2,'combine_scores_for_inland_and_offshore_and_outputs.set_up_configuration_and_start_provenance_tracking').
+yw_qualified_name(program,3,'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region').
+yw_qualified_name(program,4,'combine_scores_for_inland_and_offshore_and_outputs.combine_scores_for_inland_and_offshore_and_write_output_layers').
+yw_qualified_name(port,1,'combine_scores_for_inland_and_offshore_and_outputs<-setup_configuration_file').
+yw_qualified_name(port,2,'combine_scores_for_inland_and_offshore_and_outputs<-prot_3nm_stats_file').
+yw_qualified_name(port,3,'combine_scores_for_inland_and_offshore_and_outputs<-prot_1km_stats_file').
+yw_qualified_name(port,4,'combine_scores_for_inland_and_offshore_and_outputs<-prot_ws_stats_file').
+yw_qualified_name(port,5,'combine_scores_for_inland_and_offshore_and_outputs->area_protected_total_file').
+yw_qualified_name(port,6,'combine_scores_for_inland_and_offshore_and_outputs.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file').
+yw_qualified_name(port,7,'combine_scores_for_inland_and_offshore_and_outputs.set_up_configuration_and_start_provenance_tracking->dir_goal').
+yw_qualified_name(port,8,'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region<-dir_goal').
+yw_qualified_name(port,9,'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region<-prot_3nm_stats_file').
+yw_qualified_name(port,10,'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region<-prot_1km_stats_file').
+yw_qualified_name(port,11,'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region<-prot_ws_stats_file').
+yw_qualified_name(port,12,'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region->prot_3nm').
+yw_qualified_name(port,13,'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region->prot_1km').
+yw_qualified_name(port,14,'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region->prot_ws').
+yw_qualified_name(port,15,'combine_scores_for_inland_and_offshore_and_outputs.combine_scores_for_inland_and_offshore_and_write_output_layers<-prot_1km').
+yw_qualified_name(port,16,'combine_scores_for_inland_and_offshore_and_outputs.combine_scores_for_inland_and_offshore_and_write_output_layers<-prot_3nm').
+yw_qualified_name(port,17,'combine_scores_for_inland_and_offshore_and_outputs.combine_scores_for_inland_and_offshore_and_write_output_layers<-prot_ws').
+yw_qualified_name(port,18,'combine_scores_for_inland_and_offshore_and_outputs.combine_scores_for_inland_and_offshore_and_write_output_layers->area_protected_total_file').
+yw_qualified_name(data,1,'[setup_R]').
+yw_qualified_name(data,2,'[prot_3nm_stats_file]').
+yw_qualified_name(data,3,'[prot_1km_stats_file]').
+yw_qualified_name(data,4,'[prot_ws_stats_file]').
+yw_qualified_name(data,5,'[area_protected_total_file]').
+yw_qualified_name(data,6,'combine_scores_for_inland_and_offshore_and_outputs[setup_R]').
+yw_qualified_name(data,7,'combine_scores_for_inland_and_offshore_and_outputs[dir_goal]').
+yw_qualified_name(data,8,'combine_scores_for_inland_and_offshore_and_outputs[prot_3nm_stats_file]').
+yw_qualified_name(data,9,'combine_scores_for_inland_and_offshore_and_outputs[prot_1km_stats_file]').
+yw_qualified_name(data,10,'combine_scores_for_inland_and_offshore_and_outputs[prot_ws_stats_file]').
+yw_qualified_name(data,11,'combine_scores_for_inland_and_offshore_and_outputs[prot_3nm]').
+yw_qualified_name(data,12,'combine_scores_for_inland_and_offshore_and_outputs[prot_1km]').
+yw_qualified_name(data,13,'combine_scores_for_inland_and_offshore_and_outputs[prot_ws]').
+yw_qualified_name(data,14,'combine_scores_for_inland_and_offshore_and_outputs[area_protected_total_file]').
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_description(EntityType, Id, Name, Description)).
+%...................................................................................................
