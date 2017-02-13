@@ -39,7 +39,7 @@ $YW_CMD graph $SCRIPT_DIR/get_analysis_rasters.R \
 dot -Tpdf $RESULTS_DIR/complete_wf_graph_uri.gv > $RESULTS_DIR/complete_wf_graph_uri.pdf
 dot -Tsvg $RESULTS_DIR/complete_wf_graph_uri.gv > $RESULTS_DIR/complete_wf_graph_uri.svg
 
-# list workflow outputs
+# list workflow outputs from prospective proveannce graph
 $QUERIES_DIR/list_workflow_outputs.sh > $RESULTS_DIR/workflow_outputs.txt
 
 
