@@ -1,0 +1,10 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q2_Pro : List the script inputs that are upstream of data product rast_watershed.
+
+q2_pro(DataProduct, InputDataName)
+...................................................................................................
+q2_pro(rast_watershed,howe_sound_watersheds).
+q2_pro(rast_watershed,rast_base).
+q2_pro(rast_watershed,setup_R).

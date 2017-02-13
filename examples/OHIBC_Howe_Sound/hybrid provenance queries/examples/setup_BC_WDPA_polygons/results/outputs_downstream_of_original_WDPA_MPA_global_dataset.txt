@@ -1,0 +1,8 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q4_Pro : List the outputs that depend on original_WDPA_MPA_global_dataset.
+
+q4_pro(UpstreamDataName, OutputDataName)
+...................................................................................................
+q4_pro(original_WDPA_MPA_global_dataset,'BC_specific_polygon_subset_of_WDPA_global_dataset').

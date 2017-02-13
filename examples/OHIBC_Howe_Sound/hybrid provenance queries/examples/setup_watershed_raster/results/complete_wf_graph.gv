@@ -1,0 +1,46 @@
+
+digraph yw_data_view {
+rankdir=TB
+fontname=Courier; fontsize=18; labelloc=t
+label="Setup_watershed_raster"
+subgraph cluster_workflow { label=""; color=black; penwidth=2
+subgraph cluster_workflow_inner { label=""; color=white
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+set_up_configuration_and_start_provenance_tracking
+raster_to_same_extents_resolution_as_500m_base_raster
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+setup_R
+dir_spatial
+dir_goal
+rast_base
+howe_sound_watersheds
+rast_watershed
+node[shape=box style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica]
+}}
+subgraph cluster_inflows { label=""; color=white; penwidth=2
+subgraph cluster_inflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+setup_R_inflow [label=""]
+rast_base_inflow [label=""]
+howe_sound_watersheds_inflow [label=""]
+}}
+subgraph cluster_outflows { label=""; color=white; penwidth=2
+subgraph cluster_outflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+rast_watershed_outflow [label=""]
+}}
+setup_R -> set_up_configuration_and_start_provenance_tracking
+dir_spatial -> raster_to_same_extents_resolution_as_500m_base_raster
+dir_goal -> raster_to_same_extents_resolution_as_500m_base_raster
+rast_base -> raster_to_same_extents_resolution_as_500m_base_raster
+howe_sound_watersheds -> raster_to_same_extents_resolution_as_500m_base_raster
+set_up_configuration_and_start_provenance_tracking -> dir_spatial
+set_up_configuration_and_start_provenance_tracking -> dir_goal
+raster_to_same_extents_resolution_as_500m_base_raster -> rast_watershed
+setup_R_inflow -> setup_R
+rast_base_inflow -> rast_base
+howe_sound_watersheds_inflow -> howe_sound_watersheds
+rast_watershed -> rast_watershed_outflow
+}
+

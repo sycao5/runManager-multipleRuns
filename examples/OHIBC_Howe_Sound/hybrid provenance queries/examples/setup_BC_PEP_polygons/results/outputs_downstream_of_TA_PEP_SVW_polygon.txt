@@ -1,0 +1,15 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q4_Pro : List the outputs that depend on TA_PEP_SVW_polygon.
+
+q4_pro(UpstreamDataName, OutputDataName)
+...................................................................................................
+q4_pro(poly_hs_pep,poly_hs_pep).
+q4_pro(hs_pep_poly,poly_hs_pep).
+q4_pro('TA_PEP_SVW_polygon',poly_hs_pep).
+q4_pro(dir_goal,poly_hs_pep).
+q4_pro(dir_anx,poly_hs_pep).
+q4_pro(setup_R,poly_hs_pep).
+
+TA_PEP_SVW_polygon = _h177

@@ -1,0 +1,118 @@
+
+% FACT: program(program_id, program_name, qualified_program_name, begin_annotation_id, end_annotation_id).
+program(1, 'Setup_watershed_raster', 'Setup_watershed_raster', 1, 26).
+program(2, 'set_up_configuration_and_start_provenance_tracking', 'Setup_watershed_raster.set_up_configuration_and_start_provenance_tracking', 10, 15).
+program(3, 'raster_to_same_extents_resolution_as_500m_base_raster', 'Setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster', 16, 25).
+
+% FACT: workflow(program_id).
+workflow(1).
+
+% FACT: function(program_id).
+
+% FACT: has_subprogram(program_id, subprogram_id).
+has_subprogram(1, 2).
+has_subprogram(1, 3).
+
+% FACT: port(port_id, port_type, port_name, qualified_port_name, port_annotation_id, data_id).
+port(1, 'in', 'setup_configuration_file', 'Setup_watershed_raster<-setup_configuration_file', 2, 1).
+port(2, 'in', 'rast_base', 'Setup_watershed_raster<-rast_base', 4, 2).
+port(3, 'in', 'howe_sound_watersheds', 'Setup_watershed_raster<-howe_sound_watersheds', 6, 3).
+port(4, 'out', 'rast_watershed', 'Setup_watershed_raster->rast_watershed', 8, 4).
+port(5, 'in', 'setup_configuration_file', 'Setup_watershed_raster.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file', 11, 5).
+port(6, 'out', 'dir_spatial', 'Setup_watershed_raster.set_up_configuration_and_start_provenance_tracking->dir_spatial', 13, 6).
+port(7, 'out', 'dir_goal', 'Setup_watershed_raster.set_up_configuration_and_start_provenance_tracking->dir_goal', 14, 7).
+port(8, 'param', 'dir_spatial', 'Setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster<-dir_spatial', 17, 6).
+port(9, 'param', 'dir_goal', 'Setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster<-dir_goal', 18, 7).
+port(10, 'in', 'rast_base', 'Setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster<-rast_base', 19, 8).
+port(11, 'in', 'howe_sound_watersheds', 'Setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster<-howe_sound_watersheds', 21, 9).
+port(12, 'out', 'rast_watershed', 'Setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster->rast_watershed', 23, 10).
+
+% FACT: port_alias(port_id, alias).
+port_alias(1, 'setup_R').
+port_alias(5, 'setup_R').
+
+% FACT: port_uri_template(port_id, uri).
+port_uri_template(2, 'file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif').
+port_uri_template(3, 'file:{dir_spatial}/watershed/howe_sound_watersheds').
+port_uri_template(4, 'file:{dir_goal}/spatial/howe_sound_watershed_500m.tif').
+port_uri_template(10, 'file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif').
+port_uri_template(11, 'file:{dir_spatial}/watershed/howe_sound_watersheds').
+port_uri_template(12, 'file:{dir_goal}/spatial/howe_sound_watershed_500m.tif').
+
+% FACT: has_in_port(block_id, port_id).
+has_in_port(1, 1).
+has_in_port(1, 2).
+has_in_port(1, 3).
+has_in_port(2, 5).
+has_in_port(3, 8).
+has_in_port(3, 9).
+has_in_port(3, 10).
+has_in_port(3, 11).
+
+% FACT: has_out_port(block_id, port_id).
+has_out_port(1, 4).
+has_out_port(2, 6).
+has_out_port(2, 7).
+has_out_port(3, 12).
+
+% FACT: data(data_id, data_name, qualified_data_name).
+data(1, 'setup_R', '[setup_R]').
+data(2, 'rast_base', '[rast_base]').
+data(3, 'howe_sound_watersheds', '[howe_sound_watersheds]').
+data(4, 'rast_watershed', '[rast_watershed]').
+data(5, 'setup_R', 'Setup_watershed_raster[setup_R]').
+data(6, 'dir_spatial', 'Setup_watershed_raster[dir_spatial]').
+data(7, 'dir_goal', 'Setup_watershed_raster[dir_goal]').
+data(8, 'rast_base', 'Setup_watershed_raster[rast_base]').
+data(9, 'howe_sound_watersheds', 'Setup_watershed_raster[howe_sound_watersheds]').
+data(10, 'rast_watershed', 'Setup_watershed_raster[rast_watershed]').
+
+% FACT: channel(channel_id, data_id).
+channel(1, 4).
+channel(2, 5).
+channel(3, 6).
+channel(4, 7).
+channel(5, 8).
+channel(6, 9).
+channel(7, 1).
+channel(8, 2).
+channel(9, 3).
+channel(10, 10).
+
+% FACT: port_connects_to_channel(port_id, channel_id).
+port_connects_to_channel(12, 1).
+port_connects_to_channel(5, 2).
+port_connects_to_channel(6, 3).
+port_connects_to_channel(8, 3).
+port_connects_to_channel(7, 4).
+port_connects_to_channel(9, 4).
+port_connects_to_channel(10, 5).
+port_connects_to_channel(11, 6).
+port_connects_to_channel(5, 7).
+port_connects_to_channel(10, 8).
+port_connects_to_channel(11, 9).
+port_connects_to_channel(12, 10).
+
+% FACT: inflow_connects_to_channel(port_id, channel_id).
+inflow_connects_to_channel(1, 2).
+inflow_connects_to_channel(2, 5).
+inflow_connects_to_channel(3, 6).
+inflow_connects_to_channel(1, 7).
+inflow_connects_to_channel(2, 8).
+inflow_connects_to_channel(3, 9).
+
+% FACT: outflow_connects_to_channel(port_id, channel_id).
+outflow_connects_to_channel(4, 1).
+outflow_connects_to_channel(4, 10).
+
+% FACT: uri_variable(uri_variable_id, variable_name, port_id).
+uri_variable(1, 'dir_spatial', 2).
+uri_variable(2, 'dir_spatial', 3).
+uri_variable(3, 'dir_goal', 4).
+uri_variable(4, 'dir_spatial', 10).
+uri_variable(5, 'dir_spatial', 11).
+uri_variable(6, 'dir_goal', 12).
+
+% FACT: log_template(log_template_id, port_id, entry_template, log_annotation_id).
+
+% FACT: log_template_variable(log_variable_id, variable_name, log_template_id).

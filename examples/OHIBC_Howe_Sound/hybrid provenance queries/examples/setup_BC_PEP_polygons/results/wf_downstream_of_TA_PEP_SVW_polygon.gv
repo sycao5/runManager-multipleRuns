@@ -1,0 +1,42 @@
+
+digraph yw_data_view {
+rankdir=TB
+fontname=Courier; fontsize=18; labelloc=t
+label="Read_BC_Parks_EcologicalReserves_ProtectedArea_data"
+subgraph cluster_workflow { label=""; color=black; penwidth=2
+subgraph cluster_workflow_inner { label=""; color=white
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+write_hs_pep_poly
+read_TA_PEP_SVW_polygon
+set_up_Configuration_and_start_provenance_tracking
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+setup_R
+dir_anx
+dir_goal
+hs_pep_poly
+poly_hs_pep
+node[shape=box style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica]
+}}
+subgraph cluster_inflows { label=""; color=white; penwidth=2
+subgraph cluster_inflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+setup_R_inflow [label=""]
+}}
+subgraph cluster_outflows { label=""; color=white; penwidth=2
+subgraph cluster_outflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+poly_hs_pep_outflow [label=""]
+}}
+write_hs_pep_poly -> poly_hs_pep
+read_TA_PEP_SVW_polygon -> hs_pep_poly
+set_up_Configuration_and_start_provenance_tracking -> dir_goal
+set_up_Configuration_and_start_provenance_tracking -> dir_anx
+setup_R -> set_up_Configuration_and_start_provenance_tracking
+dir_anx -> read_TA_PEP_SVW_polygon
+dir_goal -> write_hs_pep_poly
+hs_pep_poly -> write_hs_pep_poly
+setup_R_inflow -> setup_R
+poly_hs_pep -> poly_hs_pep_outflow
+}
+

@@ -1,0 +1,14 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q2_Pro : List the script inputs that are upstream of data product BC_specific_polygon_subset_of_WDPA_global_dataset.
+
+q2_pro(DataProduct, InputDataName)
+...................................................................................................
+q2_pro(setup_R,setup_R).
+q2_pro(dir_goal,setup_R).
+q2_pro('BC_specific_polygon_subset_of_WDPA_global_dataset',setup_R).
+q2_pro('BC_specific_polygon_subset_of_WDPA_global_dataset',original_WDPA_MPA_global_dataset).
+q2_pro(original_WDPA_MPA_global_dataset,original_WDPA_MPA_global_dataset).
+
+BC_specific_polygon_subset_of_WDPA_global_dataset = _h177

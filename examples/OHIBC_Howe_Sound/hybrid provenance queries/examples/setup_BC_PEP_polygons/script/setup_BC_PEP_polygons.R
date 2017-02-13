@@ -3,14 +3,14 @@
 
 # @BEGIN Read_BC_Parks_EcologicalReserves_ProtectedArea_data
 # @in poly_hs_pep @AS TA_PEP_SVW_polygon @URI file:{dir_anx}/_raw_data/databc/TA_PEP_SVW
-# @in setup_configuration_file @AS setup.R
+# @in setup_configuration_file @AS setup_R
 # @out poly_hs_pep @URI file:{dir_goal}/spatial/hs_pep_poly.shp 
 
 # @BEGIN set_up_Configuration_and_start_provenance_tracking
-# @in setup_configuration_file @AS setup.R
+# @in setup_configuration_file @AS setup_R
 # @out dir_anx
 # @out dir_goal
-source("setup.R")
+source("setup_R")
 # @END set_up_Configuration_and_start_provenance_tracking
 
 # @BEGIN read_TA_PEP_SVW_polygon

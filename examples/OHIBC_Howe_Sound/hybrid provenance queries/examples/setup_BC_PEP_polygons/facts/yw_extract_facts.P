@@ -1,0 +1,47 @@
+
+% FACT: extract_source(source_id, source_path).
+extract_source(1, './script/setup_BC_PEP_polygons.R').
+
+% FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
+annotation(1, 1, 4, 'begin', '@BEGIN', 'Read_BC_Parks_EcologicalReserves_ProtectedArea_data').
+annotation(2, 1, 5, 'in', '@in', 'poly_hs_pep').
+annotation(3, 1, 5, 'as', '@AS', 'TA_PEP_SVW_polygon').
+annotation(4, 1, 5, 'uri', '@URI', 'file:{dir_anx}/_raw_data/databc/TA_PEP_SVW').
+annotation(5, 1, 6, 'in', '@in', 'setup_configuration_file').
+annotation(6, 1, 6, 'as', '@AS', 'setup_R').
+annotation(7, 1, 7, 'out', '@out', 'poly_hs_pep').
+annotation(8, 1, 7, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_pep_poly.shp').
+annotation(9, 1, 9, 'begin', '@BEGIN', 'set_up_Configuration_and_start_provenance_tracking').
+annotation(10, 1, 10, 'in', '@in', 'setup_configuration_file').
+annotation(11, 1, 10, 'as', '@AS', 'setup_R').
+annotation(12, 1, 11, 'out', '@out', 'dir_anx').
+annotation(13, 1, 12, 'out', '@out', 'dir_goal').
+annotation(14, 1, 14, 'end', '@END', 'set_up_Configuration_and_start_provenance_tracking').
+annotation(15, 1, 16, 'begin', '@BEGIN', 'read_TA_PEP_SVW_polygon').
+annotation(16, 1, 17, 'param', '@param', 'dir_anx').
+annotation(17, 1, 18, 'in', '@in', 'poly_hs_pep').
+annotation(18, 1, 18, 'as', '@AS', 'TA_PEP_SVW_polygon').
+annotation(19, 1, 18, 'uri', '@URI', 'file:{dir_anx}/_raw_data/databc/TA_PEP_SVW').
+annotation(20, 1, 19, 'out', '@out', 'poly_hs_pep').
+annotation(21, 1, 19, 'as', '@AS', 'hs_pep_poly').
+annotation(22, 1, 28, 'end', '@END', 'read_TA_PEP_SVW_polygon').
+annotation(23, 1, 30, 'begin', '@BEGIN', 'write_hs_pep_poly').
+annotation(24, 1, 31, 'in', '@in', 'poly_hs_pep').
+annotation(25, 1, 31, 'as', '@AS', 'hs_pep_poly').
+annotation(26, 1, 32, 'param', '@param', 'dir_goal').
+annotation(27, 1, 33, 'out', '@out', 'poly_hs_pep').
+annotation(28, 1, 33, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_pep_poly.shp').
+annotation(29, 1, 43, 'end', '@END', 'write_hs_pep_poly').
+annotation(30, 1, 45, 'end', '@END', 'Read_BC_Parks_EcologicalReserves_ProtectedArea_data').
+
+% FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
+annotation_qualifies(3, 2).
+annotation_qualifies(4, 2).
+annotation_qualifies(6, 5).
+annotation_qualifies(8, 7).
+annotation_qualifies(11, 10).
+annotation_qualifies(18, 17).
+annotation_qualifies(19, 17).
+annotation_qualifies(21, 20).
+annotation_qualifies(25, 24).
+annotation_qualifies(28, 27).

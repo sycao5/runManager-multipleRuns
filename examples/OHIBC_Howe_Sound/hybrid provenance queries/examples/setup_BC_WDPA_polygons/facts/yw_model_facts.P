@@ -1,0 +1,97 @@
+
+% FACT: program(program_id, program_name, qualified_program_name, begin_annotation_id, end_annotation_id).
+program(1, 'Read_in_BC_WDPA_MPA_shapefile', 'Read_in_BC_WDPA_MPA_shapefile', 1, 24).
+program(2, 'Set_up_default_BC_projection_to_BC_Albers_and_start_provenance_tracking', 'Read_in_BC_WDPA_MPA_shapefile.Set_up_default_BC_projection_to_BC_Albers_and_start_provenance_tracking', 9, 15).
+program(3, 'create_BC_specific_polygon_subset_of_WDPA_global_dataset', 'Read_in_BC_WDPA_MPA_shapefile.create_BC_specific_polygon_subset_of_WDPA_global_dataset', 16, 23).
+
+% FACT: workflow(program_id).
+workflow(1).
+
+% FACT: function(program_id).
+
+% FACT: has_subprogram(program_id, subprogram_id).
+has_subprogram(1, 2).
+has_subprogram(1, 3).
+
+% FACT: port(port_id, port_type, port_name, qualified_port_name, port_annotation_id, data_id).
+port(1, 'in', 'setup_configuration_file', 'Read_in_BC_WDPA_MPA_shapefile<-setup_configuration_file', 2, 1).
+port(2, 'in', 'hs_wdpa_poly', 'Read_in_BC_WDPA_MPA_shapefile<-hs_wdpa_poly', 4, 2).
+port(3, 'out', 'poly_hs_wdpa', 'Read_in_BC_WDPA_MPA_shapefile->poly_hs_wdpa', 6, 3).
+port(4, 'in', 'setup_configuration_file', 'Read_in_BC_WDPA_MPA_shapefile.Set_up_default_BC_projection_to_BC_Albers_and_start_provenance_tracking<-setup_configuration_file', 10, 4).
+port(5, 'out', 'dir_goal', 'Read_in_BC_WDPA_MPA_shapefile.Set_up_default_BC_projection_to_BC_Albers_and_start_provenance_tracking->dir_goal', 12, 5).
+port(6, 'out', 'poly_hs_wdpa', 'Read_in_BC_WDPA_MPA_shapefile.Set_up_default_BC_projection_to_BC_Albers_and_start_provenance_tracking->poly_hs_wdpa', 13, 6).
+port(7, 'in', 'hs_wdpa_poly', 'Read_in_BC_WDPA_MPA_shapefile.create_BC_specific_polygon_subset_of_WDPA_global_dataset<-hs_wdpa_poly', 17, 7).
+port(8, 'param', 'dir_goal', 'Read_in_BC_WDPA_MPA_shapefile.create_BC_specific_polygon_subset_of_WDPA_global_dataset<-dir_goal', 19, 5).
+port(9, 'out', 'poly_hs_wdpa', 'Read_in_BC_WDPA_MPA_shapefile.create_BC_specific_polygon_subset_of_WDPA_global_dataset->poly_hs_wdpa', 20, 6).
+
+% FACT: port_alias(port_id, alias).
+port_alias(1, 'setup_R').
+port_alias(2, 'original_WDPA_MPA_global_dataset').
+port_alias(3, 'BC_specific_polygon_subset_of_WDPA_global_dataset').
+port_alias(4, 'setup_R').
+port_alias(6, 'BC_specific_polygon_subset_of_WDPA_global_dataset').
+port_alias(7, 'original_WDPA_MPA_global_dataset').
+port_alias(9, 'BC_specific_polygon_subset_of_WDPA_global_dataset').
+
+% FACT: port_uri_template(port_id, uri).
+port_uri_template(3, 'file:{dir_goal}/spatial/hs_wdpa_poly.shp').
+port_uri_template(9, 'file:{dir_goal}/spatial/hs_wdpa_poly.shp').
+
+% FACT: has_in_port(block_id, port_id).
+has_in_port(1, 1).
+has_in_port(1, 2).
+has_in_port(2, 4).
+has_in_port(3, 7).
+has_in_port(3, 8).
+
+% FACT: has_out_port(block_id, port_id).
+has_out_port(1, 3).
+has_out_port(2, 5).
+has_out_port(2, 6).
+has_out_port(3, 9).
+
+% FACT: data(data_id, data_name, qualified_data_name).
+data(1, 'setup_R', '[setup_R]').
+data(2, 'original_WDPA_MPA_global_dataset', '[original_WDPA_MPA_global_dataset]').
+data(3, 'BC_specific_polygon_subset_of_WDPA_global_dataset', '[BC_specific_polygon_subset_of_WDPA_global_dataset]').
+data(4, 'setup_R', 'Read_in_BC_WDPA_MPA_shapefile[setup_R]').
+data(5, 'dir_goal', 'Read_in_BC_WDPA_MPA_shapefile[dir_goal]').
+data(6, 'BC_specific_polygon_subset_of_WDPA_global_dataset', 'Read_in_BC_WDPA_MPA_shapefile[BC_specific_polygon_subset_of_WDPA_global_dataset]').
+data(7, 'original_WDPA_MPA_global_dataset', 'Read_in_BC_WDPA_MPA_shapefile[original_WDPA_MPA_global_dataset]').
+
+% FACT: channel(channel_id, data_id).
+channel(1, 3).
+channel(2, 4).
+channel(3, 7).
+channel(4, 5).
+channel(5, 1).
+channel(6, 2).
+channel(7, 6).
+
+% FACT: port_connects_to_channel(port_id, channel_id).
+port_connects_to_channel(9, 1).
+port_connects_to_channel(4, 2).
+port_connects_to_channel(7, 3).
+port_connects_to_channel(5, 4).
+port_connects_to_channel(8, 4).
+port_connects_to_channel(4, 5).
+port_connects_to_channel(7, 6).
+port_connects_to_channel(9, 7).
+
+% FACT: inflow_connects_to_channel(port_id, channel_id).
+inflow_connects_to_channel(1, 2).
+inflow_connects_to_channel(2, 3).
+inflow_connects_to_channel(1, 5).
+inflow_connects_to_channel(2, 6).
+
+% FACT: outflow_connects_to_channel(port_id, channel_id).
+outflow_connects_to_channel(3, 1).
+outflow_connects_to_channel(3, 7).
+
+% FACT: uri_variable(uri_variable_id, variable_name, port_id).
+uri_variable(1, 'dir_goal', 3).
+uri_variable(2, 'dir_goal', 9).
+
+% FACT: log_template(log_template_id, port_id, entry_template, log_annotation_id).
+
+% FACT: log_template_variable(log_variable_id, variable_name, log_template_id).

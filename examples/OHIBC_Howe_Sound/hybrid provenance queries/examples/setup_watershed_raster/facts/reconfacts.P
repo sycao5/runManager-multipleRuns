@@ -1,0 +1,18 @@
+
+% FACT: resource(resource_id, resource_uri).
+resource(1, 'prep/spatial/raster/ohibc_rgn_raster_500m.tif').
+resource(2, 'prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif').
+
+% FACT: data_resource(data_id, resource_id).
+data_resource(2, 1).
+data_resource(4, 2).
+data_resource(8, 1).
+data_resource(10, 2).
+
+% FACT: uri_variable_value(resource_id, uri_variable_id, uri_variable_value).
+uri_variable_value(1, 1, 'prep/spatial').
+uri_variable_value(2, 3, 'prep/lsp/vHS').
+uri_variable_value(1, 4, 'prep/spatial').
+uri_variable_value(2, 6, 'prep/lsp/vHS').
+
+% FACT: log_variable_value(resource_id, log_entry_id, log_variable_id, log_variable_value).

@@ -1,0 +1,9 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q2_Pro : List the script inputs that are upstream of data product poly_hs_pep.
+
+q2_pro(DataProduct, InputDataName)
+...................................................................................................
+q2_pro(poly_hs_pep,'TA_PEP_SVW_polygon').
+q2_pro(poly_hs_pep,setup_R).

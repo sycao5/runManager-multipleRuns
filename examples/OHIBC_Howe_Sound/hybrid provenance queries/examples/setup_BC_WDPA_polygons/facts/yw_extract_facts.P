@@ -1,0 +1,40 @@
+
+% FACT: extract_source(source_id, source_path).
+extract_source(1, './script/setup_BC_WDPA_polygons.R').
+
+% FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
+annotation(1, 1, 29, 'begin', '@BEGIN', 'Read_in_BC_WDPA_MPA_shapefile').
+annotation(2, 1, 30, 'in', '@in', 'setup_configuration_file').
+annotation(3, 1, 30, 'as', '@AS', 'setup_R').
+annotation(4, 1, 31, 'in', '@in', 'hs_wdpa_poly').
+annotation(5, 1, 31, 'as', '@AS', 'original_WDPA_MPA_global_dataset').
+annotation(6, 1, 32, 'out', '@out', 'poly_hs_wdpa').
+annotation(7, 1, 32, 'as', '@AS', 'BC_specific_polygon_subset_of_WDPA_global_dataset').
+annotation(8, 1, 32, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_wdpa_poly.shp').
+annotation(9, 1, 34, 'begin', '@BEGIN', 'Set_up_default_BC_projection_to_BC_Albers_and_start_provenance_tracking').
+annotation(10, 1, 35, 'in', '@in', 'setup_configuration_file').
+annotation(11, 1, 35, 'as', '@AS', 'setup_R').
+annotation(12, 1, 36, 'out', '@out', 'dir_goal').
+annotation(13, 1, 37, 'out', '@out', 'poly_hs_wdpa').
+annotation(14, 1, 37, 'as', '@AS', 'BC_specific_polygon_subset_of_WDPA_global_dataset').
+annotation(15, 1, 39, 'end', '@END', 'Set_up_default_BC_projection_to_BC_Albers_and_start_provenance_tracking').
+annotation(16, 1, 41, 'begin', '@BEGIN', 'create_BC_specific_polygon_subset_of_WDPA_global_dataset').
+annotation(17, 1, 42, 'in', '@in', 'hs_wdpa_poly').
+annotation(18, 1, 42, 'as', '@AS', 'original_WDPA_MPA_global_dataset').
+annotation(19, 1, 43, 'param', '@param', 'dir_goal').
+annotation(20, 1, 44, 'out', '@out', 'poly_hs_wdpa').
+annotation(21, 1, 44, 'as', '@AS', 'BC_specific_polygon_subset_of_WDPA_global_dataset').
+annotation(22, 1, 44, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_wdpa_poly.shp').
+annotation(23, 1, 54, 'end', '@END', 'create_BC_specific_polygon_subset_of_WDPA_global_dataset').
+annotation(24, 1, 56, 'end', '@END', 'Read_in_BC_WDPA_MPA_shapefile').
+
+% FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
+annotation_qualifies(3, 2).
+annotation_qualifies(5, 4).
+annotation_qualifies(7, 6).
+annotation_qualifies(8, 6).
+annotation_qualifies(11, 10).
+annotation_qualifies(14, 13).
+annotation_qualifies(18, 17).
+annotation_qualifies(21, 20).
+annotation_qualifies(22, 20).
