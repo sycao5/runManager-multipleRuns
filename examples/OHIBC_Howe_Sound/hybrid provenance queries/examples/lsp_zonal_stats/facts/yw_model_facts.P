@@ -1,0 +1,232 @@
+
+% FACT: program(program_id, program_name, qualified_program_name, begin_annotation_id, end_annotation_id).
+program(1, 'calculate_goal_model', 'calculate_goal_model', 1, 62).
+program(2, 'set_up_configuration_and_start_provenance_tracking', 'calculate_goal_model.set_up_configuration_and_start_provenance_tracking', 23, 27).
+program(3, 'read_in_OHI_region_rasters', 'calculate_goal_model.read_in_OHI_region_rasters', 28, 44).
+program(4, 'outputs_zonal_stats_dataframes_for_protected_cells', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells', 45, 61).
+
+% FACT: workflow(program_id).
+workflow(1).
+
+% FACT: function(program_id).
+
+% FACT: has_subprogram(program_id, subprogram_id).
+has_subprogram(1, 2).
+has_subprogram(1, 3).
+has_subprogram(1, 4).
+
+% FACT: port(port_id, port_type, port_name, qualified_port_name, port_annotation_id, data_id).
+port(1, 'in', 'setup_configuration_file', 'calculate_goal_model<-setup_configuration_file', 2, 1).
+port(2, 'in', 'rast_3nm_raster_file', 'calculate_goal_model<-rast_3nm_raster_file', 4, 2).
+port(3, 'in', 'rast_1km_raster_file', 'calculate_goal_model<-rast_1km_raster_file', 6, 3).
+port(4, 'in', 'rast_ws_raster_file', 'calculate_goal_model<-rast_ws_raster_file', 8, 4).
+port(5, 'in', 'rast_pep_file', 'calculate_goal_model<-rast_pep_file', 10, 5).
+port(6, 'in', 'rast_wdpa_pep_file', 'calculate_goal_model<-rast_wdpa_pep_file', 12, 6).
+port(7, 'out', 'zonal_3nm_file', 'calculate_goal_model->zonal_3nm_file', 14, 7).
+port(8, 'out', 'zonal_1km_file', 'calculate_goal_model->zonal_1km_file', 17, 8).
+port(9, 'out', 'zonal_ws_file', 'calculate_goal_model->zonal_ws_file', 20, 9).
+port(10, 'in', 'setup_configuration_file', 'calculate_goal_model.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file', 24, 10).
+port(11, 'out', 'dir_goal', 'calculate_goal_model.set_up_configuration_and_start_provenance_tracking->dir_goal', 26, 11).
+port(12, 'in', 'rast_3nm_raster_file', 'calculate_goal_model.read_in_OHI_region_rasters<-rast_3nm_raster_file', 29, 12).
+port(13, 'in', 'rast_1km_raster_file', 'calculate_goal_model.read_in_OHI_region_rasters<-rast_1km_raster_file', 31, 13).
+port(14, 'in', 'rast_ws_raster_file', 'calculate_goal_model.read_in_OHI_region_rasters<-rast_ws_raster_file', 33, 14).
+port(15, 'in', 'rast_pep_file', 'calculate_goal_model.read_in_OHI_region_rasters<-rast_pep_file', 35, 15).
+port(16, 'in', 'rast_wdpa_pep_file', 'calculate_goal_model.read_in_OHI_region_rasters<-rast_wdpa_pep_file', 37, 16).
+port(17, 'out', 'rast_3nm', 'calculate_goal_model.read_in_OHI_region_rasters->rast_3nm', 39, 17).
+port(18, 'out', 'rast_1km', 'calculate_goal_model.read_in_OHI_region_rasters->rast_1km', 40, 18).
+port(19, 'out', 'rast_ws', 'calculate_goal_model.read_in_OHI_region_rasters->rast_ws', 41, 19).
+port(20, 'out', 'rast_pep', 'calculate_goal_model.read_in_OHI_region_rasters->rast_pep', 42, 20).
+port(21, 'out', 'rast_wdpa_pep', 'calculate_goal_model.read_in_OHI_region_rasters->rast_wdpa_pep', 43, 21).
+port(22, 'param', 'dir_goal', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-dir_goal', 46, 11).
+port(23, 'in', 'rast_3nm', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_3nm', 47, 17).
+port(24, 'in', 'rast_1km', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_1km', 48, 18).
+port(25, 'in', 'rast_ws', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_ws', 49, 19).
+port(26, 'in', 'rast_pep', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_pep', 50, 20).
+port(27, 'in', 'rast_wdpa_pep', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_wdpa_pep', 51, 21).
+port(28, 'out', 'zonal_3nm_file', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells->zonal_3nm_file', 52, 22).
+port(29, 'out', 'zonal_1km_file', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells->zonal_1km_file', 55, 23).
+port(30, 'out', 'zonal_ws_file', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells->zonal_ws_file', 58, 24).
+
+% FACT: port_alias(port_id, alias).
+port_alias(1, 'setup_R').
+port_alias(10, 'setup_R').
+
+% FACT: port_uri_template(port_id, uri).
+port_uri_template(2, 'file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m').
+port_uri_template(3, 'file:{dir_goal}/spatial/hs_inland_1km_raster_500m').
+port_uri_template(4, 'file:{dir_goal}/spatial/howe_sound_watershed_500m.tif').
+port_uri_template(5, 'file:{dir_goal}/spatial/howe_sound_watershed_500m.tif').
+port_uri_template(6, 'file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif').
+port_uri_template(7, 'file:{dir_goal}/int/zonal_stats_3nm.csv').
+port_uri_template(8, 'file:{dir_goal}/int/zonal_stats_1km.csv').
+port_uri_template(9, 'file:{dir_goal}/int/zonal_stats_ws.csv').
+port_uri_template(12, 'file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m').
+port_uri_template(13, 'file:{dir_goal}/spatial/hs_inland_1km_raster_500m').
+port_uri_template(14, 'file:{dir_goal}/spatial/howe_sound_watershed_500m.tif').
+port_uri_template(15, 'file:{dir_goal}/spatial/howe_sound_watershed_500m.tif').
+port_uri_template(16, 'file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif').
+port_uri_template(28, 'file:{dir_goal}/int/zonal_stats_3nm.csv').
+port_uri_template(29, 'file:{dir_goal}/int/zonal_stats_1km.csv').
+port_uri_template(30, 'file:{dir_goal}/int/zonal_stats_ws.csv').
+
+% FACT: has_in_port(block_id, port_id).
+has_in_port(1, 1).
+has_in_port(1, 2).
+has_in_port(1, 3).
+has_in_port(1, 4).
+has_in_port(1, 5).
+has_in_port(1, 6).
+has_in_port(2, 10).
+has_in_port(3, 12).
+has_in_port(3, 13).
+has_in_port(3, 14).
+has_in_port(3, 15).
+has_in_port(3, 16).
+has_in_port(4, 22).
+has_in_port(4, 23).
+has_in_port(4, 24).
+has_in_port(4, 25).
+has_in_port(4, 26).
+has_in_port(4, 27).
+
+% FACT: has_out_port(block_id, port_id).
+has_out_port(1, 7).
+has_out_port(1, 8).
+has_out_port(1, 9).
+has_out_port(2, 11).
+has_out_port(3, 17).
+has_out_port(3, 18).
+has_out_port(3, 19).
+has_out_port(3, 20).
+has_out_port(3, 21).
+has_out_port(4, 28).
+has_out_port(4, 29).
+has_out_port(4, 30).
+
+% FACT: data(data_id, data_name, qualified_data_name).
+data(1, 'setup_R', '[setup_R]').
+data(2, 'rast_3nm_raster_file', '[rast_3nm_raster_file]').
+data(3, 'rast_1km_raster_file', '[rast_1km_raster_file]').
+data(4, 'rast_ws_raster_file', '[rast_ws_raster_file]').
+data(5, 'rast_pep_file', '[rast_pep_file]').
+data(6, 'rast_wdpa_pep_file', '[rast_wdpa_pep_file]').
+data(7, 'zonal_3nm_file', '[zonal_3nm_file]').
+data(8, 'zonal_1km_file', '[zonal_1km_file]').
+data(9, 'zonal_ws_file', '[zonal_ws_file]').
+data(10, 'setup_R', 'calculate_goal_model[setup_R]').
+data(11, 'dir_goal', 'calculate_goal_model[dir_goal]').
+data(12, 'rast_3nm_raster_file', 'calculate_goal_model[rast_3nm_raster_file]').
+data(13, 'rast_1km_raster_file', 'calculate_goal_model[rast_1km_raster_file]').
+data(14, 'rast_ws_raster_file', 'calculate_goal_model[rast_ws_raster_file]').
+data(15, 'rast_pep_file', 'calculate_goal_model[rast_pep_file]').
+data(16, 'rast_wdpa_pep_file', 'calculate_goal_model[rast_wdpa_pep_file]').
+data(17, 'rast_3nm', 'calculate_goal_model[rast_3nm]').
+data(18, 'rast_1km', 'calculate_goal_model[rast_1km]').
+data(19, 'rast_ws', 'calculate_goal_model[rast_ws]').
+data(20, 'rast_pep', 'calculate_goal_model[rast_pep]').
+data(21, 'rast_wdpa_pep', 'calculate_goal_model[rast_wdpa_pep]').
+data(22, 'zonal_3nm_file', 'calculate_goal_model[zonal_3nm_file]').
+data(23, 'zonal_1km_file', 'calculate_goal_model[zonal_1km_file]').
+data(24, 'zonal_ws_file', 'calculate_goal_model[zonal_ws_file]').
+
+% FACT: channel(channel_id, data_id).
+channel(1, 7).
+channel(2, 8).
+channel(3, 9).
+channel(4, 10).
+channel(5, 12).
+channel(6, 13).
+channel(7, 14).
+channel(8, 15).
+channel(9, 16).
+channel(10, 11).
+channel(11, 17).
+channel(12, 18).
+channel(13, 19).
+channel(14, 20).
+channel(15, 21).
+channel(16, 1).
+channel(17, 2).
+channel(18, 3).
+channel(19, 4).
+channel(20, 5).
+channel(21, 6).
+channel(22, 22).
+channel(23, 23).
+channel(24, 24).
+
+% FACT: port_connects_to_channel(port_id, channel_id).
+port_connects_to_channel(28, 1).
+port_connects_to_channel(29, 2).
+port_connects_to_channel(30, 3).
+port_connects_to_channel(10, 4).
+port_connects_to_channel(12, 5).
+port_connects_to_channel(13, 6).
+port_connects_to_channel(14, 7).
+port_connects_to_channel(15, 8).
+port_connects_to_channel(16, 9).
+port_connects_to_channel(11, 10).
+port_connects_to_channel(22, 10).
+port_connects_to_channel(17, 11).
+port_connects_to_channel(23, 11).
+port_connects_to_channel(18, 12).
+port_connects_to_channel(24, 12).
+port_connects_to_channel(19, 13).
+port_connects_to_channel(25, 13).
+port_connects_to_channel(20, 14).
+port_connects_to_channel(26, 14).
+port_connects_to_channel(21, 15).
+port_connects_to_channel(27, 15).
+port_connects_to_channel(10, 16).
+port_connects_to_channel(12, 17).
+port_connects_to_channel(13, 18).
+port_connects_to_channel(14, 19).
+port_connects_to_channel(15, 20).
+port_connects_to_channel(16, 21).
+port_connects_to_channel(28, 22).
+port_connects_to_channel(29, 23).
+port_connects_to_channel(30, 24).
+
+% FACT: inflow_connects_to_channel(port_id, channel_id).
+inflow_connects_to_channel(1, 4).
+inflow_connects_to_channel(2, 5).
+inflow_connects_to_channel(3, 6).
+inflow_connects_to_channel(4, 7).
+inflow_connects_to_channel(5, 8).
+inflow_connects_to_channel(6, 9).
+inflow_connects_to_channel(1, 16).
+inflow_connects_to_channel(2, 17).
+inflow_connects_to_channel(3, 18).
+inflow_connects_to_channel(4, 19).
+inflow_connects_to_channel(5, 20).
+inflow_connects_to_channel(6, 21).
+
+% FACT: outflow_connects_to_channel(port_id, channel_id).
+outflow_connects_to_channel(7, 1).
+outflow_connects_to_channel(8, 2).
+outflow_connects_to_channel(9, 3).
+outflow_connects_to_channel(7, 22).
+outflow_connects_to_channel(8, 23).
+outflow_connects_to_channel(9, 24).
+
+% FACT: uri_variable(uri_variable_id, variable_name, port_id).
+uri_variable(1, 'dir_goal', 2).
+uri_variable(2, 'dir_goal', 3).
+uri_variable(3, 'dir_goal', 4).
+uri_variable(4, 'dir_goal', 5).
+uri_variable(5, 'dir_goal', 6).
+uri_variable(6, 'dir_goal', 7).
+uri_variable(7, 'dir_goal', 8).
+uri_variable(8, 'dir_goal', 9).
+uri_variable(9, 'dir_goal', 12).
+uri_variable(10, 'dir_goal', 13).
+uri_variable(11, 'dir_goal', 14).
+uri_variable(12, 'dir_goal', 15).
+uri_variable(13, 'dir_goal', 16).
+uri_variable(14, 'dir_goal', 28).
+uri_variable(15, 'dir_goal', 29).
+uri_variable(16, 'dir_goal', 30).
+
+% FACT: log_template(log_template_id, port_id, entry_template, log_annotation_id).
+
+% FACT: log_template_variable(log_variable_id, variable_name, log_template_id).

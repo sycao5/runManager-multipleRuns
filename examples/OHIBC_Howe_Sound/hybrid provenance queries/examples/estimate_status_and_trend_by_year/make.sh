@@ -39,7 +39,7 @@ $YW_CMD graph $SCRIPT_DIR/estimate_status_and_trend_by_year.R \
 dot -Tpdf $RESULTS_DIR/complete_wf_graph_uri.gv > $RESULTS_DIR/complete_wf_graph_uri.pdf
 dot -Tsvg $RESULTS_DIR/complete_wf_graph_uri.gv > $RESULTS_DIR/complete_wf_graph_uri.svg
 
-# list workflow outputs
+# list workflow outputs from prospective proveannce graph
 $QUERIES_DIR/list_workflow_outputs.sh > $RESULTS_DIR/workflow_outputs.txt
 
 
@@ -47,7 +47,7 @@ $QUERIES_DIR/list_workflow_outputs.sh > $RESULTS_DIR/workflow_outputs.txt
 #   Q1_pro   #
 ##############
 
-# draw worfklow graph upstream of lsp_status_trend_summary_db_file
+# draw prospective provenance graph upstream of lsp_status_trend_summary_db_file
 $QUERIES_DIR/render_wf_graph_upstream_of_data_q1.sh lsp_status_trend_summary_db_file > $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.gv
 dot -Tpdf $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.gv > $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.pdf
 dot -Tsvg $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.gv > $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.svg
@@ -64,7 +64,7 @@ $QUERIES_DIR/list_inputs_upstream_of_data_q2.sh lsp_status_trend_summary_db_file
 ##############
 
 
-# draw worfklow graph downstream of area_protected_total_file
+# draw prospective provenance graph downstream of area_protected_total_file
 $QUERIES_DIR/render_wf_graph_downstream_of_data_q3.sh area_protected_total_file > $RESULTS_DIR/wf_downstream_of_area_protected_total_file.gv
 dot -Tpdf $RESULTS_DIR/wf_downstream_of_area_protected_total_file.gv > $RESULTS_DIR/wf_downstream_of_area_protected_total_file.pdf
 dot -Tsvg $RESULTS_DIR/wf_downstream_of_area_protected_total_file.gv > $RESULTS_DIR/wf_downstream_of_area_protected_total_file.svg
@@ -82,7 +82,7 @@ $QUERIES_DIR/list_outputs_downstream_of_data_q4.sh area_protected_total_file are
 #   Q5_pro   #
 ##############
 
-# draw recon worfklow graph upstream of lsp_status_trend_summary_db_file
+# draw hybrid provenance graph upstream of lsp_status_trend_summary_db_file
 $QUERIES_DIR/render_wf_recon_graph_upstream_of_data_q5.sh lsp_status_trend_summary_db_file > $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.gv
 dot -Tpdf $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.gv > $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.pdf
 dot -Tsvg $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.gv > $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.svg
@@ -93,7 +93,7 @@ dot -Tsvg $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.gv 
 ##############
 
 
-# draw recon workflow graph with all observables
+# draw hybrid provenance graph with all observables
 
 $QUERIES_DIR/render_recon_complete_wf_graph_q6.sh > $RESULTS_DIR/wf_recon_complete_graph_all_observables.gv
 dot -Tpdf $RESULTS_DIR/wf_recon_complete_graph_all_observables.gv > $RESULTS_DIR/wf_recon_complete_graph_all_observables.pdf

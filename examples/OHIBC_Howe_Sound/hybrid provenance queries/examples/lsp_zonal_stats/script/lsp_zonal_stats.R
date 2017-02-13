@@ -7,7 +7,7 @@
 # Calculate goal model
 
 # @BEGIN calculate_goal_model
-# @in setup_configuration_file @AS setup.R
+# @in setup_configuration_file @AS setup_R
 # @in rast_3nm_raster_file @URI file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m
 # @in rast_1km_raster_file @URI file:{dir_goal}/spatial/hs_inland_1km_raster_500m
 # @in rast_ws_raster_file  @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
@@ -19,10 +19,10 @@
 
 
 # @BEGIN set_up_configuration_and_start_provenance_tracking
-# @in setup_configuration_file @AS setup.R
+# @in setup_configuration_file @AS setup_R
 # @out dir_goal
 
-source("setup.R")
+source("setup_R")
 # @END set_up_configuration_and_start_provenance_tracking
 
 

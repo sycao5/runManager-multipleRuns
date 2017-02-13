@@ -1,0 +1,13 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q2_Pro : List the script inputs that are upstream of data product zonal_3nm_file.
+
+q2_pro(DataProduct, InputDataName)
+...................................................................................................
+q2_pro(zonal_3nm_file,rast_wdpa_pep_file).
+q2_pro(zonal_3nm_file,rast_pep_file).
+q2_pro(zonal_3nm_file,rast_ws_raster_file).
+q2_pro(zonal_3nm_file,rast_1km_raster_file).
+q2_pro(zonal_3nm_file,rast_3nm_raster_file).
+q2_pro(zonal_3nm_file,setup_R).

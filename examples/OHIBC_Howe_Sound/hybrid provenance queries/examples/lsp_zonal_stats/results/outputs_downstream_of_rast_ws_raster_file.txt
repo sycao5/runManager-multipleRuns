@@ -1,0 +1,10 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q4_Pro : List the outputs that depend on rast_ws_raster_file.
+
+q4_pro(UpstreamDataName, OutputDataName)
+...................................................................................................
+q4_pro(rast_ws_raster_file,zonal_ws_file).
+q4_pro(rast_ws_raster_file,zonal_1km_file).
+q4_pro(rast_ws_raster_file,zonal_3nm_file).

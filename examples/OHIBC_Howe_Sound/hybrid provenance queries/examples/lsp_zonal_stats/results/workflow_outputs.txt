@@ -1,0 +1,3 @@
+q(zonal_ws_file).
+q(zonal_1km_file).
+q(zonal_3nm_file).

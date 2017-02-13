@@ -1,0 +1,213 @@
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_source_file(SourceId, SourceFile).
+%...................................................................................................
+yw_source_file(1,'./script/lsp_zonal_stats.R').
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_workflow_script(WorkflowId, WorkflowName, SourceId, SourceFile).
+%...................................................................................................
+yw_workflow_script(1,calculate_goal_model,1,'./script/lsp_zonal_stats.R').
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_program(WorkflowId, ProgramName, WorkflowId, SourceId, BeginLine, EndLine).
+%...................................................................................................
+yw_program(1,calculate_goal_model,nil,1,9,105).
+yw_program(2,set_up_configuration_and_start_provenance_tracking,1,1,21,26).
+yw_program(3,read_in_OHI_region_rasters,1,1,29,52).
+yw_program(4,outputs_zonal_stats_dataframes_for_protected_cells,1,1,60,103).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_workflow(WorkflowId, WorkflowName, ParentWorkflowId, SourceId, BeginLine, EndLine).
+%...................................................................................................
+yw_workflow(1,calculate_goal_model,nil,1,9,105).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_workflow_step(StepId, StepName, WorkflowId, SourceId, BeginLine, EndLine).
+%...................................................................................................
+yw_workflow_step(2,set_up_configuration_and_start_provenance_tracking,1,1,21,26).
+yw_workflow_step(3,read_in_OHI_region_rasters,1,1,29,52).
+yw_workflow_step(4,outputs_zonal_stats_dataframes_for_protected_cells,1,1,60,103).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_function(FunctionId, FunctionName, ParentWorkflowId, SourceId, BeginLine, EndLine).
+%...................................................................................................
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_data(DataId, DataName, WorkflowId, WorkflowName).
+%...................................................................................................
+yw_data(1,setup_R,nil,nil).
+yw_data(2,rast_3nm_raster_file,nil,nil).
+yw_data(3,rast_1km_raster_file,nil,nil).
+yw_data(4,rast_ws_raster_file,nil,nil).
+yw_data(5,rast_pep_file,nil,nil).
+yw_data(6,rast_wdpa_pep_file,nil,nil).
+yw_data(7,zonal_3nm_file,nil,nil).
+yw_data(8,zonal_1km_file,nil,nil).
+yw_data(9,zonal_ws_file,nil,nil).
+yw_data(10,setup_R,1,calculate_goal_model).
+yw_data(11,dir_goal,1,calculate_goal_model).
+yw_data(12,rast_3nm_raster_file,1,calculate_goal_model).
+yw_data(13,rast_1km_raster_file,1,calculate_goal_model).
+yw_data(14,rast_ws_raster_file,1,calculate_goal_model).
+yw_data(15,rast_pep_file,1,calculate_goal_model).
+yw_data(16,rast_wdpa_pep_file,1,calculate_goal_model).
+yw_data(17,rast_3nm,1,calculate_goal_model).
+yw_data(18,rast_1km,1,calculate_goal_model).
+yw_data(19,rast_ws,1,calculate_goal_model).
+yw_data(20,rast_pep,1,calculate_goal_model).
+yw_data(21,rast_wdpa_pep,1,calculate_goal_model).
+yw_data(22,zonal_3nm_file,1,calculate_goal_model).
+yw_data(23,zonal_1km_file,1,calculate_goal_model).
+yw_data(24,zonal_ws_file,1,calculate_goal_model).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_step_input(ProgramId, ProgramName, PortType, PortId, PortName, DataId, DataName).
+%...................................................................................................
+yw_step_input(4,outputs_zonal_stats_dataframes_for_protected_cells,param,22,dir_goal,11,dir_goal).
+yw_step_input(4,outputs_zonal_stats_dataframes_for_protected_cells,in,27,rast_wdpa_pep,21,rast_wdpa_pep).
+yw_step_input(4,outputs_zonal_stats_dataframes_for_protected_cells,in,26,rast_pep,20,rast_pep).
+yw_step_input(4,outputs_zonal_stats_dataframes_for_protected_cells,in,25,rast_ws,19,rast_ws).
+yw_step_input(4,outputs_zonal_stats_dataframes_for_protected_cells,in,24,rast_1km,18,rast_1km).
+yw_step_input(4,outputs_zonal_stats_dataframes_for_protected_cells,in,23,rast_3nm,17,rast_3nm).
+yw_step_input(3,read_in_OHI_region_rasters,in,16,rast_wdpa_pep_file,16,rast_wdpa_pep_file).
+yw_step_input(3,read_in_OHI_region_rasters,in,15,rast_pep_file,15,rast_pep_file).
+yw_step_input(3,read_in_OHI_region_rasters,in,14,rast_ws_raster_file,14,rast_ws_raster_file).
+yw_step_input(3,read_in_OHI_region_rasters,in,13,rast_1km_raster_file,13,rast_1km_raster_file).
+yw_step_input(3,read_in_OHI_region_rasters,in,12,rast_3nm_raster_file,12,rast_3nm_raster_file).
+yw_step_input(2,set_up_configuration_and_start_provenance_tracking,in,10,setup_configuration_file,10,setup_R).
+yw_step_input(1,calculate_goal_model,in,6,rast_wdpa_pep_file,6,rast_wdpa_pep_file).
+yw_step_input(1,calculate_goal_model,in,5,rast_pep_file,5,rast_pep_file).
+yw_step_input(1,calculate_goal_model,in,4,rast_ws_raster_file,4,rast_ws_raster_file).
+yw_step_input(1,calculate_goal_model,in,3,rast_1km_raster_file,3,rast_1km_raster_file).
+yw_step_input(1,calculate_goal_model,in,2,rast_3nm_raster_file,2,rast_3nm_raster_file).
+yw_step_input(1,calculate_goal_model,in,1,setup_configuration_file,1,setup_R).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_step_output(ProgramId, ProgramName, PortType, PortId, PortName, DataId, DataName).
+%...................................................................................................
+yw_step_output(1,calculate_goal_model,out,7,zonal_3nm_file,7,zonal_3nm_file).
+yw_step_output(1,calculate_goal_model,out,8,zonal_1km_file,8,zonal_1km_file).
+yw_step_output(1,calculate_goal_model,out,9,zonal_ws_file,9,zonal_ws_file).
+yw_step_output(2,set_up_configuration_and_start_provenance_tracking,out,11,dir_goal,11,dir_goal).
+yw_step_output(3,read_in_OHI_region_rasters,out,17,rast_3nm,17,rast_3nm).
+yw_step_output(3,read_in_OHI_region_rasters,out,18,rast_1km,18,rast_1km).
+yw_step_output(3,read_in_OHI_region_rasters,out,19,rast_ws,19,rast_ws).
+yw_step_output(3,read_in_OHI_region_rasters,out,20,rast_pep,20,rast_pep).
+yw_step_output(3,read_in_OHI_region_rasters,out,21,rast_wdpa_pep,21,rast_wdpa_pep).
+yw_step_output(4,outputs_zonal_stats_dataframes_for_protected_cells,out,28,zonal_3nm_file,22,zonal_3nm_file).
+yw_step_output(4,outputs_zonal_stats_dataframes_for_protected_cells,out,29,zonal_1km_file,23,zonal_1km_file).
+yw_step_output(4,outputs_zonal_stats_dataframes_for_protected_cells,out,30,zonal_ws_file,24,zonal_ws_file).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_inflow(WorkflowId, WorkflowName, DataId, DataName, ProgramId, ProgramName).
+%...................................................................................................
+yw_inflow(1,calculate_goal_model,16,rast_wdpa_pep_file,3,read_in_OHI_region_rasters).
+yw_inflow(1,calculate_goal_model,15,rast_pep_file,3,read_in_OHI_region_rasters).
+yw_inflow(1,calculate_goal_model,14,rast_ws_raster_file,3,read_in_OHI_region_rasters).
+yw_inflow(1,calculate_goal_model,13,rast_1km_raster_file,3,read_in_OHI_region_rasters).
+yw_inflow(1,calculate_goal_model,12,rast_3nm_raster_file,3,read_in_OHI_region_rasters).
+yw_inflow(1,calculate_goal_model,10,setup_R,2,set_up_configuration_and_start_provenance_tracking).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_flow(SourceProgramId, SourceProgramName, SourcePortId, SourcePortName, DataId, DataName, SinkPortId, SinkPortName, SinkProgramId, SinkProgramName).
+%...................................................................................................
+yw_flow(2,set_up_configuration_and_start_provenance_tracking,11,dir_goal,11,dir_goal,22,dir_goal,4,outputs_zonal_stats_dataframes_for_protected_cells).
+yw_flow(3,read_in_OHI_region_rasters,17,rast_3nm,17,rast_3nm,23,rast_3nm,4,outputs_zonal_stats_dataframes_for_protected_cells).
+yw_flow(3,read_in_OHI_region_rasters,18,rast_1km,18,rast_1km,24,rast_1km,4,outputs_zonal_stats_dataframes_for_protected_cells).
+yw_flow(3,read_in_OHI_region_rasters,19,rast_ws,19,rast_ws,25,rast_ws,4,outputs_zonal_stats_dataframes_for_protected_cells).
+yw_flow(3,read_in_OHI_region_rasters,20,rast_pep,20,rast_pep,26,rast_pep,4,outputs_zonal_stats_dataframes_for_protected_cells).
+yw_flow(3,read_in_OHI_region_rasters,21,rast_wdpa_pep,21,rast_wdpa_pep,27,rast_wdpa_pep,4,outputs_zonal_stats_dataframes_for_protected_cells).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_outflow(StepId, StepName, StepOutDataId, StepOutDataName, WorkflowId, WorkflowName, WorkflowOutDataId, WorkflowOutDataName).
+%...................................................................................................
+yw_outflow(4,outputs_zonal_stats_dataframes_for_protected_cells,22,zonal_3nm_file,1,calculate_goal_model,7,zonal_3nm_file).
+yw_outflow(4,outputs_zonal_stats_dataframes_for_protected_cells,23,zonal_1km_file,1,calculate_goal_model,8,zonal_1km_file).
+yw_outflow(4,outputs_zonal_stats_dataframes_for_protected_cells,24,zonal_ws_file,1,calculate_goal_model,9,zonal_ws_file).
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_qualified_name(EntityType, Id, QualifiedName).
+%...................................................................................................
+yw_qualified_name(program,1,calculate_goal_model).
+yw_qualified_name(program,2,'calculate_goal_model.set_up_configuration_and_start_provenance_tracking').
+yw_qualified_name(program,3,'calculate_goal_model.read_in_OHI_region_rasters').
+yw_qualified_name(program,4,'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells').
+yw_qualified_name(port,1,'calculate_goal_model<-setup_configuration_file').
+yw_qualified_name(port,2,'calculate_goal_model<-rast_3nm_raster_file').
+yw_qualified_name(port,3,'calculate_goal_model<-rast_1km_raster_file').
+yw_qualified_name(port,4,'calculate_goal_model<-rast_ws_raster_file').
+yw_qualified_name(port,5,'calculate_goal_model<-rast_pep_file').
+yw_qualified_name(port,6,'calculate_goal_model<-rast_wdpa_pep_file').
+yw_qualified_name(port,7,'calculate_goal_model->zonal_3nm_file').
+yw_qualified_name(port,8,'calculate_goal_model->zonal_1km_file').
+yw_qualified_name(port,9,'calculate_goal_model->zonal_ws_file').
+yw_qualified_name(port,10,'calculate_goal_model.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file').
+yw_qualified_name(port,11,'calculate_goal_model.set_up_configuration_and_start_provenance_tracking->dir_goal').
+yw_qualified_name(port,12,'calculate_goal_model.read_in_OHI_region_rasters<-rast_3nm_raster_file').
+yw_qualified_name(port,13,'calculate_goal_model.read_in_OHI_region_rasters<-rast_1km_raster_file').
+yw_qualified_name(port,14,'calculate_goal_model.read_in_OHI_region_rasters<-rast_ws_raster_file').
+yw_qualified_name(port,15,'calculate_goal_model.read_in_OHI_region_rasters<-rast_pep_file').
+yw_qualified_name(port,16,'calculate_goal_model.read_in_OHI_region_rasters<-rast_wdpa_pep_file').
+yw_qualified_name(port,17,'calculate_goal_model.read_in_OHI_region_rasters->rast_3nm').
+yw_qualified_name(port,18,'calculate_goal_model.read_in_OHI_region_rasters->rast_1km').
+yw_qualified_name(port,19,'calculate_goal_model.read_in_OHI_region_rasters->rast_ws').
+yw_qualified_name(port,20,'calculate_goal_model.read_in_OHI_region_rasters->rast_pep').
+yw_qualified_name(port,21,'calculate_goal_model.read_in_OHI_region_rasters->rast_wdpa_pep').
+yw_qualified_name(port,22,'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-dir_goal').
+yw_qualified_name(port,23,'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_3nm').
+yw_qualified_name(port,24,'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_1km').
+yw_qualified_name(port,25,'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_ws').
+yw_qualified_name(port,26,'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_pep').
+yw_qualified_name(port,27,'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_wdpa_pep').
+yw_qualified_name(port,28,'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells->zonal_3nm_file').
+yw_qualified_name(port,29,'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells->zonal_1km_file').
+yw_qualified_name(port,30,'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells->zonal_ws_file').
+yw_qualified_name(data,1,'[setup_R]').
+yw_qualified_name(data,2,'[rast_3nm_raster_file]').
+yw_qualified_name(data,3,'[rast_1km_raster_file]').
+yw_qualified_name(data,4,'[rast_ws_raster_file]').
+yw_qualified_name(data,5,'[rast_pep_file]').
+yw_qualified_name(data,6,'[rast_wdpa_pep_file]').
+yw_qualified_name(data,7,'[zonal_3nm_file]').
+yw_qualified_name(data,8,'[zonal_1km_file]').
+yw_qualified_name(data,9,'[zonal_ws_file]').
+yw_qualified_name(data,10,'calculate_goal_model[setup_R]').
+yw_qualified_name(data,11,'calculate_goal_model[dir_goal]').
+yw_qualified_name(data,12,'calculate_goal_model[rast_3nm_raster_file]').
+yw_qualified_name(data,13,'calculate_goal_model[rast_1km_raster_file]').
+yw_qualified_name(data,14,'calculate_goal_model[rast_ws_raster_file]').
+yw_qualified_name(data,15,'calculate_goal_model[rast_pep_file]').
+yw_qualified_name(data,16,'calculate_goal_model[rast_wdpa_pep_file]').
+yw_qualified_name(data,17,'calculate_goal_model[rast_3nm]').
+yw_qualified_name(data,18,'calculate_goal_model[rast_1km]').
+yw_qualified_name(data,19,'calculate_goal_model[rast_ws]').
+yw_qualified_name(data,20,'calculate_goal_model[rast_pep]').
+yw_qualified_name(data,21,'calculate_goal_model[rast_wdpa_pep]').
+yw_qualified_name(data,22,'calculate_goal_model[zonal_3nm_file]').
+yw_qualified_name(data,23,'calculate_goal_model[zonal_1km_file]').
+yw_qualified_name(data,24,'calculate_goal_model[zonal_ws_file]').
+
+
+%---------------------------------------------------------------------------------------------------
+% FACT: yw_description(EntityType, Id, Name, Description)).
+%...................................................................................................
+yw_description(port,7,zonal_3nm_file,'summary of zonal stats datafrmes (3nm offshore)').
+yw_description(port,8,zonal_1km_file,'summary of zonal stats dataframes (1km inland)').
+yw_description(port,9,zonal_ws_file,'summary of zonal stats dataframes (inland, full watershed)').
+yw_description(port,28,zonal_3nm_file,'summary of zonal stats datafrmes (3nm offshore)').
+yw_description(port,29,zonal_1km_file,'summary of zonal stats dataframes (1km inland)').
+yw_description(port,30,zonal_ws_file,'summary of zonal stats dataframes (inland, full watershed)').
