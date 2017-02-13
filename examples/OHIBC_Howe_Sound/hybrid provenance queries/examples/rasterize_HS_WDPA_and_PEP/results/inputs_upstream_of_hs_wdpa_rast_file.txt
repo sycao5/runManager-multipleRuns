@@ -1,0 +1,11 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q2_Pro : List the script inputs that are upstream of data product hs_wdpa_rast_file.
+
+q2_pro(DataProduct, InputDataName)
+...................................................................................................
+q2_pro(hs_wdpa_rast_file,hs_pep_shp_file).
+q2_pro(hs_wdpa_rast_file,hs_wdpa_shp_file).
+q2_pro(hs_wdpa_rast_file,ohibc_rgn_raster_500m).
+q2_pro(hs_wdpa_rast_file,setup_R).

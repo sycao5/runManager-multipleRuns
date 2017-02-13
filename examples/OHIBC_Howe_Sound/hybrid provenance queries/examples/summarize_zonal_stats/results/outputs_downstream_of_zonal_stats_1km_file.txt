@@ -1,0 +1,10 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q4_Pro : List the outputs that depend on zonal_stats_1km_file.
+
+q4_pro(UpstreamDataName, OutputDataName)
+...................................................................................................
+q4_pro(zonal_stats_1km_file,prot_1km).
+q4_pro(zonal_stats_1km_file,prot_3nm).
+q4_pro(zonal_stats_1km_file,prot_ws).

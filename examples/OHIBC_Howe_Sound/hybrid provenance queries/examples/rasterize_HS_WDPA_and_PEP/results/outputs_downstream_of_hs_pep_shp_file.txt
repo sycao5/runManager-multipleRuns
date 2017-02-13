@@ -1,0 +1,9 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q4_Pro : List the outputs that depend on hs_pep_shp_file.
+
+q4_pro(UpstreamDataName, OutputDataName)
+...................................................................................................
+q4_pro(hs_pep_shp_file,hs_pep_rast_file).
+q4_pro(hs_pep_shp_file,hs_wdpa_rast_file).

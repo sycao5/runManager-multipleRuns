@@ -1,0 +1,3 @@
+q(prot_1km).
+q(prot_3nm).
+q(prot_ws).

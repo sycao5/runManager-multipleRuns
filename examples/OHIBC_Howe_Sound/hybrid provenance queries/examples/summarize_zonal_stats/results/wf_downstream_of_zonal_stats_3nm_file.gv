@@ -1,0 +1,49 @@
+
+digraph yw_data_view {
+rankdir=TB
+fontname=Courier; fontsize=18; labelloc=t
+label="summarize_zonal_stats"
+subgraph cluster_workflow { label=""; color=black; penwidth=2
+subgraph cluster_workflow_inner { label=""; color=white
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+compute_total_cells_and_cumulaative_total_of_cells_per_region
+read_in_zonal_stats_dataframes
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+zonal_stats_3nm_file
+stats_3nm
+stats_1km
+stats_ws
+prot_ws
+prot_3nm
+prot_1km
+node[shape=box style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica]
+}}
+subgraph cluster_inflows { label=""; color=white; penwidth=2
+subgraph cluster_inflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+zonal_stats_3nm_file_inflow [label=""]
+}}
+subgraph cluster_outflows { label=""; color=white; penwidth=2
+subgraph cluster_outflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+prot_1km_outflow [label=""]
+prot_3nm_outflow [label=""]
+prot_ws_outflow [label=""]
+}}
+compute_total_cells_and_cumulaative_total_of_cells_per_region -> prot_1km
+compute_total_cells_and_cumulaative_total_of_cells_per_region -> prot_3nm
+compute_total_cells_and_cumulaative_total_of_cells_per_region -> prot_ws
+read_in_zonal_stats_dataframes -> stats_ws
+read_in_zonal_stats_dataframes -> stats_1km
+read_in_zonal_stats_dataframes -> stats_3nm
+zonal_stats_3nm_file -> read_in_zonal_stats_dataframes
+stats_3nm -> compute_total_cells_and_cumulaative_total_of_cells_per_region
+stats_1km -> compute_total_cells_and_cumulaative_total_of_cells_per_region
+stats_ws -> compute_total_cells_and_cumulaative_total_of_cells_per_region
+zonal_stats_3nm_file_inflow -> zonal_stats_3nm_file
+prot_1km -> prot_1km_outflow
+prot_3nm -> prot_3nm_outflow
+prot_ws -> prot_ws_outflow
+}
+

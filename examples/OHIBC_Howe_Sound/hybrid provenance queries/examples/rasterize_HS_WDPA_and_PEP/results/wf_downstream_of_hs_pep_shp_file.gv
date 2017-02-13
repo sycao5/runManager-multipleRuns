@@ -1,0 +1,44 @@
+
+digraph yw_data_view {
+rankdir=TB
+fontname=Courier; fontsize=18; labelloc=t
+label="Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents"
+subgraph cluster_workflow { label=""; color=black; penwidth=2
+subgraph cluster_workflow_inner { label=""; color=white
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+rasterize_howe_sound_wdpa_shape_file
+load_and_create_howe_sound_wdpa_pep_files
+rasterize_howe_sound_pep_shape_file
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+hs_pep_shp_file
+hs_wdpa_rast_file_handle
+hs_pep_rast_file_handle
+hs_wdpa_rast_file
+hs_pep_rast_file
+node[shape=box style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica]
+}}
+subgraph cluster_inflows { label=""; color=white; penwidth=2
+subgraph cluster_inflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+hs_pep_shp_file_inflow [label=""]
+}}
+subgraph cluster_outflows { label=""; color=white; penwidth=2
+subgraph cluster_outflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+hs_pep_rast_file_outflow [label=""]
+hs_wdpa_rast_file_outflow [label=""]
+}}
+rasterize_howe_sound_pep_shape_file -> hs_pep_rast_file
+rasterize_howe_sound_wdpa_shape_file -> hs_wdpa_rast_file
+load_and_create_howe_sound_wdpa_pep_files -> hs_pep_rast_file_handle
+load_and_create_howe_sound_wdpa_pep_files -> hs_wdpa_rast_file_handle
+hs_pep_shp_file -> load_and_create_howe_sound_wdpa_pep_files
+hs_wdpa_rast_file_handle -> rasterize_howe_sound_wdpa_shape_file
+hs_pep_shp_file -> rasterize_howe_sound_pep_shape_file
+hs_pep_rast_file_handle -> rasterize_howe_sound_pep_shape_file
+hs_pep_shp_file_inflow -> hs_pep_shp_file
+hs_pep_rast_file -> hs_pep_rast_file_outflow
+hs_wdpa_rast_file -> hs_wdpa_rast_file_outflow
+}
+

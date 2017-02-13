@@ -1,0 +1,194 @@
+
+% FACT: program(program_id, program_name, qualified_program_name, begin_annotation_id, end_annotation_id).
+program(1, 'summarize_zonal_stats', 'summarize_zonal_stats', 1, 48).
+program(2, 'set_up_configuration_and_start_provenance_tracking', 'summarize_zonal_stats.set_up_configuration_and_start_provenance_tracking', 16, 20).
+program(3, 'read_in_zonal_stats_dataframes', 'summarize_zonal_stats.read_in_zonal_stats_dataframes', 21, 32).
+program(4, 'set_goals_target_threshhold', 'summarize_zonal_stats.set_goals_target_threshhold', 33, 35).
+program(5, 'compute_total_cells_and_cumulaative_total_of_cells_per_region', 'summarize_zonal_stats.compute_total_cells_and_cumulaative_total_of_cells_per_region', 36, 47).
+
+% FACT: workflow(program_id).
+workflow(1).
+
+% FACT: function(program_id).
+
+% FACT: has_subprogram(program_id, subprogram_id).
+has_subprogram(1, 2).
+has_subprogram(1, 3).
+has_subprogram(1, 4).
+has_subprogram(1, 5).
+
+% FACT: port(port_id, port_type, port_name, qualified_port_name, port_annotation_id, data_id).
+port(1, 'in', 'setup_configuration_file', 'summarize_zonal_stats<-setup_configuration_file', 2, 1).
+port(2, 'in', 'zonal_stats_3nm_file', 'summarize_zonal_stats<-zonal_stats_3nm_file', 4, 2).
+port(3, 'in', 'zonal_stats_1km_file', 'summarize_zonal_stats<-zonal_stats_1km_file', 6, 3).
+port(4, 'in', 'zonal_stats_ws_file', 'summarize_zonal_stats<-zonal_stats_ws_file', 8, 4).
+port(5, 'out', 'prot_ws', 'summarize_zonal_stats->prot_ws', 10, 5).
+port(6, 'out', 'prot_3nm', 'summarize_zonal_stats->prot_3nm', 12, 6).
+port(7, 'out', 'prot_1km', 'summarize_zonal_stats->prot_1km', 14, 7).
+port(8, 'in', 'setup_configuration_file', 'summarize_zonal_stats.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file', 17, 8).
+port(9, 'out', 'dir_goal', 'summarize_zonal_stats.set_up_configuration_and_start_provenance_tracking->dir_goal', 19, 9).
+port(10, 'param', 'dir_goal', 'summarize_zonal_stats.read_in_zonal_stats_dataframes<-dir_goal', 22, 9).
+port(11, 'in', 'zonal_stats_3nm_file', 'summarize_zonal_stats.read_in_zonal_stats_dataframes<-zonal_stats_3nm_file', 23, 10).
+port(12, 'in', 'zonal_stats_1km_file', 'summarize_zonal_stats.read_in_zonal_stats_dataframes<-zonal_stats_1km_file', 25, 11).
+port(13, 'in', 'zonal_stats_ws_file', 'summarize_zonal_stats.read_in_zonal_stats_dataframes<-zonal_stats_ws_file', 27, 12).
+port(14, 'out', 'stats_3nm', 'summarize_zonal_stats.read_in_zonal_stats_dataframes->stats_3nm', 29, 13).
+port(15, 'out', 'stats_1km', 'summarize_zonal_stats.read_in_zonal_stats_dataframes->stats_1km', 30, 14).
+port(16, 'out', 'stats_ws', 'summarize_zonal_stats.read_in_zonal_stats_dataframes->stats_ws', 31, 15).
+port(17, 'out', 'lsp_thresh', 'summarize_zonal_stats.set_goals_target_threshhold->lsp_thresh', 34, 16).
+port(18, 'param', 'lsp_thresh', 'summarize_zonal_stats.compute_total_cells_and_cumulaative_total_of_cells_per_region<-lsp_thresh', 37, 16).
+port(19, 'in', 'stats_1km', 'summarize_zonal_stats.compute_total_cells_and_cumulaative_total_of_cells_per_region<-stats_1km', 38, 14).
+port(20, 'in', 'stats_3nm', 'summarize_zonal_stats.compute_total_cells_and_cumulaative_total_of_cells_per_region<-stats_3nm', 39, 13).
+port(21, 'in', 'stats_ws', 'summarize_zonal_stats.compute_total_cells_and_cumulaative_total_of_cells_per_region<-stats_ws', 40, 15).
+port(22, 'out', 'prot_ws', 'summarize_zonal_stats.compute_total_cells_and_cumulaative_total_of_cells_per_region->prot_ws', 41, 17).
+port(23, 'out', 'prot_3nm', 'summarize_zonal_stats.compute_total_cells_and_cumulaative_total_of_cells_per_region->prot_3nm', 43, 18).
+port(24, 'out', 'prot_1km', 'summarize_zonal_stats.compute_total_cells_and_cumulaative_total_of_cells_per_region->prot_1km', 45, 19).
+
+% FACT: port_alias(port_id, alias).
+port_alias(1, 'setup_R').
+port_alias(8, 'setup_R').
+
+% FACT: port_uri_template(port_id, uri).
+port_uri_template(2, 'file:{dir_goal}/int/zonal_stats_3nm.csv').
+port_uri_template(3, 'file:{dir_goal}/int/zonal_stats_1km.csv').
+port_uri_template(4, 'file:{dir_goal}/int/zonal_stats_ws.csv').
+port_uri_template(5, 'file:{dir_goal}/int/area_protected_ws.csv').
+port_uri_template(6, 'file:{dir_goal}/int/area_protected_3nm.csv').
+port_uri_template(7, 'file:{dir_goal}/int/area_protected_1km.csv').
+port_uri_template(11, 'file:{dir_goal}/int/zonal_stats_3nm.csv').
+port_uri_template(12, 'file:{dir_goal}/int/zonal_stats_1km.csv').
+port_uri_template(13, 'file:{dir_goal}/int/zonal_stats_ws.csv').
+port_uri_template(22, 'file:{dir_goal}/int/area_protected_ws.csv').
+port_uri_template(23, 'file:{dir_goal}/int/area_protected_3nm.csv').
+port_uri_template(24, 'file:{dir_goal}/int/area_protected_1km.csv').
+
+% FACT: has_in_port(block_id, port_id).
+has_in_port(1, 1).
+has_in_port(1, 2).
+has_in_port(1, 3).
+has_in_port(1, 4).
+has_in_port(2, 8).
+has_in_port(3, 10).
+has_in_port(3, 11).
+has_in_port(3, 12).
+has_in_port(3, 13).
+has_in_port(5, 18).
+has_in_port(5, 19).
+has_in_port(5, 20).
+has_in_port(5, 21).
+
+% FACT: has_out_port(block_id, port_id).
+has_out_port(1, 5).
+has_out_port(1, 6).
+has_out_port(1, 7).
+has_out_port(2, 9).
+has_out_port(3, 14).
+has_out_port(3, 15).
+has_out_port(3, 16).
+has_out_port(4, 17).
+has_out_port(5, 22).
+has_out_port(5, 23).
+has_out_port(5, 24).
+
+% FACT: data(data_id, data_name, qualified_data_name).
+data(1, 'setup_R', '[setup_R]').
+data(2, 'zonal_stats_3nm_file', '[zonal_stats_3nm_file]').
+data(3, 'zonal_stats_1km_file', '[zonal_stats_1km_file]').
+data(4, 'zonal_stats_ws_file', '[zonal_stats_ws_file]').
+data(5, 'prot_ws', '[prot_ws]').
+data(6, 'prot_3nm', '[prot_3nm]').
+data(7, 'prot_1km', '[prot_1km]').
+data(8, 'setup_R', 'summarize_zonal_stats[setup_R]').
+data(9, 'dir_goal', 'summarize_zonal_stats[dir_goal]').
+data(10, 'zonal_stats_3nm_file', 'summarize_zonal_stats[zonal_stats_3nm_file]').
+data(11, 'zonal_stats_1km_file', 'summarize_zonal_stats[zonal_stats_1km_file]').
+data(12, 'zonal_stats_ws_file', 'summarize_zonal_stats[zonal_stats_ws_file]').
+data(13, 'stats_3nm', 'summarize_zonal_stats[stats_3nm]').
+data(14, 'stats_1km', 'summarize_zonal_stats[stats_1km]').
+data(15, 'stats_ws', 'summarize_zonal_stats[stats_ws]').
+data(16, 'lsp_thresh', 'summarize_zonal_stats[lsp_thresh]').
+data(17, 'prot_ws', 'summarize_zonal_stats[prot_ws]').
+data(18, 'prot_3nm', 'summarize_zonal_stats[prot_3nm]').
+data(19, 'prot_1km', 'summarize_zonal_stats[prot_1km]').
+
+% FACT: channel(channel_id, data_id).
+channel(1, 5).
+channel(2, 6).
+channel(3, 7).
+channel(4, 8).
+channel(5, 9).
+channel(6, 10).
+channel(7, 11).
+channel(8, 12).
+channel(9, 16).
+channel(10, 14).
+channel(11, 13).
+channel(12, 15).
+channel(13, 1).
+channel(14, 2).
+channel(15, 3).
+channel(16, 4).
+channel(17, 17).
+channel(18, 18).
+channel(19, 19).
+
+% FACT: port_connects_to_channel(port_id, channel_id).
+port_connects_to_channel(22, 1).
+port_connects_to_channel(23, 2).
+port_connects_to_channel(24, 3).
+port_connects_to_channel(8, 4).
+port_connects_to_channel(9, 5).
+port_connects_to_channel(10, 5).
+port_connects_to_channel(11, 6).
+port_connects_to_channel(12, 7).
+port_connects_to_channel(13, 8).
+port_connects_to_channel(17, 9).
+port_connects_to_channel(18, 9).
+port_connects_to_channel(15, 10).
+port_connects_to_channel(19, 10).
+port_connects_to_channel(14, 11).
+port_connects_to_channel(20, 11).
+port_connects_to_channel(16, 12).
+port_connects_to_channel(21, 12).
+port_connects_to_channel(8, 13).
+port_connects_to_channel(11, 14).
+port_connects_to_channel(12, 15).
+port_connects_to_channel(13, 16).
+port_connects_to_channel(22, 17).
+port_connects_to_channel(23, 18).
+port_connects_to_channel(24, 19).
+
+% FACT: inflow_connects_to_channel(port_id, channel_id).
+inflow_connects_to_channel(1, 4).
+inflow_connects_to_channel(2, 6).
+inflow_connects_to_channel(3, 7).
+inflow_connects_to_channel(4, 8).
+inflow_connects_to_channel(1, 13).
+inflow_connects_to_channel(2, 14).
+inflow_connects_to_channel(3, 15).
+inflow_connects_to_channel(4, 16).
+
+% FACT: outflow_connects_to_channel(port_id, channel_id).
+outflow_connects_to_channel(5, 1).
+outflow_connects_to_channel(6, 2).
+outflow_connects_to_channel(7, 3).
+outflow_connects_to_channel(5, 17).
+outflow_connects_to_channel(6, 18).
+outflow_connects_to_channel(7, 19).
+
+% FACT: uri_variable(uri_variable_id, variable_name, port_id).
+uri_variable(1, 'dir_goal', 2).
+uri_variable(2, 'dir_goal', 3).
+uri_variable(3, 'dir_goal', 4).
+uri_variable(4, 'dir_goal', 5).
+uri_variable(5, 'dir_goal', 6).
+uri_variable(6, 'dir_goal', 7).
+uri_variable(7, 'dir_goal', 11).
+uri_variable(8, 'dir_goal', 12).
+uri_variable(9, 'dir_goal', 13).
+uri_variable(10, 'dir_goal', 22).
+uri_variable(11, 'dir_goal', 23).
+uri_variable(12, 'dir_goal', 24).
+
+% FACT: log_template(log_template_id, port_id, entry_template, log_annotation_id).
+
+% FACT: log_template_variable(log_variable_id, variable_name, log_template_id).

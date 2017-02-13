@@ -1,0 +1,9 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q4_Pro : List the outputs that depend on ohibc_rgn_raster_500m.
+
+q4_pro(UpstreamDataName, OutputDataName)
+...................................................................................................
+q4_pro(ohibc_rgn_raster_500m,hs_pep_rast_file).
+q4_pro(ohibc_rgn_raster_500m,hs_wdpa_rast_file).

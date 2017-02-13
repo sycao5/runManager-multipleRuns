@@ -1,8 +1,9 @@
 
 
 ---------------------------------------------------------------------------------------------------
-Q4_Pro : List the outputs that depend on prot_1km_stats_file.
+Q4_Pro : List the outputs that depend on hs_wdpa_shp_file.
 
 q4_pro(UpstreamDataName, OutputDataName)
 ...................................................................................................
-q4_pro(prot_1km_stats_file,area_protected_total_file).
+q4_pro(hs_wdpa_shp_file,hs_pep_rast_file).
+q4_pro(hs_wdpa_shp_file,hs_wdpa_rast_file).

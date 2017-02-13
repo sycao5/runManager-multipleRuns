@@ -1,0 +1,78 @@
+
+% FACT: extract_source(source_id, source_path).
+extract_source(1, './script/rasterize_HS_WDPA_and_PEP.R').
+
+% FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
+annotation(1, 1, 10, 'begin', '@BEGIN', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents').
+annotation(2, 1, 11, 'in', '@in', 'setup_configuration_file').
+annotation(3, 1, 11, 'as', '@AS', 'setup_R').
+annotation(4, 1, 12, 'in', '@in', 'hs_wdpa_shp_file').
+annotation(5, 1, 12, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_wdpa_poly.shp').
+annotation(6, 1, 13, 'in', '@in', 'hs_pep_shp_file').
+annotation(7, 1, 13, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_pep_poly.shp').
+annotation(8, 1, 14, 'in', '@in', 'ohibc_rgn_raster_500m').
+annotation(9, 1, 14, 'uri', '@URI', 'file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif').
+annotation(10, 1, 16, 'out', '@out', 'hs_wdpa_rast_file').
+annotation(11, 1, 16, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif').
+annotation(12, 1, 17, 'out', '@out', 'hs_pep_rast_file').
+annotation(13, 1, 17, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_pep_rast_500m.tif').
+annotation(14, 1, 19, 'begin', '@BEGIN', 'set_up_configuration_and_start_provenance_tracking').
+annotation(15, 1, 20, 'in', '@in', 'setup_configuration_file').
+annotation(16, 1, 20, 'as', '@AS', 'setup_R').
+annotation(17, 1, 21, 'out', '@out', 'dir_spatial').
+annotation(18, 1, 22, 'out', '@out', 'dir_goal').
+annotation(19, 1, 25, 'end', '@END', 'set_up_configuration_and_start_provenance_tracking').
+annotation(20, 1, 28, 'begin', '@BEGIN', 'rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution').
+annotation(21, 1, 29, 'param', '@param', 'dir_spatial').
+annotation(22, 1, 30, 'in', '@in', 'ohibc_rgn_raster_500m').
+annotation(23, 1, 30, 'uri', '@URI', 'file:{dir_spatial}/raster/ohibc_rgn_raster_500m.tif').
+annotation(24, 1, 31, 'out', '@out', 'rast_base').
+annotation(25, 1, 31, 'as', '@AS', 'extent_of_howe_sound').
+annotation(26, 1, 35, 'end', '@END', 'rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution').
+annotation(27, 1, 38, 'begin', '@BEGIN', 'load_and_create_howe_sound_wdpa_pep_files').
+annotation(28, 1, 39, 'param', '@param', 'dir_goal').
+annotation(29, 1, 40, 'in', '@in', 'hs_wdpa_shp_file').
+annotation(30, 1, 40, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_wdpa_poly.shp').
+annotation(31, 1, 41, 'in', '@in', 'hs_pep_shp_file').
+annotation(32, 1, 41, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_pep_poly.shp').
+annotation(33, 1, 42, 'out', '@out', 'hs_wdpa_rast_file_handle').
+annotation(34, 1, 43, 'out', '@out', 'hs_pep_rast_file_handle').
+annotation(35, 1, 49, 'end', '@END', 'load_and_create_howe_sound_wdpa_pep_files').
+annotation(36, 1, 52, 'begin', '@BEGIN', 'rasterize_howe_sound_wdpa_shape_file').
+annotation(37, 1, 53, 'in', '@in', 'hs_wdpa_shp_file').
+annotation(38, 1, 53, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_wdpa_poly.shp').
+annotation(39, 1, 54, 'in', '@in', 'rast_base').
+annotation(40, 1, 54, 'as', '@AS', 'extent_of_howe_sound').
+annotation(41, 1, 55, 'in', '@in', 'hs_wdpa_rast_file_handle').
+annotation(42, 1, 56, 'out', '@out', 'hs_wdpa_rast_file').
+annotation(43, 1, 56, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif').
+annotation(44, 1, 63, 'end', '@END', 'rasterize_wdpa_shape_file').
+annotation(45, 1, 66, 'begin', '@BEGIN', 'rasterize_howe_sound_pep_shape_file').
+annotation(46, 1, 67, 'in', '@in', 'hs_pep_shp_file').
+annotation(47, 1, 67, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_pep_poly.shp').
+annotation(48, 1, 68, 'in', '@in', 'rast_base').
+annotation(49, 1, 68, 'as', '@AS', 'extent_of_howe_sound').
+annotation(50, 1, 69, 'in', '@in', 'hs_pep_rast_file_handle').
+annotation(51, 1, 70, 'out', '@out', 'hs_pep_rast_file').
+annotation(52, 1, 70, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_pep_rast_500m.tif').
+annotation(53, 1, 77, 'end', '@END', 'rasterize_howe_sound_pep_shape_file').
+annotation(54, 1, 79, 'end', '@END', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents').
+
+% FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
+annotation_qualifies(3, 2).
+annotation_qualifies(5, 4).
+annotation_qualifies(7, 6).
+annotation_qualifies(9, 8).
+annotation_qualifies(11, 10).
+annotation_qualifies(13, 12).
+annotation_qualifies(16, 15).
+annotation_qualifies(23, 22).
+annotation_qualifies(25, 24).
+annotation_qualifies(30, 29).
+annotation_qualifies(32, 31).
+annotation_qualifies(38, 37).
+annotation_qualifies(40, 39).
+annotation_qualifies(43, 42).
+annotation_qualifies(47, 46).
+annotation_qualifies(49, 48).
+annotation_qualifies(52, 51).

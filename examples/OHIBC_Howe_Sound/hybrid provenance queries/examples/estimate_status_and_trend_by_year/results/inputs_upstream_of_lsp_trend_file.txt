@@ -1,0 +1,9 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q2_Pro : List the script inputs that are upstream of data product lsp_trend_file.
+
+q2_pro(DataProduct, InputDataName)
+...................................................................................................
+q2_pro(lsp_trend_file,area_protected_total_file).
+q2_pro(lsp_trend_file,setup_R).

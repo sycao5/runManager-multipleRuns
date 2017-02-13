@@ -116,32 +116,32 @@
 <polygon fill="black" stroke="black" points="730.5,-126.396 727,-116.396 723.5,-126.396 730.5,-126.396"/>
 </g>
 <!-- dir_goal&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells -->
-<g id="edge9" class="edge"><title>dir_goal&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells</title>
+<g id="edge2" class="edge"><title>dir_goal&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells</title>
 <path fill="none" stroke="black" d="M965.939,-231.028C958.732,-228.822 951.129,-226.57 944,-224.6 900.489,-212.574 851.683,-200.527 811.392,-190.964"/>
 <polygon fill="black" stroke="black" points="812.144,-187.545 801.607,-188.65 810.533,-194.357 812.144,-187.545"/>
 </g>
 <!-- rast_3nm&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells -->
-<g id="edge11" class="edge"><title>rast_3nm&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells</title>
+<g id="edge4" class="edge"><title>rast_3nm&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells</title>
 <path fill="none" stroke="black" d="M543.34,-227.588C546.263,-226.556 549.175,-225.549 552,-224.6 586.635,-212.967 625.499,-201.081 657.789,-191.522"/>
 <polygon fill="black" stroke="black" points="658.986,-194.818 667.588,-188.632 657.006,-188.104 658.986,-194.818"/>
 </g>
 <!-- rast_1km&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells -->
-<g id="edge2" class="edge"><title>rast_1km&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells</title>
+<g id="edge7" class="edge"><title>rast_1km&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells</title>
 <path fill="none" stroke="black" d="M629.557,-224.476C646.658,-215.196 667.982,-203.625 686.319,-193.675"/>
 <polygon fill="black" stroke="black" points="688.202,-196.635 695.322,-188.79 684.863,-190.483 688.202,-196.635"/>
 </g>
 <!-- rast_ws&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells -->
-<g id="edge4" class="edge"><title>rast_ws&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells</title>
+<g id="edge9" class="edge"><title>rast_ws&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells</title>
 <path fill="none" stroke="black" d="M695.382,-224.297C700.265,-216.159 706.187,-206.289 711.579,-197.301"/>
 <polygon fill="black" stroke="black" points="714.594,-199.08 716.737,-188.704 708.591,-195.479 714.594,-199.08"/>
 </g>
 <!-- rast_pep&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells -->
-<g id="edge6" class="edge"><title>rast_pep&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells</title>
+<g id="edge11" class="edge"><title>rast_pep&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells</title>
 <path fill="none" stroke="black" d="M759.371,-224.297C754.372,-216.159 748.309,-206.289 742.788,-197.301"/>
 <polygon fill="black" stroke="black" points="745.723,-195.393 737.507,-188.704 739.759,-199.057 745.723,-195.393"/>
 </g>
 <!-- rast_wdpa_pep&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells -->
-<g id="edge8" class="edge"><title>rast_wdpa_pep&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells</title>
+<g id="edge1" class="edge"><title>rast_wdpa_pep&#45;&gt;outputs_zonal_stats_dataframes_for_protected_cells</title>
 <path fill="none" stroke="black" d="M841.817,-224.476C821.13,-214.949 795.198,-203.007 773.215,-192.883"/>
 <polygon fill="black" stroke="black" points="774.61,-189.672 764.063,-188.668 771.682,-196.03 774.61,-189.672"/>
 </g>
@@ -153,7 +153,7 @@
 <text text-anchor="middle" x="1202.9" y="-375.8" font-family="Courier,monospace" font-weight="bold" font-size="9.00"> </text>
 </g>
 <!-- setup_R&#45;&gt;set_up_configuration_and_start_provenance_tracking -->
-<g id="edge1" class="edge"><title>setup_R&#45;&gt;set_up_configuration_and_start_provenance_tracking</title>
+<g id="edge6" class="edge"><title>setup_R&#45;&gt;set_up_configuration_and_start_provenance_tracking</title>
 <path fill="none" stroke="black" d="M1175.67,-372.507C1172.77,-371.13 1169.84,-369.801 1167,-368.6 1138.18,-356.418 1105.5,-344.917 1077.6,-335.762"/>
 <polygon fill="black" stroke="black" points="1078.54,-332.387 1067.95,-332.625 1076.38,-339.044 1078.54,-332.387"/>
 </g>
@@ -165,7 +165,7 @@
 <text text-anchor="middle" x="1096" y="-375.8" font-family="Courier,monospace" font-weight="bold" font-size="9.00"> </text>
 </g>
 <!-- rast_3nm_raster_file&#45;&gt;read_in_OHI_region_rasters -->
-<g id="edge3" class="edge"><title>rast_3nm_raster_file&#45;&gt;read_in_OHI_region_rasters</title>
+<g id="edge8" class="edge"><title>rast_3nm_raster_file&#45;&gt;read_in_OHI_region_rasters</title>
 <path fill="none" stroke="black" d="M1033.75,-370.448C1030.8,-369.796 1027.87,-369.176 1025,-368.6 1001.67,-363.918 882.614,-346.884 786.529,-333.375"/>
 <polygon fill="black" stroke="black" points="786.81,-329.88 776.42,-331.955 785.836,-336.812 786.81,-329.88"/>
 </g>
@@ -177,7 +177,7 @@
 <text text-anchor="middle" x="954" y="-375.8" font-family="Courier,monospace" font-weight="bold" font-size="9.00"> </text>
 </g>
 <!-- rast_1km_raster_file&#45;&gt;read_in_OHI_region_rasters -->
-<g id="edge5" class="edge"><title>rast_1km_raster_file&#45;&gt;read_in_OHI_region_rasters</title>
+<g id="edge10" class="edge"><title>rast_1km_raster_file&#45;&gt;read_in_OHI_region_rasters</title>
 <path fill="none" stroke="black" d="M891.68,-370.762C888.747,-370.026 885.842,-369.302 883,-368.6 836.668,-357.149 784.816,-344.848 742.677,-334.981"/>
 <polygon fill="black" stroke="black" points="743.272,-331.526 732.737,-332.657 741.678,-338.342 743.272,-331.526"/>
 </g>
@@ -189,7 +189,7 @@
 <text text-anchor="start" x="596.022" y="-375.8" font-family="Courier,monospace" font-weight="bold" font-size="9.00">prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif</text>
 </g>
 <!-- rast_ws_raster_file&#45;&gt;read_in_OHI_region_rasters -->
-<g id="edge7" class="edge"><title>rast_ws_raster_file&#45;&gt;read_in_OHI_region_rasters</title>
+<g id="edge12" class="edge"><title>rast_ws_raster_file&#45;&gt;read_in_OHI_region_rasters</title>
 <path fill="none" stroke="black" d="M712.831,-368.908C704.022,-360.184 693.306,-349.573 683.762,-340.121"/>
 <polygon fill="black" stroke="black" points="685.986,-337.398 676.418,-332.848 681.06,-342.372 685.986,-337.398"/>
 </g>
@@ -201,7 +201,7 @@
 <text text-anchor="start" x="292.022" y="-375.8" font-family="Courier,monospace" font-weight="bold" font-size="9.00">prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif</text>
 </g>
 <!-- rast_pep_file&#45;&gt;read_in_OHI_region_rasters -->
-<g id="edge10" class="edge"><title>rast_pep_file&#45;&gt;read_in_OHI_region_rasters</title>
+<g id="edge3" class="edge"><title>rast_pep_file&#45;&gt;read_in_OHI_region_rasters</title>
 <path fill="none" stroke="black" d="M484.945,-369.092C517.927,-358.956 559.345,-346.227 593.503,-335.729"/>
 <polygon fill="black" stroke="black" points="594.86,-338.973 603.391,-332.69 592.804,-332.282 594.86,-338.973"/>
 </g>
@@ -213,7 +213,7 @@
 <text text-anchor="start" x="31.6189" y="-375.8" font-family="Courier,monospace" font-weight="bold" font-size="9.00">prep/lsp/vHS/spatial/hs_wdpa_rast_500m.tif</text>
 </g>
 <!-- rast_wdpa_pep_file&#45;&gt;read_in_OHI_region_rasters -->
-<g id="edge12" class="edge"><title>rast_wdpa_pep_file&#45;&gt;read_in_OHI_region_rasters</title>
+<g id="edge5" class="edge"><title>rast_wdpa_pep_file&#45;&gt;read_in_OHI_region_rasters</title>
 <path fill="none" stroke="black" d="M266.442,-369.794C269.322,-369.392 272.178,-368.993 275,-368.6 360.638,-356.662 457.04,-343.358 531.83,-333.065"/>
 <polygon fill="black" stroke="black" points="532.34,-336.527 541.77,-331.697 531.386,-329.593 532.34,-336.527"/>
 </g>

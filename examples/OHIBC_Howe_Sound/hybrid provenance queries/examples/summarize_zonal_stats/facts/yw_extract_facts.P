@@ -1,0 +1,69 @@
+
+% FACT: extract_source(source_id, source_path).
+extract_source(1, './script/summarize_zonal_stats.R').
+
+% FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
+annotation(1, 1, 7, 'begin', '@BEGIN', 'summarize_zonal_stats').
+annotation(2, 1, 8, 'in', '@in', 'setup_configuration_file').
+annotation(3, 1, 8, 'as', '@AS', 'setup_R').
+annotation(4, 1, 9, 'in', '@in', 'zonal_stats_3nm_file').
+annotation(5, 1, 9, 'uri', '@URI', 'file:{dir_goal}/int/zonal_stats_3nm.csv').
+annotation(6, 1, 10, 'in', '@in', 'zonal_stats_1km_file').
+annotation(7, 1, 10, 'uri', '@URI', 'file:{dir_goal}/int/zonal_stats_1km.csv').
+annotation(8, 1, 11, 'in', '@in', 'zonal_stats_ws_file').
+annotation(9, 1, 11, 'uri', '@URI', 'file:{dir_goal}/int/zonal_stats_ws.csv').
+annotation(10, 1, 12, 'out', '@out', 'prot_ws').
+annotation(11, 1, 12, 'uri', '@URI', 'file:{dir_goal}/int/area_protected_ws.csv').
+annotation(12, 1, 13, 'out', '@out', 'prot_3nm').
+annotation(13, 1, 13, 'uri', '@URI', 'file:{dir_goal}/int/area_protected_3nm.csv').
+annotation(14, 1, 14, 'out', '@out', 'prot_1km').
+annotation(15, 1, 14, 'uri', '@URI', 'file:{dir_goal}/int/area_protected_1km.csv').
+annotation(16, 1, 16, 'begin', '@BEGIN', 'set_up_configuration_and_start_provenance_tracking').
+annotation(17, 1, 17, 'in', '@in', 'setup_configuration_file').
+annotation(18, 1, 17, 'as', '@AS', 'setup_R').
+annotation(19, 1, 18, 'out', '@out', 'dir_goal').
+annotation(20, 1, 21, 'end', '@END', 'set_up_configuration_and_start_provenance_tracking').
+annotation(21, 1, 26, 'begin', '@BEGIN', 'read_in_zonal_stats_dataframes').
+annotation(22, 1, 27, 'param', '@param', 'dir_goal').
+annotation(23, 1, 28, 'in', '@in', 'zonal_stats_3nm_file').
+annotation(24, 1, 28, 'uri', '@URI', 'file:{dir_goal}/int/zonal_stats_3nm.csv').
+annotation(25, 1, 29, 'in', '@in', 'zonal_stats_1km_file').
+annotation(26, 1, 29, 'uri', '@URI', 'file:{dir_goal}/int/zonal_stats_1km.csv').
+annotation(27, 1, 30, 'in', '@in', 'zonal_stats_ws_file').
+annotation(28, 1, 30, 'uri', '@URI', 'file:{dir_goal}/int/zonal_stats_ws.csv').
+annotation(29, 1, 31, 'out', '@out', 'stats_3nm').
+annotation(30, 1, 32, 'out', '@out', 'stats_1km').
+annotation(31, 1, 33, 'out', '@out', 'stats_ws').
+annotation(32, 1, 38, 'end', '@END', 'read_in_zonal_stats_dataframes').
+annotation(33, 1, 41, 'begin', '@BEGIN', 'set_goals_target_threshhold').
+annotation(34, 1, 42, 'out', '@out', 'lsp_thresh').
+annotation(35, 1, 45, 'end', '@END', 'set_goals_target_threshhold').
+annotation(36, 1, 52, 'begin', '@BEGIN', 'compute_total_cells_and_cumulaative_total_of_cells_per_region').
+annotation(37, 1, 53, 'param', '@param', 'lsp_thresh').
+annotation(38, 1, 54, 'in', '@in', 'stats_1km').
+annotation(39, 1, 55, 'in', '@in', 'stats_3nm').
+annotation(40, 1, 56, 'in', '@in', 'stats_ws').
+annotation(41, 1, 57, 'out', '@out', 'prot_ws').
+annotation(42, 1, 57, 'uri', '@URI', 'file:{dir_goal}/int/area_protected_ws.csv').
+annotation(43, 1, 58, 'out', '@out', 'prot_3nm').
+annotation(44, 1, 58, 'uri', '@URI', 'file:{dir_goal}/int/area_protected_3nm.csv').
+annotation(45, 1, 59, 'out', '@out', 'prot_1km').
+annotation(46, 1, 59, 'uri', '@URI', 'file:{dir_goal}/int/area_protected_1km.csv').
+annotation(47, 1, 104, 'end', '@END', 'compute_total_cells_and_cumulaative_total_of_cells_per_region').
+annotation(48, 1, 106, 'end', '@END', 'summarize_zonal_stats').
+
+% FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
+annotation_qualifies(3, 2).
+annotation_qualifies(5, 4).
+annotation_qualifies(7, 6).
+annotation_qualifies(9, 8).
+annotation_qualifies(11, 10).
+annotation_qualifies(13, 12).
+annotation_qualifies(15, 14).
+annotation_qualifies(18, 17).
+annotation_qualifies(24, 23).
+annotation_qualifies(26, 25).
+annotation_qualifies(28, 27).
+annotation_qualifies(42, 41).
+annotation_qualifies(44, 43).
+annotation_qualifies(46, 45).

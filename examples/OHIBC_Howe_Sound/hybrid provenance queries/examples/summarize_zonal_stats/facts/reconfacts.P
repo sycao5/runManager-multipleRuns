@@ -1,0 +1,38 @@
+
+% FACT: resource(resource_id, resource_uri).
+resource(1, 'prep/lsp/vHS/int/zonal_stats_3nm.csv').
+resource(2, 'prep/lsp/vHS/int/zonal_stats_1km.csv').
+resource(3, 'prep/lsp/vHS/int/zonal_stats_ws.csv').
+resource(4, 'prep/lsp/vHS/int/area_protected_ws.csv').
+resource(5, 'prep/lsp/vHS/int/area_protected_3nm.csv').
+resource(6, 'prep/lsp/vHS/int/area_protected_1km.csv').
+
+% FACT: data_resource(data_id, resource_id).
+data_resource(2, 1).
+data_resource(3, 2).
+data_resource(4, 3).
+data_resource(5, 4).
+data_resource(6, 5).
+data_resource(7, 6).
+data_resource(10, 1).
+data_resource(11, 2).
+data_resource(12, 3).
+data_resource(17, 4).
+data_resource(18, 5).
+data_resource(19, 6).
+
+% FACT: uri_variable_value(resource_id, uri_variable_id, uri_variable_value).
+uri_variable_value(1, 1, 'prep/lsp/vHS').
+uri_variable_value(2, 2, 'prep/lsp/vHS').
+uri_variable_value(3, 3, 'prep/lsp/vHS').
+uri_variable_value(4, 4, 'prep/lsp/vHS').
+uri_variable_value(5, 5, 'prep/lsp/vHS').
+uri_variable_value(6, 6, 'prep/lsp/vHS').
+uri_variable_value(1, 7, 'prep/lsp/vHS').
+uri_variable_value(2, 8, 'prep/lsp/vHS').
+uri_variable_value(3, 9, 'prep/lsp/vHS').
+uri_variable_value(4, 10, 'prep/lsp/vHS').
+uri_variable_value(5, 11, 'prep/lsp/vHS').
+uri_variable_value(6, 12, 'prep/lsp/vHS').
+
+% FACT: log_variable_value(resource_id, log_entry_id, log_variable_id, log_variable_value).

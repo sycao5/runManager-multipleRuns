@@ -1,0 +1,69 @@
+
+digraph yw_data_view {
+rankdir=TB
+fontname=Courier; fontsize=18; labelloc=t
+label="summarize_zonal_stats"
+subgraph cluster_workflow { label=""; color=black; penwidth=2
+subgraph cluster_workflow_inner { label=""; color=white
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+set_up_configuration_and_start_provenance_tracking
+read_in_zonal_stats_dataframes
+set_goals_target_threshhold
+compute_total_cells_and_cumulaative_total_of_cells_per_region
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+setup_R
+dir_goal
+zonal_stats_3nm_file
+zonal_stats_1km_file
+zonal_stats_ws_file
+stats_3nm
+stats_1km
+stats_ws
+lsp_thresh
+prot_ws
+prot_3nm
+prot_1km
+node[shape=box style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica]
+}}
+subgraph cluster_inflows { label=""; color=white; penwidth=2
+subgraph cluster_inflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+setup_R_inflow [label=""]
+zonal_stats_3nm_file_inflow [label=""]
+zonal_stats_1km_file_inflow [label=""]
+zonal_stats_ws_file_inflow [label=""]
+}}
+subgraph cluster_outflows { label=""; color=white; penwidth=2
+subgraph cluster_outflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+prot_1km_outflow [label=""]
+prot_3nm_outflow [label=""]
+prot_ws_outflow [label=""]
+}}
+setup_R -> set_up_configuration_and_start_provenance_tracking
+dir_goal -> read_in_zonal_stats_dataframes
+zonal_stats_3nm_file -> read_in_zonal_stats_dataframes
+zonal_stats_1km_file -> read_in_zonal_stats_dataframes
+zonal_stats_ws_file -> read_in_zonal_stats_dataframes
+stats_3nm -> compute_total_cells_and_cumulaative_total_of_cells_per_region
+stats_1km -> compute_total_cells_and_cumulaative_total_of_cells_per_region
+stats_ws -> compute_total_cells_and_cumulaative_total_of_cells_per_region
+lsp_thresh -> compute_total_cells_and_cumulaative_total_of_cells_per_region
+set_up_configuration_and_start_provenance_tracking -> dir_goal
+read_in_zonal_stats_dataframes -> stats_3nm
+read_in_zonal_stats_dataframes -> stats_1km
+read_in_zonal_stats_dataframes -> stats_ws
+set_goals_target_threshhold -> lsp_thresh
+compute_total_cells_and_cumulaative_total_of_cells_per_region -> prot_ws
+compute_total_cells_and_cumulaative_total_of_cells_per_region -> prot_3nm
+compute_total_cells_and_cumulaative_total_of_cells_per_region -> prot_1km
+setup_R_inflow -> setup_R
+zonal_stats_3nm_file_inflow -> zonal_stats_3nm_file
+zonal_stats_1km_file_inflow -> zonal_stats_1km_file
+zonal_stats_ws_file_inflow -> zonal_stats_ws_file
+prot_1km -> prot_1km_outflow
+prot_3nm -> prot_3nm_outflow
+prot_ws -> prot_ws_outflow
+}
+

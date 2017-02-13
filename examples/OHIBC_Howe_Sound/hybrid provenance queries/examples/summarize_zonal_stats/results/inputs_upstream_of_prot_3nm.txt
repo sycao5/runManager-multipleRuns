@@ -1,0 +1,11 @@
+
+
+---------------------------------------------------------------------------------------------------
+Q2_Pro : List the script inputs that are upstream of data product prot_3nm.
+
+q2_pro(DataProduct, InputDataName)
+...................................................................................................
+q2_pro(prot_3nm,zonal_stats_ws_file).
+q2_pro(prot_3nm,zonal_stats_1km_file).
+q2_pro(prot_3nm,zonal_stats_3nm_file).
+q2_pro(prot_3nm,setup_R).

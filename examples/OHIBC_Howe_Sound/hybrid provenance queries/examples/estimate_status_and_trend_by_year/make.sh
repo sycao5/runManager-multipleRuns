@@ -8,8 +8,16 @@ mkdir -p $FACTS_DIR
 mkdir -p $VIEWS_DIR
 mkdir -p $RESULTS_DIR
 
+for f in $SCRIPT_DIR/*.R
+do
+	## Get the file name by removeing everything until the last / (the path) from the file name
+	str1="${f##*/}"
+	## Removes the string .R from the end of it
+	filename="${str1%.R}"	
+done
+
 # export YW model facts
-$YW_CMD model $SCRIPT_DIR/estimate_status_and_trend_by_year.R \
+$YW_CMD model $f \
         -c extract.language=R \
         -c extract.factsfile=$FACTS_DIR/yw_extract_facts.P \
         -c model.factsfile=$FACTS_DIR/yw_model_facts.P \
@@ -19,9 +27,11 @@ $YW_CMD model $SCRIPT_DIR/estimate_status_and_trend_by_year.R \
 $QUERIES_DIR/materialize_yw_views.sh > $VIEWS_DIR/yw_views.P
 
 # generate reconfacts.P to facts/ folder from the run.yaml which is decoded by yw-matlab bridge
-$YW_MATLAB_RECON_CMD recon $SCRIPT_DIR/estimate_status_and_trend_by_year.R \
+run_yaml="$filename.yaml"
+
+$YW_MATLAB_RECON_CMD recon $f \
         -c extract.language=R \
-        -c recon.matlab.exportfile=recon/estimate_status_and_trend_by_year.yaml \
+        -c recon.matlab.exportfile=recon/$run_yaml \
         -c recon.factsfile=facts/reconfacts.P \
         -c recon.finderclass=org.yesworkflow.matlab.MatlabResourceFinder \
         -c query.engine=xsb
@@ -32,12 +42,14 @@ dot -Tpdf $RESULTS_DIR/complete_wf_graph.gv > $RESULTS_DIR/complete_wf_graph.pdf
 dot -Tsvg $RESULTS_DIR/complete_wf_graph.gv > $RESULTS_DIR/complete_wf_graph.svg
 
 # draw complete workflow graph with URI template
-$YW_CMD graph $SCRIPT_DIR/estimate_status_and_trend_by_year.R \
+complete_wf_graph_name="$filename"_complete_wf_graph_uri
+
+$YW_CMD graph $f \
         -c graph.view=combined \
         -c graph.layout=tb \
-        > $RESULTS_DIR/complete_wf_graph_uri.gv
-dot -Tpdf $RESULTS_DIR/complete_wf_graph_uri.gv > $RESULTS_DIR/complete_wf_graph_uri.pdf
-dot -Tsvg $RESULTS_DIR/complete_wf_graph_uri.gv > $RESULTS_DIR/complete_wf_graph_uri.svg
+        > $RESULTS_DIR/$complete_wf_graph_name.gv
+dot -Tpdf $RESULTS_DIR/$complete_wf_graph_name.gv > $RESULTS_DIR/$complete_wf_graph_name.pdf
+dot -Tsvg $RESULTS_DIR/$complete_wf_graph_name.gv > $RESULTS_DIR/$complete_wf_graph_name.svg
 
 # list workflow outputs from prospective proveannce graph
 $QUERIES_DIR/list_workflow_outputs.sh > $RESULTS_DIR/workflow_outputs.txt
@@ -48,34 +60,60 @@ $QUERIES_DIR/list_workflow_outputs.sh > $RESULTS_DIR/workflow_outputs.txt
 ##############
 
 # draw prospective provenance graph upstream of lsp_status_trend_summary_db_file
-$QUERIES_DIR/render_wf_graph_upstream_of_data_q1.sh lsp_status_trend_summary_db_file > $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.gv
-dot -Tpdf $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.gv > $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.pdf
-dot -Tsvg $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.gv > $RESULTS_DIR/wf_upstream_of_lsp_status_trend_summary_db_file.svg
+productName="lsp_status_trend_summary_db_file"
+$QUERIES_DIR/render_wf_graph_upstream_of_data_q1.sh $productName > $RESULTS_DIR/wf_upstream_of_$productName.gv
+dot -Tpdf $RESULTS_DIR/wf_upstream_of_$productName.gv > $RESULTS_DIR/wf_upstream_of_$productName.pdf
+dot -Tsvg $RESULTS_DIR/wf_upstream_of_$productName.gv > $RESULTS_DIR/wf_upstream_of_$productName.svg
+
+
+# draw prospective provenance graph upstream of lsp_status_file
+productName="lsp_status_file"
+$QUERIES_DIR/render_wf_graph_upstream_of_data_q1.sh $productName > $RESULTS_DIR/wf_upstream_of_$productName.gv
+dot -Tpdf $RESULTS_DIR/wf_upstream_of_$productName.gv > $RESULTS_DIR/wf_upstream_of_$productName.pdf
+dot -Tsvg $RESULTS_DIR/wf_upstream_of_$productName.gv > $RESULTS_DIR/wf_upstream_of_$productName.svg
+
+# draw prospective provenance graph upstream of lsp_trend_file
+productName="lsp_trend_file"
+$QUERIES_DIR/render_wf_graph_upstream_of_data_q1.sh $productName > $RESULTS_DIR/wf_upstream_of_$productName.gv
+dot -Tpdf $RESULTS_DIR/wf_upstream_of_$productName.gv > $RESULTS_DIR/wf_upstream_of_$productName.pdf
+dot -Tsvg $RESULTS_DIR/wf_upstream_of_$productName.gv > $RESULTS_DIR/wf_upstream_of_$productName.svg
+
 
 ##############
 #   Q2_pro   #
 ##############
 
-# list script inputs upstream of output data C3_fraction_data
-$QUERIES_DIR/list_inputs_upstream_of_data_q2.sh lsp_status_trend_summary_db_file  lsp_status_trend_summary_db_file > $RESULTS_DIR/inputs_upstream_of_lsp_status_trend_summary_db_file.txt
+# list script inputs upstream of output data lsp_status_trend_summary_db_file
+productName="lsp_status_trend_summary_db_file"
+$QUERIES_DIR/list_inputs_upstream_of_data_q2.sh $productName $productName > $RESULTS_DIR/inputs_upstream_of_$productName.txt
+
+# list script inputs upstream of output data lsp_status_file
+productName="lsp_status_file"
+$QUERIES_DIR/list_inputs_upstream_of_data_q2.sh $productName $productName > $RESULTS_DIR/inputs_upstream_of_$productName.txt
+
+# list script inputs upstream of output data lsp_trend_file
+productName="lsp_trend_file"
+$QUERIES_DIR/list_inputs_upstream_of_data_q2.sh $productName $productName > $RESULTS_DIR/inputs_upstream_of_$productName.txt
+
 
 ##############
 #   Q3_pro   #
 ##############
 
-
 # draw prospective provenance graph downstream of area_protected_total_file
-$QUERIES_DIR/render_wf_graph_downstream_of_data_q3.sh area_protected_total_file > $RESULTS_DIR/wf_downstream_of_area_protected_total_file.gv
-dot -Tpdf $RESULTS_DIR/wf_downstream_of_area_protected_total_file.gv > $RESULTS_DIR/wf_downstream_of_area_protected_total_file.pdf
-dot -Tsvg $RESULTS_DIR/wf_downstream_of_area_protected_total_file.gv > $RESULTS_DIR/wf_downstream_of_area_protected_total_file.svg
+productName="area_protected_total_file"
+$QUERIES_DIR/render_wf_graph_downstream_of_data_q3.sh $productName > $RESULTS_DIR/wf_downstream_of_$productName.gv
+dot -Tpdf $RESULTS_DIR/wf_downstream_of_$productName.gv > $RESULTS_DIR/wf_downstream_of_$productName.pdf
+dot -Tsvg $RESULTS_DIR/wf_downstream_of_$productName.gv > $RESULTS_DIR/wf_downstream_of_$productName.svg
+
 
 ##############
 #   Q4_pro   #
 ##############
 
-
 # list script outputs downstream of input data area_protected_total_file
-$QUERIES_DIR/list_outputs_downstream_of_data_q4.sh area_protected_total_file area_protected_total_file > $RESULTS_DIR/outputs_downstream_of_area_protected_total_file.txt
+productName="area_protected_total_file"
+$QUERIES_DIR/list_outputs_downstream_of_data_q4.sh $productName $productName > $RESULTS_DIR/outputs_downstream_of_$productName.txt
 
 
 ##############
@@ -83,9 +121,22 @@ $QUERIES_DIR/list_outputs_downstream_of_data_q4.sh area_protected_total_file are
 ##############
 
 # draw hybrid provenance graph upstream of lsp_status_trend_summary_db_file
-$QUERIES_DIR/render_wf_recon_graph_upstream_of_data_q5.sh lsp_status_trend_summary_db_file > $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.gv
-dot -Tpdf $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.gv > $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.pdf
-dot -Tsvg $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.gv > $RESULTS_DIR/wf_recon_upstream_of_lsp_status_trend_summary_db_file.svg
+productName="lsp_status_trend_summary_db_file"
+$QUERIES_DIR/render_wf_recon_graph_upstream_of_data_q5.sh $productName > $RESULTS_DIR/wf_recon_upstream_of_$productName.gv
+dot -Tpdf $RESULTS_DIR/wf_recon_upstream_of_$productName.gv > $RESULTS_DIR/wf_recon_upstream_of_$productName.pdf
+dot -Tsvg $RESULTS_DIR/wf_recon_upstream_of_$productName.gv > $RESULTS_DIR/wf_recon_upstream_of_$productName.svg
+
+# draw hybrid provenance graph upstream of lsp_status_file
+productName="lsp_status_file"
+$QUERIES_DIR/render_wf_recon_graph_upstream_of_data_q5.sh $productName > $RESULTS_DIR/wf_recon_upstream_of_$productName.gv
+dot -Tpdf $RESULTS_DIR/wf_recon_upstream_of_$productName.gv > $RESULTS_DIR/wf_recon_upstream_of_$productName.pdf
+dot -Tsvg $RESULTS_DIR/wf_recon_upstream_of_$productName.gv > $RESULTS_DIR/wf_recon_upstream_of_$productName.svg
+
+# draw hybrid provenance graph upstream of lsp_trend_file
+productName="lsp_trend_file"
+$QUERIES_DIR/render_wf_recon_graph_upstream_of_data_q5.sh $productName > $RESULTS_DIR/wf_recon_upstream_of_$productName.gv
+dot -Tpdf $RESULTS_DIR/wf_recon_upstream_of_$productName.gv > $RESULTS_DIR/wf_recon_upstream_of_$productName.pdf
+dot -Tsvg $RESULTS_DIR/wf_recon_upstream_of_$productName.gv > $RESULTS_DIR/wf_recon_upstream_of_$productName.svg
 
 
 ##############

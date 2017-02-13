@@ -1,0 +1,23 @@
+
+% FACT: resource(resource_id, resource_uri).
+resource(1, 'prep/spatial/raster/ohibc_rgn_raster_500m.tif').
+resource(2, 'prep/lsp/vHS/spatial/hs_wdpa_rast_500m.tif').
+resource(3, 'prep/lsp/vHS/spatial/hs_pep_rast_500m.tif').
+
+% FACT: data_resource(data_id, resource_id).
+data_resource(4, 1).
+data_resource(5, 2).
+data_resource(6, 3).
+data_resource(10, 1).
+data_resource(16, 2).
+data_resource(17, 3).
+
+% FACT: uri_variable_value(resource_id, uri_variable_id, uri_variable_value).
+uri_variable_value(1, 3, 'prep/spatial').
+uri_variable_value(2, 4, 'prep/lsp/vHS').
+uri_variable_value(3, 5, 'prep/lsp/vHS').
+uri_variable_value(1, 6, 'prep/spatial').
+uri_variable_value(2, 10, 'prep/lsp/vHS').
+uri_variable_value(3, 12, 'prep/lsp/vHS').
+
+% FACT: log_variable_value(resource_id, log_entry_id, log_variable_id, log_variable_value).

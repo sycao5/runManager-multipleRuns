@@ -5,7 +5,7 @@
 # Available at: https://github.com/OHI-Science/ohiprep/releases/edit/v2016.1
 
 # @BEGIN summarize_zonal_stats
-# @in setup_configuration_file @AS setup.R
+# @in setup_configuration_file @AS setup_R
 # @in zonal_stats_3nm_file @URI file:{dir_goal}/int/zonal_stats_3nm.csv
 # @in zonal_stats_1km_file @URI file:{dir_goal}/int/zonal_stats_1km.csv
 # @in zonal_stats_ws_file @URI file:{dir_goal}/int/zonal_stats_ws.csv
@@ -14,10 +14,10 @@
 # @out prot_1km @URI file:{dir_goal}/int/area_protected_1km.csv
 
 # @BEGIN set_up_configuration_and_start_provenance_tracking
-# @in setup_configuration_file @AS setup.R
+# @in setup_configuration_file @AS setup_R
 # @out dir_goal
 
-source("setup.R")
+source("setup_R")
 # @END set_up_configuration_and_start_provenance_tracking
 
 
@@ -49,7 +49,7 @@ lsp_thresh <- 0.30
 ### Determine total cells per region (n_cells_tot) and then a cumulative
 ### total of cells per region
 
-# @BEGIN compute_total_cells_&_cumulaative_total_of_cells_per_region
+# @BEGIN compute_total_cells_and_cumulaative_total_of_cells_per_region
 # @param lsp_thresh
 # @in stats_1km
 # @in stats_3nm
@@ -101,6 +101,6 @@ write.csv(prot_ws, file.path(dir_goal,  'int', 'area_protected_ws.csv'))
 write.csv(prot_3nm, file.path(dir_goal, 'int', 'area_protected_3nm.csv'))
 write.csv(prot_1km, file.path(dir_goal, 'int', 'area_protected_1km.csv'))
 
-# @END compute_total_cells_&_cumulaative_total_of_cells_per_region
+# @END compute_total_cells_and_cumulaative_total_of_cells_per_region
 
 # @END summarize_zonal_stats
