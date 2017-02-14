@@ -18,7 +18,7 @@ set_prolog_flag(unknown, fail).
 [user].
 graph :-
 
-    gv_graph('yw_data_view', 'Upstream graph for multiple runs', 'LR'),
+    gv_graph('yw_data_view', 'Upstream graph for multiple runs', 'TB'),
 
         gv_cluster('workflow', 'black'),
             gv_nodestyle__atomic_run,

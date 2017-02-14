@@ -1,6 +1,6 @@
 
 digraph rm_data_view {
-rankdir=LR
+rankdir=TB
 fontname=Courier; fontsize=18; labelloc=t
 label="multiple_runs"
 subgraph cluster_workflow { label=""; color=black; penwidth=2

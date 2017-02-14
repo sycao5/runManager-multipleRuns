@@ -41,9 +41,9 @@ rm_execution_downstream_of_file(E2, Sha256) :-
 
 
 :- table rm_file_to_execution_connection_upstream_of_file/6.
-rm_file_to_execution_connection_upstream_of_file(RM, DataSha256, FilePath, Tag, ExecutionId, Sha256_1) :-
+rm_file_to_execution_connection_upstream_of_file(_, DataSha256, FilePath, Tag, ExecutionId, Sha256_1) :-
     rm_file_downstream_of_execution(ExecutionId, DataSha256),
     execmeta(_,ExecutionId,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_),
     tag(_,ExecutionId,Tag),
-    exec_used_files(Seq,ExecutionId,User,FileId,FilePath,Sha256_1,Format,ArchivedFilePath,Access),
+    exec_used_files(_,ExecutionId,_,_,FilePath,Sha256_1,_,_,_),
     filemeta(_,_,FilePath,Sha256_1,_,_,_,_,_,_,_).

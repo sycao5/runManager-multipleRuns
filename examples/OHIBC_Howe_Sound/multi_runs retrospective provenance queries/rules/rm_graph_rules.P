@@ -28,7 +28,7 @@ gv_node_style__file :-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-gv_nodes__execution(RM) :-
+gv_nodes__execution(_) :-
 	    execmeta(_,ExecutionId,_,_,_,_,_,_,_,_,SoftwareApplication,_,_,_,_,_,_),
         tag(_,ExecutionId,Tag),
         %gv_labeled_node(Tag),
@@ -37,14 +37,14 @@ gv_nodes__execution(RM) :-
         ;
         true.
 
-gv_nodes__file(RM) :-
+gv_nodes__file(_) :-
        filemeta(_,_,FilePath,_,_,_,_,_,_,_,_),
        gv_labeled_node(FilePath),
        fail
        ;
        true.
 	   
-gv_edges__file_to_execution(RM) :-
+gv_edges__file_to_execution(_) :-
 	   filemeta(FileId,ExecutionId,FilePath,_,_,_,_,_,_,_,_),
        execmeta(_,ExecutionId,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_),
 	   input_files_to_execution_edges(ExecutionId,FileId),
@@ -53,9 +53,9 @@ gv_edges__file_to_execution(RM) :-
        ;
        true.
 
-gv_edges__execution_to_file(RM) :-
+gv_edges__execution_to_file(_) :-
        execmeta(_,ExecutionId,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_),
-       tag(_,ExecutionId,Tag),
+       tag(_,ExecutionId,_),
        filemeta(FileId,ExecutionId,FilePath,_,_,_,_,_,_,_,_),
        execution_to_output_files_edges(ExecutionId,FileId),
 	   gv_unlabeled_edge(ExecutionId,FilePath),
@@ -63,7 +63,7 @@ gv_edges__execution_to_file(RM) :-
        ;
        true.
 
-gv_nodes__atomic_executions__upstream_of_data(RM, DataSha256) :-
+gv_nodes__atomic_executions__upstream_of_data(_, DataSha256) :-
        rm_file_downstream_of_execution(E1, DataSha256),
        execmeta(_,E1,_,_,_,_,_,_,_,_,SoftwareApplication,_,_,_,_,_,_),
 	   tag(_,E1,Tag),
@@ -72,7 +72,7 @@ gv_nodes__atomic_executions__upstream_of_data(RM, DataSha256) :-
        ;
        true.
 
-gv_nodes__files__upstream_of_file(RM, DataSha256) :-
+gv_nodes__files__upstream_of_file(_, DataSha256) :-
        rm_file_downstream(Sha256, DataSha256),
        filemeta(_,_,FilePath,Sha256,_,_,_,_,_,_,_),
        gv_labeled_node(FilePath),
@@ -80,14 +80,14 @@ gv_nodes__files__upstream_of_file(RM, DataSha256) :-
        ;
        true.
 
-gv_edges__file_to_execution__upstream_of_file(RM, DownstreamDataSha256) :-
-       rm_file_to_execution_connection_upstream_of_file(RM, DownstreamDataSha256, FilePath, Tag,  ExecutionId, Shas256),
+gv_edges__file_to_execution__upstream_of_file(_, DownstreamDataSha256) :-
+       rm_file_to_execution_connection_upstream_of_file(_, DownstreamDataSha256, FilePath, _,  ExecutionId, _),
 	   gv_unlabeled_edge(FilePath, ExecutionId),
 	   fail
        ;
        true.
 
-gv_edges__execution_to_file__upstream_of_file(RM, DownstreamDataSha256) :-
+gv_edges__execution_to_file__upstream_of_file(_, DownstreamDataSha256) :-
        rm_file_downstream(DataSha256, DownstreamDataSha256),
        exec_generated_files(_,ExecutionId,_,_,FilePath,DataSha256,_,_,_),
 	   gv_unlabeled_edge(ExecutionId, FilePath),
@@ -95,15 +95,15 @@ gv_edges__execution_to_file__upstream_of_file(RM, DownstreamDataSha256) :-
        ;
        true.
 
-gv_nodes__file_DataSha256(RM) :-
+gv_nodes__file_DataSha256(_) :-
        filemeta(_,_,FilePath,Sha256,_,_,_,_,_,_,_),
        gv_labeled_node_sha256(Sha256, FilePath),
        fail
        ;
        true.
 	   
-gv_edges__file_DataSha256_to_execution(RM) :-
-	   filemeta(FileId,ExecutionId,FilePath,Sha256,_,_,_,_,_,_,_),
+gv_edges__file_DataSha256_to_execution(_) :-
+	   filemeta(FileId,ExecutionId,_,Sha256,_,_,_,_,_,_,_),
        execmeta(_,ExecutionId,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_),
 	   input_files_to_execution_edges(ExecutionId,FileId),
 	   gv_unlabeled_edge_sha256(Sha256,ExecutionId),
@@ -111,9 +111,9 @@ gv_edges__file_DataSha256_to_execution(RM) :-
        ;
        true.
 
-gv_edges__execution_to_file_DataSha256(RM) :-
+gv_edges__execution_to_file_DataSha256(_) :-
        execmeta(_,ExecutionId,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_),
-       filemeta(FileId,ExecutionId,FilePath,Sha256,_,_,_,_,_,_,_),
+       filemeta(FileId,ExecutionId,_,Sha256,_,_,_,_,_,_,_),
        execution_to_output_files_edges(ExecutionId,FileId),
 	   gv_unlabeled_edge_sha256(ExecutionId,Sha256),
        fail
@@ -121,7 +121,7 @@ gv_edges__execution_to_file_DataSha256(RM) :-
        true.
 	   
 
-gv_nodes__files__upstream_of_file_sha256(RM, DataSha256) :-
+gv_nodes__files__upstream_of_file_sha256(_, DataSha256) :-
        rm_file_downstream(Sha256, DataSha256),
        filemeta(_,_,FilePath,Sha256,_,_,_,_,_,_,_),
 	   gv_labeled_node_sha256(Sha256, FilePath),
@@ -129,16 +129,16 @@ gv_nodes__files__upstream_of_file_sha256(RM, DataSha256) :-
        ;
        true.
 
-gv_edges__file_to_execution__upstream_of_file_sha256(RM, DownstreamDataSha256) :-
-       rm_file_to_execution_connection_upstream_of_file(RM, DownstreamDataSha256, FilePath, Tag, ExecutionId, Sha256),
+gv_edges__file_to_execution__upstream_of_file_sha256(_, DownstreamDataSha256) :-
+       rm_file_to_execution_connection_upstream_of_file(_, DownstreamDataSha256, _, _, ExecutionId, Sha256),
 	   gv_unlabeled_edge_sha256(Sha256, ExecutionId),
        fail
        ;
        true.
 
-gv_edges__execution_to_file__upstream_of_file_sha256(RM, DownstreamDataSha256) :-
+gv_edges__execution_to_file__upstream_of_file_sha256(_, DownstreamDataSha256) :-
        rm_file_downstream(DataSha256, DownstreamDataSha256),
-       exec_generated_files(_,ExecutionId,_,_,FilePath,DataSha256,_,_,_),
+       exec_generated_files(_,ExecutionId,_,_,_,DataSha256,_,_,_),
 	   gv_unlabeled_edge_sha256(ExecutionId, DataSha256),
        fail
        ;
