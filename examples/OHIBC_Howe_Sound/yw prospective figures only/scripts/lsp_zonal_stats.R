@@ -8,10 +8,10 @@
 
 # @BEGIN lsp_zonal_stats
 # @in setup_configuration_file @AS setup_R
-# @in rast_3nm_raster_file @URI file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m
-# @in rast_1km_raster_file @URI file:{dir_goal}/spatial/hs_inland_1km_raster_500m
+# @in rast_3nm_raster_file @URI file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m.tif
+# @in rast_1km_raster_file @URI file:{dir_goal}/spatial/hs_inland_1km_raster_500m.tif
 # @in rast_ws_raster_file  @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
-# @in rast_pep_file @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
+# @in rast_pep_file @URI file:{dir_goal}/spatial/hs_pep_rast_500m.tif
 # @in rast_wdpa_pep_file   @URI file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif
 # @out zonal_3nm_file @URI file:{dir_goal}/int/zonal_stats_3nm.csv @DESC summary of zonal stats datafrmes (3nm offshore)
 # @out zonal_1km_file @URI file:{dir_goal}/int/zonal_stats_1km.csv @DESC summary of zonal stats dataframes (1km inland)
@@ -27,10 +27,10 @@ source("setup_R")
 
 
 # @BEGIN read_in_OHI_region_rasters
-# @in rast_3nm_raster_file @URI file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m
-# @in rast_1km_raster_file @URI file:{dir_goal}/spatial/hs_inland_1km_raster_500m
+# @in rast_3nm_raster_file @URI file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m.tif
+# @in rast_1km_raster_file @URI file:{dir_goal}/spatial/hs_inland_1km_raster_500m.tif
 # @in rast_ws_raster_file  @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
-# @in rast_pep_file        @URI file:{dir_goal}/spatial/howe_sound_watershed_500m.tif
+# @in rast_pep_file        @URI file:{dir_goal}/spatial/hs_pep_rast_500m.tif
 # @in rast_wdpa_pep_file   @URI file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif
 # @out rast_3nm
 # @out rast_1km

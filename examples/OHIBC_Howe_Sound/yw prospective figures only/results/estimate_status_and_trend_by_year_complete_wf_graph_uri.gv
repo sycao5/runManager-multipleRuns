@@ -16,7 +16,7 @@ save_year_by_year_status_and_trend_estimates
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
 lsp_status_file [shape=record rankdir=LR label="{<f0> lsp_status_file |<f1> file\:\{dir_goal\}/output/lsp_status.csv}"];
 lsp_trend_file [shape=record rankdir=LR label="{<f0> lsp_trend_file |<f1> file\:\{dir_goal\}/output/lsp_trend.csv}"];
-lsp_status_trend_summary_db_file [shape=record rankdir=LR label="{<f0> lsp_status_trend_summary_db_file |<f1> dbfile\://}"];
+lsp_status_trend_summary_db_file
 setup_R
 area_protected_total_file [shape=record rankdir=LR label="{<f0> area_protected_total_file |<f1> file\:\{dir_goal\}/output/area_protected_total.csv}"];
 status_file_handle

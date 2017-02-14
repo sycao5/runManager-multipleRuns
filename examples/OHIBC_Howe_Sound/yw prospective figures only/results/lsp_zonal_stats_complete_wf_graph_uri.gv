@@ -13,10 +13,10 @@ zonal_3nm_file [shape=record rankdir=LR label="{<f0> zonal_3nm_file |<f1> file\:
 zonal_1km_file [shape=record rankdir=LR label="{<f0> zonal_1km_file |<f1> file\:\{dir_goal\}/int/zonal_stats_1km.csv}"];
 zonal_ws_file [shape=record rankdir=LR label="{<f0> zonal_ws_file |<f1> file\:\{dir_goal\}/int/zonal_stats_ws.csv}"];
 setup_R
-rast_3nm_raster_file [shape=record rankdir=LR label="{<f0> rast_3nm_raster_file |<f1> file\:\{dir_goal\}/spatial/hs_offshore_3nm_raster_500m}"];
-rast_1km_raster_file [shape=record rankdir=LR label="{<f0> rast_1km_raster_file |<f1> file\:\{dir_goal\}/spatial/hs_inland_1km_raster_500m}"];
+rast_3nm_raster_file [shape=record rankdir=LR label="{<f0> rast_3nm_raster_file |<f1> file\:\{dir_goal\}/spatial/hs_offshore_3nm_raster_500m.tif}"];
+rast_1km_raster_file [shape=record rankdir=LR label="{<f0> rast_1km_raster_file |<f1> file\:\{dir_goal\}/spatial/hs_inland_1km_raster_500m.tif}"];
 rast_ws_raster_file [shape=record rankdir=LR label="{<f0> rast_ws_raster_file |<f1> file\:\{dir_goal\}/spatial/howe_sound_watershed_500m.tif}"];
-rast_pep_file [shape=record rankdir=LR label="{<f0> rast_pep_file |<f1> file\:\{dir_goal\}/spatial/howe_sound_watershed_500m.tif}"];
+rast_pep_file [shape=record rankdir=LR label="{<f0> rast_pep_file |<f1> file\:\{dir_goal\}/spatial/hs_pep_rast_500m.tif}"];
 rast_wdpa_pep_file [shape=record rankdir=LR label="{<f0> rast_wdpa_pep_file |<f1> file\:\{dir_goal\}/spatial/hs_wdpa_rast_500m.tif}"];
 rast_3nm
 rast_1km

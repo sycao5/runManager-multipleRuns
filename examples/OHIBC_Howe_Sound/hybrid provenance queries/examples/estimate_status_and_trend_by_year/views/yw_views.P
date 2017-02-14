@@ -9,13 +9,13 @@ yw_source_file(1,'./script/estimate_status_and_trend_by_year.R').
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_workflow_script(WorkflowId, WorkflowName, SourceId, SourceFile).
 %...................................................................................................
-yw_workflow_script(1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',1,'./script/estimate_status_and_trend_by_year.R').
+yw_workflow_script(1,estimate_status_and_trend_by_year,1,'./script/estimate_status_and_trend_by_year.R').
 
 
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_program(WorkflowId, ProgramName, WorkflowId, SourceId, BeginLine, EndLine).
 %...................................................................................................
-yw_program(1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',nil,1,8,107).
+yw_program(1,estimate_status_and_trend_by_year,nil,1,8,107).
 yw_program(2,set_up_configuration_and_start_provenance_tracking,1,1,15,20).
 yw_program(3,create_new_stats_and_trend_file,1,1,22,30).
 yw_program(4,define_param_year_span,1,1,33,38).
@@ -29,7 +29,7 @@ yw_program(9,save_year_by_year_status_and_trend_estimates,1,1,91,102).
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_workflow(WorkflowId, WorkflowName, ParentWorkflowId, SourceId, BeginLine, EndLine).
 %...................................................................................................
-yw_workflow(1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',nil,1,8,107).
+yw_workflow(1,estimate_status_and_trend_by_year,nil,1,8,107).
 
 
 %---------------------------------------------------------------------------------------------------
@@ -58,17 +58,17 @@ yw_data(2,area_protected_total_file,nil,nil).
 yw_data(3,lsp_status_file,nil,nil).
 yw_data(4,lsp_trend_file,nil,nil).
 yw_data(5,lsp_status_trend_summary_db_file,nil,nil).
-yw_data(6,setup_R,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound').
-yw_data(7,dir_goal,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound').
-yw_data(8,status_file_handle,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound').
-yw_data(9,trend_file_handle,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound').
-yw_data(10,year_span,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound').
-yw_data(11,area_protected_total_file,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound').
-yw_data(12,status_df_data,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound').
-yw_data(13,lsp_status_file,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound').
-yw_data(14,trend_df_data,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound').
-yw_data(15,lsp_trend_file,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound').
-yw_data(16,lsp_status_trend_summary_db_file,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound').
+yw_data(6,setup_R,1,estimate_status_and_trend_by_year).
+yw_data(7,dir_goal,1,estimate_status_and_trend_by_year).
+yw_data(8,status_file_handle,1,estimate_status_and_trend_by_year).
+yw_data(9,trend_file_handle,1,estimate_status_and_trend_by_year).
+yw_data(10,year_span,1,estimate_status_and_trend_by_year).
+yw_data(11,area_protected_total_file,1,estimate_status_and_trend_by_year).
+yw_data(12,status_df_data,1,estimate_status_and_trend_by_year).
+yw_data(13,lsp_status_file,1,estimate_status_and_trend_by_year).
+yw_data(14,trend_df_data,1,estimate_status_and_trend_by_year).
+yw_data(15,lsp_trend_file,1,estimate_status_and_trend_by_year).
+yw_data(16,lsp_status_trend_summary_db_file,1,estimate_status_and_trend_by_year).
 
 
 %---------------------------------------------------------------------------------------------------
@@ -88,16 +88,16 @@ yw_step_input(5,output_estimate_status_file_by_region_since_1980,param,12,year_s
 yw_step_input(5,output_estimate_status_file_by_region_since_1980,in,15,status_file_handle,8,status_file_handle).
 yw_step_input(5,output_estimate_status_file_by_region_since_1980,in,14,area_protected_total_file,11,area_protected_total_file).
 yw_step_input(2,set_up_configuration_and_start_provenance_tracking,in,6,setup_configuration_file,6,setup_R).
-yw_step_input(1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',in,2,area_protected_total_file,2,area_protected_total_file).
-yw_step_input(1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',in,1,setup_configuration_file,1,setup_R).
+yw_step_input(1,estimate_status_and_trend_by_year,in,2,area_protected_total_file,2,area_protected_total_file).
+yw_step_input(1,estimate_status_and_trend_by_year,in,1,setup_configuration_file,1,setup_R).
 
 
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_step_output(ProgramId, ProgramName, PortType, PortId, PortName, DataId, DataName).
 %...................................................................................................
-yw_step_output(1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',out,3,lsp_status_file,3,lsp_status_file).
-yw_step_output(1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',out,4,lsp_trend_file,4,lsp_trend_file).
-yw_step_output(1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',out,5,lsp_status_trend_summary_db_file,5,lsp_status_trend_summary_db_file).
+yw_step_output(1,estimate_status_and_trend_by_year,out,3,lsp_status_file,3,lsp_status_file).
+yw_step_output(1,estimate_status_and_trend_by_year,out,4,lsp_trend_file,4,lsp_trend_file).
+yw_step_output(1,estimate_status_and_trend_by_year,out,5,lsp_status_trend_summary_db_file,5,lsp_status_trend_summary_db_file).
 yw_step_output(2,set_up_configuration_and_start_provenance_tracking,out,7,dir_goal,7,dir_goal).
 yw_step_output(3,create_new_stats_and_trend_file,out,9,status_file_handle,8,status_file_handle).
 yw_step_output(3,create_new_stats_and_trend_file,out,10,trend_file_handle,9,trend_file_handle).
@@ -112,9 +112,9 @@ yw_step_output(9,save_year_by_year_status_and_trend_estimates,out,28,lsp_status_
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_inflow(WorkflowId, WorkflowName, DataId, DataName, ProgramId, ProgramName).
 %...................................................................................................
-yw_inflow(1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',11,area_protected_total_file,7,output_estimate_trend_file_by_region_since_1980).
-yw_inflow(1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',11,area_protected_total_file,5,output_estimate_status_file_by_region_since_1980).
-yw_inflow(1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',6,setup_R,2,set_up_configuration_and_start_provenance_tracking).
+yw_inflow(1,estimate_status_and_trend_by_year,11,area_protected_total_file,7,output_estimate_trend_file_by_region_since_1980).
+yw_inflow(1,estimate_status_and_trend_by_year,11,area_protected_total_file,5,output_estimate_status_file_by_region_since_1980).
+yw_inflow(1,estimate_status_and_trend_by_year,6,setup_R,2,set_up_configuration_and_start_provenance_tracking).
 
 
 %---------------------------------------------------------------------------------------------------
@@ -136,67 +136,67 @@ yw_flow(7,output_estimate_trend_file_by_region_since_1980,23,trend_df_data,14,tr
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_outflow(StepId, StepName, StepOutDataId, StepOutDataName, WorkflowId, WorkflowName, WorkflowOutDataId, WorkflowOutDataName).
 %...................................................................................................
-yw_outflow(6,write_status_to_csv_file,13,lsp_status_file,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',3,lsp_status_file).
-yw_outflow(8,write_trend_to_csv_file,15,lsp_trend_file,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',4,lsp_trend_file).
-yw_outflow(9,save_year_by_year_status_and_trend_estimates,16,lsp_status_trend_summary_db_file,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound',5,lsp_status_trend_summary_db_file).
+yw_outflow(6,write_status_to_csv_file,13,lsp_status_file,1,estimate_status_and_trend_by_year,3,lsp_status_file).
+yw_outflow(8,write_trend_to_csv_file,15,lsp_trend_file,1,estimate_status_and_trend_by_year,4,lsp_trend_file).
+yw_outflow(9,save_year_by_year_status_and_trend_estimates,16,lsp_status_trend_summary_db_file,1,estimate_status_and_trend_by_year,5,lsp_status_trend_summary_db_file).
 
 
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_qualified_name(EntityType, Id, QualifiedName).
 %...................................................................................................
-yw_qualified_name(program,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound').
-yw_qualified_name(program,2,'Calculate_Percentage_Protected_Area_for_Howe_Sound.set_up_configuration_and_start_provenance_tracking').
-yw_qualified_name(program,3,'Calculate_Percentage_Protected_Area_for_Howe_Sound.create_new_stats_and_trend_file').
-yw_qualified_name(program,4,'Calculate_Percentage_Protected_Area_for_Howe_Sound.define_param_year_span').
-yw_qualified_name(program,5,'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_status_file_by_region_since_1980').
-yw_qualified_name(program,6,'Calculate_Percentage_Protected_Area_for_Howe_Sound.write_status_to_csv_file').
-yw_qualified_name(program,7,'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_trend_file_by_region_since_1980').
-yw_qualified_name(program,8,'Calculate_Percentage_Protected_Area_for_Howe_Sound.write_trend_to_csv_file').
-yw_qualified_name(program,9,'Calculate_Percentage_Protected_Area_for_Howe_Sound.save_year_by_year_status_and_trend_estimates').
-yw_qualified_name(port,1,'Calculate_Percentage_Protected_Area_for_Howe_Sound<-setup_configuration_file').
-yw_qualified_name(port,2,'Calculate_Percentage_Protected_Area_for_Howe_Sound<-area_protected_total_file').
-yw_qualified_name(port,3,'Calculate_Percentage_Protected_Area_for_Howe_Sound->lsp_status_file').
-yw_qualified_name(port,4,'Calculate_Percentage_Protected_Area_for_Howe_Sound->lsp_trend_file').
-yw_qualified_name(port,5,'Calculate_Percentage_Protected_Area_for_Howe_Sound->lsp_status_trend_summary_db_file').
-yw_qualified_name(port,6,'Calculate_Percentage_Protected_Area_for_Howe_Sound.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file').
-yw_qualified_name(port,7,'Calculate_Percentage_Protected_Area_for_Howe_Sound.set_up_configuration_and_start_provenance_tracking->dir_goal').
-yw_qualified_name(port,8,'Calculate_Percentage_Protected_Area_for_Howe_Sound.create_new_stats_and_trend_file<-dir_goal').
-yw_qualified_name(port,9,'Calculate_Percentage_Protected_Area_for_Howe_Sound.create_new_stats_and_trend_file->status_file_handle').
-yw_qualified_name(port,10,'Calculate_Percentage_Protected_Area_for_Howe_Sound.create_new_stats_and_trend_file->trend_file_handle').
-yw_qualified_name(port,11,'Calculate_Percentage_Protected_Area_for_Howe_Sound.define_param_year_span->year_span').
-yw_qualified_name(port,12,'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_status_file_by_region_since_1980<-year_span').
-yw_qualified_name(port,13,'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_status_file_by_region_since_1980<-dir_goal').
-yw_qualified_name(port,14,'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_status_file_by_region_since_1980<-area_protected_total_file').
-yw_qualified_name(port,15,'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_status_file_by_region_since_1980<-status_file_handle').
-yw_qualified_name(port,16,'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_status_file_by_region_since_1980->status_df_data').
-yw_qualified_name(port,17,'Calculate_Percentage_Protected_Area_for_Howe_Sound.write_status_to_csv_file<-status_df_data').
-yw_qualified_name(port,18,'Calculate_Percentage_Protected_Area_for_Howe_Sound.write_status_to_csv_file->lsp_status_file').
-yw_qualified_name(port,19,'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_trend_file_by_region_since_1980<-dir_goal').
-yw_qualified_name(port,20,'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_trend_file_by_region_since_1980<-year_span').
-yw_qualified_name(port,21,'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_trend_file_by_region_since_1980<-area_protected_total_file').
-yw_qualified_name(port,22,'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_trend_file_by_region_since_1980<-trend_file_handle').
-yw_qualified_name(port,23,'Calculate_Percentage_Protected_Area_for_Howe_Sound.output_estimate_trend_file_by_region_since_1980->trend_df_data').
-yw_qualified_name(port,24,'Calculate_Percentage_Protected_Area_for_Howe_Sound.write_trend_to_csv_file<-trend_df_data').
-yw_qualified_name(port,25,'Calculate_Percentage_Protected_Area_for_Howe_Sound.write_trend_to_csv_file->lsp_trend_file').
-yw_qualified_name(port,26,'Calculate_Percentage_Protected_Area_for_Howe_Sound.save_year_by_year_status_and_trend_estimates<-status_df_data').
-yw_qualified_name(port,27,'Calculate_Percentage_Protected_Area_for_Howe_Sound.save_year_by_year_status_and_trend_estimates<-trend_df_data').
-yw_qualified_name(port,28,'Calculate_Percentage_Protected_Area_for_Howe_Sound.save_year_by_year_status_and_trend_estimates->lsp_status_trend_summary_db_file').
+yw_qualified_name(program,1,estimate_status_and_trend_by_year).
+yw_qualified_name(program,2,'estimate_status_and_trend_by_year.set_up_configuration_and_start_provenance_tracking').
+yw_qualified_name(program,3,'estimate_status_and_trend_by_year.create_new_stats_and_trend_file').
+yw_qualified_name(program,4,'estimate_status_and_trend_by_year.define_param_year_span').
+yw_qualified_name(program,5,'estimate_status_and_trend_by_year.output_estimate_status_file_by_region_since_1980').
+yw_qualified_name(program,6,'estimate_status_and_trend_by_year.write_status_to_csv_file').
+yw_qualified_name(program,7,'estimate_status_and_trend_by_year.output_estimate_trend_file_by_region_since_1980').
+yw_qualified_name(program,8,'estimate_status_and_trend_by_year.write_trend_to_csv_file').
+yw_qualified_name(program,9,'estimate_status_and_trend_by_year.save_year_by_year_status_and_trend_estimates').
+yw_qualified_name(port,1,'estimate_status_and_trend_by_year<-setup_configuration_file').
+yw_qualified_name(port,2,'estimate_status_and_trend_by_year<-area_protected_total_file').
+yw_qualified_name(port,3,'estimate_status_and_trend_by_year->lsp_status_file').
+yw_qualified_name(port,4,'estimate_status_and_trend_by_year->lsp_trend_file').
+yw_qualified_name(port,5,'estimate_status_and_trend_by_year->lsp_status_trend_summary_db_file').
+yw_qualified_name(port,6,'estimate_status_and_trend_by_year.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file').
+yw_qualified_name(port,7,'estimate_status_and_trend_by_year.set_up_configuration_and_start_provenance_tracking->dir_goal').
+yw_qualified_name(port,8,'estimate_status_and_trend_by_year.create_new_stats_and_trend_file<-dir_goal').
+yw_qualified_name(port,9,'estimate_status_and_trend_by_year.create_new_stats_and_trend_file->status_file_handle').
+yw_qualified_name(port,10,'estimate_status_and_trend_by_year.create_new_stats_and_trend_file->trend_file_handle').
+yw_qualified_name(port,11,'estimate_status_and_trend_by_year.define_param_year_span->year_span').
+yw_qualified_name(port,12,'estimate_status_and_trend_by_year.output_estimate_status_file_by_region_since_1980<-year_span').
+yw_qualified_name(port,13,'estimate_status_and_trend_by_year.output_estimate_status_file_by_region_since_1980<-dir_goal').
+yw_qualified_name(port,14,'estimate_status_and_trend_by_year.output_estimate_status_file_by_region_since_1980<-area_protected_total_file').
+yw_qualified_name(port,15,'estimate_status_and_trend_by_year.output_estimate_status_file_by_region_since_1980<-status_file_handle').
+yw_qualified_name(port,16,'estimate_status_and_trend_by_year.output_estimate_status_file_by_region_since_1980->status_df_data').
+yw_qualified_name(port,17,'estimate_status_and_trend_by_year.write_status_to_csv_file<-status_df_data').
+yw_qualified_name(port,18,'estimate_status_and_trend_by_year.write_status_to_csv_file->lsp_status_file').
+yw_qualified_name(port,19,'estimate_status_and_trend_by_year.output_estimate_trend_file_by_region_since_1980<-dir_goal').
+yw_qualified_name(port,20,'estimate_status_and_trend_by_year.output_estimate_trend_file_by_region_since_1980<-year_span').
+yw_qualified_name(port,21,'estimate_status_and_trend_by_year.output_estimate_trend_file_by_region_since_1980<-area_protected_total_file').
+yw_qualified_name(port,22,'estimate_status_and_trend_by_year.output_estimate_trend_file_by_region_since_1980<-trend_file_handle').
+yw_qualified_name(port,23,'estimate_status_and_trend_by_year.output_estimate_trend_file_by_region_since_1980->trend_df_data').
+yw_qualified_name(port,24,'estimate_status_and_trend_by_year.write_trend_to_csv_file<-trend_df_data').
+yw_qualified_name(port,25,'estimate_status_and_trend_by_year.write_trend_to_csv_file->lsp_trend_file').
+yw_qualified_name(port,26,'estimate_status_and_trend_by_year.save_year_by_year_status_and_trend_estimates<-status_df_data').
+yw_qualified_name(port,27,'estimate_status_and_trend_by_year.save_year_by_year_status_and_trend_estimates<-trend_df_data').
+yw_qualified_name(port,28,'estimate_status_and_trend_by_year.save_year_by_year_status_and_trend_estimates->lsp_status_trend_summary_db_file').
 yw_qualified_name(data,1,'[setup_R]').
 yw_qualified_name(data,2,'[area_protected_total_file]').
 yw_qualified_name(data,3,'[lsp_status_file]').
 yw_qualified_name(data,4,'[lsp_trend_file]').
 yw_qualified_name(data,5,'[lsp_status_trend_summary_db_file]').
-yw_qualified_name(data,6,'Calculate_Percentage_Protected_Area_for_Howe_Sound[setup_R]').
-yw_qualified_name(data,7,'Calculate_Percentage_Protected_Area_for_Howe_Sound[dir_goal]').
-yw_qualified_name(data,8,'Calculate_Percentage_Protected_Area_for_Howe_Sound[status_file_handle]').
-yw_qualified_name(data,9,'Calculate_Percentage_Protected_Area_for_Howe_Sound[trend_file_handle]').
-yw_qualified_name(data,10,'Calculate_Percentage_Protected_Area_for_Howe_Sound[year_span]').
-yw_qualified_name(data,11,'Calculate_Percentage_Protected_Area_for_Howe_Sound[area_protected_total_file]').
-yw_qualified_name(data,12,'Calculate_Percentage_Protected_Area_for_Howe_Sound[status_df_data]').
-yw_qualified_name(data,13,'Calculate_Percentage_Protected_Area_for_Howe_Sound[lsp_status_file]').
-yw_qualified_name(data,14,'Calculate_Percentage_Protected_Area_for_Howe_Sound[trend_df_data]').
-yw_qualified_name(data,15,'Calculate_Percentage_Protected_Area_for_Howe_Sound[lsp_trend_file]').
-yw_qualified_name(data,16,'Calculate_Percentage_Protected_Area_for_Howe_Sound[lsp_status_trend_summary_db_file]').
+yw_qualified_name(data,6,'estimate_status_and_trend_by_year[setup_R]').
+yw_qualified_name(data,7,'estimate_status_and_trend_by_year[dir_goal]').
+yw_qualified_name(data,8,'estimate_status_and_trend_by_year[status_file_handle]').
+yw_qualified_name(data,9,'estimate_status_and_trend_by_year[trend_file_handle]').
+yw_qualified_name(data,10,'estimate_status_and_trend_by_year[year_span]').
+yw_qualified_name(data,11,'estimate_status_and_trend_by_year[area_protected_total_file]').
+yw_qualified_name(data,12,'estimate_status_and_trend_by_year[status_df_data]').
+yw_qualified_name(data,13,'estimate_status_and_trend_by_year[lsp_status_file]').
+yw_qualified_name(data,14,'estimate_status_and_trend_by_year[trend_df_data]').
+yw_qualified_name(data,15,'estimate_status_and_trend_by_year[lsp_trend_file]').
+yw_qualified_name(data,16,'estimate_status_and_trend_by_year[lsp_status_trend_summary_db_file]').
 
 
 %---------------------------------------------------------------------------------------------------

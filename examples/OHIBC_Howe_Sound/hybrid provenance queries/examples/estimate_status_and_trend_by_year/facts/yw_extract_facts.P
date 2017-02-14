@@ -3,7 +3,7 @@
 extract_source(1, './script/estimate_status_and_trend_by_year.R').
 
 % FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
-annotation(1, 1, 8, 'begin', '@BEGIN', 'Calculate_Percentage_Protected_Area_for_Howe_Sound').
+annotation(1, 1, 8, 'begin', '@BEGIN', 'estimate_status_and_trend_by_year').
 annotation(2, 1, 9, 'in', '@in', 'setup_configuration_file').
 annotation(3, 1, 9, 'as', '@AS', 'setup_R').
 annotation(4, 1, 10, 'in', '@in', 'area_protected_total_file').
@@ -13,63 +13,59 @@ annotation(7, 1, 11, 'uri', '@URI', 'file:{dir_goal}/output/lsp_status.csv').
 annotation(8, 1, 12, 'out', '@out', 'lsp_trend_file').
 annotation(9, 1, 12, 'uri', '@URI', 'file:{dir_goal}/output/lsp_trend.csv').
 annotation(10, 1, 13, 'out', '@out', 'lsp_status_trend_summary_db_file').
-annotation(11, 1, 13, 'uri', '@URI', 'dbfile://').
-annotation(12, 1, 15, 'begin', '@BEGIN', 'set_up_configuration_and_start_provenance_tracking').
-annotation(13, 1, 16, 'in', '@in', 'setup_configuration_file').
-annotation(14, 1, 16, 'as', '@AS', 'setup_R').
-annotation(15, 1, 17, 'out', '@out', 'dir_goal').
-annotation(16, 1, 20, 'end', '@END', 'set_up_configuration_and_start_provenance_tracking').
-annotation(17, 1, 22, 'begin', '@BEGIN', 'create_new_stats_and_trend_file').
-annotation(18, 1, 23, 'param', '@param', 'dir_goal').
-annotation(19, 1, 24, 'out', '@out', 'status_file_handle').
-annotation(20, 1, 25, 'out', '@out', 'trend_file_handle').
-annotation(21, 1, 30, 'end', '@END', 'create_new_stats_and_trend_file').
-annotation(22, 1, 33, 'begin', '@BEGIN', 'define_param_year_span').
-annotation(23, 1, 34, 'out', '@out', 'year_span').
-annotation(24, 1, 38, 'end', '@END', 'define_param_year_span').
-annotation(25, 1, 40, 'begin', '@BEGIN', 'output_estimate_status_file_by_region_since_1980').
-annotation(26, 1, 41, 'param', '@param', 'year_span').
-annotation(27, 1, 42, 'param', '@param', 'dir_goal').
-annotation(28, 1, 43, 'in', '@in', 'area_protected_total_file').
-annotation(29, 1, 43, 'uri', '@URI', 'file:{dir_goal}/output/area_protected_total.csv').
-annotation(30, 1, 44, 'in', '@in', 'status_file_handle').
-annotation(31, 1, 45, 'out', '@out', 'status_df_data').
-annotation(32, 1, 50, 'end', '@END', 'output_estimate_status_file_by_region_since_1980').
-annotation(33, 1, 52, 'begin', '@BEGIN', 'write_status_to_csv_file').
-annotation(34, 1, 53, 'in', '@in', 'status_df_data').
-annotation(35, 1, 54, 'out', '@out', 'lsp_status_file').
-annotation(36, 1, 54, 'uri', '@URI', 'file:{dir_goal}/output/lsp_status.csv').
-annotation(37, 1, 56, 'end', '@END', 'write_status_to_csv_file').
-annotation(38, 1, 59, 'begin', '@BEGIN', 'output_estimate_trend_file_by_region_since_1980').
-annotation(39, 1, 60, 'param', '@param', 'dir_goal').
-annotation(40, 1, 61, 'param', '@param', 'year_span').
-annotation(41, 1, 62, 'in', '@in', 'area_protected_total_file').
-annotation(42, 1, 62, 'uri', '@URI', 'file:{dir_goal}/output/area_protected_total.csv').
-annotation(43, 1, 63, 'in', '@in', 'trend_file_handle').
-annotation(44, 1, 64, 'out', '@out', 'trend_df_data').
-annotation(45, 1, 78, 'end', '@END', 'output_estimate_trend_file_by_region_since_1980').
-annotation(46, 1, 80, 'begin', '@BEGIN', 'write_trend_to_csv_file').
-annotation(47, 1, 81, 'in', '@in', 'trend_df_data').
-annotation(48, 1, 82, 'out', '@out', 'lsp_trend_file').
-annotation(49, 1, 82, 'uri', '@URI', 'file:{dir_goal}/output/lsp_trend.csv').
-annotation(50, 1, 84, 'end', '@END', 'write_trend_to_csv_file').
-annotation(51, 1, 91, 'begin', '@BEGIN', 'save_year_by_year_status_and_trend_estimates').
-annotation(52, 1, 92, 'in', '@in', 'status_df_data').
-annotation(53, 1, 93, 'in', '@in', 'trend_df_data').
-annotation(54, 1, 94, 'out', '@out', 'lsp_status_trend_summary_db_file').
-annotation(55, 1, 94, 'uri', '@URI', 'dbfile://').
-annotation(56, 1, 102, 'end', '@END', 'save_year_by_year_status_and_trend_estimates').
-annotation(57, 1, 107, 'end', '@END', 'Calculate_Percentage_Protected_Area_for_Howe_Sound').
+annotation(11, 1, 15, 'begin', '@BEGIN', 'set_up_configuration_and_start_provenance_tracking').
+annotation(12, 1, 16, 'in', '@in', 'setup_configuration_file').
+annotation(13, 1, 16, 'as', '@AS', 'setup_R').
+annotation(14, 1, 17, 'out', '@out', 'dir_goal').
+annotation(15, 1, 20, 'end', '@END', 'set_up_configuration_and_start_provenance_tracking').
+annotation(16, 1, 22, 'begin', '@BEGIN', 'create_new_stats_and_trend_file').
+annotation(17, 1, 23, 'param', '@param', 'dir_goal').
+annotation(18, 1, 24, 'out', '@out', 'status_file_handle').
+annotation(19, 1, 25, 'out', '@out', 'trend_file_handle').
+annotation(20, 1, 30, 'end', '@END', 'create_new_stats_and_trend_file').
+annotation(21, 1, 33, 'begin', '@BEGIN', 'define_param_year_span').
+annotation(22, 1, 34, 'out', '@out', 'year_span').
+annotation(23, 1, 38, 'end', '@END', 'define_param_year_span').
+annotation(24, 1, 40, 'begin', '@BEGIN', 'output_estimate_status_file_by_region_since_1980').
+annotation(25, 1, 41, 'param', '@param', 'year_span').
+annotation(26, 1, 42, 'param', '@param', 'dir_goal').
+annotation(27, 1, 43, 'in', '@in', 'area_protected_total_file').
+annotation(28, 1, 43, 'uri', '@URI', 'file:{dir_goal}/output/area_protected_total.csv').
+annotation(29, 1, 44, 'in', '@in', 'status_file_handle').
+annotation(30, 1, 45, 'out', '@out', 'status_df_data').
+annotation(31, 1, 50, 'end', '@END', 'output_estimate_status_file_by_region_since_1980').
+annotation(32, 1, 52, 'begin', '@BEGIN', 'write_status_to_csv_file').
+annotation(33, 1, 53, 'in', '@in', 'status_df_data').
+annotation(34, 1, 54, 'out', '@out', 'lsp_status_file').
+annotation(35, 1, 54, 'uri', '@URI', 'file:{dir_goal}/output/lsp_status.csv').
+annotation(36, 1, 56, 'end', '@END', 'write_status_to_csv_file').
+annotation(37, 1, 59, 'begin', '@BEGIN', 'output_estimate_trend_file_by_region_since_1980').
+annotation(38, 1, 60, 'param', '@param', 'dir_goal').
+annotation(39, 1, 61, 'param', '@param', 'year_span').
+annotation(40, 1, 62, 'in', '@in', 'area_protected_total_file').
+annotation(41, 1, 62, 'uri', '@URI', 'file:{dir_goal}/output/area_protected_total.csv').
+annotation(42, 1, 63, 'in', '@in', 'trend_file_handle').
+annotation(43, 1, 64, 'out', '@out', 'trend_df_data').
+annotation(44, 1, 78, 'end', '@END', 'output_estimate_trend_file_by_region_since_1980').
+annotation(45, 1, 80, 'begin', '@BEGIN', 'write_trend_to_csv_file').
+annotation(46, 1, 81, 'in', '@in', 'trend_df_data').
+annotation(47, 1, 82, 'out', '@out', 'lsp_trend_file').
+annotation(48, 1, 82, 'uri', '@URI', 'file:{dir_goal}/output/lsp_trend.csv').
+annotation(49, 1, 84, 'end', '@END', 'write_trend_to_csv_file').
+annotation(50, 1, 91, 'begin', '@BEGIN', 'save_year_by_year_status_and_trend_estimates').
+annotation(51, 1, 92, 'in', '@in', 'status_df_data').
+annotation(52, 1, 93, 'in', '@in', 'trend_df_data').
+annotation(53, 1, 94, 'out', '@out', 'lsp_status_trend_summary_db_file').
+annotation(54, 1, 102, 'end', '@END', 'save_year_by_year_status_and_trend_estimates').
+annotation(55, 1, 107, 'end', '@END', 'estimate_status_and_trend_by_year').
 
 % FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
 annotation_qualifies(3, 2).
 annotation_qualifies(5, 4).
 annotation_qualifies(7, 6).
 annotation_qualifies(9, 8).
-annotation_qualifies(11, 10).
-annotation_qualifies(14, 13).
-annotation_qualifies(29, 28).
-annotation_qualifies(36, 35).
-annotation_qualifies(42, 41).
-annotation_qualifies(49, 48).
-annotation_qualifies(55, 54).
+annotation_qualifies(13, 12).
+annotation_qualifies(28, 27).
+annotation_qualifies(35, 34).
+annotation_qualifies(41, 40).
+annotation_qualifies(48, 47).

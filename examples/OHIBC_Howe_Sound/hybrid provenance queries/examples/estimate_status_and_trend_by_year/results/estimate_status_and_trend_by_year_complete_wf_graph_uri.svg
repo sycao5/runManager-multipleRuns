@@ -9,7 +9,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 830.8)">
 <title>Workflow</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-830.8 901,-830.8 901,4 -4,4"/>
-<text text-anchor="middle" x="448.5" y="-806.6" font-family="Courier,monospace" font-size="18.00">Calculate_Percentage_Protected_Area_for_Howe_Sound</text>
+<text text-anchor="middle" x="448.5" y="-806.6" font-family="Courier,monospace" font-size="18.00">estimate_status_and_trend_by_year</text>
 <g id="clust1" class="cluster"><title>cluster_workflow_box_outer</title>
 <polygon fill="none" stroke="black" stroke-width="2" points="8,-62 8,-735.2 889,-735.2 889,-62 8,-62"/>
 </g>
@@ -154,15 +154,13 @@
 </g>
 <!-- lsp_status_trend_summary_db_file -->
 <g id="node11" class="node"><title>lsp_status_trend_summary_db_file</title>
-<path fill="#ffffcc" stroke="black" d="M339.477,-78.5C339.477,-78.5 548.523,-78.5 548.523,-78.5 554.523,-78.5 560.523,-84.5 560.523,-90.5 560.523,-90.5 560.523,-116.1 560.523,-116.1 560.523,-122.1 554.523,-128.1 548.523,-128.1 548.523,-128.1 339.477,-128.1 339.477,-128.1 333.477,-128.1 327.477,-122.1 327.477,-116.1 327.477,-116.1 327.477,-90.5 327.477,-90.5 327.477,-84.5 333.477,-78.5 339.477,-78.5"/>
-<text text-anchor="middle" x="444" y="-111.5" font-family="Helvetica,sans-Serif" font-size="14.00">lsp_status_trend_summary_db_file</text>
-<polyline fill="none" stroke="black" points="327.477,-103.3 560.523,-103.3 "/>
-<text text-anchor="middle" x="444" y="-86.7" font-family="Helvetica,sans-Serif" font-size="14.00">dbfile://</text>
+<path fill="#ffffcc" stroke="black" d="M548.546,-121.3C548.546,-121.3 339.454,-121.3 339.454,-121.3 333.454,-121.3 327.454,-115.3 327.454,-109.3 327.454,-109.3 327.454,-97.3 327.454,-97.3 327.454,-91.3 333.454,-85.3 339.454,-85.3 339.454,-85.3 548.546,-85.3 548.546,-85.3 554.546,-85.3 560.546,-91.3 560.546,-97.3 560.546,-97.3 560.546,-109.3 560.546,-109.3 560.546,-115.3 554.546,-121.3 548.546,-121.3"/>
+<text text-anchor="middle" x="444" y="-99.1" font-family="Helvetica,sans-Serif" font-size="14.00">lsp_status_trend_summary_db_file</text>
 </g>
 <!-- save_year_by_year_status_and_trend_estimates&#45;&gt;lsp_status_trend_summary_db_file -->
 <g id="edge21" class="edge"><title>save_year_by_year_status_and_trend_estimates&#45;&gt;lsp_status_trend_summary_db_file</title>
-<path fill="none" stroke="black" d="M444,-164.445C444,-156.689 444,-147.239 444,-138.15"/>
-<polygon fill="black" stroke="black" points="447.5,-138.15 444,-128.15 440.5,-138.15 447.5,-138.15"/>
+<path fill="none" stroke="black" d="M444,-164.445C444,-154.837 444,-142.632 444,-131.73"/>
+<polygon fill="black" stroke="black" points="447.5,-131.407 444,-121.407 440.5,-131.407 447.5,-131.407"/>
 </g>
 <!-- lsp_status_file_output_port -->
 <g id="node22" class="node"><title>lsp_status_file_output_port</title>
@@ -188,8 +186,8 @@
 </g>
 <!-- lsp_status_trend_summary_db_file&#45;&gt;lsp_status_trend_summary_db_file_output_port -->
 <g id="edge28" class="edge"><title>lsp_status_trend_summary_db_file&#45;&gt;lsp_status_trend_summary_db_file_output_port</title>
-<path fill="none" stroke="black" d="M444,-78.4996C444,-68.5289 444,-57.1933 444,-48.2105"/>
-<polygon fill="black" stroke="black" points="447.5,-48.0698 444,-38.0698 440.5,-48.0699 447.5,-48.0698"/>
+<path fill="none" stroke="black" d="M444,-85.2823C444,-74.0618 444,-59.4466 444,-48.3618"/>
+<polygon fill="black" stroke="black" points="447.5,-48.0469 444,-38.047 440.5,-48.047 447.5,-48.0469"/>
 </g>
 <!-- setup_R -->
 <g id="node12" class="node"><title>setup_R</title>

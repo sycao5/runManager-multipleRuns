@@ -1,9 +1,9 @@
 
 % FACT: program(program_id, program_name, qualified_program_name, begin_annotation_id, end_annotation_id).
-program(1, 'calculate_goal_model', 'calculate_goal_model', 1, 62).
-program(2, 'set_up_configuration_and_start_provenance_tracking', 'calculate_goal_model.set_up_configuration_and_start_provenance_tracking', 23, 27).
-program(3, 'read_in_OHI_region_rasters', 'calculate_goal_model.read_in_OHI_region_rasters', 28, 44).
-program(4, 'outputs_zonal_stats_dataframes_for_protected_cells', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells', 45, 61).
+program(1, 'lsp_zonal_stats', 'lsp_zonal_stats', 1, 62).
+program(2, 'set_up_configuration_and_start_provenance_tracking', 'lsp_zonal_stats.set_up_configuration_and_start_provenance_tracking', 23, 27).
+program(3, 'read_in_OHI_region_rasters', 'lsp_zonal_stats.read_in_OHI_region_rasters', 28, 44).
+program(4, 'outputs_zonal_stats_dataframes_for_protected_cells', 'lsp_zonal_stats.outputs_zonal_stats_dataframes_for_protected_cells', 45, 61).
 
 % FACT: workflow(program_id).
 workflow(1).
@@ -16,54 +16,54 @@ has_subprogram(1, 3).
 has_subprogram(1, 4).
 
 % FACT: port(port_id, port_type, port_name, qualified_port_name, port_annotation_id, data_id).
-port(1, 'in', 'setup_configuration_file', 'calculate_goal_model<-setup_configuration_file', 2, 1).
-port(2, 'in', 'rast_3nm_raster_file', 'calculate_goal_model<-rast_3nm_raster_file', 4, 2).
-port(3, 'in', 'rast_1km_raster_file', 'calculate_goal_model<-rast_1km_raster_file', 6, 3).
-port(4, 'in', 'rast_ws_raster_file', 'calculate_goal_model<-rast_ws_raster_file', 8, 4).
-port(5, 'in', 'rast_pep_file', 'calculate_goal_model<-rast_pep_file', 10, 5).
-port(6, 'in', 'rast_wdpa_pep_file', 'calculate_goal_model<-rast_wdpa_pep_file', 12, 6).
-port(7, 'out', 'zonal_3nm_file', 'calculate_goal_model->zonal_3nm_file', 14, 7).
-port(8, 'out', 'zonal_1km_file', 'calculate_goal_model->zonal_1km_file', 17, 8).
-port(9, 'out', 'zonal_ws_file', 'calculate_goal_model->zonal_ws_file', 20, 9).
-port(10, 'in', 'setup_configuration_file', 'calculate_goal_model.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file', 24, 10).
-port(11, 'out', 'dir_goal', 'calculate_goal_model.set_up_configuration_and_start_provenance_tracking->dir_goal', 26, 11).
-port(12, 'in', 'rast_3nm_raster_file', 'calculate_goal_model.read_in_OHI_region_rasters<-rast_3nm_raster_file', 29, 12).
-port(13, 'in', 'rast_1km_raster_file', 'calculate_goal_model.read_in_OHI_region_rasters<-rast_1km_raster_file', 31, 13).
-port(14, 'in', 'rast_ws_raster_file', 'calculate_goal_model.read_in_OHI_region_rasters<-rast_ws_raster_file', 33, 14).
-port(15, 'in', 'rast_pep_file', 'calculate_goal_model.read_in_OHI_region_rasters<-rast_pep_file', 35, 15).
-port(16, 'in', 'rast_wdpa_pep_file', 'calculate_goal_model.read_in_OHI_region_rasters<-rast_wdpa_pep_file', 37, 16).
-port(17, 'out', 'rast_3nm', 'calculate_goal_model.read_in_OHI_region_rasters->rast_3nm', 39, 17).
-port(18, 'out', 'rast_1km', 'calculate_goal_model.read_in_OHI_region_rasters->rast_1km', 40, 18).
-port(19, 'out', 'rast_ws', 'calculate_goal_model.read_in_OHI_region_rasters->rast_ws', 41, 19).
-port(20, 'out', 'rast_pep', 'calculate_goal_model.read_in_OHI_region_rasters->rast_pep', 42, 20).
-port(21, 'out', 'rast_wdpa_pep', 'calculate_goal_model.read_in_OHI_region_rasters->rast_wdpa_pep', 43, 21).
-port(22, 'param', 'dir_goal', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-dir_goal', 46, 11).
-port(23, 'in', 'rast_3nm', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_3nm', 47, 17).
-port(24, 'in', 'rast_1km', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_1km', 48, 18).
-port(25, 'in', 'rast_ws', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_ws', 49, 19).
-port(26, 'in', 'rast_pep', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_pep', 50, 20).
-port(27, 'in', 'rast_wdpa_pep', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells<-rast_wdpa_pep', 51, 21).
-port(28, 'out', 'zonal_3nm_file', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells->zonal_3nm_file', 52, 22).
-port(29, 'out', 'zonal_1km_file', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells->zonal_1km_file', 55, 23).
-port(30, 'out', 'zonal_ws_file', 'calculate_goal_model.outputs_zonal_stats_dataframes_for_protected_cells->zonal_ws_file', 58, 24).
+port(1, 'in', 'setup_configuration_file', 'lsp_zonal_stats<-setup_configuration_file', 2, 1).
+port(2, 'in', 'rast_3nm_raster_file', 'lsp_zonal_stats<-rast_3nm_raster_file', 4, 2).
+port(3, 'in', 'rast_1km_raster_file', 'lsp_zonal_stats<-rast_1km_raster_file', 6, 3).
+port(4, 'in', 'rast_ws_raster_file', 'lsp_zonal_stats<-rast_ws_raster_file', 8, 4).
+port(5, 'in', 'rast_pep_file', 'lsp_zonal_stats<-rast_pep_file', 10, 5).
+port(6, 'in', 'rast_wdpa_pep_file', 'lsp_zonal_stats<-rast_wdpa_pep_file', 12, 6).
+port(7, 'out', 'zonal_3nm_file', 'lsp_zonal_stats->zonal_3nm_file', 14, 7).
+port(8, 'out', 'zonal_1km_file', 'lsp_zonal_stats->zonal_1km_file', 17, 8).
+port(9, 'out', 'zonal_ws_file', 'lsp_zonal_stats->zonal_ws_file', 20, 9).
+port(10, 'in', 'setup_configuration_file', 'lsp_zonal_stats.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file', 24, 10).
+port(11, 'out', 'dir_goal', 'lsp_zonal_stats.set_up_configuration_and_start_provenance_tracking->dir_goal', 26, 11).
+port(12, 'in', 'rast_3nm_raster_file', 'lsp_zonal_stats.read_in_OHI_region_rasters<-rast_3nm_raster_file', 29, 12).
+port(13, 'in', 'rast_1km_raster_file', 'lsp_zonal_stats.read_in_OHI_region_rasters<-rast_1km_raster_file', 31, 13).
+port(14, 'in', 'rast_ws_raster_file', 'lsp_zonal_stats.read_in_OHI_region_rasters<-rast_ws_raster_file', 33, 14).
+port(15, 'in', 'rast_pep_file', 'lsp_zonal_stats.read_in_OHI_region_rasters<-rast_pep_file', 35, 15).
+port(16, 'in', 'rast_wdpa_pep_file', 'lsp_zonal_stats.read_in_OHI_region_rasters<-rast_wdpa_pep_file', 37, 16).
+port(17, 'out', 'rast_3nm', 'lsp_zonal_stats.read_in_OHI_region_rasters->rast_3nm', 39, 17).
+port(18, 'out', 'rast_1km', 'lsp_zonal_stats.read_in_OHI_region_rasters->rast_1km', 40, 18).
+port(19, 'out', 'rast_ws', 'lsp_zonal_stats.read_in_OHI_region_rasters->rast_ws', 41, 19).
+port(20, 'out', 'rast_pep', 'lsp_zonal_stats.read_in_OHI_region_rasters->rast_pep', 42, 20).
+port(21, 'out', 'rast_wdpa_pep', 'lsp_zonal_stats.read_in_OHI_region_rasters->rast_wdpa_pep', 43, 21).
+port(22, 'param', 'dir_goal', 'lsp_zonal_stats.outputs_zonal_stats_dataframes_for_protected_cells<-dir_goal', 46, 11).
+port(23, 'in', 'rast_3nm', 'lsp_zonal_stats.outputs_zonal_stats_dataframes_for_protected_cells<-rast_3nm', 47, 17).
+port(24, 'in', 'rast_1km', 'lsp_zonal_stats.outputs_zonal_stats_dataframes_for_protected_cells<-rast_1km', 48, 18).
+port(25, 'in', 'rast_ws', 'lsp_zonal_stats.outputs_zonal_stats_dataframes_for_protected_cells<-rast_ws', 49, 19).
+port(26, 'in', 'rast_pep', 'lsp_zonal_stats.outputs_zonal_stats_dataframes_for_protected_cells<-rast_pep', 50, 20).
+port(27, 'in', 'rast_wdpa_pep', 'lsp_zonal_stats.outputs_zonal_stats_dataframes_for_protected_cells<-rast_wdpa_pep', 51, 21).
+port(28, 'out', 'zonal_3nm_file', 'lsp_zonal_stats.outputs_zonal_stats_dataframes_for_protected_cells->zonal_3nm_file', 52, 22).
+port(29, 'out', 'zonal_1km_file', 'lsp_zonal_stats.outputs_zonal_stats_dataframes_for_protected_cells->zonal_1km_file', 55, 23).
+port(30, 'out', 'zonal_ws_file', 'lsp_zonal_stats.outputs_zonal_stats_dataframes_for_protected_cells->zonal_ws_file', 58, 24).
 
 % FACT: port_alias(port_id, alias).
 port_alias(1, 'setup_R').
 port_alias(10, 'setup_R').
 
 % FACT: port_uri_template(port_id, uri).
-port_uri_template(2, 'file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m').
-port_uri_template(3, 'file:{dir_goal}/spatial/hs_inland_1km_raster_500m').
+port_uri_template(2, 'file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m.tif').
+port_uri_template(3, 'file:{dir_goal}/spatial/hs_inland_1km_raster_500m.tif').
 port_uri_template(4, 'file:{dir_goal}/spatial/howe_sound_watershed_500m.tif').
-port_uri_template(5, 'file:{dir_goal}/spatial/howe_sound_watershed_500m.tif').
+port_uri_template(5, 'file:{dir_goal}/spatial/hs_pep_rast_500m.tif').
 port_uri_template(6, 'file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif').
 port_uri_template(7, 'file:{dir_goal}/int/zonal_stats_3nm.csv').
 port_uri_template(8, 'file:{dir_goal}/int/zonal_stats_1km.csv').
 port_uri_template(9, 'file:{dir_goal}/int/zonal_stats_ws.csv').
-port_uri_template(12, 'file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m').
-port_uri_template(13, 'file:{dir_goal}/spatial/hs_inland_1km_raster_500m').
+port_uri_template(12, 'file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m.tif').
+port_uri_template(13, 'file:{dir_goal}/spatial/hs_inland_1km_raster_500m.tif').
 port_uri_template(14, 'file:{dir_goal}/spatial/howe_sound_watershed_500m.tif').
-port_uri_template(15, 'file:{dir_goal}/spatial/howe_sound_watershed_500m.tif').
+port_uri_template(15, 'file:{dir_goal}/spatial/hs_pep_rast_500m.tif').
 port_uri_template(16, 'file:{dir_goal}/spatial/hs_wdpa_rast_500m.tif').
 port_uri_template(28, 'file:{dir_goal}/int/zonal_stats_3nm.csv').
 port_uri_template(29, 'file:{dir_goal}/int/zonal_stats_1km.csv').
@@ -113,21 +113,21 @@ data(6, 'rast_wdpa_pep_file', '[rast_wdpa_pep_file]').
 data(7, 'zonal_3nm_file', '[zonal_3nm_file]').
 data(8, 'zonal_1km_file', '[zonal_1km_file]').
 data(9, 'zonal_ws_file', '[zonal_ws_file]').
-data(10, 'setup_R', 'calculate_goal_model[setup_R]').
-data(11, 'dir_goal', 'calculate_goal_model[dir_goal]').
-data(12, 'rast_3nm_raster_file', 'calculate_goal_model[rast_3nm_raster_file]').
-data(13, 'rast_1km_raster_file', 'calculate_goal_model[rast_1km_raster_file]').
-data(14, 'rast_ws_raster_file', 'calculate_goal_model[rast_ws_raster_file]').
-data(15, 'rast_pep_file', 'calculate_goal_model[rast_pep_file]').
-data(16, 'rast_wdpa_pep_file', 'calculate_goal_model[rast_wdpa_pep_file]').
-data(17, 'rast_3nm', 'calculate_goal_model[rast_3nm]').
-data(18, 'rast_1km', 'calculate_goal_model[rast_1km]').
-data(19, 'rast_ws', 'calculate_goal_model[rast_ws]').
-data(20, 'rast_pep', 'calculate_goal_model[rast_pep]').
-data(21, 'rast_wdpa_pep', 'calculate_goal_model[rast_wdpa_pep]').
-data(22, 'zonal_3nm_file', 'calculate_goal_model[zonal_3nm_file]').
-data(23, 'zonal_1km_file', 'calculate_goal_model[zonal_1km_file]').
-data(24, 'zonal_ws_file', 'calculate_goal_model[zonal_ws_file]').
+data(10, 'setup_R', 'lsp_zonal_stats[setup_R]').
+data(11, 'dir_goal', 'lsp_zonal_stats[dir_goal]').
+data(12, 'rast_3nm_raster_file', 'lsp_zonal_stats[rast_3nm_raster_file]').
+data(13, 'rast_1km_raster_file', 'lsp_zonal_stats[rast_1km_raster_file]').
+data(14, 'rast_ws_raster_file', 'lsp_zonal_stats[rast_ws_raster_file]').
+data(15, 'rast_pep_file', 'lsp_zonal_stats[rast_pep_file]').
+data(16, 'rast_wdpa_pep_file', 'lsp_zonal_stats[rast_wdpa_pep_file]').
+data(17, 'rast_3nm', 'lsp_zonal_stats[rast_3nm]').
+data(18, 'rast_1km', 'lsp_zonal_stats[rast_1km]').
+data(19, 'rast_ws', 'lsp_zonal_stats[rast_ws]').
+data(20, 'rast_pep', 'lsp_zonal_stats[rast_pep]').
+data(21, 'rast_wdpa_pep', 'lsp_zonal_stats[rast_wdpa_pep]').
+data(22, 'zonal_3nm_file', 'lsp_zonal_stats[zonal_3nm_file]').
+data(23, 'zonal_1km_file', 'lsp_zonal_stats[zonal_1km_file]').
+data(24, 'zonal_ws_file', 'lsp_zonal_stats[zonal_ws_file]').
 
 % FACT: channel(channel_id, data_id).
 channel(1, 7).

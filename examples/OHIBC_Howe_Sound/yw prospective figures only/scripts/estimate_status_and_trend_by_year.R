@@ -10,7 +10,7 @@
 # @in area_protected_total_file @URI file:{dir_goal}/output/area_protected_total.csv
 # @out lsp_status_file @URI file:{dir_goal}/output/lsp_status.csv
 # @out lsp_trend_file @URI file:{dir_goal}/output/lsp_trend.csv
-# @out lsp_status_trend_summary_db_file @URI dbfile://
+# @out lsp_status_trend_summary_db_file 
 
 # @BEGIN set_up_configuration_and_start_provenance_tracking
 # @in setup_configuration_file @AS setup_R
@@ -91,7 +91,7 @@ write.csv(trend_df, trend_file)
 # @BEGIN save_year_by_year_status_and_trend_estimates
 # @in status_df_data
 # @in trend_df_data
-# @out lsp_status_trend_summary_db_file @URI dbfile://
+# @out lsp_status_trend_summary_db_file 
 
 lsp_status_trend_summary <- status_df %>%
   left_join(trend_df,  by = c('rgn_id', 'year')) %>%

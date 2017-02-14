@@ -22,20 +22,31 @@ source("setup_R")
 # @END set_up_configuration_and_start_provenance_tracking
 
 
-# @BEGIN read_in_protected_area_and_total_area_by_region
+# @BEGIN read_in_area_weighted_average_of_offshore_3nm_score
 # @param dir_goal
 # @in prot_3nm_stats_file @URI file:{dir_goal}/int/area_protected_3nm.csv
-# @in prot_1km_stats_file @URI file:{dir_goal}/int/area_protected_1km.csv
-# @in prot_ws_stats_file  @URI file:{dir_goal}/int/area_protected_ws.csv
 # @out prot_3nm
-# @out prot_1km
-# @out prot_ws
 
 prot_3nm <- read.csv(file.path(dir_goal, 'int', 'area_protected_3nm.csv'))
-prot_1km <- read.csv(file.path(dir_goal, 'int', 'area_protected_1km.csv'))
-prot_ws  <- read.csv(file.path(dir_goal, 'int', 'area_protected_ws.csv'))
+# @END read_in_area_weighted_average_of_offshore_3nm_score
 
-# @END read_in_protected_area_and_total_area_by_region
+
+# @BEGIN read_in_area_weighted_average_of_offshore_1km_score
+# @param dir_goal
+# @in prot_1km_stats_file @URI file:{dir_goal}/int/area_protected_1km.csv
+# @out prot_1km
+
+prot_1km <- read.csv(file.path(dir_goal, 'int', 'area_protected_1km.csv'))
+# @END read_in_area_weighted_average_of_offshore_1km_score
+
+
+# @BEGIN read_in_area_weighted_average_of_inland_watershed_score
+# @param dir_goal
+# @in prot_ws_stats_file  @URI file:{dir_goal}/int/area_protected_ws.csv
+# @out prot_ws
+
+prot_ws  <- read.csv(file.path(dir_goal, 'int', 'area_protected_ws.csv'))
+# @END read_in_area_weighted_average_of_inland_watershed_score
 
 
 # @BEGIN combine_scores_for_inland_and_offshore_and_write_output_layers

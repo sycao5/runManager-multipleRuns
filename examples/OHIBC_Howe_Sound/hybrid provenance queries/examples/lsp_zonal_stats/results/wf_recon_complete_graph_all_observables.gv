@@ -2,7 +2,7 @@
 digraph yw_data_view {
 rankdir=TB
 fontname=Courier; fontsize=18; labelloc=t
-label="calculate_goal_model"
+label="lsp_zonal_stats"
 subgraph cluster_workflow { label=""; color=black; penwidth=2
 subgraph cluster_workflow_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
@@ -12,10 +12,10 @@ outputs_zonal_stats_dataframes_for_protected_cells
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname="Courier-Bold" fontsize=9]
 setup_R[shape=record rankdir=LR label="{<f0> setup_R |<f1>}"]
-rast_3nm_raster_file[shape=record rankdir=LR label="{<f0> rast_3nm_raster_file |<f1>}"]
-rast_1km_raster_file[shape=record rankdir=LR label="{<f0> rast_1km_raster_file |<f1>}"]
+rast_3nm_raster_file[shape=record rankdir=LR label="{<f0> rast_3nm_raster_file |<f1>prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif\l}"]
+rast_1km_raster_file[shape=record rankdir=LR label="{<f0> rast_1km_raster_file |<f1>prep/lsp/vHS/spatial/hs_inland_1km_raster_500m.tif\l}"]
 rast_ws_raster_file[shape=record rankdir=LR label="{<f0> rast_ws_raster_file |<f1>prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif\l}"]
-rast_pep_file[shape=record rankdir=LR label="{<f0> rast_pep_file |<f1>prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif\l}"]
+rast_pep_file[shape=record rankdir=LR label="{<f0> rast_pep_file |<f1>prep/lsp/vHS/spatial/hs_pep_rast_500m.tif\l}"]
 rast_wdpa_pep_file[shape=record rankdir=LR label="{<f0> rast_wdpa_pep_file |<f1>prep/lsp/vHS/spatial/hs_wdpa_rast_500m.tif\l}"]
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
 dir_goal
