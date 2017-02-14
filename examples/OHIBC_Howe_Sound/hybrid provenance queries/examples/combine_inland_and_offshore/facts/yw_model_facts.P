@@ -1,9 +1,11 @@
 
 % FACT: program(program_id, program_name, qualified_program_name, begin_annotation_id, end_annotation_id).
-program(1, 'combine_scores_for_inland_and_offshore_and_outputs', 'combine_scores_for_inland_and_offshore_and_outputs', 1, 36).
-program(2, 'set_up_configuration_and_start_provenance_tracking', 'combine_scores_for_inland_and_offshore_and_outputs.set_up_configuration_and_start_provenance_tracking', 12, 16).
-program(3, 'read_in_protected_area_and_total_area_by_region', 'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region', 17, 28).
-program(4, 'combine_scores_for_inland_and_offshore_and_write_output_layers', 'combine_scores_for_inland_and_offshore_and_outputs.combine_scores_for_inland_and_offshore_and_write_output_layers', 29, 35).
+program(1, 'combine_scores_for_inland_and_offshore', 'combine_scores_for_inland_and_offshore', 1, 42).
+program(2, 'set_up_configuration_and_start_provenance_tracking', 'combine_scores_for_inland_and_offshore.set_up_configuration_and_start_provenance_tracking', 12, 16).
+program(3, 'read_in_area_weighted_average_of_offshore_3nm_score', 'combine_scores_for_inland_and_offshore.read_in_area_weighted_average_of_offshore_3nm_score', 17, 22).
+program(4, 'read_in_area_weighted_average_of_offshore_1km_score', 'combine_scores_for_inland_and_offshore.read_in_area_weighted_average_of_offshore_1km_score', 23, 28).
+program(5, 'read_in_area_weighted_average_of_inland_watershed_score', 'combine_scores_for_inland_and_offshore.read_in_area_weighted_average_of_inland_watershed_score', 29, 34).
+program(6, 'combine_scores_for_inland_and_offshore_and_write_output_layers', 'combine_scores_for_inland_and_offshore.combine_scores_for_inland_and_offshore_and_write_output_layers', 35, 41).
 
 % FACT: workflow(program_id).
 workflow(1).
@@ -14,26 +16,30 @@ workflow(1).
 has_subprogram(1, 2).
 has_subprogram(1, 3).
 has_subprogram(1, 4).
+has_subprogram(1, 5).
+has_subprogram(1, 6).
 
 % FACT: port(port_id, port_type, port_name, qualified_port_name, port_annotation_id, data_id).
-port(1, 'in', 'setup_configuration_file', 'combine_scores_for_inland_and_offshore_and_outputs<-setup_configuration_file', 2, 1).
-port(2, 'in', 'prot_3nm_stats_file', 'combine_scores_for_inland_and_offshore_and_outputs<-prot_3nm_stats_file', 4, 2).
-port(3, 'in', 'prot_1km_stats_file', 'combine_scores_for_inland_and_offshore_and_outputs<-prot_1km_stats_file', 6, 3).
-port(4, 'in', 'prot_ws_stats_file', 'combine_scores_for_inland_and_offshore_and_outputs<-prot_ws_stats_file', 8, 4).
-port(5, 'out', 'area_protected_total_file', 'combine_scores_for_inland_and_offshore_and_outputs->area_protected_total_file', 10, 5).
-port(6, 'in', 'setup_configuration_file', 'combine_scores_for_inland_and_offshore_and_outputs.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file', 13, 6).
-port(7, 'out', 'dir_goal', 'combine_scores_for_inland_and_offshore_and_outputs.set_up_configuration_and_start_provenance_tracking->dir_goal', 15, 7).
-port(8, 'param', 'dir_goal', 'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region<-dir_goal', 18, 7).
-port(9, 'in', 'prot_3nm_stats_file', 'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region<-prot_3nm_stats_file', 19, 8).
-port(10, 'in', 'prot_1km_stats_file', 'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region<-prot_1km_stats_file', 21, 9).
-port(11, 'in', 'prot_ws_stats_file', 'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region<-prot_ws_stats_file', 23, 10).
-port(12, 'out', 'prot_3nm', 'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region->prot_3nm', 25, 11).
-port(13, 'out', 'prot_1km', 'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region->prot_1km', 26, 12).
-port(14, 'out', 'prot_ws', 'combine_scores_for_inland_and_offshore_and_outputs.read_in_protected_area_and_total_area_by_region->prot_ws', 27, 13).
-port(15, 'in', 'prot_1km', 'combine_scores_for_inland_and_offshore_and_outputs.combine_scores_for_inland_and_offshore_and_write_output_layers<-prot_1km', 30, 12).
-port(16, 'in', 'prot_3nm', 'combine_scores_for_inland_and_offshore_and_outputs.combine_scores_for_inland_and_offshore_and_write_output_layers<-prot_3nm', 31, 11).
-port(17, 'in', 'prot_ws', 'combine_scores_for_inland_and_offshore_and_outputs.combine_scores_for_inland_and_offshore_and_write_output_layers<-prot_ws', 32, 13).
-port(18, 'out', 'area_protected_total_file', 'combine_scores_for_inland_and_offshore_and_outputs.combine_scores_for_inland_and_offshore_and_write_output_layers->area_protected_total_file', 33, 14).
+port(1, 'in', 'setup_configuration_file', 'combine_scores_for_inland_and_offshore<-setup_configuration_file', 2, 1).
+port(2, 'in', 'prot_3nm_stats_file', 'combine_scores_for_inland_and_offshore<-prot_3nm_stats_file', 4, 2).
+port(3, 'in', 'prot_1km_stats_file', 'combine_scores_for_inland_and_offshore<-prot_1km_stats_file', 6, 3).
+port(4, 'in', 'prot_ws_stats_file', 'combine_scores_for_inland_and_offshore<-prot_ws_stats_file', 8, 4).
+port(5, 'out', 'area_protected_total_file', 'combine_scores_for_inland_and_offshore->area_protected_total_file', 10, 5).
+port(6, 'in', 'setup_configuration_file', 'combine_scores_for_inland_and_offshore.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file', 13, 6).
+port(7, 'out', 'dir_goal', 'combine_scores_for_inland_and_offshore.set_up_configuration_and_start_provenance_tracking->dir_goal', 15, 7).
+port(8, 'param', 'dir_goal', 'combine_scores_for_inland_and_offshore.read_in_area_weighted_average_of_offshore_3nm_score<-dir_goal', 18, 7).
+port(9, 'in', 'prot_3nm_stats_file', 'combine_scores_for_inland_and_offshore.read_in_area_weighted_average_of_offshore_3nm_score<-prot_3nm_stats_file', 19, 8).
+port(10, 'out', 'prot_3nm', 'combine_scores_for_inland_and_offshore.read_in_area_weighted_average_of_offshore_3nm_score->prot_3nm', 21, 9).
+port(11, 'param', 'dir_goal', 'combine_scores_for_inland_and_offshore.read_in_area_weighted_average_of_offshore_1km_score<-dir_goal', 24, 7).
+port(12, 'in', 'prot_1km_stats_file', 'combine_scores_for_inland_and_offshore.read_in_area_weighted_average_of_offshore_1km_score<-prot_1km_stats_file', 25, 10).
+port(13, 'out', 'prot_1km', 'combine_scores_for_inland_and_offshore.read_in_area_weighted_average_of_offshore_1km_score->prot_1km', 27, 11).
+port(14, 'param', 'dir_goal', 'combine_scores_for_inland_and_offshore.read_in_area_weighted_average_of_inland_watershed_score<-dir_goal', 30, 7).
+port(15, 'in', 'prot_ws_stats_file', 'combine_scores_for_inland_and_offshore.read_in_area_weighted_average_of_inland_watershed_score<-prot_ws_stats_file', 31, 12).
+port(16, 'out', 'prot_ws', 'combine_scores_for_inland_and_offshore.read_in_area_weighted_average_of_inland_watershed_score->prot_ws', 33, 13).
+port(17, 'in', 'prot_1km', 'combine_scores_for_inland_and_offshore.combine_scores_for_inland_and_offshore_and_write_output_layers<-prot_1km', 36, 11).
+port(18, 'in', 'prot_3nm', 'combine_scores_for_inland_and_offshore.combine_scores_for_inland_and_offshore_and_write_output_layers<-prot_3nm', 37, 9).
+port(19, 'in', 'prot_ws', 'combine_scores_for_inland_and_offshore.combine_scores_for_inland_and_offshore_and_write_output_layers<-prot_ws', 38, 13).
+port(20, 'out', 'area_protected_total_file', 'combine_scores_for_inland_and_offshore.combine_scores_for_inland_and_offshore_and_write_output_layers->area_protected_total_file', 39, 14).
 
 % FACT: port_alias(port_id, alias).
 port_alias(1, 'setup_R').
@@ -45,9 +51,9 @@ port_uri_template(3, 'file:{dir_goal}/int/area_protected_1km.csv').
 port_uri_template(4, 'file:{dir_goal}/int/area_protected_ws.csv').
 port_uri_template(5, 'file:{dir_goal}/output/area_protected_total.csv').
 port_uri_template(9, 'file:{dir_goal}/int/area_protected_3nm.csv').
-port_uri_template(10, 'file:{dir_goal}/int/area_protected_1km.csv').
-port_uri_template(11, 'file:{dir_goal}/int/area_protected_ws.csv').
-port_uri_template(18, 'file:{dir_goal}/output/area_protected_total.csv').
+port_uri_template(12, 'file:{dir_goal}/int/area_protected_1km.csv').
+port_uri_template(15, 'file:{dir_goal}/int/area_protected_ws.csv').
+port_uri_template(20, 'file:{dir_goal}/output/area_protected_total.csv').
 
 % FACT: has_in_port(block_id, port_id).
 has_in_port(1, 1).
@@ -57,19 +63,21 @@ has_in_port(1, 4).
 has_in_port(2, 6).
 has_in_port(3, 8).
 has_in_port(3, 9).
-has_in_port(3, 10).
-has_in_port(3, 11).
-has_in_port(4, 15).
-has_in_port(4, 16).
-has_in_port(4, 17).
+has_in_port(4, 11).
+has_in_port(4, 12).
+has_in_port(5, 14).
+has_in_port(5, 15).
+has_in_port(6, 17).
+has_in_port(6, 18).
+has_in_port(6, 19).
 
 % FACT: has_out_port(block_id, port_id).
 has_out_port(1, 5).
 has_out_port(2, 7).
-has_out_port(3, 12).
-has_out_port(3, 13).
-has_out_port(3, 14).
-has_out_port(4, 18).
+has_out_port(3, 10).
+has_out_port(4, 13).
+has_out_port(5, 16).
+has_out_port(6, 20).
 
 % FACT: data(data_id, data_name, qualified_data_name).
 data(1, 'setup_R', '[setup_R]').
@@ -77,65 +85,71 @@ data(2, 'prot_3nm_stats_file', '[prot_3nm_stats_file]').
 data(3, 'prot_1km_stats_file', '[prot_1km_stats_file]').
 data(4, 'prot_ws_stats_file', '[prot_ws_stats_file]').
 data(5, 'area_protected_total_file', '[area_protected_total_file]').
-data(6, 'setup_R', 'combine_scores_for_inland_and_offshore_and_outputs[setup_R]').
-data(7, 'dir_goal', 'combine_scores_for_inland_and_offshore_and_outputs[dir_goal]').
-data(8, 'prot_3nm_stats_file', 'combine_scores_for_inland_and_offshore_and_outputs[prot_3nm_stats_file]').
-data(9, 'prot_1km_stats_file', 'combine_scores_for_inland_and_offshore_and_outputs[prot_1km_stats_file]').
-data(10, 'prot_ws_stats_file', 'combine_scores_for_inland_and_offshore_and_outputs[prot_ws_stats_file]').
-data(11, 'prot_3nm', 'combine_scores_for_inland_and_offshore_and_outputs[prot_3nm]').
-data(12, 'prot_1km', 'combine_scores_for_inland_and_offshore_and_outputs[prot_1km]').
-data(13, 'prot_ws', 'combine_scores_for_inland_and_offshore_and_outputs[prot_ws]').
-data(14, 'area_protected_total_file', 'combine_scores_for_inland_and_offshore_and_outputs[area_protected_total_file]').
+data(6, 'setup_R', 'combine_scores_for_inland_and_offshore[setup_R]').
+data(7, 'dir_goal', 'combine_scores_for_inland_and_offshore[dir_goal]').
+data(8, 'prot_3nm_stats_file', 'combine_scores_for_inland_and_offshore[prot_3nm_stats_file]').
+data(9, 'prot_3nm', 'combine_scores_for_inland_and_offshore[prot_3nm]').
+data(10, 'prot_1km_stats_file', 'combine_scores_for_inland_and_offshore[prot_1km_stats_file]').
+data(11, 'prot_1km', 'combine_scores_for_inland_and_offshore[prot_1km]').
+data(12, 'prot_ws_stats_file', 'combine_scores_for_inland_and_offshore[prot_ws_stats_file]').
+data(13, 'prot_ws', 'combine_scores_for_inland_and_offshore[prot_ws]').
+data(14, 'area_protected_total_file', 'combine_scores_for_inland_and_offshore[area_protected_total_file]').
 
 % FACT: channel(channel_id, data_id).
 channel(1, 5).
 channel(2, 6).
 channel(3, 7).
-channel(4, 8).
-channel(5, 9).
-channel(6, 10).
-channel(7, 12).
-channel(8, 11).
-channel(9, 13).
-channel(10, 1).
-channel(11, 2).
-channel(12, 3).
-channel(13, 4).
-channel(14, 14).
+channel(4, 7).
+channel(5, 7).
+channel(6, 8).
+channel(7, 10).
+channel(8, 12).
+channel(9, 11).
+channel(10, 9).
+channel(11, 13).
+channel(12, 1).
+channel(13, 2).
+channel(14, 3).
+channel(15, 4).
+channel(16, 14).
 
 % FACT: port_connects_to_channel(port_id, channel_id).
-port_connects_to_channel(18, 1).
+port_connects_to_channel(20, 1).
 port_connects_to_channel(6, 2).
 port_connects_to_channel(7, 3).
 port_connects_to_channel(8, 3).
-port_connects_to_channel(9, 4).
-port_connects_to_channel(10, 5).
-port_connects_to_channel(11, 6).
-port_connects_to_channel(13, 7).
-port_connects_to_channel(15, 7).
-port_connects_to_channel(12, 8).
-port_connects_to_channel(16, 8).
-port_connects_to_channel(14, 9).
+port_connects_to_channel(7, 4).
+port_connects_to_channel(11, 4).
+port_connects_to_channel(7, 5).
+port_connects_to_channel(14, 5).
+port_connects_to_channel(9, 6).
+port_connects_to_channel(12, 7).
+port_connects_to_channel(15, 8).
+port_connects_to_channel(13, 9).
 port_connects_to_channel(17, 9).
-port_connects_to_channel(6, 10).
-port_connects_to_channel(9, 11).
-port_connects_to_channel(10, 12).
-port_connects_to_channel(11, 13).
-port_connects_to_channel(18, 14).
+port_connects_to_channel(10, 10).
+port_connects_to_channel(18, 10).
+port_connects_to_channel(16, 11).
+port_connects_to_channel(19, 11).
+port_connects_to_channel(6, 12).
+port_connects_to_channel(9, 13).
+port_connects_to_channel(12, 14).
+port_connects_to_channel(15, 15).
+port_connects_to_channel(20, 16).
 
 % FACT: inflow_connects_to_channel(port_id, channel_id).
 inflow_connects_to_channel(1, 2).
-inflow_connects_to_channel(2, 4).
-inflow_connects_to_channel(3, 5).
-inflow_connects_to_channel(4, 6).
-inflow_connects_to_channel(1, 10).
-inflow_connects_to_channel(2, 11).
-inflow_connects_to_channel(3, 12).
-inflow_connects_to_channel(4, 13).
+inflow_connects_to_channel(2, 6).
+inflow_connects_to_channel(3, 7).
+inflow_connects_to_channel(4, 8).
+inflow_connects_to_channel(1, 12).
+inflow_connects_to_channel(2, 13).
+inflow_connects_to_channel(3, 14).
+inflow_connects_to_channel(4, 15).
 
 % FACT: outflow_connects_to_channel(port_id, channel_id).
 outflow_connects_to_channel(5, 1).
-outflow_connects_to_channel(5, 14).
+outflow_connects_to_channel(5, 16).
 
 % FACT: uri_variable(uri_variable_id, variable_name, port_id).
 uri_variable(1, 'dir_goal', 2).
@@ -143,9 +157,9 @@ uri_variable(2, 'dir_goal', 3).
 uri_variable(3, 'dir_goal', 4).
 uri_variable(4, 'dir_goal', 5).
 uri_variable(5, 'dir_goal', 9).
-uri_variable(6, 'dir_goal', 10).
-uri_variable(7, 'dir_goal', 11).
-uri_variable(8, 'dir_goal', 18).
+uri_variable(6, 'dir_goal', 12).
+uri_variable(7, 'dir_goal', 15).
+uri_variable(8, 'dir_goal', 20).
 
 % FACT: log_template(log_template_id, port_id, entry_template, log_annotation_id).
 

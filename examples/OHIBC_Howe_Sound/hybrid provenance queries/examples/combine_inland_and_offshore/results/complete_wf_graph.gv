@@ -2,22 +2,24 @@
 digraph yw_data_view {
 rankdir=TB
 fontname=Courier; fontsize=18; labelloc=t
-label="combine_scores_for_inland_and_offshore_and_outputs"
+label="combine_scores_for_inland_and_offshore"
 subgraph cluster_workflow { label=""; color=black; penwidth=2
 subgraph cluster_workflow_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 set_up_configuration_and_start_provenance_tracking
-read_in_protected_area_and_total_area_by_region
+read_in_area_weighted_average_of_offshore_3nm_score
+read_in_area_weighted_average_of_offshore_1km_score
+read_in_area_weighted_average_of_inland_watershed_score
 combine_scores_for_inland_and_offshore_and_write_output_layers
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
 setup_R
 dir_goal
 prot_3nm_stats_file
-prot_1km_stats_file
-prot_ws_stats_file
 prot_3nm
+prot_1km_stats_file
 prot_1km
+prot_ws_stats_file
 prot_ws
 area_protected_total_file
 node[shape=box style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica]
@@ -36,17 +38,19 @@ node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
 area_protected_total_file_outflow [label=""]
 }}
 setup_R -> set_up_configuration_and_start_provenance_tracking
-dir_goal -> read_in_protected_area_and_total_area_by_region
-prot_3nm_stats_file -> read_in_protected_area_and_total_area_by_region
-prot_1km_stats_file -> read_in_protected_area_and_total_area_by_region
-prot_ws_stats_file -> read_in_protected_area_and_total_area_by_region
+dir_goal -> read_in_area_weighted_average_of_offshore_3nm_score
+dir_goal -> read_in_area_weighted_average_of_offshore_1km_score
+dir_goal -> read_in_area_weighted_average_of_inland_watershed_score
+prot_3nm_stats_file -> read_in_area_weighted_average_of_offshore_3nm_score
 prot_3nm -> combine_scores_for_inland_and_offshore_and_write_output_layers
+prot_1km_stats_file -> read_in_area_weighted_average_of_offshore_1km_score
 prot_1km -> combine_scores_for_inland_and_offshore_and_write_output_layers
+prot_ws_stats_file -> read_in_area_weighted_average_of_inland_watershed_score
 prot_ws -> combine_scores_for_inland_and_offshore_and_write_output_layers
 set_up_configuration_and_start_provenance_tracking -> dir_goal
-read_in_protected_area_and_total_area_by_region -> prot_3nm
-read_in_protected_area_and_total_area_by_region -> prot_1km
-read_in_protected_area_and_total_area_by_region -> prot_ws
+read_in_area_weighted_average_of_offshore_3nm_score -> prot_3nm
+read_in_area_weighted_average_of_offshore_1km_score -> prot_1km
+read_in_area_weighted_average_of_inland_watershed_score -> prot_ws
 combine_scores_for_inland_and_offshore_and_write_output_layers -> area_protected_total_file
 setup_R_inflow -> setup_R
 prot_3nm_stats_file_inflow -> prot_3nm_stats_file

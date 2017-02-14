@@ -2,18 +2,16 @@
 digraph yw_data_view {
 rankdir=TB
 fontname=Courier; fontsize=18; labelloc=t
-label="combine_scores_for_inland_and_offshore_and_outputs"
+label="combine_scores_for_inland_and_offshore"
 subgraph cluster_workflow { label=""; color=black; penwidth=2
 subgraph cluster_workflow_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 combine_scores_for_inland_and_offshore_and_write_output_layers
-read_in_protected_area_and_total_area_by_region
+read_in_area_weighted_average_of_offshore_3nm_score
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
 prot_3nm_stats_file
 prot_3nm
-prot_1km
-prot_ws
 area_protected_total_file
 node[shape=box style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica]
 }}
@@ -28,13 +26,9 @@ node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
 area_protected_total_file_outflow [label=""]
 }}
 combine_scores_for_inland_and_offshore_and_write_output_layers -> area_protected_total_file
-read_in_protected_area_and_total_area_by_region -> prot_ws
-read_in_protected_area_and_total_area_by_region -> prot_1km
-read_in_protected_area_and_total_area_by_region -> prot_3nm
-prot_3nm_stats_file -> read_in_protected_area_and_total_area_by_region
+read_in_area_weighted_average_of_offshore_3nm_score -> prot_3nm
+prot_3nm_stats_file -> read_in_area_weighted_average_of_offshore_3nm_score
 prot_3nm -> combine_scores_for_inland_and_offshore_and_write_output_layers
-prot_1km -> combine_scores_for_inland_and_offshore_and_write_output_layers
-prot_ws -> combine_scores_for_inland_and_offshore_and_write_output_layers
 prot_3nm_stats_file_inflow -> prot_3nm_stats_file
 area_protected_total_file -> area_protected_total_file_outflow
 }
