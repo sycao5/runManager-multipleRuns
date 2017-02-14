@@ -53,5 +53,5 @@ gv_labeled_node_sha256(Sha256, FilePath) :-
 gv_unlabeled_edge_sha256(From, To) :-
    fmt_write('"%S" -> "%S"', args(From, To)), eol.
    
-gv_labeled_node_execution(ExecutionId, Tag) :-
-    fmt_write('"%S" [shape=record label="%S \\n %S"]', args(ExecutionId, Tag, ExecutionId)), eol.
+gv_labeled_node_execution(ExecutionId, SoftwareApplication, Tag) :-
+    fmt_write('"%S" [shape=record label="%S \\n %S \\n %S"]', args(ExecutionId, Tag, SoftwareApplication, ExecutionId)), eol.
