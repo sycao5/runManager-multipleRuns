@@ -9,7 +9,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 686.8)">
 <title>Workflow</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-686.8 982,-686.8 982,4 -4,4"/>
-<text text-anchor="middle" x="489" y="-662.6" font-family="Courier,monospace" font-size="18.00">combine_scores_for_inland_and_offshore_and_outputs</text>
+<text text-anchor="middle" x="489" y="-662.6" font-family="Courier,monospace" font-size="18.00">combine_scores_for_inland_and_offshore</text>
 <g id="clust1" class="cluster"><title>cluster_workflow_box_outer</title>
 <polygon fill="none" stroke="black" stroke-width="2" points="8,-62 8,-591.2 970,-591.2 970,-62 8,-62"/>
 </g>

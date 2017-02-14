@@ -14,7 +14,7 @@
 #   * Read in buffer shapefiles to SpatialPolygonsDataFrames
 
 
-# @BEGIN  Set_up_coastal_buffer_rasters
+# @BEGIN  get_analysis_rasters
 # @in setup_configuration_file @AS setup_R
 # @in poly_3nm_file @URI file:{dir_spatial}/howe_sound_offshore_3nm.shp
 # @in poly_1km_file @URI file:{dir_spatial}/howe_sound_inland_1km.shp
@@ -79,4 +79,4 @@ if(!file.exists(rast_3nm_file) | !file.exists(rast_1km_file) | reload == TRUE) {
 
 # @END read_in_buffer_shapfiles_if_rasters_not avaliable 
 
-# @END Set_up_coastal_buffer_rasters
+# @END get_analysis_rasters

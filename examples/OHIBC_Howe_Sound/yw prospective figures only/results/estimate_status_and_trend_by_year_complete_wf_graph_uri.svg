@@ -9,7 +9,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 830.8)">
 <title>Workflow</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-830.8 901,-830.8 901,4 -4,4"/>
-<text text-anchor="middle" x="448.5" y="-806.6" font-family="Courier,monospace" font-size="18.00">Calculate_Percentage_Protected_Area_for_Howe_Sound</text>
+<text text-anchor="middle" x="448.5" y="-806.6" font-family="Courier,monospace" font-size="18.00">estimate_status_and_trend_by_year</text>
 <g id="clust1" class="cluster"><title>cluster_workflow_box_outer</title>
 <polygon fill="none" stroke="black" stroke-width="2" points="8,-62 8,-735.2 889,-735.2 889,-62 8,-62"/>
 </g>

@@ -26,7 +26,7 @@
 # # x 1169571.2 1227753.5
 # # y  473548.3  534590.4
 
-# @BEGIN Read_in_BC_WDPA_MPA_shapefile
+# @BEGIN setup_BC_WDPA_polygons
 # @in setup_configuration_file @AS setup_R
 # @in hs_wdpa_poly @AS original_WDPA_MPA_global_dataset
 # @out poly_hs_wdpa @AS BC_specific_polygon_subset_of_WDPA_global_dataset @URI file:{dir_goal}/spatial/hs_wdpa_poly.shp
@@ -53,4 +53,4 @@ writeOGR(poly_hs_wdpa,
          overwrite_layer = TRUE)
 # @END create_BC_specific_polygon_subset_of_WDPA_global_dataset
 		 
-# @END Read_in_BC_WDPA_MPA_shapefile
+# @END setup_BC_WDPA_polygons

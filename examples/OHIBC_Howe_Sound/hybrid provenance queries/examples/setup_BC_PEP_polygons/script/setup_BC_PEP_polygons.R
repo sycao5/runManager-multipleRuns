@@ -1,7 +1,7 @@
 ## Read in BC Parks, Ecological Reserves, and Protected Areas data
 # DataBC offers spatial data on BC protected areas with small differences from the WDPA dataset.  We will use this as well.
 
-# @BEGIN Read_BC_Parks_EcologicalReserves_ProtectedArea_data
+# @BEGIN setup_BC_PEP_polygons
 # @in poly_hs_pep @AS TA_PEP_SVW_polygon @URI file:{dir_anx}/_raw_data/databc/TA_PEP_SVW
 # @in setup_configuration_file @AS setup_R
 # @out poly_hs_pep @URI file:{dir_goal}/spatial/hs_pep_poly.shp 
@@ -42,4 +42,4 @@ message("completed BC_PEP_polygons.")
 
 # @END write_hs_pep_poly
 
-# @END Read_BC_Parks_EcologicalReserves_ProtectedArea_data
+# @END setup_BC_PEP_polygons

@@ -6,7 +6,7 @@
 
 # Calculate goal model
 
-# @BEGIN calculate_goal_model
+# @BEGIN lsp_zonal_stats
 # @in setup_configuration_file @AS setup_R
 # @in rast_3nm_raster_file @URI file:{dir_goal}/spatial/hs_offshore_3nm_raster_500m
 # @in rast_1km_raster_file @URI file:{dir_goal}/spatial/hs_inland_1km_raster_500m
@@ -102,4 +102,4 @@ write.csv(stats_ws,  zonal_ws_file)
 
 # @END outputs_stats_for_protected_cells
 
-# @END calculate_goal_model
+# @END lsp_zonal_stats

@@ -9,7 +9,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 542.8)">
 <title>Workflow</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-542.8 911,-542.8 911,4 -4,4"/>
-<text text-anchor="middle" x="453.5" y="-518.6" font-family="Courier,monospace" font-size="18.00">Setup_watershed_raster</text>
+<text text-anchor="middle" x="453.5" y="-518.6" font-family="Courier,monospace" font-size="18.00">setup_watershed_raster</text>
 <g id="clust1" class="cluster"><title>cluster_workflow_box_outer</title>
 <polygon fill="none" stroke="black" stroke-width="2" points="8,-62 8,-447.2 899,-447.2 899,-62 8,-62"/>
 </g>

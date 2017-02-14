@@ -7,7 +7,7 @@
 
 ## Rasterize the BC WDPA-MPA shapefile to Howe Sound extents
 
-# @BEGIN  Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents
+# @BEGIN  Rasterize_HS_WDPA_and_PEP
 # @in setup_configuration_file @AS setup_R
 # @in hs_wdpa_shp_file @URI file:{dir_goal}/spatial/hs_wdpa_poly.shp
 # @in hs_pep_shp_file @URI file:{dir_goal}/spatial/hs_pep_poly.shp
@@ -76,4 +76,4 @@ rast_pep  <- gdal_rast2(src = hs_pep_shp_file,
                         override_p4s = TRUE)
 # @END rasterize_howe_sound_pep_shape_file
 						
-# @END Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents
+# @END Rasterize_HS_WDPA_and_PEP

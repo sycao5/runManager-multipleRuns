@@ -6,7 +6,7 @@
 
 ## Combine scores for inland and offshore, and writing output layers
 
-# @BEGIN combine_scores_for_inland_and_offshore_and_outputs
+# @BEGIN combine_scores_for_inland_and_offshore
 # @in setup_configuration_file @AS setup_R
 # @in prot_3nm_stats_file @URI file:{dir_goal}/int/area_protected_3nm.csv
 # @in prot_1km_stats_file @URI file:{dir_goal}/int/area_protected_1km.csv
@@ -76,4 +76,4 @@ write.csv(prot_df, file.path(dir_goal, 'output', 'area_protected_total.csv'))
 
 # @END combine_scores_for_inland_and_offshore_and_write_output_layers
 
-# @END combine_scores_for_inland_and_offshore_and_outputs
+# @END combine_scores_for_inland_and_offshore

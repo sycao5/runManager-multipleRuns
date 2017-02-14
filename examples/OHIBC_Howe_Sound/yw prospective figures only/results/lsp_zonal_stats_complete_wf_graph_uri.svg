@@ -9,7 +9,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 542.8)">
 <title>Workflow</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-542.8 1874,-542.8 1874,4 -4,4"/>
-<text text-anchor="middle" x="935" y="-518.6" font-family="Courier,monospace" font-size="18.00">calculate_goal_model</text>
+<text text-anchor="middle" x="935" y="-518.6" font-family="Courier,monospace" font-size="18.00">lsp_zonal_stats</text>
 <g id="clust1" class="cluster"><title>cluster_workflow_box_outer</title>
 <polygon fill="none" stroke="black" stroke-width="2" points="8,-62 8,-447.2 1862,-447.2 1862,-62 8,-62"/>
 </g>

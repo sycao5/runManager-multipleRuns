@@ -5,7 +5,7 @@
 # University of California, Santa Barbara.
 # Available at: https://github.com/OHI-Science/ohiprep/releases/edit/v2016.1
 
-# @BEGIN Calculate_Percentage_Protected_Area_for_Howe_Sound
+# @BEGIN estimate_status_and_trend_by_year
 # @in setup_configuration_file @AS setup_R
 # @in area_protected_total_file @URI file:{dir_goal}/output/area_protected_total.csv
 # @out lsp_status_file @URI file:{dir_goal}/output/lsp_status.csv
@@ -104,4 +104,4 @@ head(lsp_status_trend_summary)
 
 #DT::datatable(lsp_status_trend_summary, caption = 'LSP status and trend estimates')
 
-# @END Calculate_Percentage_Protected_Area_for_Howe_Sound
+# @END estimate_status_and_trend_by_year
