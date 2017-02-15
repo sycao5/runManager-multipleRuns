@@ -9,13 +9,13 @@ yw_source_file(1,'./script/setup_watershed_raster.R').
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_workflow_script(WorkflowId, WorkflowName, SourceId, SourceFile).
 %...................................................................................................
-yw_workflow_script(1,'Setup_watershed_raster',1,'./script/setup_watershed_raster.R').
+yw_workflow_script(1,setup_watershed_raster,1,'./script/setup_watershed_raster.R').
 
 
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_program(WorkflowId, ProgramName, WorkflowId, SourceId, BeginLine, EndLine).
 %...................................................................................................
-yw_program(1,'Setup_watershed_raster',nil,1,7,41).
+yw_program(1,setup_watershed_raster,nil,1,7,41).
 yw_program(2,set_up_configuration_and_start_provenance_tracking,1,1,14,20).
 yw_program(3,raster_to_same_extents_resolution_as_500m_base_raster,1,1,23,39).
 
@@ -23,7 +23,7 @@ yw_program(3,raster_to_same_extents_resolution_as_500m_base_raster,1,1,23,39).
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_workflow(WorkflowId, WorkflowName, ParentWorkflowId, SourceId, BeginLine, EndLine).
 %...................................................................................................
-yw_workflow(1,'Setup_watershed_raster',nil,1,7,41).
+yw_workflow(1,setup_watershed_raster,nil,1,7,41).
 
 
 %---------------------------------------------------------------------------------------------------
@@ -45,12 +45,12 @@ yw_data(1,setup_R,nil,nil).
 yw_data(2,rast_base,nil,nil).
 yw_data(3,howe_sound_watersheds,nil,nil).
 yw_data(4,rast_watershed,nil,nil).
-yw_data(5,setup_R,1,'Setup_watershed_raster').
-yw_data(6,dir_spatial,1,'Setup_watershed_raster').
-yw_data(7,dir_goal,1,'Setup_watershed_raster').
-yw_data(8,rast_base,1,'Setup_watershed_raster').
-yw_data(9,howe_sound_watersheds,1,'Setup_watershed_raster').
-yw_data(10,rast_watershed,1,'Setup_watershed_raster').
+yw_data(5,setup_R,1,setup_watershed_raster).
+yw_data(6,dir_spatial,1,setup_watershed_raster).
+yw_data(7,dir_goal,1,setup_watershed_raster).
+yw_data(8,rast_base,1,setup_watershed_raster).
+yw_data(9,howe_sound_watersheds,1,setup_watershed_raster).
+yw_data(10,rast_watershed,1,setup_watershed_raster).
 
 
 %---------------------------------------------------------------------------------------------------
@@ -61,15 +61,15 @@ yw_step_input(3,raster_to_same_extents_resolution_as_500m_base_raster,param,8,di
 yw_step_input(3,raster_to_same_extents_resolution_as_500m_base_raster,in,11,howe_sound_watersheds,9,howe_sound_watersheds).
 yw_step_input(3,raster_to_same_extents_resolution_as_500m_base_raster,in,10,rast_base,8,rast_base).
 yw_step_input(2,set_up_configuration_and_start_provenance_tracking,in,5,setup_configuration_file,5,setup_R).
-yw_step_input(1,'Setup_watershed_raster',in,3,howe_sound_watersheds,3,howe_sound_watersheds).
-yw_step_input(1,'Setup_watershed_raster',in,2,rast_base,2,rast_base).
-yw_step_input(1,'Setup_watershed_raster',in,1,setup_configuration_file,1,setup_R).
+yw_step_input(1,setup_watershed_raster,in,3,howe_sound_watersheds,3,howe_sound_watersheds).
+yw_step_input(1,setup_watershed_raster,in,2,rast_base,2,rast_base).
+yw_step_input(1,setup_watershed_raster,in,1,setup_configuration_file,1,setup_R).
 
 
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_step_output(ProgramId, ProgramName, PortType, PortId, PortName, DataId, DataName).
 %...................................................................................................
-yw_step_output(1,'Setup_watershed_raster',out,4,rast_watershed,4,rast_watershed).
+yw_step_output(1,setup_watershed_raster,out,4,rast_watershed,4,rast_watershed).
 yw_step_output(2,set_up_configuration_and_start_provenance_tracking,out,6,dir_spatial,6,dir_spatial).
 yw_step_output(2,set_up_configuration_and_start_provenance_tracking,out,7,dir_goal,7,dir_goal).
 yw_step_output(3,raster_to_same_extents_resolution_as_500m_base_raster,out,12,rast_watershed,10,rast_watershed).
@@ -78,9 +78,9 @@ yw_step_output(3,raster_to_same_extents_resolution_as_500m_base_raster,out,12,ra
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_inflow(WorkflowId, WorkflowName, DataId, DataName, ProgramId, ProgramName).
 %...................................................................................................
-yw_inflow(1,'Setup_watershed_raster',9,howe_sound_watersheds,3,raster_to_same_extents_resolution_as_500m_base_raster).
-yw_inflow(1,'Setup_watershed_raster',8,rast_base,3,raster_to_same_extents_resolution_as_500m_base_raster).
-yw_inflow(1,'Setup_watershed_raster',5,setup_R,2,set_up_configuration_and_start_provenance_tracking).
+yw_inflow(1,setup_watershed_raster,9,howe_sound_watersheds,3,raster_to_same_extents_resolution_as_500m_base_raster).
+yw_inflow(1,setup_watershed_raster,8,rast_base,3,raster_to_same_extents_resolution_as_500m_base_raster).
+yw_inflow(1,setup_watershed_raster,5,setup_R,2,set_up_configuration_and_start_provenance_tracking).
 
 
 %---------------------------------------------------------------------------------------------------
@@ -93,37 +93,37 @@ yw_flow(2,set_up_configuration_and_start_provenance_tracking,7,dir_goal,7,dir_go
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_outflow(StepId, StepName, StepOutDataId, StepOutDataName, WorkflowId, WorkflowName, WorkflowOutDataId, WorkflowOutDataName).
 %...................................................................................................
-yw_outflow(3,raster_to_same_extents_resolution_as_500m_base_raster,10,rast_watershed,1,'Setup_watershed_raster',4,rast_watershed).
+yw_outflow(3,raster_to_same_extents_resolution_as_500m_base_raster,10,rast_watershed,1,setup_watershed_raster,4,rast_watershed).
 
 
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_qualified_name(EntityType, Id, QualifiedName).
 %...................................................................................................
-yw_qualified_name(program,1,'Setup_watershed_raster').
-yw_qualified_name(program,2,'Setup_watershed_raster.set_up_configuration_and_start_provenance_tracking').
-yw_qualified_name(program,3,'Setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster').
-yw_qualified_name(port,1,'Setup_watershed_raster<-setup_configuration_file').
-yw_qualified_name(port,2,'Setup_watershed_raster<-rast_base').
-yw_qualified_name(port,3,'Setup_watershed_raster<-howe_sound_watersheds').
-yw_qualified_name(port,4,'Setup_watershed_raster->rast_watershed').
-yw_qualified_name(port,5,'Setup_watershed_raster.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file').
-yw_qualified_name(port,6,'Setup_watershed_raster.set_up_configuration_and_start_provenance_tracking->dir_spatial').
-yw_qualified_name(port,7,'Setup_watershed_raster.set_up_configuration_and_start_provenance_tracking->dir_goal').
-yw_qualified_name(port,8,'Setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster<-dir_spatial').
-yw_qualified_name(port,9,'Setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster<-dir_goal').
-yw_qualified_name(port,10,'Setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster<-rast_base').
-yw_qualified_name(port,11,'Setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster<-howe_sound_watersheds').
-yw_qualified_name(port,12,'Setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster->rast_watershed').
+yw_qualified_name(program,1,setup_watershed_raster).
+yw_qualified_name(program,2,'setup_watershed_raster.set_up_configuration_and_start_provenance_tracking').
+yw_qualified_name(program,3,'setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster').
+yw_qualified_name(port,1,'setup_watershed_raster<-setup_configuration_file').
+yw_qualified_name(port,2,'setup_watershed_raster<-rast_base').
+yw_qualified_name(port,3,'setup_watershed_raster<-howe_sound_watersheds').
+yw_qualified_name(port,4,'setup_watershed_raster->rast_watershed').
+yw_qualified_name(port,5,'setup_watershed_raster.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file').
+yw_qualified_name(port,6,'setup_watershed_raster.set_up_configuration_and_start_provenance_tracking->dir_spatial').
+yw_qualified_name(port,7,'setup_watershed_raster.set_up_configuration_and_start_provenance_tracking->dir_goal').
+yw_qualified_name(port,8,'setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster<-dir_spatial').
+yw_qualified_name(port,9,'setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster<-dir_goal').
+yw_qualified_name(port,10,'setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster<-rast_base').
+yw_qualified_name(port,11,'setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster<-howe_sound_watersheds').
+yw_qualified_name(port,12,'setup_watershed_raster.raster_to_same_extents_resolution_as_500m_base_raster->rast_watershed').
 yw_qualified_name(data,1,'[setup_R]').
 yw_qualified_name(data,2,'[rast_base]').
 yw_qualified_name(data,3,'[howe_sound_watersheds]').
 yw_qualified_name(data,4,'[rast_watershed]').
-yw_qualified_name(data,5,'Setup_watershed_raster[setup_R]').
-yw_qualified_name(data,6,'Setup_watershed_raster[dir_spatial]').
-yw_qualified_name(data,7,'Setup_watershed_raster[dir_goal]').
-yw_qualified_name(data,8,'Setup_watershed_raster[rast_base]').
-yw_qualified_name(data,9,'Setup_watershed_raster[howe_sound_watersheds]').
-yw_qualified_name(data,10,'Setup_watershed_raster[rast_watershed]').
+yw_qualified_name(data,5,'setup_watershed_raster[setup_R]').
+yw_qualified_name(data,6,'setup_watershed_raster[dir_spatial]').
+yw_qualified_name(data,7,'setup_watershed_raster[dir_goal]').
+yw_qualified_name(data,8,'setup_watershed_raster[rast_base]').
+yw_qualified_name(data,9,'setup_watershed_raster[howe_sound_watersheds]').
+yw_qualified_name(data,10,'setup_watershed_raster[rast_watershed]').
 
 
 %---------------------------------------------------------------------------------------------------

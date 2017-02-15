@@ -9,13 +9,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 657.6)">
 <title>yw_data_view</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-657.6 629,-657.6 629,4 -4,4"/>
-<text text-anchor="middle" x="312.5" y="-633.4" font-family="Courier,monospace" font-size="18.00">Set_up_coastal_buffer_rasters</text>
-<g id="clust1" class="cluster"><title>cluster_workflow</title>
-<polygon fill="none" stroke="black" stroke-width="2" points="8,-62 8,-562 617,-562 617,-62 8,-62"/>
-</g>
-<g id="clust2" class="cluster"><title>cluster_workflow_inner</title>
-<polygon fill="none" stroke="white" stroke-width="2" points="16,-70 16,-554 609,-554 609,-70 16,-70"/>
-</g>
+<text text-anchor="middle" x="312.5" y="-633.4" font-family="Courier,monospace" font-size="18.00">get_analysis_rasters</text>
 <g id="clust3" class="cluster"><title>cluster_inflows</title>
 <polygon fill="none" stroke="white" stroke-width="2" points="436,-570 436,-616 578,-616 578,-570 436,-570"/>
 </g>
@@ -27,6 +21,12 @@
 </g>
 <g id="clust6" class="cluster"><title>cluster_outflows_inner</title>
 <polygon fill="none" stroke="white" stroke-width="2" points="255,-16 255,-46 317,-46 317,-16 255,-16"/>
+</g>
+<g id="clust1" class="cluster"><title>cluster_workflow</title>
+<polygon fill="none" stroke="black" stroke-width="2" points="8,-62 8,-562 617,-562 617,-62 8,-62"/>
+</g>
+<g id="clust2" class="cluster"><title>cluster_workflow_inner</title>
+<polygon fill="none" stroke="white" stroke-width="2" points="16,-70 16,-554 609,-554 609,-70 16,-70"/>
 </g>
 <!-- set_up_configuration_and_start_provenance_tracking -->
 <g id="node1" class="node"><title>set_up_configuration_and_start_provenance_tracking</title>

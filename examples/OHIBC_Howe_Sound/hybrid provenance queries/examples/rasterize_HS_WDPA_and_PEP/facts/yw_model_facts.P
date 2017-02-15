@@ -1,11 +1,11 @@
 
 % FACT: program(program_id, program_name, qualified_program_name, begin_annotation_id, end_annotation_id).
-program(1, 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents', 1, 54).
-program(2, 'set_up_configuration_and_start_provenance_tracking', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.set_up_configuration_and_start_provenance_tracking', 14, 19).
-program(3, 'rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution', 20, 26).
-program(4, 'load_and_create_howe_sound_wdpa_pep_files', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.load_and_create_howe_sound_wdpa_pep_files', 27, 35).
-program(5, 'rasterize_howe_sound_wdpa_shape_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_howe_sound_wdpa_shape_file', 36, 44).
-program(6, 'rasterize_howe_sound_pep_shape_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_howe_sound_pep_shape_file', 45, 53).
+program(1, 'Rasterize_HS_WDPA_and_PEP', 'Rasterize_HS_WDPA_and_PEP', 1, 54).
+program(2, 'set_up_configuration_and_start_provenance_tracking', 'Rasterize_HS_WDPA_and_PEP.set_up_configuration_and_start_provenance_tracking', 14, 19).
+program(3, 'rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution', 'Rasterize_HS_WDPA_and_PEP.rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution', 20, 26).
+program(4, 'load_and_create_howe_sound_wdpa_pep_files', 'Rasterize_HS_WDPA_and_PEP.load_and_create_howe_sound_wdpa_pep_files', 27, 35).
+program(5, 'rasterize_howe_sound_wdpa_shape_file', 'Rasterize_HS_WDPA_and_PEP.rasterize_howe_sound_wdpa_shape_file', 36, 44).
+program(6, 'rasterize_howe_sound_pep_shape_file', 'Rasterize_HS_WDPA_and_PEP.rasterize_howe_sound_pep_shape_file', 45, 53).
 
 % FACT: workflow(program_id).
 workflow(1).
@@ -20,31 +20,31 @@ has_subprogram(1, 5).
 has_subprogram(1, 6).
 
 % FACT: port(port_id, port_type, port_name, qualified_port_name, port_annotation_id, data_id).
-port(1, 'in', 'setup_configuration_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents<-setup_configuration_file', 2, 1).
-port(2, 'in', 'hs_wdpa_shp_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents<-hs_wdpa_shp_file', 4, 2).
-port(3, 'in', 'hs_pep_shp_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents<-hs_pep_shp_file', 6, 3).
-port(4, 'in', 'ohibc_rgn_raster_500m', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents<-ohibc_rgn_raster_500m', 8, 4).
-port(5, 'out', 'hs_wdpa_rast_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents->hs_wdpa_rast_file', 10, 5).
-port(6, 'out', 'hs_pep_rast_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents->hs_pep_rast_file', 12, 6).
-port(7, 'in', 'setup_configuration_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file', 15, 7).
-port(8, 'out', 'dir_spatial', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.set_up_configuration_and_start_provenance_tracking->dir_spatial', 17, 8).
-port(9, 'out', 'dir_goal', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.set_up_configuration_and_start_provenance_tracking->dir_goal', 18, 9).
-port(10, 'param', 'dir_spatial', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution<-dir_spatial', 21, 8).
-port(11, 'in', 'ohibc_rgn_raster_500m', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution<-ohibc_rgn_raster_500m', 22, 10).
-port(12, 'out', 'rast_base', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution->rast_base', 24, 11).
-port(13, 'param', 'dir_goal', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.load_and_create_howe_sound_wdpa_pep_files<-dir_goal', 28, 9).
-port(14, 'in', 'hs_wdpa_shp_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.load_and_create_howe_sound_wdpa_pep_files<-hs_wdpa_shp_file', 29, 12).
-port(15, 'in', 'hs_pep_shp_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.load_and_create_howe_sound_wdpa_pep_files<-hs_pep_shp_file', 31, 13).
-port(16, 'out', 'hs_wdpa_rast_file_handle', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.load_and_create_howe_sound_wdpa_pep_files->hs_wdpa_rast_file_handle', 33, 14).
-port(17, 'out', 'hs_pep_rast_file_handle', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.load_and_create_howe_sound_wdpa_pep_files->hs_pep_rast_file_handle', 34, 15).
-port(18, 'in', 'hs_wdpa_shp_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_howe_sound_wdpa_shape_file<-hs_wdpa_shp_file', 37, 12).
-port(19, 'in', 'rast_base', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_howe_sound_wdpa_shape_file<-rast_base', 39, 11).
-port(20, 'in', 'hs_wdpa_rast_file_handle', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_howe_sound_wdpa_shape_file<-hs_wdpa_rast_file_handle', 41, 14).
-port(21, 'out', 'hs_wdpa_rast_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_howe_sound_wdpa_shape_file->hs_wdpa_rast_file', 42, 16).
-port(22, 'in', 'hs_pep_shp_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_howe_sound_pep_shape_file<-hs_pep_shp_file', 46, 13).
-port(23, 'in', 'rast_base', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_howe_sound_pep_shape_file<-rast_base', 48, 11).
-port(24, 'in', 'hs_pep_rast_file_handle', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_howe_sound_pep_shape_file<-hs_pep_rast_file_handle', 50, 15).
-port(25, 'out', 'hs_pep_rast_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents.rasterize_howe_sound_pep_shape_file->hs_pep_rast_file', 51, 17).
+port(1, 'in', 'setup_configuration_file', 'Rasterize_HS_WDPA_and_PEP<-setup_configuration_file', 2, 1).
+port(2, 'in', 'hs_wdpa_shp_file', 'Rasterize_HS_WDPA_and_PEP<-hs_wdpa_shp_file', 4, 2).
+port(3, 'in', 'hs_pep_shp_file', 'Rasterize_HS_WDPA_and_PEP<-hs_pep_shp_file', 6, 3).
+port(4, 'in', 'ohibc_rgn_raster_500m', 'Rasterize_HS_WDPA_and_PEP<-ohibc_rgn_raster_500m', 8, 4).
+port(5, 'out', 'hs_wdpa_rast_file', 'Rasterize_HS_WDPA_and_PEP->hs_wdpa_rast_file', 10, 5).
+port(6, 'out', 'hs_pep_rast_file', 'Rasterize_HS_WDPA_and_PEP->hs_pep_rast_file', 12, 6).
+port(7, 'in', 'setup_configuration_file', 'Rasterize_HS_WDPA_and_PEP.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file', 15, 7).
+port(8, 'out', 'dir_spatial', 'Rasterize_HS_WDPA_and_PEP.set_up_configuration_and_start_provenance_tracking->dir_spatial', 17, 8).
+port(9, 'out', 'dir_goal', 'Rasterize_HS_WDPA_and_PEP.set_up_configuration_and_start_provenance_tracking->dir_goal', 18, 9).
+port(10, 'param', 'dir_spatial', 'Rasterize_HS_WDPA_and_PEP.rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution<-dir_spatial', 21, 8).
+port(11, 'in', 'ohibc_rgn_raster_500m', 'Rasterize_HS_WDPA_and_PEP.rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution<-ohibc_rgn_raster_500m', 22, 10).
+port(12, 'out', 'rast_base', 'Rasterize_HS_WDPA_and_PEP.rasterize_ohibc_rgn_raster_500m_shape_file_at_500m_resolution->rast_base', 24, 11).
+port(13, 'param', 'dir_goal', 'Rasterize_HS_WDPA_and_PEP.load_and_create_howe_sound_wdpa_pep_files<-dir_goal', 28, 9).
+port(14, 'in', 'hs_wdpa_shp_file', 'Rasterize_HS_WDPA_and_PEP.load_and_create_howe_sound_wdpa_pep_files<-hs_wdpa_shp_file', 29, 12).
+port(15, 'in', 'hs_pep_shp_file', 'Rasterize_HS_WDPA_and_PEP.load_and_create_howe_sound_wdpa_pep_files<-hs_pep_shp_file', 31, 13).
+port(16, 'out', 'hs_wdpa_rast_file_handle', 'Rasterize_HS_WDPA_and_PEP.load_and_create_howe_sound_wdpa_pep_files->hs_wdpa_rast_file_handle', 33, 14).
+port(17, 'out', 'hs_pep_rast_file_handle', 'Rasterize_HS_WDPA_and_PEP.load_and_create_howe_sound_wdpa_pep_files->hs_pep_rast_file_handle', 34, 15).
+port(18, 'in', 'hs_wdpa_shp_file', 'Rasterize_HS_WDPA_and_PEP.rasterize_howe_sound_wdpa_shape_file<-hs_wdpa_shp_file', 37, 12).
+port(19, 'in', 'rast_base', 'Rasterize_HS_WDPA_and_PEP.rasterize_howe_sound_wdpa_shape_file<-rast_base', 39, 11).
+port(20, 'in', 'hs_wdpa_rast_file_handle', 'Rasterize_HS_WDPA_and_PEP.rasterize_howe_sound_wdpa_shape_file<-hs_wdpa_rast_file_handle', 41, 14).
+port(21, 'out', 'hs_wdpa_rast_file', 'Rasterize_HS_WDPA_and_PEP.rasterize_howe_sound_wdpa_shape_file->hs_wdpa_rast_file', 42, 16).
+port(22, 'in', 'hs_pep_shp_file', 'Rasterize_HS_WDPA_and_PEP.rasterize_howe_sound_pep_shape_file<-hs_pep_shp_file', 46, 13).
+port(23, 'in', 'rast_base', 'Rasterize_HS_WDPA_and_PEP.rasterize_howe_sound_pep_shape_file<-rast_base', 48, 11).
+port(24, 'in', 'hs_pep_rast_file_handle', 'Rasterize_HS_WDPA_and_PEP.rasterize_howe_sound_pep_shape_file<-hs_pep_rast_file_handle', 50, 15).
+port(25, 'out', 'hs_pep_rast_file', 'Rasterize_HS_WDPA_and_PEP.rasterize_howe_sound_pep_shape_file->hs_pep_rast_file', 51, 17).
 
 % FACT: port_alias(port_id, alias).
 port_alias(1, 'setup_R').
@@ -103,17 +103,17 @@ data(3, 'hs_pep_shp_file', '[hs_pep_shp_file]').
 data(4, 'ohibc_rgn_raster_500m', '[ohibc_rgn_raster_500m]').
 data(5, 'hs_wdpa_rast_file', '[hs_wdpa_rast_file]').
 data(6, 'hs_pep_rast_file', '[hs_pep_rast_file]').
-data(7, 'setup_R', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents[setup_R]').
-data(8, 'dir_spatial', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents[dir_spatial]').
-data(9, 'dir_goal', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents[dir_goal]').
-data(10, 'ohibc_rgn_raster_500m', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents[ohibc_rgn_raster_500m]').
-data(11, 'extent_of_howe_sound', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents[extent_of_howe_sound]').
-data(12, 'hs_wdpa_shp_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents[hs_wdpa_shp_file]').
-data(13, 'hs_pep_shp_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents[hs_pep_shp_file]').
-data(14, 'hs_wdpa_rast_file_handle', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents[hs_wdpa_rast_file_handle]').
-data(15, 'hs_pep_rast_file_handle', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents[hs_pep_rast_file_handle]').
-data(16, 'hs_wdpa_rast_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents[hs_wdpa_rast_file]').
-data(17, 'hs_pep_rast_file', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents[hs_pep_rast_file]').
+data(7, 'setup_R', 'Rasterize_HS_WDPA_and_PEP[setup_R]').
+data(8, 'dir_spatial', 'Rasterize_HS_WDPA_and_PEP[dir_spatial]').
+data(9, 'dir_goal', 'Rasterize_HS_WDPA_and_PEP[dir_goal]').
+data(10, 'ohibc_rgn_raster_500m', 'Rasterize_HS_WDPA_and_PEP[ohibc_rgn_raster_500m]').
+data(11, 'extent_of_howe_sound', 'Rasterize_HS_WDPA_and_PEP[extent_of_howe_sound]').
+data(12, 'hs_wdpa_shp_file', 'Rasterize_HS_WDPA_and_PEP[hs_wdpa_shp_file]').
+data(13, 'hs_pep_shp_file', 'Rasterize_HS_WDPA_and_PEP[hs_pep_shp_file]').
+data(14, 'hs_wdpa_rast_file_handle', 'Rasterize_HS_WDPA_and_PEP[hs_wdpa_rast_file_handle]').
+data(15, 'hs_pep_rast_file_handle', 'Rasterize_HS_WDPA_and_PEP[hs_pep_rast_file_handle]').
+data(16, 'hs_wdpa_rast_file', 'Rasterize_HS_WDPA_and_PEP[hs_wdpa_rast_file]').
+data(17, 'hs_pep_rast_file', 'Rasterize_HS_WDPA_and_PEP[hs_pep_rast_file]').
 
 % FACT: channel(channel_id, data_id).
 channel(1, 5).

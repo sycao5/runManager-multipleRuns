@@ -3,10 +3,10 @@
 extract_source(1, './script/setup_BC_PEP_polygons.R').
 
 % FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
-annotation(1, 1, 4, 'begin', '@BEGIN', 'Read_BC_Parks_EcologicalReserves_ProtectedArea_data').
+annotation(1, 1, 4, 'begin', '@BEGIN', 'setup_BC_PEP_polygons').
 annotation(2, 1, 5, 'in', '@in', 'poly_hs_pep').
 annotation(3, 1, 5, 'as', '@AS', 'TA_PEP_SVW_polygon').
-annotation(4, 1, 5, 'uri', '@URI', 'file:{dir_anx}/_raw_data/databc/TA_PEP_SVW').
+annotation(4, 1, 5, 'uri', '@URI', 'file:{dir_anx}/_raw_data/databc/TA_PEP_SVW/TA_PEP_SVW_polygon.shp').
 annotation(5, 1, 6, 'in', '@in', 'setup_configuration_file').
 annotation(6, 1, 6, 'as', '@AS', 'setup_R').
 annotation(7, 1, 7, 'out', '@out', 'poly_hs_pep').
@@ -21,7 +21,7 @@ annotation(15, 1, 16, 'begin', '@BEGIN', 'read_TA_PEP_SVW_polygon').
 annotation(16, 1, 17, 'param', '@param', 'dir_anx').
 annotation(17, 1, 18, 'in', '@in', 'poly_hs_pep').
 annotation(18, 1, 18, 'as', '@AS', 'TA_PEP_SVW_polygon').
-annotation(19, 1, 18, 'uri', '@URI', 'file:{dir_anx}/_raw_data/databc/TA_PEP_SVW').
+annotation(19, 1, 18, 'uri', '@URI', 'file:{dir_anx}/_raw_data/databc/TA_PEP_SVW/TA_PEP_SVW_polygon.shp').
 annotation(20, 1, 19, 'out', '@out', 'poly_hs_pep').
 annotation(21, 1, 19, 'as', '@AS', 'hs_pep_poly').
 annotation(22, 1, 28, 'end', '@END', 'read_TA_PEP_SVW_polygon').
@@ -32,7 +32,7 @@ annotation(26, 1, 32, 'param', '@param', 'dir_goal').
 annotation(27, 1, 33, 'out', '@out', 'poly_hs_pep').
 annotation(28, 1, 33, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_pep_poly.shp').
 annotation(29, 1, 43, 'end', '@END', 'write_hs_pep_poly').
-annotation(30, 1, 45, 'end', '@END', 'Read_BC_Parks_EcologicalReserves_ProtectedArea_data').
+annotation(30, 1, 45, 'end', '@END', 'setup_BC_PEP_polygons').
 
 % FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
 annotation_qualifies(3, 2).

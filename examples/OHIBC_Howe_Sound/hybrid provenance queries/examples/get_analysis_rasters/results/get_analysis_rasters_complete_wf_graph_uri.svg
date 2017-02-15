@@ -9,7 +9,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 701.4)">
 <title>Workflow</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-701.4 1039,-701.4 1039,4 -4,4"/>
-<text text-anchor="middle" x="517.5" y="-677.2" font-family="Courier,monospace" font-size="18.00">Set_up_coastal_buffer_rasters</text>
+<text text-anchor="middle" x="517.5" y="-677.2" font-family="Courier,monospace" font-size="18.00">get_analysis_rasters</text>
 <g id="clust1" class="cluster"><title>cluster_workflow_box_outer</title>
 <polygon fill="none" stroke="black" stroke-width="2" points="8,-62 8,-605.8 1027,-605.8 1027,-62 8,-62"/>
 </g>

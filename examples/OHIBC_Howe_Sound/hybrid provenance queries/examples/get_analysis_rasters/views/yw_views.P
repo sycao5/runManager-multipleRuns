@@ -9,13 +9,13 @@ yw_source_file(1,'./script/get_analysis_rasters.R').
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_workflow_script(WorkflowId, WorkflowName, SourceId, SourceFile).
 %...................................................................................................
-yw_workflow_script(1,'Set_up_coastal_buffer_rasters',1,'./script/get_analysis_rasters.R').
+yw_workflow_script(1,get_analysis_rasters,1,'./script/get_analysis_rasters.R').
 
 
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_program(WorkflowId, ProgramName, WorkflowId, SourceId, BeginLine, EndLine).
 %...................................................................................................
-yw_program(1,'Set_up_coastal_buffer_rasters',nil,1,17,82).
+yw_program(1,get_analysis_rasters,nil,1,17,82).
 yw_program(2,set_up_configuration_and_start_provenance_tracking,1,1,26,32).
 yw_program(3,create_presence_of_buffer_rasters,1,1,36,47).
 yw_program(4,read_in_buffer_shapfiles_if_rasters_not,1,1,50,80).
@@ -24,7 +24,7 @@ yw_program(4,read_in_buffer_shapfiles_if_rasters_not,1,1,50,80).
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_workflow(WorkflowId, WorkflowName, ParentWorkflowId, SourceId, BeginLine, EndLine).
 %...................................................................................................
-yw_workflow(1,'Set_up_coastal_buffer_rasters',nil,1,17,82).
+yw_workflow(1,get_analysis_rasters,nil,1,17,82).
 
 
 %---------------------------------------------------------------------------------------------------
@@ -49,16 +49,16 @@ yw_data(3,poly_1km_file,nil,nil).
 yw_data(4,rast_base,nil,nil).
 yw_data(5,rast_3nm_file,nil,nil).
 yw_data(6,rast_1km_file,nil,nil).
-yw_data(7,setup_R,1,'Set_up_coastal_buffer_rasters').
-yw_data(8,dir_spatial,1,'Set_up_coastal_buffer_rasters').
-yw_data(9,dir_goal,1,'Set_up_coastal_buffer_rasters').
-yw_data(10,rast_base,1,'Set_up_coastal_buffer_rasters').
-yw_data(11,rast_3nm_file_handle,1,'Set_up_coastal_buffer_rasters').
-yw_data(12,rast_1km_file_handle,1,'Set_up_coastal_buffer_rasters').
-yw_data(13,poly_3nm_file,1,'Set_up_coastal_buffer_rasters').
-yw_data(14,poly_1km_file,1,'Set_up_coastal_buffer_rasters').
-yw_data(15,rast_3nm_file,1,'Set_up_coastal_buffer_rasters').
-yw_data(16,rast_1km_file,1,'Set_up_coastal_buffer_rasters').
+yw_data(7,setup_R,1,get_analysis_rasters).
+yw_data(8,dir_spatial,1,get_analysis_rasters).
+yw_data(9,dir_goal,1,get_analysis_rasters).
+yw_data(10,rast_base,1,get_analysis_rasters).
+yw_data(11,rast_3nm_file_handle,1,get_analysis_rasters).
+yw_data(12,rast_1km_file_handle,1,get_analysis_rasters).
+yw_data(13,poly_3nm_file,1,get_analysis_rasters).
+yw_data(14,poly_1km_file,1,get_analysis_rasters).
+yw_data(15,rast_3nm_file,1,get_analysis_rasters).
+yw_data(16,rast_1km_file,1,get_analysis_rasters).
 
 
 %---------------------------------------------------------------------------------------------------
@@ -72,17 +72,17 @@ yw_step_input(4,read_in_buffer_shapfiles_if_rasters_not,in,15,poly_3nm_file,13,p
 yw_step_input(3,create_presence_of_buffer_rasters,param,10,dir_goal,9,dir_goal).
 yw_step_input(3,create_presence_of_buffer_rasters,in,11,rast_base,10,rast_base).
 yw_step_input(2,set_up_configuration_and_start_provenance_tracking,in,7,setup_configuration_file,7,setup_R).
-yw_step_input(1,'Set_up_coastal_buffer_rasters',in,4,rast_base,4,rast_base).
-yw_step_input(1,'Set_up_coastal_buffer_rasters',in,3,poly_1km_file,3,poly_1km_file).
-yw_step_input(1,'Set_up_coastal_buffer_rasters',in,2,poly_3nm_file,2,poly_3nm_file).
-yw_step_input(1,'Set_up_coastal_buffer_rasters',in,1,setup_configuration_file,1,setup_R).
+yw_step_input(1,get_analysis_rasters,in,4,rast_base,4,rast_base).
+yw_step_input(1,get_analysis_rasters,in,3,poly_1km_file,3,poly_1km_file).
+yw_step_input(1,get_analysis_rasters,in,2,poly_3nm_file,2,poly_3nm_file).
+yw_step_input(1,get_analysis_rasters,in,1,setup_configuration_file,1,setup_R).
 
 
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_step_output(ProgramId, ProgramName, PortType, PortId, PortName, DataId, DataName).
 %...................................................................................................
-yw_step_output(1,'Set_up_coastal_buffer_rasters',out,5,rast_3nm_file,5,rast_3nm_file).
-yw_step_output(1,'Set_up_coastal_buffer_rasters',out,6,rast_1km_file,6,rast_1km_file).
+yw_step_output(1,get_analysis_rasters,out,5,rast_3nm_file,5,rast_3nm_file).
+yw_step_output(1,get_analysis_rasters,out,6,rast_1km_file,6,rast_1km_file).
 yw_step_output(2,set_up_configuration_and_start_provenance_tracking,out,8,dir_spatial,8,dir_spatial).
 yw_step_output(2,set_up_configuration_and_start_provenance_tracking,out,9,dir_goal,9,dir_goal).
 yw_step_output(3,create_presence_of_buffer_rasters,out,12,rast_3nm_file_handle,11,rast_3nm_file_handle).
@@ -94,10 +94,10 @@ yw_step_output(4,read_in_buffer_shapfiles_if_rasters_not,out,20,rast_1km_file,16
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_inflow(WorkflowId, WorkflowName, DataId, DataName, ProgramId, ProgramName).
 %...................................................................................................
-yw_inflow(1,'Set_up_coastal_buffer_rasters',14,poly_1km_file,4,read_in_buffer_shapfiles_if_rasters_not).
-yw_inflow(1,'Set_up_coastal_buffer_rasters',13,poly_3nm_file,4,read_in_buffer_shapfiles_if_rasters_not).
-yw_inflow(1,'Set_up_coastal_buffer_rasters',10,rast_base,3,create_presence_of_buffer_rasters).
-yw_inflow(1,'Set_up_coastal_buffer_rasters',7,setup_R,2,set_up_configuration_and_start_provenance_tracking).
+yw_inflow(1,get_analysis_rasters,14,poly_1km_file,4,read_in_buffer_shapfiles_if_rasters_not).
+yw_inflow(1,get_analysis_rasters,13,poly_3nm_file,4,read_in_buffer_shapfiles_if_rasters_not).
+yw_inflow(1,get_analysis_rasters,10,rast_base,3,create_presence_of_buffer_rasters).
+yw_inflow(1,get_analysis_rasters,7,setup_R,2,set_up_configuration_and_start_provenance_tracking).
 
 
 %---------------------------------------------------------------------------------------------------
@@ -112,53 +112,53 @@ yw_flow(3,create_presence_of_buffer_rasters,13,rast_1km_file_handle,12,rast_1km_
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_outflow(StepId, StepName, StepOutDataId, StepOutDataName, WorkflowId, WorkflowName, WorkflowOutDataId, WorkflowOutDataName).
 %...................................................................................................
-yw_outflow(4,read_in_buffer_shapfiles_if_rasters_not,15,rast_3nm_file,1,'Set_up_coastal_buffer_rasters',5,rast_3nm_file).
-yw_outflow(4,read_in_buffer_shapfiles_if_rasters_not,16,rast_1km_file,1,'Set_up_coastal_buffer_rasters',6,rast_1km_file).
+yw_outflow(4,read_in_buffer_shapfiles_if_rasters_not,15,rast_3nm_file,1,get_analysis_rasters,5,rast_3nm_file).
+yw_outflow(4,read_in_buffer_shapfiles_if_rasters_not,16,rast_1km_file,1,get_analysis_rasters,6,rast_1km_file).
 
 
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_qualified_name(EntityType, Id, QualifiedName).
 %...................................................................................................
-yw_qualified_name(program,1,'Set_up_coastal_buffer_rasters').
-yw_qualified_name(program,2,'Set_up_coastal_buffer_rasters.set_up_configuration_and_start_provenance_tracking').
-yw_qualified_name(program,3,'Set_up_coastal_buffer_rasters.create_presence_of_buffer_rasters').
-yw_qualified_name(program,4,'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not').
-yw_qualified_name(port,1,'Set_up_coastal_buffer_rasters<-setup_configuration_file').
-yw_qualified_name(port,2,'Set_up_coastal_buffer_rasters<-poly_3nm_file').
-yw_qualified_name(port,3,'Set_up_coastal_buffer_rasters<-poly_1km_file').
-yw_qualified_name(port,4,'Set_up_coastal_buffer_rasters<-rast_base').
-yw_qualified_name(port,5,'Set_up_coastal_buffer_rasters->rast_3nm_file').
-yw_qualified_name(port,6,'Set_up_coastal_buffer_rasters->rast_1km_file').
-yw_qualified_name(port,7,'Set_up_coastal_buffer_rasters.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file').
-yw_qualified_name(port,8,'Set_up_coastal_buffer_rasters.set_up_configuration_and_start_provenance_tracking->dir_spatial').
-yw_qualified_name(port,9,'Set_up_coastal_buffer_rasters.set_up_configuration_and_start_provenance_tracking->dir_goal').
-yw_qualified_name(port,10,'Set_up_coastal_buffer_rasters.create_presence_of_buffer_rasters<-dir_goal').
-yw_qualified_name(port,11,'Set_up_coastal_buffer_rasters.create_presence_of_buffer_rasters<-rast_base').
-yw_qualified_name(port,12,'Set_up_coastal_buffer_rasters.create_presence_of_buffer_rasters->rast_3nm_file_handle').
-yw_qualified_name(port,13,'Set_up_coastal_buffer_rasters.create_presence_of_buffer_rasters->rast_1km_file_handle').
-yw_qualified_name(port,14,'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not<-dir_spatial').
-yw_qualified_name(port,15,'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not<-poly_3nm_file').
-yw_qualified_name(port,16,'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not<-poly_1km_file').
-yw_qualified_name(port,17,'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not<-rast_3nm_file_handle').
-yw_qualified_name(port,18,'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not<-rast_1km_file_handle').
-yw_qualified_name(port,19,'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not->rast_3nm_file').
-yw_qualified_name(port,20,'Set_up_coastal_buffer_rasters.read_in_buffer_shapfiles_if_rasters_not->rast_1km_file').
+yw_qualified_name(program,1,get_analysis_rasters).
+yw_qualified_name(program,2,'get_analysis_rasters.set_up_configuration_and_start_provenance_tracking').
+yw_qualified_name(program,3,'get_analysis_rasters.create_presence_of_buffer_rasters').
+yw_qualified_name(program,4,'get_analysis_rasters.read_in_buffer_shapfiles_if_rasters_not').
+yw_qualified_name(port,1,'get_analysis_rasters<-setup_configuration_file').
+yw_qualified_name(port,2,'get_analysis_rasters<-poly_3nm_file').
+yw_qualified_name(port,3,'get_analysis_rasters<-poly_1km_file').
+yw_qualified_name(port,4,'get_analysis_rasters<-rast_base').
+yw_qualified_name(port,5,'get_analysis_rasters->rast_3nm_file').
+yw_qualified_name(port,6,'get_analysis_rasters->rast_1km_file').
+yw_qualified_name(port,7,'get_analysis_rasters.set_up_configuration_and_start_provenance_tracking<-setup_configuration_file').
+yw_qualified_name(port,8,'get_analysis_rasters.set_up_configuration_and_start_provenance_tracking->dir_spatial').
+yw_qualified_name(port,9,'get_analysis_rasters.set_up_configuration_and_start_provenance_tracking->dir_goal').
+yw_qualified_name(port,10,'get_analysis_rasters.create_presence_of_buffer_rasters<-dir_goal').
+yw_qualified_name(port,11,'get_analysis_rasters.create_presence_of_buffer_rasters<-rast_base').
+yw_qualified_name(port,12,'get_analysis_rasters.create_presence_of_buffer_rasters->rast_3nm_file_handle').
+yw_qualified_name(port,13,'get_analysis_rasters.create_presence_of_buffer_rasters->rast_1km_file_handle').
+yw_qualified_name(port,14,'get_analysis_rasters.read_in_buffer_shapfiles_if_rasters_not<-dir_spatial').
+yw_qualified_name(port,15,'get_analysis_rasters.read_in_buffer_shapfiles_if_rasters_not<-poly_3nm_file').
+yw_qualified_name(port,16,'get_analysis_rasters.read_in_buffer_shapfiles_if_rasters_not<-poly_1km_file').
+yw_qualified_name(port,17,'get_analysis_rasters.read_in_buffer_shapfiles_if_rasters_not<-rast_3nm_file_handle').
+yw_qualified_name(port,18,'get_analysis_rasters.read_in_buffer_shapfiles_if_rasters_not<-rast_1km_file_handle').
+yw_qualified_name(port,19,'get_analysis_rasters.read_in_buffer_shapfiles_if_rasters_not->rast_3nm_file').
+yw_qualified_name(port,20,'get_analysis_rasters.read_in_buffer_shapfiles_if_rasters_not->rast_1km_file').
 yw_qualified_name(data,1,'[setup_R]').
 yw_qualified_name(data,2,'[poly_3nm_file]').
 yw_qualified_name(data,3,'[poly_1km_file]').
 yw_qualified_name(data,4,'[rast_base]').
 yw_qualified_name(data,5,'[rast_3nm_file]').
 yw_qualified_name(data,6,'[rast_1km_file]').
-yw_qualified_name(data,7,'Set_up_coastal_buffer_rasters[setup_R]').
-yw_qualified_name(data,8,'Set_up_coastal_buffer_rasters[dir_spatial]').
-yw_qualified_name(data,9,'Set_up_coastal_buffer_rasters[dir_goal]').
-yw_qualified_name(data,10,'Set_up_coastal_buffer_rasters[rast_base]').
-yw_qualified_name(data,11,'Set_up_coastal_buffer_rasters[rast_3nm_file_handle]').
-yw_qualified_name(data,12,'Set_up_coastal_buffer_rasters[rast_1km_file_handle]').
-yw_qualified_name(data,13,'Set_up_coastal_buffer_rasters[poly_3nm_file]').
-yw_qualified_name(data,14,'Set_up_coastal_buffer_rasters[poly_1km_file]').
-yw_qualified_name(data,15,'Set_up_coastal_buffer_rasters[rast_3nm_file]').
-yw_qualified_name(data,16,'Set_up_coastal_buffer_rasters[rast_1km_file]').
+yw_qualified_name(data,7,'get_analysis_rasters[setup_R]').
+yw_qualified_name(data,8,'get_analysis_rasters[dir_spatial]').
+yw_qualified_name(data,9,'get_analysis_rasters[dir_goal]').
+yw_qualified_name(data,10,'get_analysis_rasters[rast_base]').
+yw_qualified_name(data,11,'get_analysis_rasters[rast_3nm_file_handle]').
+yw_qualified_name(data,12,'get_analysis_rasters[rast_1km_file_handle]').
+yw_qualified_name(data,13,'get_analysis_rasters[poly_3nm_file]').
+yw_qualified_name(data,14,'get_analysis_rasters[poly_1km_file]').
+yw_qualified_name(data,15,'get_analysis_rasters[rast_3nm_file]').
+yw_qualified_name(data,16,'get_analysis_rasters[rast_1km_file]').
 
 
 %---------------------------------------------------------------------------------------------------

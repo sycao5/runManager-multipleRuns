@@ -9,13 +9,13 @@ yw_source_file(1,'./script/setup_BC_PEP_polygons.R').
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_workflow_script(WorkflowId, WorkflowName, SourceId, SourceFile).
 %...................................................................................................
-yw_workflow_script(1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data',1,'./script/setup_BC_PEP_polygons.R').
+yw_workflow_script(1,setup_BC_PEP_polygons,1,'./script/setup_BC_PEP_polygons.R').
 
 
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_program(WorkflowId, ProgramName, WorkflowId, SourceId, BeginLine, EndLine).
 %...................................................................................................
-yw_program(1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data',nil,1,4,45).
+yw_program(1,setup_BC_PEP_polygons,nil,1,4,45).
 yw_program(2,set_up_Configuration_and_start_provenance_tracking,1,1,9,14).
 yw_program(3,read_TA_PEP_SVW_polygon,1,1,16,28).
 yw_program(4,write_hs_pep_poly,1,1,30,43).
@@ -24,7 +24,7 @@ yw_program(4,write_hs_pep_poly,1,1,30,43).
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_workflow(WorkflowId, WorkflowName, ParentWorkflowId, SourceId, BeginLine, EndLine).
 %...................................................................................................
-yw_workflow(1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data',nil,1,4,45).
+yw_workflow(1,setup_BC_PEP_polygons,nil,1,4,45).
 
 
 %---------------------------------------------------------------------------------------------------
@@ -46,12 +46,12 @@ yw_workflow_step(4,write_hs_pep_poly,1,1,30,43).
 yw_data(1,'TA_PEP_SVW_polygon',nil,nil).
 yw_data(2,setup_R,nil,nil).
 yw_data(3,poly_hs_pep,nil,nil).
-yw_data(4,setup_R,1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data').
-yw_data(5,dir_anx,1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data').
-yw_data(6,dir_goal,1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data').
-yw_data(7,'TA_PEP_SVW_polygon',1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data').
-yw_data(8,hs_pep_poly,1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data').
-yw_data(9,poly_hs_pep,1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data').
+yw_data(4,setup_R,1,setup_BC_PEP_polygons).
+yw_data(5,dir_anx,1,setup_BC_PEP_polygons).
+yw_data(6,dir_goal,1,setup_BC_PEP_polygons).
+yw_data(7,'TA_PEP_SVW_polygon',1,setup_BC_PEP_polygons).
+yw_data(8,hs_pep_poly,1,setup_BC_PEP_polygons).
+yw_data(9,poly_hs_pep,1,setup_BC_PEP_polygons).
 
 
 %---------------------------------------------------------------------------------------------------
@@ -62,14 +62,14 @@ yw_step_input(4,write_hs_pep_poly,in,10,poly_hs_pep,8,hs_pep_poly).
 yw_step_input(3,read_TA_PEP_SVW_polygon,param,7,dir_anx,5,dir_anx).
 yw_step_input(3,read_TA_PEP_SVW_polygon,in,8,poly_hs_pep,7,'TA_PEP_SVW_polygon').
 yw_step_input(2,set_up_Configuration_and_start_provenance_tracking,in,4,setup_configuration_file,4,setup_R).
-yw_step_input(1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data',in,2,setup_configuration_file,2,setup_R).
-yw_step_input(1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data',in,1,poly_hs_pep,1,'TA_PEP_SVW_polygon').
+yw_step_input(1,setup_BC_PEP_polygons,in,2,setup_configuration_file,2,setup_R).
+yw_step_input(1,setup_BC_PEP_polygons,in,1,poly_hs_pep,1,'TA_PEP_SVW_polygon').
 
 
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_step_output(ProgramId, ProgramName, PortType, PortId, PortName, DataId, DataName).
 %...................................................................................................
-yw_step_output(1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data',out,3,poly_hs_pep,3,poly_hs_pep).
+yw_step_output(1,setup_BC_PEP_polygons,out,3,poly_hs_pep,3,poly_hs_pep).
 yw_step_output(2,set_up_Configuration_and_start_provenance_tracking,out,5,dir_anx,5,dir_anx).
 yw_step_output(2,set_up_Configuration_and_start_provenance_tracking,out,6,dir_goal,6,dir_goal).
 yw_step_output(3,read_TA_PEP_SVW_polygon,out,9,poly_hs_pep,8,hs_pep_poly).
@@ -79,8 +79,8 @@ yw_step_output(4,write_hs_pep_poly,out,12,poly_hs_pep,9,poly_hs_pep).
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_inflow(WorkflowId, WorkflowName, DataId, DataName, ProgramId, ProgramName).
 %...................................................................................................
-yw_inflow(1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data',7,'TA_PEP_SVW_polygon',3,read_TA_PEP_SVW_polygon).
-yw_inflow(1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data',4,setup_R,2,set_up_Configuration_and_start_provenance_tracking).
+yw_inflow(1,setup_BC_PEP_polygons,7,'TA_PEP_SVW_polygon',3,read_TA_PEP_SVW_polygon).
+yw_inflow(1,setup_BC_PEP_polygons,4,setup_R,2,set_up_Configuration_and_start_provenance_tracking).
 
 
 %---------------------------------------------------------------------------------------------------
@@ -94,37 +94,37 @@ yw_flow(3,read_TA_PEP_SVW_polygon,9,poly_hs_pep,8,hs_pep_poly,10,poly_hs_pep,4,w
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_outflow(StepId, StepName, StepOutDataId, StepOutDataName, WorkflowId, WorkflowName, WorkflowOutDataId, WorkflowOutDataName).
 %...................................................................................................
-yw_outflow(4,write_hs_pep_poly,9,poly_hs_pep,1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data',3,poly_hs_pep).
+yw_outflow(4,write_hs_pep_poly,9,poly_hs_pep,1,setup_BC_PEP_polygons,3,poly_hs_pep).
 
 
 %---------------------------------------------------------------------------------------------------
 % FACT: yw_qualified_name(EntityType, Id, QualifiedName).
 %...................................................................................................
-yw_qualified_name(program,1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data').
-yw_qualified_name(program,2,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data.set_up_Configuration_and_start_provenance_tracking').
-yw_qualified_name(program,3,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data.read_TA_PEP_SVW_polygon').
-yw_qualified_name(program,4,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data.write_hs_pep_poly').
-yw_qualified_name(port,1,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data<-poly_hs_pep').
-yw_qualified_name(port,2,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data<-setup_configuration_file').
-yw_qualified_name(port,3,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data->poly_hs_pep').
-yw_qualified_name(port,4,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data.set_up_Configuration_and_start_provenance_tracking<-setup_configuration_file').
-yw_qualified_name(port,5,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data.set_up_Configuration_and_start_provenance_tracking->dir_anx').
-yw_qualified_name(port,6,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data.set_up_Configuration_and_start_provenance_tracking->dir_goal').
-yw_qualified_name(port,7,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data.read_TA_PEP_SVW_polygon<-dir_anx').
-yw_qualified_name(port,8,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data.read_TA_PEP_SVW_polygon<-poly_hs_pep').
-yw_qualified_name(port,9,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data.read_TA_PEP_SVW_polygon->poly_hs_pep').
-yw_qualified_name(port,10,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data.write_hs_pep_poly<-poly_hs_pep').
-yw_qualified_name(port,11,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data.write_hs_pep_poly<-dir_goal').
-yw_qualified_name(port,12,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data.write_hs_pep_poly->poly_hs_pep').
+yw_qualified_name(program,1,setup_BC_PEP_polygons).
+yw_qualified_name(program,2,'setup_BC_PEP_polygons.set_up_Configuration_and_start_provenance_tracking').
+yw_qualified_name(program,3,'setup_BC_PEP_polygons.read_TA_PEP_SVW_polygon').
+yw_qualified_name(program,4,'setup_BC_PEP_polygons.write_hs_pep_poly').
+yw_qualified_name(port,1,'setup_BC_PEP_polygons<-poly_hs_pep').
+yw_qualified_name(port,2,'setup_BC_PEP_polygons<-setup_configuration_file').
+yw_qualified_name(port,3,'setup_BC_PEP_polygons->poly_hs_pep').
+yw_qualified_name(port,4,'setup_BC_PEP_polygons.set_up_Configuration_and_start_provenance_tracking<-setup_configuration_file').
+yw_qualified_name(port,5,'setup_BC_PEP_polygons.set_up_Configuration_and_start_provenance_tracking->dir_anx').
+yw_qualified_name(port,6,'setup_BC_PEP_polygons.set_up_Configuration_and_start_provenance_tracking->dir_goal').
+yw_qualified_name(port,7,'setup_BC_PEP_polygons.read_TA_PEP_SVW_polygon<-dir_anx').
+yw_qualified_name(port,8,'setup_BC_PEP_polygons.read_TA_PEP_SVW_polygon<-poly_hs_pep').
+yw_qualified_name(port,9,'setup_BC_PEP_polygons.read_TA_PEP_SVW_polygon->poly_hs_pep').
+yw_qualified_name(port,10,'setup_BC_PEP_polygons.write_hs_pep_poly<-poly_hs_pep').
+yw_qualified_name(port,11,'setup_BC_PEP_polygons.write_hs_pep_poly<-dir_goal').
+yw_qualified_name(port,12,'setup_BC_PEP_polygons.write_hs_pep_poly->poly_hs_pep').
 yw_qualified_name(data,1,'[TA_PEP_SVW_polygon]').
 yw_qualified_name(data,2,'[setup_R]').
 yw_qualified_name(data,3,'[poly_hs_pep]').
-yw_qualified_name(data,4,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data[setup_R]').
-yw_qualified_name(data,5,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data[dir_anx]').
-yw_qualified_name(data,6,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data[dir_goal]').
-yw_qualified_name(data,7,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data[TA_PEP_SVW_polygon]').
-yw_qualified_name(data,8,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data[hs_pep_poly]').
-yw_qualified_name(data,9,'Read_BC_Parks_EcologicalReserves_ProtectedArea_data[poly_hs_pep]').
+yw_qualified_name(data,4,'setup_BC_PEP_polygons[setup_R]').
+yw_qualified_name(data,5,'setup_BC_PEP_polygons[dir_anx]').
+yw_qualified_name(data,6,'setup_BC_PEP_polygons[dir_goal]').
+yw_qualified_name(data,7,'setup_BC_PEP_polygons[TA_PEP_SVW_polygon]').
+yw_qualified_name(data,8,'setup_BC_PEP_polygons[hs_pep_poly]').
+yw_qualified_name(data,9,'setup_BC_PEP_polygons[poly_hs_pep]').
 
 
 %---------------------------------------------------------------------------------------------------

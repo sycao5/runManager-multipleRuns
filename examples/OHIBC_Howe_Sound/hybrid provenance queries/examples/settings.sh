@@ -1,6 +1,6 @@
 # define base directories
 export EXAMPLE_DIR=.
-export PROJECT_ROOT=../../
+export PROJECT_ROOT=../..
 
 # define lcoation of YesWorkflow jar file
 export YW_JAR="${PROJECT_ROOT}/yw_jar/yesworkflow-0.2.1-SNAPSHOT-jar-with-dependencies.jar"

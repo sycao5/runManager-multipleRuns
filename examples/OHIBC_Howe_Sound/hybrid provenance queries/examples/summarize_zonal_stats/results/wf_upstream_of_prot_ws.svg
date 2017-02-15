@@ -114,12 +114,12 @@
 <text text-anchor="middle" x="334" y="-523.8" font-family="Helvetica,sans-Serif" font-size="14.00">setup_R</text>
 </g>
 <!-- setup_R&#45;&gt;set_up_configuration_and_start_provenance_tracking -->
-<g id="edge7" class="edge"><title>setup_R&#45;&gt;set_up_configuration_and_start_provenance_tracking</title>
+<g id="edge4" class="edge"><title>setup_R&#45;&gt;set_up_configuration_and_start_provenance_tracking</title>
 <path fill="none" stroke="black" d="M311.258,-509.697C299.56,-500.796 285.139,-489.823 272.49,-480.199"/>
 <polygon fill="black" stroke="black" points="274.558,-477.374 264.48,-474.104 270.319,-482.945 274.558,-477.374"/>
 </g>
 <!-- dir_goal&#45;&gt;read_in_zonal_stats_dataframes -->
-<g id="edge1" class="edge"><title>dir_goal&#45;&gt;read_in_zonal_stats_dataframes</title>
+<g id="edge7" class="edge"><title>dir_goal&#45;&gt;read_in_zonal_stats_dataframes</title>
 <path fill="none" stroke="black" d="M87.5784,-365.876C104.074,-356.639 124.624,-345.131 142.336,-335.212"/>
 <polygon fill="black" stroke="black" points="144.289,-338.13 151.304,-330.19 140.869,-332.022 144.289,-338.13"/>
 </g>
@@ -129,7 +129,7 @@
 <text text-anchor="middle" x="182" y="-379.8" font-family="Helvetica,sans-Serif" font-size="14.00">zonal_stats_3nm_file</text>
 </g>
 <!-- zonal_stats_3nm_file&#45;&gt;read_in_zonal_stats_dataframes -->
-<g id="edge9" class="edge"><title>zonal_stats_3nm_file&#45;&gt;read_in_zonal_stats_dataframes</title>
+<g id="edge6" class="edge"><title>zonal_stats_3nm_file&#45;&gt;read_in_zonal_stats_dataframes</title>
 <path fill="none" stroke="black" d="M182,-365.697C182,-357.983 182,-348.712 182,-340.112"/>
 <polygon fill="black" stroke="black" points="185.5,-340.104 182,-330.104 178.5,-340.104 185.5,-340.104"/>
 </g>
@@ -139,7 +139,7 @@
 <text text-anchor="middle" x="347" y="-379.8" font-family="Helvetica,sans-Serif" font-size="14.00">zonal_stats_1km_file</text>
 </g>
 <!-- zonal_stats_1km_file&#45;&gt;read_in_zonal_stats_dataframes -->
-<g id="edge2" class="edge"><title>zonal_stats_1km_file&#45;&gt;read_in_zonal_stats_dataframes</title>
+<g id="edge8" class="edge"><title>zonal_stats_1km_file&#45;&gt;read_in_zonal_stats_dataframes</title>
 <path fill="none" stroke="black" d="M306.636,-365.876C283.98,-356.264 255.527,-344.193 231.53,-334.013"/>
 <polygon fill="black" stroke="black" points="232.805,-330.752 222.232,-330.068 230.071,-337.196 232.805,-330.752"/>
 </g>
@@ -149,27 +149,27 @@
 <text text-anchor="middle" x="507" y="-379.8" font-family="Helvetica,sans-Serif" font-size="14.00">zonal_stats_ws_file</text>
 </g>
 <!-- zonal_stats_ws_file&#45;&gt;read_in_zonal_stats_dataframes -->
-<g id="edge4" class="edge"><title>zonal_stats_ws_file&#45;&gt;read_in_zonal_stats_dataframes</title>
+<g id="edge1" class="edge"><title>zonal_stats_ws_file&#45;&gt;read_in_zonal_stats_dataframes</title>
 <path fill="none" stroke="black" d="M438.099,-367.971C435.024,-367.304 431.98,-366.645 429,-366 376.773,-354.705 318.313,-342.157 271.382,-332.107"/>
 <polygon fill="black" stroke="black" points="272.06,-328.673 261.549,-330.001 270.595,-335.517 272.06,-328.673"/>
 </g>
 <!-- stats_3nm&#45;&gt;compute_total_cells_and_cumulaative_total_of_cells_per_region -->
-<g id="edge3" class="edge"><title>stats_3nm&#45;&gt;compute_total_cells_and_cumulaative_total_of_cells_per_region</title>
+<g id="edge9" class="edge"><title>stats_3nm&#45;&gt;compute_total_cells_and_cumulaative_total_of_cells_per_region</title>
 <path fill="none" stroke="black" d="M308.798,-221.697C306.904,-213.898 304.623,-204.509 302.516,-195.829"/>
 <polygon fill="black" stroke="black" points="305.915,-194.996 300.154,-186.104 299.113,-196.648 305.915,-194.996"/>
 </g>
 <!-- stats_1km&#45;&gt;compute_total_cells_and_cumulaative_total_of_cells_per_region -->
-<g id="edge5" class="edge"><title>stats_1km&#45;&gt;compute_total_cells_and_cumulaative_total_of_cells_per_region</title>
+<g id="edge2" class="edge"><title>stats_1km&#45;&gt;compute_total_cells_and_cumulaative_total_of_cells_per_region</title>
 <path fill="none" stroke="black" d="M165.857,-222.588C189.527,-212.842 219.776,-200.386 245.153,-189.937"/>
 <polygon fill="black" stroke="black" points="246.703,-193.084 254.617,-186.04 244.038,-186.611 246.703,-193.084"/>
 </g>
 <!-- stats_ws&#45;&gt;compute_total_cells_and_cumulaative_total_of_cells_per_region -->
-<g id="edge6" class="edge"><title>stats_ws&#45;&gt;compute_total_cells_and_cumulaative_total_of_cells_per_region</title>
+<g id="edge3" class="edge"><title>stats_ws&#45;&gt;compute_total_cells_and_cumulaative_total_of_cells_per_region</title>
 <path fill="none" stroke="black" d="M238.034,-221.697C247.545,-213.05 259.207,-202.449 269.57,-193.027"/>
 <polygon fill="black" stroke="black" points="272.14,-195.421 277.185,-186.104 267.431,-190.241 272.14,-195.421"/>
 </g>
 <!-- lsp_thresh&#45;&gt;compute_total_cells_and_cumulaative_total_of_cells_per_region -->
-<g id="edge8" class="edge"><title>lsp_thresh&#45;&gt;compute_total_cells_and_cumulaative_total_of_cells_per_region</title>
+<g id="edge5" class="edge"><title>lsp_thresh&#45;&gt;compute_total_cells_and_cumulaative_total_of_cells_per_region</title>
 <path fill="none" stroke="black" d="M409.306,-221.876C388.982,-212.392 363.529,-200.513 341.898,-190.419"/>
 <polygon fill="black" stroke="black" points="343.117,-187.126 332.575,-186.068 340.157,-193.469 343.117,-187.126"/>
 </g>

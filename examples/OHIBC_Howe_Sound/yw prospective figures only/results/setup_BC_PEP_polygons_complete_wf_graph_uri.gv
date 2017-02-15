@@ -11,7 +11,7 @@ write_hs_pep_poly
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
 poly_hs_pep [shape=record rankdir=LR label="{<f0> poly_hs_pep |<f1> file\:\{dir_goal\}/spatial/hs_pep_poly.shp}"];
 setup_R
-TA_PEP_SVW_polygon [shape=record rankdir=LR label="{<f0> TA_PEP_SVW_polygon |<f1> file\:\{dir_anx\}/_raw_data/databc/TA_PEP_SVW}"];
+TA_PEP_SVW_polygon [shape=record rankdir=LR label="{<f0> TA_PEP_SVW_polygon |<f1> file\:\{dir_anx\}/_raw_data/databc/TA_PEP_SVW/TA_PEP_SVW_polygon.shp}"];
 hs_pep_poly
 node[shape=box style="rounded,filled" fillcolor="#FCFCFC" peripheries=1 fontname=Helvetica]
 dir_anx

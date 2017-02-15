@@ -9,7 +9,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 521.4)">
 <title>yw_data_view</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-521.4 664,-521.4 664,4 -4,4"/>
-<text text-anchor="middle" x="330" y="-497.2" font-family="Courier,monospace" font-size="18.00">Read_in_BC_WDPA_MPA_shapefile</text>
+<text text-anchor="middle" x="330" y="-497.2" font-family="Courier,monospace" font-size="18.00">setup_BC_WDPA_polygons</text>
 <g id="clust1" class="cluster"><title>cluster_workflow</title>
 <polygon fill="none" stroke="black" stroke-width="2" points="8,-62 8,-425.8 652,-425.8 652,-62 8,-62"/>
 </g>

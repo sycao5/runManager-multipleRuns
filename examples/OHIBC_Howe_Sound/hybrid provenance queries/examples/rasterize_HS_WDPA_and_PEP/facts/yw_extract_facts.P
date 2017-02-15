@@ -3,7 +3,7 @@
 extract_source(1, './script/rasterize_HS_WDPA_and_PEP.R').
 
 % FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
-annotation(1, 1, 10, 'begin', '@BEGIN', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents').
+annotation(1, 1, 10, 'begin', '@BEGIN', 'Rasterize_HS_WDPA_and_PEP').
 annotation(2, 1, 11, 'in', '@in', 'setup_configuration_file').
 annotation(3, 1, 11, 'as', '@AS', 'setup_R').
 annotation(4, 1, 12, 'in', '@in', 'hs_wdpa_shp_file').
@@ -56,7 +56,7 @@ annotation(50, 1, 69, 'in', '@in', 'hs_pep_rast_file_handle').
 annotation(51, 1, 70, 'out', '@out', 'hs_pep_rast_file').
 annotation(52, 1, 70, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_pep_rast_500m.tif').
 annotation(53, 1, 77, 'end', '@END', 'rasterize_howe_sound_pep_shape_file').
-annotation(54, 1, 79, 'end', '@END', 'Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents').
+annotation(54, 1, 79, 'end', '@END', 'Rasterize_HS_WDPA_and_PEP').
 
 % FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
 annotation_qualifies(3, 2).

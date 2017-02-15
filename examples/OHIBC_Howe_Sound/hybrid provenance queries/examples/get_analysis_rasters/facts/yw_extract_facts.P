@@ -3,7 +3,7 @@
 extract_source(1, './script/get_analysis_rasters.R').
 
 % FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
-annotation(1, 1, 17, 'begin', '@BEGIN', 'Set_up_coastal_buffer_rasters').
+annotation(1, 1, 17, 'begin', '@BEGIN', 'get_analysis_rasters').
 annotation(2, 1, 18, 'in', '@in', 'setup_configuration_file').
 annotation(3, 1, 18, 'as', '@AS', 'setup_R').
 annotation(4, 1, 19, 'in', '@in', 'poly_3nm_file').
@@ -42,7 +42,7 @@ annotation(36, 1, 56, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_offshore_3nm_ra
 annotation(37, 1, 57, 'out', '@out', 'rast_1km_file').
 annotation(38, 1, 57, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_inland_1km_raster_500m.tif').
 annotation(39, 1, 80, 'end', '@END', 'read_in_buffer_shapfiles_if_rasters_not').
-annotation(40, 1, 82, 'end', '@END', 'Set_up_coastal_buffer_rasters').
+annotation(40, 1, 82, 'end', '@END', 'get_analysis_rasters').
 
 % FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
 annotation_qualifies(3, 2).

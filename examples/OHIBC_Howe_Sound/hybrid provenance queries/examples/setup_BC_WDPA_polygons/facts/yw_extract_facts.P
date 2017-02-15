@@ -3,7 +3,7 @@
 extract_source(1, './script/setup_BC_WDPA_polygons.R').
 
 % FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
-annotation(1, 1, 29, 'begin', '@BEGIN', 'Read_in_BC_WDPA_MPA_shapefile').
+annotation(1, 1, 29, 'begin', '@BEGIN', 'setup_BC_WDPA_polygons').
 annotation(2, 1, 30, 'in', '@in', 'setup_configuration_file').
 annotation(3, 1, 30, 'as', '@AS', 'setup_R').
 annotation(4, 1, 31, 'in', '@in', 'hs_wdpa_poly').
@@ -26,7 +26,7 @@ annotation(20, 1, 44, 'out', '@out', 'poly_hs_wdpa').
 annotation(21, 1, 44, 'as', '@AS', 'BC_specific_polygon_subset_of_WDPA_global_dataset').
 annotation(22, 1, 44, 'uri', '@URI', 'file:{dir_goal}/spatial/hs_wdpa_poly.shp').
 annotation(23, 1, 54, 'end', '@END', 'create_BC_specific_polygon_subset_of_WDPA_global_dataset').
-annotation(24, 1, 56, 'end', '@END', 'Read_in_BC_WDPA_MPA_shapefile').
+annotation(24, 1, 56, 'end', '@END', 'setup_BC_WDPA_polygons').
 
 % FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
 annotation_qualifies(3, 2).

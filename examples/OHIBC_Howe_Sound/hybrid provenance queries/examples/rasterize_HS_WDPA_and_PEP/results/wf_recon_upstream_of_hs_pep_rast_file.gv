@@ -2,7 +2,7 @@
 digraph yw_data_view {
 rankdir=TB
 fontname=Courier; fontsize=18; labelloc=t
-label="Rasterize_BC_WDPA_MPA_Shapefile_Howe_Sound_extents"
+label="Rasterize_HS_WDPA_and_PEP"
 subgraph cluster_workflow { label=""; color=black; penwidth=2
 subgraph cluster_workflow_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]

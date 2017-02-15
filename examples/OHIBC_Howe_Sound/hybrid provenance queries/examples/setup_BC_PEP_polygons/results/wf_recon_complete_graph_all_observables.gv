@@ -2,7 +2,7 @@
 digraph yw_data_view {
 rankdir=TB
 fontname=Courier; fontsize=18; labelloc=t
-label="Read_BC_Parks_EcologicalReserves_ProtectedArea_data"
+label="setup_BC_PEP_polygons"
 subgraph cluster_workflow { label=""; color=black; penwidth=2
 subgraph cluster_workflow_inner { label=""; color=white
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
@@ -12,7 +12,7 @@ write_hs_pep_poly
 node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
 node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname="Courier-Bold" fontsize=9]
 setup_R[shape=record rankdir=LR label="{<f0> setup_R |<f1>}"]
-TA_PEP_SVW_polygon[shape=record rankdir=LR label="{<f0> TA_PEP_SVW_polygon |<f1>}"]
+TA_PEP_SVW_polygon[shape=record rankdir=LR label="{<f0> TA_PEP_SVW_polygon |<f1>/Volumes/ohi/git-annex/bcprep/_raw_data/databc/TA_PEP_SVW/TA_PEP_SVW_polygon.shp\l}"]
 node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
 dir_anx
 dir_goal

@@ -37,15 +37,15 @@ subgraph cluster_outflows_inner { label=""; color=white
 node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
 prot_3nm_outflow [label=""]
 }}
-stats_ws -> compute_total_cells_and_cumulaative_total_of_cells_per_region
-setup_R -> set_up_configuration_and_start_provenance_tracking
-lsp_thresh -> compute_total_cells_and_cumulaative_total_of_cells_per_region
 zonal_stats_3nm_file -> read_in_zonal_stats_dataframes
 dir_goal -> read_in_zonal_stats_dataframes
 zonal_stats_1km_file -> read_in_zonal_stats_dataframes
 stats_3nm -> compute_total_cells_and_cumulaative_total_of_cells_per_region
 zonal_stats_ws_file -> read_in_zonal_stats_dataframes
 stats_1km -> compute_total_cells_and_cumulaative_total_of_cells_per_region
+stats_ws -> compute_total_cells_and_cumulaative_total_of_cells_per_region
+setup_R -> set_up_configuration_and_start_provenance_tracking
+lsp_thresh -> compute_total_cells_and_cumulaative_total_of_cells_per_region
 set_up_configuration_and_start_provenance_tracking -> dir_goal
 read_in_zonal_stats_dataframes -> stats_3nm
 read_in_zonal_stats_dataframes -> stats_1km
