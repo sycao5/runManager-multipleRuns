@@ -1,0 +1,73 @@
+
+digraph yw_data_view {
+rankdir=TB
+fontname=Courier; fontsize=18; labelloc=t
+label="lsp_zonal_stats"
+subgraph cluster_workflow { label=""; color=black; penwidth=2
+subgraph cluster_workflow_inner { label=""; color=white
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+read_in_OHI_region_rasters
+set_up_configuration_and_start_provenance_tracking
+outputs_zonal_stats_dataframes_for_protected_cells
+node[shape=box style="filled" fillcolor="#CCFFCC" peripheries=1 fontname=Courier]
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+dir_goal
+rast_3nm
+rast_1km
+rast_ws
+rast_pep
+rast_wdpa_pep
+node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname="Courier-Bold" fontsize=9]
+setup_R[shape=record rankdir=LR label="{<f0> setup_R |<f1>}"]
+rast_3nm_raster_file[shape=record rankdir=LR label="{<f0> rast_3nm_raster_file |<f1>prep/lsp/vHS/spatial/hs_offshore_3nm_raster_500m.tif\l}"]
+rast_1km_raster_file[shape=record rankdir=LR label="{<f0> rast_1km_raster_file |<f1>prep/lsp/vHS/spatial/hs_inland_1km_raster_500m.tif\l}"]
+rast_ws_raster_file[shape=record rankdir=LR label="{<f0> rast_ws_raster_file |<f1>prep/lsp/vHS/spatial/howe_sound_watershed_500m.tif\l}"]
+rast_pep_file[shape=record rankdir=LR label="{<f0> rast_pep_file |<f1>prep/lsp/vHS/spatial/hs_pep_rast_500m.tif\l}"]
+rast_wdpa_pep_file[shape=record rankdir=LR label="{<f0> rast_wdpa_pep_file |<f1>prep/lsp/vHS/spatial/hs_wdpa_rast_500m.tif\l}"]
+node[shape=box style="rounded,filled" fillcolor="#FFE4B5" peripheries=1 fontname="Courier-Bold" fontsize=9]
+zonal_3nm_file[shape=record rankdir=LR label="{<f0> zonal_3nm_file |<f1>prep/lsp/vHS/int/zonal_stats_3nm.csv\l}"]
+node[shape=box style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica]
+}}
+subgraph cluster_inflows { label=""; color=white; penwidth=2
+subgraph cluster_inflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+setup_R_inflow [label=""]
+rast_3nm_raster_file_inflow [label=""]
+rast_1km_raster_file_inflow [label=""]
+rast_ws_raster_file_inflow [label=""]
+rast_pep_file_inflow [label=""]
+rast_wdpa_pep_file_inflow [label=""]
+}}
+subgraph cluster_outflows { label=""; color=white; penwidth=2
+subgraph cluster_outflows_inner { label=""; color=white
+node[shape=circle fillcolor="#FFFFFF" peripheries=1 width=0.2]
+zonal_3nm_file_outflow [label=""]
+}}
+dir_goal -> outputs_zonal_stats_dataframes_for_protected_cells
+rast_pep_file -> read_in_OHI_region_rasters
+rast_3nm -> outputs_zonal_stats_dataframes_for_protected_cells
+rast_wdpa_pep_file -> read_in_OHI_region_rasters
+setup_R -> set_up_configuration_and_start_provenance_tracking
+rast_1km -> outputs_zonal_stats_dataframes_for_protected_cells
+rast_3nm_raster_file -> read_in_OHI_region_rasters
+rast_ws -> outputs_zonal_stats_dataframes_for_protected_cells
+rast_1km_raster_file -> read_in_OHI_region_rasters
+rast_pep -> outputs_zonal_stats_dataframes_for_protected_cells
+rast_ws_raster_file -> read_in_OHI_region_rasters
+rast_wdpa_pep -> outputs_zonal_stats_dataframes_for_protected_cells
+set_up_configuration_and_start_provenance_tracking -> dir_goal
+read_in_OHI_region_rasters -> rast_3nm
+read_in_OHI_region_rasters -> rast_1km
+read_in_OHI_region_rasters -> rast_ws
+read_in_OHI_region_rasters -> rast_pep
+read_in_OHI_region_rasters -> rast_wdpa_pep
+outputs_zonal_stats_dataframes_for_protected_cells -> zonal_3nm_file
+setup_R_inflow -> setup_R
+rast_3nm_raster_file_inflow -> rast_3nm_raster_file
+rast_1km_raster_file_inflow -> rast_1km_raster_file
+rast_ws_raster_file_inflow -> rast_ws_raster_file
+rast_pep_file_inflow -> rast_pep_file
+rast_wdpa_pep_file_inflow -> rast_wdpa_pep_file
+zonal_3nm_file -> zonal_3nm_file_outflow
+}
+
