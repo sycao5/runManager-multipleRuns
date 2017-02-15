@@ -2,7 +2,7 @@
 
 cd ./examples
 
-for DIR in $(find . -maxdepth 1 -type d)
+for DIR in $(find . -mindepth 1 -maxdepth 1 -type d)
 do
 	cur_dir=$(pwd)
 	#echo "$DIR"
