@@ -10,12 +10,6 @@
 <title>yw_data_view</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-657.6 998,-657.6 998,4 -4,4"/>
 <text text-anchor="middle" x="497" y="-633.4" font-family="Courier,monospace" font-size="18.00">Rasterize_HS_WDPA_and_PEP</text>
-<g id="clust1" class="cluster"><title>cluster_workflow</title>
-<polygon fill="none" stroke="black" stroke-width="2" points="8,-62 8,-562 986,-562 986,-62 8,-62"/>
-</g>
-<g id="clust2" class="cluster"><title>cluster_workflow_inner</title>
-<polygon fill="none" stroke="white" stroke-width="2" points="16,-70 16,-554 978,-554 978,-70 16,-70"/>
-</g>
 <g id="clust3" class="cluster"><title>cluster_inflows</title>
 <polygon fill="none" stroke="white" stroke-width="2" points="580,-570 580,-616 722,-616 722,-570 580,-570"/>
 </g>
@@ -27,6 +21,12 @@
 </g>
 <g id="clust6" class="cluster"><title>cluster_outflows_inner</title>
 <polygon fill="none" stroke="white" stroke-width="2" points="617,-16 617,-46 679,-46 679,-16 617,-16"/>
+</g>
+<g id="clust1" class="cluster"><title>cluster_workflow</title>
+<polygon fill="none" stroke="black" stroke-width="2" points="8,-62 8,-562 986,-562 986,-62 8,-62"/>
+</g>
+<g id="clust2" class="cluster"><title>cluster_workflow_inner</title>
+<polygon fill="none" stroke="white" stroke-width="2" points="16,-70 16,-554 978,-554 978,-70 16,-70"/>
 </g>
 <!-- set_up_configuration_and_start_provenance_tracking -->
 <g id="node1" class="node"><title>set_up_configuration_and_start_provenance_tracking</title>

@@ -16,17 +16,17 @@
 <g id="clust2" class="cluster"><title>cluster_workflow_inner</title>
 <polygon fill="none" stroke="white" stroke-width="2" points="16,-70 16,-705.8 547,-705.8 547,-70 16,-70"/>
 </g>
-<g id="clust5" class="cluster"><title>cluster_outflows</title>
-<polygon fill="none" stroke="white" stroke-width="2" points="206,-8 206,-54 252,-54 252,-8 206,-8"/>
-</g>
-<g id="clust6" class="cluster"><title>cluster_outflows_inner</title>
-<polygon fill="none" stroke="white" stroke-width="2" points="214,-16 214,-46 244,-46 244,-16 214,-16"/>
-</g>
 <g id="clust3" class="cluster"><title>cluster_inflows</title>
 <polygon fill="none" stroke="white" stroke-width="2" points="431,-721.8 431,-767.8 509,-767.8 509,-721.8 431,-721.8"/>
 </g>
 <g id="clust4" class="cluster"><title>cluster_inflows_inner</title>
 <polygon fill="none" stroke="white" stroke-width="2" points="439,-729.8 439,-759.8 501,-759.8 501,-729.8 439,-729.8"/>
+</g>
+<g id="clust5" class="cluster"><title>cluster_outflows</title>
+<polygon fill="none" stroke="white" stroke-width="2" points="206,-8 206,-54 252,-54 252,-8 206,-8"/>
+</g>
+<g id="clust6" class="cluster"><title>cluster_outflows_inner</title>
+<polygon fill="none" stroke="white" stroke-width="2" points="214,-16 214,-46 244,-46 244,-16 214,-16"/>
 </g>
 <!-- output_estimate_trend_file_by_region_since_1980 -->
 <g id="node1" class="node"><title>output_estimate_trend_file_by_region_since_1980</title>
